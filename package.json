@@ -1,0 +1,40 @@
+{
+  "name": "analyze-css",
+  "version": "0.0.0",
+  "author": "Maciej Brencz <maciej.brencz@gmail.com> (https://github.com/macbre)",
+  "description": "CSS selectors complexity and performance analyzer",
+  "main": "./lib/index.js",
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/macbre/analyze-css.git"
+  },
+  "keywords": [
+    "css",
+    "analyzer",
+    "complexity",
+    "webperf"
+  ],
+  "license": "BSD",
+  "engines": {
+    "node": ">=0.8"
+  },
+  "dependencies": {
+    "css-parse": "1.5",
+    "debug": "0.7.x",
+    "optimist": "0.6.x",
+    "slick": "1.0"
+  },
+  "devDependencies": {
+    "jshint": ">=2.1.11",
+    "vows": ">=0.7"
+  },
+  "bin": "./bin/analyze-css.js",
+  "preferGlobal": true,
+  "scripts": {
+    "test": "vows --spec",
+    "lint": "jshint --verbose bin/ lib/ rules/ test/"
+  },
+  "jshintConfig": {
+    "node": true
+  }
+}
