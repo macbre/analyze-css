@@ -78,7 +78,19 @@ new analyzer('.foo {margin: 0 !important}', function(err, res) {
 }
 ```
 
+## Metrics
+
+* comments: number of comments in CSS source
+* commentsLength: length of comments content in CSS source
+* emptyRules: number of rules with no properties (e.g. ``.foo { }``)
+* importants: number of properties with value forced by ``!important``
+* length: length of CSS source (in bytes)
+* rules: number of rules (e.g. ``.foo, .bar { color: red }`` is counted as one rule)
+* selectors: number of selectors (e.g. ``.foo, .bar { color: red }`` is counted as two selectors - ``.foo`` and ``.bar``)
+* declarations: number of declarations (e.g. ``.foo, .bar { color: red }`` is counted as one declaration - ``color: red``)
+
 ## Read more
 
 * [Writing Efficient CSS](http://developer.mozilla.org/en/Writing_Efficient_CSS) (by Mozilla)
 * [Profiling CSS for fun and profit. Optimization notes.](http://perfectionkills.com/profiling-css-for-fun-and-profit-optimization-notes/)
+* [CSS specificity](http://css-tricks.com/specifics-on-css-specificity/)
