@@ -13,6 +13,14 @@ tests = [
 		}
 	},
 
+	// complex selectors
+	{
+		css: 'header ul li .foo { color: red }',
+		metrics: {
+			complexSelectors: 1
+		}
+	},
+
 	// empty rules
 	{
 		css: '.foo { } .bar { color: red } ',
