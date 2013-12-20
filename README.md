@@ -92,5 +92,6 @@ analyze-css currently supports reporting in JSON format only. Use [jsonlint](htt
 ## Read more
 
 * [Writing Efficient CSS](http://developer.mozilla.org/en/Writing_Efficient_CSS) (by Mozilla)
+* [Optimize browser rendering](https://developers.google.com/speed/docs/best-practices/rendering) (by Google)
 * [Profiling CSS for fun and profit. Optimization notes.](http://perfectionkills.com/profiling-css-for-fun-and-profit-optimization-notes/)
 * [CSS specificity](http://css-tricks.com/specifics-on-css-specificity/)
