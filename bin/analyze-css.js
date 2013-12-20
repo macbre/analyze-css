@@ -19,6 +19,8 @@ program
 	.describe('url', 'Set URL of CSS to analyze').string('url')
 	.describe('file', 'Set local CSS file to analyze').string('file')
 
+	.describe('pretty', 'Causes JSON with the results to be pretty-printed').boolean('pretty').alias('pretty', 'p')
+
 	// version / help
 	.describe('version', 'Show version number and quit').boolean('version').alias('version', 'V')
 	.describe('help', 'This help text').boolean('help').alias('help', 'h');
@@ -48,12 +50,25 @@ if (typeof argv.url !== 'string' && typeof argv.file !== 'string') {
 url = argv.url || argv.file;
 
 runner(url, function(err, res) {
+	var output;
+
+	// emit an error and die
 	if (err) {
 		console.error(err);
 		process.exit(255);
 	}
 
-	console.log(JSON.stringify(res));
+	// format the results
+	if (argv.pretty === true) {
+		output = JSON.stringify(res, null, '  ');
+	}
+	else {
+		output = JSON.stringify(res);
+	}
+
+	console.log(output);
+
+	// done
 	process.exit(0);
 });
 
