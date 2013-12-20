@@ -16,6 +16,8 @@ npm install --global analyze-css
 
 ## Usage
 
+### Command line tool
+
 ```
 git clone git@github.com:macbre/analyze-css.git
 cd analyze-css
@@ -23,40 +25,22 @@ npm install
 ./bin/analyze-css.js --file examples/elecena.css
 ```
 
-```json
-{
-  "generator": "analyze-css v0.0.0",
-  "metrics": {
-    "comments": 1,
-    "commentsLength": 68,
-    "emptyRules": 0,
-    "importants": 3,
-    "length": 51665,
-    "rules": 422,
-    "selectors": 699,
-    "declarations": 1240
-  },
-  "offenders": {
-    "importants": [
-      "header .ui-autocomplete {left: -75px !important}",
-      ".ui-helper-hidden-accessible {position: absolute !important}",
-      ".ui-state-disabled {cursor: default !important}"
-    ]
-  }
-}
-```
-
-## CommonJS module
+### CommonJS module
 
 ```js
 var analyzer = require('analyze-css');
 
-new analyzer('.foo {margin: 0 !important}', function(err, res) {
+new analyzer('.foo {margin: 0 !important}', function(err, results) {
   console.error(err);
-  console.log(res);
+  console.log(results);
 });
 
 ```
+
+### Results
+
+analyze-css currently supports reporting in JSON format only. Use [jsonlint](https://npmjs.org/package/jsonlint) (``npm install -g jsonlint``) to make it more readable.
+
 ```json
 {
   "generator": "analyze-css v0.0.0",
