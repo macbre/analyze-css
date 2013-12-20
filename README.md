@@ -19,11 +19,17 @@ npm install --global analyze-css
 ### Command line tool
 
 ```
-git clone git@github.com:macbre/analyze-css.git
-cd analyze-css
-npm install
-./bin/analyze-css.js --file examples/elecena.css
+npm install -g analyze-css
 ```
+
+This will install analyze-css "binary" globally. Now you can use it to analyze local CSS files or remote CSS assets:
+
+```
+analyze-css --file examples/elecena.css
+analyze-css --url http://jigsaw.w3.org/css-validator/style/base.css
+```
+
+This will emit JSON formatted results on ``stdin``. Use ``--pretty`` option to make the output more readable.
 
 ### CommonJS module
 
@@ -38,8 +44,6 @@ new analyzer('.foo {margin: 0 !important}', function(err, results) {
 ```
 
 ### Results
-
-analyze-css currently supports reporting in JSON format only. Use [jsonlint](https://npmjs.org/package/jsonlint) (``npm install -g jsonlint``) to make it more readable.
 
 ```json
 {
