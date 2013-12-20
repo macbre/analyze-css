@@ -61,14 +61,21 @@ new analyzer('.foo {margin: 0 !important}', function(err, res) {
 {
   "generator": "analyze-css v0.0.0",
   "metrics": {
-    "comments": 0,
-    "commentsLength": 0,
+    "comments": 1,
+    "commentsLength": 68,
+    "complexSelectors": 32,
     "emptyRules": 0,
-    "importants": 1,
-    "length": 27,
-    "rules": 1,
-    "selectors": 1,
-    "declarations": 1
+    "oldIEFixes": 51,
+    "importants": 3,
+    "selectorsByAttribute": 93,
+    "selectorsByClass": 568,
+    "selectorsById": 35,
+    "selectorsByPseudo": 166,
+    "selectorsByTag": 519,
+    "length": 51665,
+    "rules": 422,
+    "selectors": 699,
+    "declarations": 1240
   },
   "offenders": {
     "importants": [
@@ -86,6 +93,11 @@ new analyzer('.foo {margin: 0 !important}', function(err, res) {
 * emptyRules: number of rules with no properties (e.g. ``.foo { }``)
 * oldIEFixes: number of fixes for old versions of Internet Explorer (e.g. ``* html .foo {}`` and ``.foo { *zoom: 1 }``) [1](http://blogs.msdn.com/b/ie/archive/2005/09/02/460115.aspx) [2](http://www.impressivewebs.com/ie7-ie8-css-hacks/)
 * importants: number of properties with value forced by ``!important``
+* selectorsByAttribute: number of selectors by attribute (e.g. ``.foo[value=bar]``)
+* selectorsByClass: number of selectors by class
+* selectorsById: number of selectors by ID
+* selectorsByPseudo: number of pseudo-selectors (e,g. ``:hover``)
+* selectorsByTag: number of selectors by tag name
 * length: length of CSS source (in bytes)
 * rules: number of rules (e.g. ``.foo, .bar { color: red }`` is counted as one rule)
 * selectors: number of selectors (e.g. ``.foo, .bar { color: red }`` is counted as two selectors - ``.foo`` and ``.bar``)
