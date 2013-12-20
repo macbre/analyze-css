@@ -12,6 +12,13 @@ tests = [
 			commentsLength: 6
 		}
 	},
+	{
+		css: 'body { padding-bottom: 6em; min-width: 40em; /* for the tabs, mostly */ }',
+		metrics: {
+			comments: 1,
+			commentsLength: 22
+		}
+	},
 
 	// complex selectors
 	{
