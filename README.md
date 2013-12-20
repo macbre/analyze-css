@@ -83,6 +83,7 @@ new analyzer('.foo {margin: 0 !important}', function(err, res) {
 * comments: number of comments in CSS source
 * commentsLength: length of comments content in CSS source
 * emptyRules: number of rules with no properties (e.g. ``.foo { }``)
+* oldIEFixes: number of fixes for old versions of Internet Explorer (e.g. ``* html .foo {}`` and ``.foo { *zoom: 1 }``) [1](http://blogs.msdn.com/b/ie/archive/2005/09/02/460115.aspx) [2](http://www.impressivewebs.com/ie7-ie8-css-hacks/)
 * importants: number of properties with value forced by ``!important``
 * length: length of CSS source (in bytes)
 * rules: number of rules (e.g. ``.foo, .bar { color: red }`` is counted as one rule)
