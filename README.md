@@ -51,6 +51,7 @@ analyze-css currently supports reporting in JSON format only. Use [jsonlint](htt
     "emptyRules": 0,
     "oldIEFixes": 51,
     "importants": 3,
+    "qualifiedSelectors": 28,
     "selectorsByAttribute": 93,
     "selectorsByClass": 568,
     "selectorsById": 35,
@@ -75,8 +76,9 @@ analyze-css currently supports reporting in JSON format only. Use [jsonlint](htt
 * commentsLength: length of comments content in CSS source
 * complexSelectors: number of complex selectors (consisting of more than three expressions, e.g. ``header ul li .foo``)
 * emptyRules: number of rules with no properties (e.g. ``.foo { }``)
-* oldIEFixes: number of fixes for old versions of Internet Explorer (e.g. ``* html .foo {}`` and ``.foo { *zoom: 1 }``) [1](http://blogs.msdn.com/b/ie/archive/2005/09/02/460115.aspx) [2](http://www.impressivewebs.com/ie7-ie8-css-hacks/)
+* oldIEFixes: number of fixes for old versions of Internet Explorer (e.g. ``* html .foo {}`` and ``.foo { *zoom: 1 }``, [read](http://blogs.msdn.com/b/ie/archive/2005/09/02/460115.aspx) [more](http://www.impressivewebs.com/ie7-ie8-css-hacks/))
 * importants: number of properties with value forced by ``!important``
+* qualifiedSelectors: number of [qualified selectors](https://developer.mozilla.org/en-US/docs/Web/Guide/CSS/Writing_efficient_CSS) (e.g. ``header#nav``, ``.foo#bar``, ``h1.title``)
 * selectorsByAttribute: number of selectors by attribute (e.g. ``.foo[value=bar]``)
 * selectorsByClass: number of selectors by class
 * selectorsById: number of selectors by ID
