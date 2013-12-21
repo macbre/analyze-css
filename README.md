@@ -35,7 +35,7 @@ var analyzer = require('analyze-css');
 
 new analyzer('.foo {margin: 0 !important}', function(err, results) {
   console.error(err);
-  console.log(results);
+  console.log(results); // example? see below
 });
 
 ```
@@ -75,24 +75,24 @@ new analyzer('.foo {margin: 0 !important}', function(err, results) {
 
 ## Metrics
 
-* comments: number of comments in CSS source
-* commentsLength: length of comments content in CSS source
-* complexSelectors: number of complex selectors (consisting of more than three expressions, e.g. ``header ul li .foo``)
-* emptyRules: number of rules with no properties (e.g. ``.foo { }``)
-* oldIEFixes: number of fixes for old versions of Internet Explorer (e.g. ``* html .foo {}`` and ``.foo { *zoom: 1 }``, [read](http://blogs.msdn.com/b/ie/archive/2005/09/02/460115.aspx) [more](http://www.impressivewebs.com/ie7-ie8-css-hacks/))
-* importants: number of properties with value forced by ``!important``
-* oldPropertyPrefixes: number of properties with no longer needed vendor prefix, powered by data provided by [autoprefixer](https://github.com/ai/autoprefixer) (e.g. ``--moz-border-radius``)
-* qualifiedSelectors: number of [qualified selectors](https://developer.mozilla.org/en-US/docs/Web/Guide/CSS/Writing_efficient_CSS) (e.g. ``header#nav``, ``.foo#bar``, ``h1.title``)
-* selectorsByAttribute: number of selectors by attribute (e.g. ``.foo[value=bar]``)
-* selectorsByClass: number of selectors by class
-* selectorsById: number of selectors by ID
-* selectorsByPseudo: number of pseudo-selectors (e,g. ``:hover``)
-* selectorsByTag: number of selectors by tag name
-* universalSelectors: number of selectors trying to match every element (e.g. ``.foo > *``)
-* length: length of CSS source (in bytes)
-* rules: number of rules (e.g. ``.foo, .bar { color: red }`` is counted as one rule)
-* selectors: number of selectors (e.g. ``.foo, .bar { color: red }`` is counted as two selectors - ``.foo`` and ``.bar``)
-* declarations: number of declarations (e.g. ``.foo, .bar { color: red }`` is counted as one declaration - ``color: red``)
+* **comments**: number of comments in CSS source
+* **commentsLength**: length of comments content in CSS source
+* **complexSelectors**: number of complex selectors (consisting of more than three expressions, e.g. ``header ul li .foo``)
+* **emptyRules**: number of rules with no properties (e.g. ``.foo { }``)
+* **oldIEFixes**: number of fixes for old versions of Internet Explorer (e.g. ``* html .foo {}`` and ``.foo { *zoom: 1 }``, [read](http://blogs.msdn.com/b/ie/archive/2005/09/02/460115.aspx) [more](http://www.impressivewebs.com/ie7-ie8-css-hacks/))
+* **importants**: number of properties with value forced by ``!important``
+* **oldPropertyPrefixes**: number of properties with no longer needed vendor prefix, powered by data provided by [autoprefixer](https://github.com/ai/autoprefixer) (e.g. ``--moz-border-radius``)
+* **qualifiedSelectors**: number of [qualified selectors](https://developer.mozilla.org/en-US/docs/Web/Guide/CSS/Writing_efficient_CSS) (e.g. ``header#nav``, ``.foo#bar``, ``h1.title``)
+* **selectorsByAttribute**: number of selectors by attribute (e.g. ``.foo[value=bar]``)
+* **selectorsByClass**: number of selectors by class
+* **selectorsById**: number of selectors by ID
+* **selectorsByPseudo**: number of pseudo-selectors (e,g. ``:hover``)
+* **selectorsByTag**: number of selectors by tag name
+* **universalSelectors**: number of selectors trying to match every element (e.g. ``.foo > *``)
+* **length**: length of CSS source (in bytes)
+* **rules**: number of rules (e.g. ``.foo, .bar { color: red }`` is counted as one rule)
+* **selectors**: number of selectors (e.g. ``.foo, .bar { color: red }`` is counted as two selectors - ``.foo`` and ``.bar``)
+* **declarations**: number of declarations (e.g. ``.foo, .bar { color: red }`` is counted as one declaration - ``color: red``)
 
 ## Read more
 
