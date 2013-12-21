@@ -99,3 +99,7 @@ new analyzer('.foo {margin: 0 !important}', function(err, results) {
 * [Optimize browser rendering](https://developers.google.com/speed/docs/best-practices/rendering) (by Google)
 * [Profiling CSS for fun and profit. Optimization notes.](http://perfectionkills.com/profiling-css-for-fun-and-profit-optimization-notes/)
 * [CSS specificity](http://css-tricks.com/specifics-on-css-specificity/)
+
+
+[![Bitdeli Badge](https://d2weczhvl823v0.cloudfront.net/macbre/analyze-css/trend.png)](https://bitdeli.com/free "Bitdeli Badge")
+
