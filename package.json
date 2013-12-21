@@ -31,7 +31,7 @@
   "bin": "./bin/analyze-css.js",
   "preferGlobal": true,
   "scripts": {
-    "test": "mocha -R spec",
+    "test": "mocha -R dot",
     "lint": "jshint --verbose bin/ lib/ rules/ test/"
   },
   "jshintConfig": {
