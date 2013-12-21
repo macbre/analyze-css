@@ -54,7 +54,7 @@ runner(url, function(err, res) {
 
 	// emit an error and die
 	if (err) {
-		console.error(err);
+		console.error(err.toString());
 		process.exit(255);
 	}
 
@@ -71,4 +71,3 @@ runner(url, function(err, res) {
 	// done
 	process.exit(0);
 });
-
