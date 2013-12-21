@@ -58,6 +58,7 @@ new analyzer('.foo {margin: 0 !important}', function(err, results) {
     "selectorsById": 35,
     "selectorsByPseudo": 166,
     "selectorsByTag": 519,
+    "universalSelectors": 4,
     "length": 51665,
     "rules": 422,
     "selectors": 699,
@@ -85,6 +86,7 @@ new analyzer('.foo {margin: 0 !important}', function(err, results) {
 * selectorsById: number of selectors by ID
 * selectorsByPseudo: number of pseudo-selectors (e,g. ``:hover``)
 * selectorsByTag: number of selectors by tag name
+* universalSelectors: number of selectors trying to match every element (e.g. ``.foo > *``)
 * length: length of CSS source (in bytes)
 * rules: number of rules (e.g. ``.foo, .bar { color: red }`` is counted as one rule)
 * selectors: number of selectors (e.g. ``.foo, .bar { color: red }`` is counted as two selectors - ``.foo`` and ``.bar``)
