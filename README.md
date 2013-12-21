@@ -3,6 +3,7 @@ analyze-css
 
 [![NPM version](https://badge.fury.io/js/analyze-css.png)](http://badge.fury.io/js/analyze-css)
 [![Build Status](https://api.travis-ci.org/macbre/analyze-css.png)](http://travis-ci.org/macbre/analyze-css)
+[![Bitdeli Badge](https://d2weczhvl823v0.cloudfront.net/macbre/analyze-css/trend.png)](https://bitdeli.com/free "Bitdeli Badge")
 
 CSS selectors complexity and performance analyzer. analyze-css is built as a set of rules bound to events fired by CSS parser. Each rule can generate metrics and add "offenders" with more detailed information (see Usage section for an example).
 
