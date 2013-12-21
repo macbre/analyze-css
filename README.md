@@ -52,6 +52,7 @@ new analyzer('.foo {margin: 0 !important}', function(err, results) {
     "emptyRules": 0,
     "oldIEFixes": 51,
     "importants": 3,
+    "oldPropertyPrefixes": 65,
     "qualifiedSelectors": 28,
     "selectorsByAttribute": 93,
     "selectorsByClass": 568,
@@ -80,6 +81,7 @@ new analyzer('.foo {margin: 0 !important}', function(err, results) {
 * emptyRules: number of rules with no properties (e.g. ``.foo { }``)
 * oldIEFixes: number of fixes for old versions of Internet Explorer (e.g. ``* html .foo {}`` and ``.foo { *zoom: 1 }``, [read](http://blogs.msdn.com/b/ie/archive/2005/09/02/460115.aspx) [more](http://www.impressivewebs.com/ie7-ie8-css-hacks/))
 * importants: number of properties with value forced by ``!important``
+* oldPropertyPrefixes: number of properties with no longer needed vendor prefix, powered by data provided by [autoprefixer](https://github.com/ai/autoprefixer) (e.g. ``--moz-border-radius``)
 * qualifiedSelectors: number of [qualified selectors](https://developer.mozilla.org/en-US/docs/Web/Guide/CSS/Writing_efficient_CSS) (e.g. ``header#nav``, ``.foo#bar``, ``h1.title``)
 * selectorsByAttribute: number of selectors by attribute (e.g. ``.foo[value=bar]``)
 * selectorsByClass: number of selectors by class
