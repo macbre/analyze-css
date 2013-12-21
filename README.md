@@ -100,3 +100,17 @@ new analyzer('.foo {margin: 0 !important}', function(err, results) {
 * [Optimize browser rendering](https://developers.google.com/speed/docs/best-practices/rendering) (by Google)
 * [Profiling CSS for fun and profit. Optimization notes.](http://perfectionkills.com/profiling-css-for-fun-and-profit-optimization-notes/)
 * [CSS specificity](http://css-tricks.com/specifics-on-css-specificity/)
+
+## Dev hints
+
+Running tests and linting the code:
+
+```
+npm test && npm run-script lint
+``
+
+Turning on debug mode (i.e. verbose logging to stderr via [debug module](https://npmjs.org/package/debug)):
+
+```
+DEBUG=* analyze-css ...
+```
