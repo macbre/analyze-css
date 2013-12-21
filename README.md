@@ -8,7 +8,7 @@ CSS selectors complexity and performance analyzer. analyze-css is built as a set
 
 ## Install
 
-analyze-css comes as a "binary" for command-line and as CommonJS module.
+analyze-css comes as a "binary" for command-line and as CommonJS module. Run the following to install them globally:
 
 ```
 npm install --global analyze-css
@@ -18,11 +18,7 @@ npm install --global analyze-css
 
 ### Command line tool
 
-```
-npm install -g analyze-css
-```
-
-This will install analyze-css "binary" globally. Now you can use it to analyze local CSS files or remote CSS assets:
+You can use analyze-css "binary" to analyze local CSS files or remote CSS assets:
 
 ```
 analyze-css --file examples/elecena.css
