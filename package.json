@@ -25,6 +25,7 @@
     "slick": "1.0"
   },
   "devDependencies": {
+    "autoprefixer": "~0.8.20131213",
     "jshint": ">=2.1.11",
     "mocha": "~1.16.0"
   },
