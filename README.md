@@ -107,7 +107,7 @@ Running tests and linting the code:
 
 ```
 npm test && npm run-script lint
-``
+```
 
 Turning on debug mode (i.e. verbose logging to stderr via [debug module](https://npmjs.org/package/debug)):
 
