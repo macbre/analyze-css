@@ -46,6 +46,7 @@ new analyzer('.foo {margin: 0 !important}', function(err, results) {
 {
   "generator": "analyze-css v0.0.0",
   "metrics": {
+    "base64Length": 9308,
     "comments": 1,
     "commentsLength": 68,
     "complexSelectors": 32,
@@ -75,6 +76,7 @@ new analyzer('.foo {margin: 0 !important}', function(err, results) {
 
 ## Metrics
 
+* **base64Length**: total length of base64-encoded data in CSS source (will warn about base64-encoded data bigger than 4 kB)
 * **comments**: number of comments in CSS source
 * **commentsLength**: length of comments content in CSS source
 * **complexSelectors**: number of complex selectors (consisting of more than three expressions, e.g. ``header ul li .foo``)
