@@ -19,7 +19,7 @@
     "node": ">=0.8"
   },
   "dependencies": {
-    "css-parse": "1.5",
+    "css-parse": "~1.6.0",
     "debug": "0.7.x",
     "fast-stats": "0.0.x",
     "optimist": "0.6.x",
