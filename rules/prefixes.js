@@ -1,9 +1,11 @@
-var format = require('util').format;
+var debug = require('debug')('analyze-css:prefixes'),
+	format = require('util').format;
 
 function rule(analyzer) {
 	var data = require('./prefixes.json'),
 		prefixes = data.prefixes;
 
+	debug('Using data generated on %s', data.generated);
 	analyzer.setMetric('oldPropertyPrefixes');
 
 	analyzer.on('declaration', function(rule, property, value) {

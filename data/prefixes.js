@@ -5,6 +5,7 @@
  * @see https://github.com/ai/autoprefixer
  */
 var autoprefixer = require('autoprefixer'),
+	debug = require('debug')('analyze-css:prefixes'),
 	fs = require('fs'),
 	instance = new autoprefixer(),
 	prefixes = instance.data.prefixes,
@@ -17,11 +18,12 @@ data = {
 	generated: (new Date()).toJSON().substr(0, 10) + ' using autoprefixer v' + (require('../node_modules/autoprefixer/package.json').version),
 	// supported browsers, i.e. will keep venoder prefixes that they require
 	browsers: instance.browsers,
-	// list of prefixes: prefix / value (true: keep it, string: remove + reason)
+	// list of prefixes: prefix / hash (keep: true / false, msg: reason, list of browsers)
 	prefixes: {}
 };
 
-console.log('Supported browsers: ' + data.browsers.join(', '));
+debug('Generator: %s', data.generated);
+debug('Supported browsers: %s', data.browsers.join(', '));
 
 // prepare vendors data
 // [prefix] => [supported browsers]
@@ -46,7 +48,35 @@ Object.keys(instance.data.browsers).forEach(function(vendor) {
 	});
 });
 
-//console.log(browsersByPrefix); process.exit(1);
+debug('Browsers by prefix: %j' ,browsersByPrefix);
+
+function getLatestVersions(browsers, oldest) {
+	var latest = {},
+		ret = [];
+
+	oldest = !!oldest;
+
+	browsers.forEach(function(browser) {
+		var parts = browser.split(' '),
+			vendor = parts[0],
+			version = parseFloat(parts[1]);
+
+		if (oldest) {
+			// the oldest one
+			latest[vendor] = Math.min(version, latest[vendor] || 1000);
+		}
+		else {
+			// the latest version
+			latest[vendor] = Math.max(version, latest[vendor] || 0);
+		}
+	});
+
+	Object.keys(latest).forEach(function(vendor) {
+		ret.push(vendor + ' ' + latest[vendor]);
+	});
+
+	return ret;
+}
 
 // iterate through prefixes
 Object.keys(prefixes).forEach(function(property) {
@@ -81,8 +111,7 @@ Object.keys(prefixes).forEach(function(property) {
 			});
 
 			if (browsers.length > 0) {
-				//msg = 'was required by ' + browsers.pop() + ' and earlier';
-				msg = 'was required by ' + browsers.join(', ');
+				msg = 'was required by ' + getLatestVersions(browsers).join(', ') + ' and earlier';
 			}
 			else {
 				// special handling for -ms- prefixes
@@ -93,8 +122,11 @@ Object.keys(prefixes).forEach(function(property) {
 		// prefix still required by...
 		else {
 			keep = true;
-			msg = 'required by ' + browsers.join(', ');
+			msg = 'required by ' + getLatestVersions(browsers, true).join(', ') + ' and later';
 		}
+
+		debug('%j', browsers);
+		debug('%s: keep? %j (%s)', prefix + property, !!keep, msg);
 
 		data.prefixes[prefix + property] = {
 			keep: !!keep,
@@ -104,7 +136,7 @@ Object.keys(prefixes).forEach(function(property) {
 });
 
 // store in JSON file
-//console.log(data);
-fs.writeFileSync('../rules/prefixes.json', JSON.stringify(data));
+debug('Writing to a file...');
+fs.writeFileSync('../rules/prefixes.json', JSON.stringify(data, null, '  '));
 
-console.log('Generated');
+debug('Done');
