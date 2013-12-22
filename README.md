@@ -55,6 +55,12 @@ new analyzer('.foo {margin: 0 !important}', function(err, results) {
     "importants": 3,
     "oldPropertyPrefixes": 65,
     "qualifiedSelectors": 28,
+    "specificityIdAvg": 0.05,
+    "specificityIdTotal": 35,
+    "specificityClassAvg": 1.25,
+    "specificityClassTotal": 872,
+    "specificityTagAvg": 0.78,
+    "specificityTagTotal": 548,
     "selectorsByAttribute": 93,
     "selectorsByClass": 568,
     "selectorsById": 35,
@@ -85,6 +91,12 @@ new analyzer('.foo {margin: 0 !important}', function(err, results) {
 * **importants**: number of properties with value forced by ``!important``
 * **oldPropertyPrefixes**: number of properties with no longer needed vendor prefix, powered by data provided by [autoprefixer](https://github.com/ai/autoprefixer) (e.g. ``--moz-border-radius``)
 * **qualifiedSelectors**: number of [qualified selectors](https://developer.mozilla.org/en-US/docs/Web/Guide/CSS/Writing_efficient_CSS) (e.g. ``header#nav``, ``.foo#bar``, ``h1.title``)
+* **specificityIdAvg**: average [specificity](http://css-tricks.com/specifics-on-css-specificity/) for ID
+* **specificityIdTotal**: total [specificity](http://css-tricks.com/specifics-on-css-specificity/) for ID
+* **specificityClassAvg**: average [specificity](http://css-tricks.com/specifics-on-css-specificity/) for class, pseudo-class or attribute
+* **specificityClassTotal**: total [specificity](http://css-tricks.com/specifics-on-css-specificity/) for class, pseudo-class or attribute
+* **specificityTagAvg**: average [specificity](http://css-tricks.com/specifics-on-css-specificity/) for element
+* **specificityTagTotal**: total [specificity](http://css-tricks.com/specifics-on-css-specificity/) for element
 * **selectorsByAttribute**: number of selectors by attribute (e.g. ``.foo[value=bar]``)
 * **selectorsByClass**: number of selectors by class
 * **selectorsById**: number of selectors by ID
