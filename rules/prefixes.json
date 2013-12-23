@@ -1,5 +1,5 @@
 {
-  "generated": "2013-12-22 using autoprefixer v0.8.20131213",
+  "generated": "2013-12-23 using autoprefixer v1.0.20131222",
   "browsers": [
     "android 4.1",
     "android 4",
@@ -934,6 +934,22 @@
     "-o-hyphens": {
       "keep": false,
       "msg": "prefix is no longer supported"
+    },
+    "-webkit-inline-flex": {
+      "keep": true,
+      "msg": "required by android 2.3, ios 7, safari 7 and later"
+    },
+    "-moz-inline-flex": {
+      "keep": false,
+      "msg": "was required by ff 21 and earlier"
+    },
+    "-ms-inline-flex": {
+      "keep": true,
+      "msg": "required by ie 10 and later"
+    },
+    "-o-inline-flex": {
+      "keep": true,
+      "msg": "required by opera 16 and later"
     },
     "-webkit-justify-content": {
       "keep": true,
