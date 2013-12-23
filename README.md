@@ -50,6 +50,7 @@ new analyzer('.foo {margin: 0 !important}', function(err, results) {
     "comments": 1,
     "commentsLength": 68,
     "complexSelectors": 32,
+    "duplicatedSelectors": 7,
     "emptyRules": 0,
     "oldIEFixes": 51,
     "importants": 3,
@@ -86,6 +87,7 @@ new analyzer('.foo {margin: 0 !important}', function(err, results) {
 * **comments**: number of comments in CSS source
 * **commentsLength**: length of comments content in CSS source
 * **complexSelectors**: number of complex selectors (consisting of more than three expressions, e.g. ``header ul li .foo``)
+* **duplicatedSelectors**: number of CSS selectors defined more than once in CSS source
 * **emptyRules**: number of rules with no properties (e.g. ``.foo { }``)
 * **oldIEFixes**: number of fixes for old versions of Internet Explorer (e.g. ``* html .foo {}`` and ``.foo { *zoom: 1 }``, [read](http://blogs.msdn.com/b/ie/archive/2005/09/02/460115.aspx) [more](http://www.impressivewebs.com/ie7-ie8-css-hacks/))
 * **importants**: number of properties with value forced by ``!important``

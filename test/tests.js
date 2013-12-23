@@ -36,6 +36,44 @@ tests = [
 		}
 	},
 
+	// duplicated selectors
+	{
+		css: '.foo { } .bar { }',
+		metrics: {
+			duplicatedSelectors: 0
+		}
+	},
+	{
+		css: '.foo, #bar { } .foo { }',
+		metrics: {
+			duplicatedSelectors: 0
+		}
+	},
+	{
+		css: '.foo { } .foo { }',
+		metrics: {
+			duplicatedSelectors: 1
+		}
+	},
+	{
+		css: '.foo { } .bar .foo { } .foo { }',
+		metrics: {
+			duplicatedSelectors: 1
+		}
+	},
+	{
+		css: '.foo { } .foo { } .foo { }',
+		metrics: {
+			duplicatedSelectors: 1
+		}
+	},
+	{
+		css: '.foo { } .bar { } .foo { } .bar { } #foo { } .bar { }',
+		metrics: {
+			duplicatedSelectors: 2
+		}
+	},
+
 	// empty rules
 	{
 		css: '.foo { } .bar { color: red } ',
@@ -293,7 +331,7 @@ testSelector = function(test) {
 					expectedMetrics = test.metrics;
 
 				Object.keys(expectedMetrics).forEach(function(metric) {
-					assert.equal(expectedMetrics[metric], actualMetrics[metric], metric + ' should equal ' + expectedMetrics[metric] + ' (was ' + actualMetrics[metric]  + ')');
+					assert.strictEqual(expectedMetrics[metric], actualMetrics[metric], metric + ' should equal ' + expectedMetrics[metric] + ' (got ' + actualMetrics[metric]  + ')');
 				});
 
 				done();
