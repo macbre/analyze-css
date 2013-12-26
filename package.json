@@ -19,6 +19,7 @@
     "node": ">=0.8"
   },
   "dependencies": {
+    "cli": "~0.4.5",
     "css-parse": "~1.6.0",
     "debug": "0.7.x",
     "fast-stats": "0.0.x",
