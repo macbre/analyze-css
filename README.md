@@ -26,7 +26,13 @@ analyze-css --file examples/elecena.css
 analyze-css --url http://jigsaw.w3.org/css-validator/style/base.css
 ```
 
-This will emit JSON formatted results on ``stdin``. Use ``--pretty`` option to make the output more readable.
+You can provide CSS via stdin as well (notice the dash: ``-``):
+
+```
+echo ".foo {margin: 0 \!important}" | analyze-css -
+```
+
+This will emit JSON formatted results on ``stdout``. Use ``--pretty`` (or ``-p`` shortcut) option to make the output readable for human beings.
 
 ### CommonJS module
 
@@ -44,7 +50,7 @@ new analyzer('.foo {margin: 0 !important}', function(err, results) {
 
 ```json
 {
-  "generator": "analyze-css v0.0.0",
+  "generator": "analyze-css v0.2.0",
   "metrics": {
     "base64Length": 9308,
     "comments": 1,
