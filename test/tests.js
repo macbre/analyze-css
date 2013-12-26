@@ -232,6 +232,13 @@ tests = [
 		}
 	},
 	{
+		css: 'ul li, a.foo.bar {}',
+		metrics: {
+			selectorsByClass: 1,
+			selectorsByTag: 3
+		}
+	},
+	{
 		css: '* {}',
 		metrics: {
 			selectorsByTag: 0
