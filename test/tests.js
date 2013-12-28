@@ -179,6 +179,12 @@ tests = [
 		}
 	},
 	{
+		css: 'body#foo ul li a {}',
+		metrics: {
+			redundantBodySelectors: 1
+		}
+	},
+	{
 		css: 'body > h1 {}',
 		metrics: {
 			redundantBodySelectors: 0
@@ -198,6 +204,12 @@ tests = [
 	},
 	{
 		css: 'body.mainpage {}',
+		metrics: {
+			redundantBodySelectors: 0
+		}
+	},
+	{
+		css: 'body.foo ul li a {}',
 		metrics: {
 			redundantBodySelectors: 0
 		}

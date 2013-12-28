@@ -8,15 +8,15 @@ function rule(analyzer) {
 		}
 
 		var firstTag = expressions[0].tag,
-			isDescendantCombinator = expressions[1].combinator === '>',
+			isDescendantCombinator = (expressions[1].combinator === '>'),
 			isRedundant = false;
 
 		// matches "html > body" fixes
 		if (firstTag === 'html' && isDescendantCombinator && expressions[1].tag === 'body') {
 			isRedundant = false;
 		}
-		// matches "body .foo", but not "body > .bar'
-		else if (firstTag === 'body' && !isDescendantCombinator) {
+		// matches "body .foo", but not "body > .bar' nor "body.foo .bar"
+		else if (firstTag === 'body' && !isDescendantCombinator && !expressions[0].classList) {
 			isRedundant = true;
 		}
 		// matches ".foo body > h2"
