@@ -126,6 +126,7 @@ new analyzer('.foo {margin: 0 !important}', function(err, results) {
 * [CSS specificity](http://css-tricks.com/specifics-on-css-specificity/)
 * [CSS Selector Performance has changed! (For the better)](http://calendar.perfplanet.com/2011/css-selector-performance-has-changed-for-the-better/) (by Nicole Sullivan)
 * [CSS Performance](http://dl.dropboxusercontent.com/u/39519/talks/cssperf/index.html) (by Paul Irish)
+* [GitHub's CSS Performance](https://speakerdeck.com/jonrohan/githubs-css-performance) (by Joh Rohan)
 
 ## Dev hints
 
