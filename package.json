@@ -29,6 +29,7 @@
   },
   "devDependencies": {
     "autoprefixer": "1.0.x",
+    "glob": "~3.2.7",
     "jshint": ">=2.1.11",
     "mocha": "~1.16.0"
   },
