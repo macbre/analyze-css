@@ -29,13 +29,14 @@
   },
   "devDependencies": {
     "autoprefixer": "1.0.x",
+    "glob": "~3.2.7",
     "jshint": ">=2.1.11",
     "mocha": "~1.16.0"
   },
   "bin": "./bin/analyze-css.js",
   "preferGlobal": true,
   "scripts": {
-    "test": "mocha -R dot",
+    "test": "mocha -R spec",
     "lint": "jshint --verbose bin/ lib/ rules/ test/"
   },
   "jshintConfig": {
