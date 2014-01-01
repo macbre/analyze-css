@@ -20,17 +20,17 @@
   },
   "dependencies": {
     "cli": "~0.4.5",
-    "css-parse": "~1.6.0",
+    "css-parse": "~1.7.0",
     "debug": "0.7.x",
     "fast-stats": "0.0.x",
     "optimist": "0.6.x",
-    "slick": "1.0",
+    "slick": "~1.10.4",
     "specificity": "~0.1.3"
   },
   "devDependencies": {
     "autoprefixer": "1.0.x",
     "glob": "~3.2.7",
-    "jshint": ">=2.1.11",
+    "jshint": "~2.4.0",
     "mocha": "~1.16.0"
   },
   "bin": "./bin/analyze-css.js",
