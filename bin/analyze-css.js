@@ -4,6 +4,8 @@
  *
  * @see https://github.com/macbre/analyze-css
  */
+'use strict';
+
 var analyzer = require('./../lib/index'),
 	debug = require('debug')('analyze-css:bin'),
 	program = require('optimist'),

@@ -1,3 +1,5 @@
+'use strict';
+
 var debug = require('debug')('analyze-css:prefixes'),
 	format = require('util').format;
 

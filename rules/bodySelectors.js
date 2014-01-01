@@ -1,3 +1,5 @@
+'use strict';
+
 function rule(analyzer) {
 	analyzer.setMetric('redundantBodySelectors');
 

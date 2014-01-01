@@ -1,3 +1,5 @@
+'use strict';
+
 function rule(analyzer) {
 	var re = {
 		// ignore IE fixes - e.g. "* html .ui-autocomplete"

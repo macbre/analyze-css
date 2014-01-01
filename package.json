@@ -40,6 +40,8 @@
     "lint": "jshint --verbose bin/ lib/ rules/ test/"
   },
   "jshintConfig": {
-    "node": true
+    "node": true,
+    "strict": true,
+    "validthis": true
   }
 }

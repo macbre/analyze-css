@@ -1,3 +1,5 @@
+'use strict';
+
 var COMPLEX_SELECTOR_THRESHOLD = 3;
 
 function rule(analyzer) {

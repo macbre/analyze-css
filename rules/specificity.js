@@ -1,3 +1,5 @@
+'use strict';
+
 var debug = require('debug')('analyze-css:specificity'),
 	specificity = require('specificity'),
 	stats = require('fast-stats').Stats;

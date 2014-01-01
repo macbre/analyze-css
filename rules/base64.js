@@ -1,3 +1,5 @@
+'use strict';
+
 var format = require('util').format,
 	MAX_LENGTH = 4 * 1024;
 

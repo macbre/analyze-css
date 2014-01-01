@@ -1,3 +1,6 @@
+/*global describe, it */
+'use strict';
+
 var analyzer = require('../'),
 	assert = require('assert'),
 	tests;
