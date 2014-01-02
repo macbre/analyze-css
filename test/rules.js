@@ -9,11 +9,15 @@ function runTest(tests) {
 	tests.forEach(function(test, testId) {
 		new analyzer(test.css, function(err, res) {
 			var metricsExpected = test.metrics,
-				metricsActual = res.metrics;
+				metricsActual = res && res.metrics;
+
+			if (err) {
+				throw err;
+			}
 
 			Object.keys(metricsExpected).forEach(function(metric) {
 				it('should emit "' + metric + '" metric with a valid value - #' + (testId + 1), function() {
-					assert.strictEqual(metricsExpected[metric], metricsActual[metric]);
+					assert.strictEqual(metricsActual[metric], metricsExpected[metric]);
 				});
 			});
 		});

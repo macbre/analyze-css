@@ -52,5 +52,17 @@ exports.tests = [
 		metrics: {
 			universalSelectors: 1
 		}
+	},
+	{
+		css: '* {}',
+		metrics: {
+			universalSelectors: 1
+		}
+	},
+	{
+		css: '@media screen { * {} }',
+		metrics: {
+			universalSelectors: 1
+		}
 	}
 ];
