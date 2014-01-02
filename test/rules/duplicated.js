@@ -11,6 +11,26 @@ exports.tests = [
 			duplicatedSelectors: 0
 		}
 	},
+	// media queries
+	{
+		css: '.foo { } @media screen { .foo { } }',
+		metrics: {
+			duplicatedSelectors: 0
+		}
+	},
+	{
+		css: '@media print { .foo { } } @media screen { .foo { } } .foo {}',
+		metrics: {
+			duplicatedSelectors: 0
+		}
+	},
+	{
+		css: '.foo { } @media screen { .foo { } } .foo { color: red }',
+		metrics: {
+			duplicatedSelectors: 1
+		}
+	},
+	// duplicated selectors
 	{
 		css: '.foo { } .foo { }',
 		metrics: {
