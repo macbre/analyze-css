@@ -30,6 +30,12 @@ exports.tests = [
 			duplicatedSelectors: 1
 		}
 	},
+	{
+		css: '#foo { } @media screen { .foo { } } @media screen { .foo { color: red } }',
+		metrics: {
+			duplicatedSelectors: 1
+		}
+	},
 	// duplicated selectors
 	{
 		css: '.foo { } .foo { }',
