@@ -82,7 +82,7 @@ function getLatestVersions(browsers, oldest) {
 Object.keys(prefixes).forEach(function(property) {
 	var propertyData = prefixes[property];
 
-	if (propertyData.selector) {
+	if (propertyData.selector || propertyData.props) {
 		return;
 	}
 
@@ -137,6 +137,6 @@ Object.keys(prefixes).forEach(function(property) {
 
 // store in JSON file
 debug('Writing to a file...');
-fs.writeFileSync('../rules/prefixes.json', JSON.stringify(data, null, '  '));
+fs.writeFileSync(__dirname + '/../rules/prefixes.json', JSON.stringify(data, null, '  '));
 
 debug('Done');
