@@ -22,7 +22,7 @@ program
 	.describe('url', 'Set URL of CSS to analyze').string('url')
 	.describe('file', 'Set local CSS file to analyze').string('file')
 
-	.describe('ignore-ssl-errors', 'ignores SSL errors, such as expired or self-signed certificate errors').boolean('ignore-ssl-errors')
+	.describe('ignore-ssl-errors', 'Ignores SSL errors, such as expired or self-signed certificate errors').boolean('ignore-ssl-errors')
 	.describe('pretty', 'Causes JSON with the results to be pretty-printed').boolean('pretty').alias('pretty', 'p')
 
 	// version / help
