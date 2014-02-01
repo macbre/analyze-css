@@ -59,6 +59,7 @@ new analyzer('.foo {margin: 0 !important}', function(err, results) {
     "complexSelectors": 32,
     "duplicatedSelectors": 7,
     "emptyRules": 0,
+    "expressions": 0,
     "oldIEFixes": 51,
     "importants": 3,
     "mediaQueries": 0,
@@ -98,6 +99,7 @@ new analyzer('.foo {margin: 0 !important}', function(err, results) {
 * **complexSelectors**: number of complex selectors (consisting of more than three expressions, e.g. ``header ul li .foo``)
 * **duplicatedSelectors**: number of CSS selectors defined more than once in CSS source
 * **emptyRules**: number of rules with no properties (e.g. ``.foo { }``)
+* **expressions**: number of rules with CSS expressions (e.g. ``expression( document.body.clientWidth > 600 ? "600px" : "auto" )``)
 * **oldIEFixes**: number of fixes for old versions of Internet Explorer (e.g. ``* html .foo {}`` and ``.foo { *zoom: 1 }``, [read](http://blogs.msdn.com/b/ie/archive/2005/09/02/460115.aspx) [more](http://www.impressivewebs.com/ie7-ie8-css-hacks/))
 * **importants**: number of properties with value forced by ``!important``
 * **mediaQueries**: number of media queries (e.g. ``@media screen and (min-width: 1370px)``)
