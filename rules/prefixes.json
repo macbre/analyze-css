@@ -1,5 +1,5 @@
 {
-  "generated": "2014-02-12 using autoprefixer v1.0.20140203",
+  "generated": "2014-02-20 using autoprefixer v1.1.20140218",
   "browsers": [
     "android 4.1",
     "android 4",
@@ -13,7 +13,7 @@
     "ie 8",
     "ios 7",
     "safari 7",
-    "ff 25",
+    "ff 27",
     "ios 6.1",
     "opera 19",
     "opera 18",
