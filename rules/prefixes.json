@@ -1,11 +1,13 @@
 {
-  "generated": "2014-02-20 using autoprefixer v1.1.20140218",
+  "generated": "2014-03-02 using autoprefixer v1.1.20140302",
   "browsers": [
     "android 4.1",
     "android 4",
     "android 2.3",
+    "chrome 33",
     "chrome 32",
     "chrome 31",
+    "ff 27",
     "ff 26",
     "ie 11",
     "ie 10",
@@ -13,7 +15,6 @@
     "ie 8",
     "ios 7",
     "safari 7",
-    "ff 27",
     "ios 6.1",
     "opera 19",
     "opera 18",
@@ -917,6 +918,70 @@
     "-o-tab-size": {
       "keep": true,
       "msg": "required by opera 12.1 and later"
+    },
+    "-webkit-text-decoration-color": {
+      "keep": false,
+      "msg": "prefix is no longer supported"
+    },
+    "-moz-text-decoration-color": {
+      "keep": true,
+      "msg": "required by ff 24 and later"
+    },
+    "-ms-text-decoration-color": {
+      "keep": false,
+      "msg": "prefix is no longer supported"
+    },
+    "-o-text-decoration-color": {
+      "keep": false,
+      "msg": "prefix is no longer supported"
+    },
+    "-webkit-text-decoration-line": {
+      "keep": false,
+      "msg": "prefix is no longer supported"
+    },
+    "-moz-text-decoration-line": {
+      "keep": true,
+      "msg": "required by ff 24 and later"
+    },
+    "-ms-text-decoration-line": {
+      "keep": false,
+      "msg": "prefix is no longer supported"
+    },
+    "-o-text-decoration-line": {
+      "keep": false,
+      "msg": "prefix is no longer supported"
+    },
+    "-webkit-text-decoration-style": {
+      "keep": true,
+      "msg": "required by chrome 31 and later"
+    },
+    "-moz-text-decoration-style": {
+      "keep": true,
+      "msg": "required by ff 24 and later"
+    },
+    "-ms-text-decoration-style": {
+      "keep": false,
+      "msg": "prefix is no longer supported"
+    },
+    "-o-text-decoration-style": {
+      "keep": true,
+      "msg": "required by opera 18 and later"
+    },
+    "-webkit-touch-action": {
+      "keep": false,
+      "msg": "prefix is no longer supported"
+    },
+    "-moz-touch-action": {
+      "keep": false,
+      "msg": "prefix is no longer supported"
+    },
+    "-ms-touch-action": {
+      "keep": true,
+      "msg": "required by ie 10 and later"
+    },
+    "-o-touch-action": {
+      "keep": false,
+      "msg": "prefix is no longer supported"
     },
     "-webkit-transform": {
       "keep": true,
