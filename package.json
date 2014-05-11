@@ -21,7 +21,7 @@
   "dependencies": {
     "cli": "~0.4.5",
     "css-parse": "~1.7.0",
-    "debug": "0.7.x",
+    "debug": "~0.8.0",
     "fast-stats": "0.0.x",
     "optimist": "0.6.x",
     "slick": "~1.11.0",
@@ -30,8 +30,8 @@
   "devDependencies": {
     "autoprefixer": "~1.1.0",
     "glob": "~3.2.7",
-    "jshint": "~2.4.0",
-    "mocha": "~1.16.0"
+    "jshint": "~2.5.0",
+    "mocha": "~1.18.0"
   },
   "bin": "./bin/analyze-css.js",
   "preferGlobal": true,
