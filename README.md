@@ -50,13 +50,14 @@ new analyzer('.foo {margin: 0 !important}', function(err, results) {
 
 ```json
 {
-  "generator": "analyze-css v0.2.0",
+  "generator": "analyze-css v0.3.0",
   "metrics": {
     "base64Length": 9308,
     "redundantBodySelectors": 0,
     "comments": 1,
     "commentsLength": 68,
     "complexSelectors": 32,
+    "complexSelectorsByAttribute": 3,
     "duplicatedSelectors": 7,
     "emptyRules": 0,
     "expressions": 0,
@@ -97,6 +98,7 @@ new analyzer('.foo {margin: 0 !important}', function(err, results) {
 * **comments**: number of comments in CSS source
 * **commentsLength**: length of comments content in CSS source
 * **complexSelectors**: number of complex selectors (consisting of more than three expressions, e.g. ``header ul li .foo``)
+* **complexSelectorsByAttribute**: number of selectors with complex matching by attribute (e.g. ``[class$="foo"]``)
 * **duplicatedSelectors**: number of CSS selectors defined more than once in CSS source
 * **emptyRules**: number of rules with no properties (e.g. ``.foo { }``)
 * **expressions**: number of rules with CSS expressions (e.g. ``expression( document.body.clientWidth > 600 ? "600px" : "auto" )``)
