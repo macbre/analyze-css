@@ -50,7 +50,7 @@ new analyzer('.foo {margin: 0 !important}', function(err, results) {
 
 ```json
 {
-  "generator": "analyze-css v0.3.0",
+  "generator": "analyze-css v0.4.1",
   "metrics": {
     "base64Length": 9308,
     "redundantBodySelectors": 0,
@@ -62,6 +62,7 @@ new analyzer('.foo {margin: 0 !important}', function(err, results) {
     "emptyRules": 0,
     "expressions": 0,
     "oldIEFixes": 51,
+    "imports": 0,
     "importants": 3,
     "mediaQueries": 0,
     "oldPropertyPrefixes": 65,
@@ -103,6 +104,7 @@ new analyzer('.foo {margin: 0 !important}', function(err, results) {
 * **emptyRules**: number of rules with no properties (e.g. ``.foo { }``)
 * **expressions**: number of rules with CSS expressions (e.g. ``expression( document.body.clientWidth > 600 ? "600px" : "auto" )``)
 * **oldIEFixes**: number of fixes for old versions of Internet Explorer (e.g. ``* html .foo {}`` and ``.foo { *zoom: 1 }``, [read](http://blogs.msdn.com/b/ie/archive/2005/09/02/460115.aspx) [more](http://www.impressivewebs.com/ie7-ie8-css-hacks/))
+* **imports** number of ``@import`` rules
 * **importants**: number of properties with value forced by ``!important``
 * **mediaQueries**: number of media queries (e.g. ``@media screen and (min-width: 1370px)``)
 * **oldPropertyPrefixes**: number of properties with no longer needed vendor prefix, powered by data provided by [autoprefixer](https://github.com/ai/autoprefixer) (e.g. ``--moz-border-radius``)
