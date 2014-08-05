@@ -48,7 +48,7 @@ new analyzer('.foo {margin: 0 !important}', function(err, results) {
 
 ### [grunt task](https://www.npmjs.org/package/grunt-contrib-analyze-css)
 
-> Created by @nitriques
+> Created by @DeuxHuitHuit
 
 ```
 npm i grunt-contrib-analyze-css
