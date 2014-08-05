@@ -46,6 +46,16 @@ new analyzer('.foo {margin: 0 !important}', function(err, results) {
 
 ```
 
+### [grunt task](https://www.npmjs.org/package/grunt-contrib-analyze-css)
+
+> Created by @nitriques
+
+```
+npm i grunt-contrib-analyze-css
+```
+
+It uses configurable threshold and compares the analyze-css result with it.
+
 ### Results
 
 ```json
