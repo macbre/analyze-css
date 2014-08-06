@@ -46,5 +46,11 @@ exports.tests = [
 		metrics: {
 			redundantBodySelectors: 0
 		}
+	},
+	{
+		css: 'html.modal-popup-mode body {}',
+		metrics: {
+			redundantBodySelectors: 0
+		}
 	}
 ];
