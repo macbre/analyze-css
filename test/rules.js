@@ -17,7 +17,7 @@ function runTest(tests) {
 
 			Object.keys(metricsExpected).forEach(function(metric) {
 				it('should emit "' + metric + '" metric with a valid value - #' + (testId + 1), function() {
-					assert.strictEqual(metricsActual[metric], metricsExpected[metric]);
+					assert.strictEqual(metricsActual[metric], metricsExpected[metric], "Testing metric against: " + test.css);
 				});
 			});
 		});
