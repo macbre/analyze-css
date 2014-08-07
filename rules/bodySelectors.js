@@ -4,17 +4,24 @@ function rule(analyzer) {
 	analyzer.setMetric('redundantBodySelectors');
 
 	analyzer.on('selector', function(rule, selector, expressions) {
+		var noExpressions = expressions.length;
+
 		// check more complex selectors only
-		if (expressions.length < 2) {
+		if (noExpressions < 2) {
 			return;
 		}
 
 		var firstTag = expressions[0].tag,
+			lastTag = expressions[noExpressions-1].tag,
 			isDescendantCombinator = (expressions[1].combinator === '>'),
 			isRedundant = false;
 
 		// matches "html > body" fixes
 		if (firstTag === 'html' && isDescendantCombinator && expressions[1].tag === 'body') {
+			isRedundant = false;
+		}
+		// matches html.modal-popup-mode body (issue #44)
+		else if (firstTag === 'html' && lastTag === 'body' && noExpressions === 2) {
 			isRedundant = false;
 		}
 		// matches "body .foo", but not "body > .bar' nor "body.foo .bar"
