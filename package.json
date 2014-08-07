@@ -30,6 +30,7 @@
   "devDependencies": {
     "autoprefixer": "~2.2.0",
     "glob": "~4.0.5",
+    "istanbul": "^0.3.0",
     "jshint": "~2.5.2",
     "mocha": "~1.21.3"
   },
@@ -37,7 +38,8 @@
   "preferGlobal": true,
   "scripts": {
     "test": "mocha -R spec",
-    "lint": "jshint --verbose bin/ lib/ rules/ test/"
+    "lint": "jshint --verbose bin/ lib/ rules/ test/",
+    "coverage": "istanbul cover  _mocha -- -R spec"
   },
   "jshintConfig": {
     "node": true,
