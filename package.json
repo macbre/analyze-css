@@ -23,6 +23,8 @@
     "css-parse": "~1.7.0",
     "debug": "~1.0.4",
     "fast-stats": "0.0.x",
+    "glob": "^4.0.5",
+    "node-sass": "^0.9.3",
     "optimist": "0.6.x",
     "slick": "~1.12.1",
     "specificity": "~0.1.3"
