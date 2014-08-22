@@ -52,5 +52,18 @@ exports.tests = [
 		metrics: {
 			redundantBodySelectors: 0
 		}
+	},
+	{
+		css: '.has-modal > body {}',
+		metrics: {
+			redundantBodySelectors: 0
+		}
+	},
+	{
+		css: '.has-modal > body p {}',
+		metrics: {
+			redundantBodySelectors: 0
+		}
 	}
+
 ];
