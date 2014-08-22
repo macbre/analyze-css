@@ -12,31 +12,42 @@ function rule(analyzer) {
 		}
 
 		var firstTag = expressions[0].tag,
-			lastTag = expressions[noExpressions-1].tag,
+			firstHasClass = !!expressions[0].classList,
 			isDescendantCombinator = (expressions[1].combinator === '>'),
-			isRedundant = false;
+			isShortExpression = (expressions.length === 2),
+			isRedundant = true; // always expect the worst ;)
 
-		// matches "html > body" fixes
-		if (firstTag === 'html' && isDescendantCombinator && expressions[1].tag === 'body') {
-			isRedundant = false;
+		// first, let's find the body tag selector in the expression
+		var bodyIndex = expressions.
+			map(function(item) {
+				return item.tag;
+			}).
+			indexOf('body');
+
+		// body selector not found - skip the rules that follow
+		if (bodyIndex < 0) {
+			return;
 		}
-		// matches html.modal-popup-mode body (issue #44)
-		else if (firstTag === 'html' && lastTag === 'body' && noExpressions === 2) {
+
+		// matches "html > body"
+		// matches "html.modal-popup-mode body" (issue #44)
+		if ( (firstTag === 'html') && (bodyIndex === 1) && (isDescendantCombinator || isShortExpression) ) {
 			isRedundant = false;
 		}
 		// matches "body .foo", but not "body > .bar' nor "body.foo .bar"
-		else if (firstTag === 'body' && !isDescendantCombinator && !expressions[0].classList) {
-			isRedundant = true;
+		else if ( (bodyIndex === 0) && isDescendantCombinator && isShortExpression ) {
+			isRedundant = false;
 		}
-		// matches ".foo body > h2"
-		else {
-			expressions.slice(1).forEach(function(expr) {
-				if (expr.tag === 'body') {
-					isRedundant = true;
-				}
-			});
+		// matches "body.foo ul li a"
+		else if ( (bodyIndex === 0) && firstHasClass) {
+			isRedundant = false;
+		}
+		// matches ".has-modal > body" (issue #49)
+		else if ( firstHasClass && (bodyIndex === 1) && isDescendantCombinator) {
+			isRedundant = false;
 		}
 
+		// report he redundant body selector
 		if (isRedundant) {
 			analyzer.incrMetric('redundantBodySelectors');
 			analyzer.addOffender('redundantBodySelectors', selector);
