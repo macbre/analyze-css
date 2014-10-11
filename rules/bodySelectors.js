@@ -14,7 +14,7 @@ function rule(analyzer) {
 		var firstTag = expressions[0].tag,
 			firstHasClass = !!expressions[0].classList,
 			isDescendantCombinator = (expressions[1].combinator === '>'),
-			isShortExpression = (expressions.length === 2),
+			isShortExpression = (noExpressions === 2),
 			isRedundant = true; // always expect the worst ;)
 
 		// first, let's find the body tag selector in the expression
