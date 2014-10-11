@@ -60,5 +60,18 @@ exports.tests = [
 		metrics: {
 			duplicatedSelectors: 2
 		}
+	},
+	// @font-face (see #52)
+	{
+		css: '@font-face { font-family: myFont; src: url(sansation.woff);} @font-face { font-family: myFont; src: url(sansation_bold.woff); font-weight: bold;} ',
+		metrics: {
+			duplicatedSelectors: 0
+		}
+	},
+	{
+		css: '@font-face { font-family: myFont; src: url(sansation_foo.woff);} @font-face { font-family: myFontFoo; src: url(sansation_foo.woff); font-weight: bold;} ',
+		metrics: {
+			duplicatedSelectors: 1
+		}
 	}
 ];
