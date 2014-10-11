@@ -35,6 +35,11 @@ function rule(analyzer) {
 				redundantNodes = redundantChildSelectors[nodeName];
 
 			if ( (nodeIndex > -1) && (nodeIndex < noExpressions - 1) ) {
+				// skip cases like the following: "article > ul li"
+				if (expressions[nodeIndex].combinator !== ' ') {
+					return;
+				}
+
 				// we've found the possible offender, get the next node in the selector
 				// and compare it against rules in redundantChildSelectors
 				nextNode = selectorNodeNames[nodeIndex + 1];

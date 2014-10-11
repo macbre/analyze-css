@@ -42,6 +42,12 @@ exports.tests = [
 			redundantChildNodesSelectors: 0
 		}
 	},
+	{
+		css: 'article > ul li {}',
+		metrics: {
+			redundantChildNodesSelectors: 0
+		}
+	},
 	// table tr
 	{
 		css: '.foo table.test tr.row {}',
