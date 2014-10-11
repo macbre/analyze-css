@@ -60,10 +60,11 @@ It uses configurable threshold and compares the analyze-css result with it.
 
 ```json
 {
-  "generator": "analyze-css v0.4.1",
+  "generator": "analyze-css v0.5.0",
   "metrics": {
     "base64Length": 9308,
     "redundantBodySelectors": 0,
+    "redundantChildNodesSelectors": 6,
     "comments": 1,
     "commentsLength": 68,
     "complexSelectors": 32,
@@ -106,6 +107,7 @@ It uses configurable threshold and compares the analyze-css result with it.
 
 * **base64Length**: total length of base64-encoded data in CSS source (will warn about base64-encoded data bigger than 4 kB)
 * **redundantBodySelectors**: number of redundant body selectors (e.g. ``body .foo``, ``section body h2``, but not ``body > h1``)
+* **redundantChildNodesSelectors**: number of redundant child nodes selectors (e.g. ``ul li``, ``table tr``)
 * **comments**: number of comments in CSS source
 * **commentsLength**: length of comments content in CSS source
 * **complexSelectors**: number of complex selectors (consisting of more than three expressions, e.g. ``header ul li .foo``)
