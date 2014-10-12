@@ -79,6 +79,16 @@ runner(runnerOpts, function(err, res) {
 		process.exit(255);
 	}
 
+	// make offenders flat (and append position if possible - issue #25)
+	if (typeof res.offenders !== 'undefined') {
+		Object.keys(res.offenders).forEach(function(metricName) {
+			res.offenders[metricName] = res.offenders[metricName].map(function(offender) {
+				var position = offender.position && offender.position.start;
+				return offender.message + (position ? ' @ ' + position.line + ':' + position.column : '');
+			});
+		});
+	}
+
 	// format the results
 	if (argv.pretty === true) {
 		output = JSON.stringify(res, null, '  ');
