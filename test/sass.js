@@ -16,7 +16,7 @@ describe('SASS preprocessor', function() {
 
 	it('should raise an error (if not selected)', function(done) {
 		new analyzer(css, function(err, res) {
-			assert.equal(err && /CSS parsing failed: Error: property missing/.test(err), true);
+			assert.equal(err && /CSS parsing failed/.test(err), true);
 			done();
 		});
 	});

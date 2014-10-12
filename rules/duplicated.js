@@ -23,30 +23,30 @@ function rule(analyzer) {
 
 	// register each rule's selectors
 	analyzer.on('rule', function(rule) {
-		var joinedSelectors = rule.selectors.join(', ');
-
-		// special handling for @font-face (#52)
-		// include URL when detecting duplicates
-		if (joinedSelectors === '@font-face') {
-			rule.declarations.forEach(function(declaration) {
-				if (declaration.property === 'src') {
-					joinedSelectors += ' src: ' + declaration.value;
-
-					debug('special handling for @font-face, provided src: %s', declaration.value);
-					return false;
-				}
-			});
-		}
-
 		selectors.push(
 			// @media foo
 			(mediaQueryStack.length > 0 ? '@media ' + mediaQueryStack.join(' @media ') + ' ' : '') +
 			// #foo
-			joinedSelectors
+			rule.selectors.join(', ')
 		);
 	});
 
+	// special handling for @font-face (#52)
+	// include URL when detecting duplicates
+	analyzer.on('font-face', function(rule) {
+		rule.declarations.forEach(function(declaration) {
+			if (declaration.property === 'src') {
+				selectors.push('@font-face src: ' + declaration.value);
+
+				debug('special handling for @font-face, provided src: %s', declaration.value);
+				return false;
+			}
+		});
+	});
+
 	analyzer.on('report', function() {
+		analyzer.setCurrentPosition(undefined);
+
 		selectors.sort().forEach(function(selector, cnt) {
 			if (cnt > 1) {
 				analyzer.incrMetric('duplicatedSelectors');
