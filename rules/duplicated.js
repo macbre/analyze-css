@@ -45,6 +45,8 @@ function rule(analyzer) {
 	});
 
 	analyzer.on('report', function() {
+		analyzer.setCurrentPosition(undefined);
+
 		selectors.sort().forEach(function(selector, cnt) {
 			if (cnt > 1) {
 				analyzer.incrMetric('duplicatedSelectors');
