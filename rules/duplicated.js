@@ -31,6 +31,19 @@ function rule(analyzer) {
 		);
 	});
 
+	// special handling for @font-face (#52)
+	// include URL when detecting duplicates
+	analyzer.on('font-face', function(rule) {
+		rule.declarations.forEach(function(declaration) {
+			if (declaration.property === 'src') {
+				selectors.push('@font-face src: ' + declaration.value);
+
+				debug('special handling for @font-face, provided src: %s', declaration.value);
+				return false;
+			}
+		});
+	});
+
 	analyzer.on('report', function() {
 		selectors.sort().forEach(function(selector, cnt) {
 			if (cnt > 1) {
