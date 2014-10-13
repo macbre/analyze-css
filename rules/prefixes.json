@@ -1,22 +1,25 @@
 {
-  "generated": "2014-08-04 using autoprefixer v2.2.0",
+  "generated": "2014-10-13 using autoprefixer v3.1.0",
   "browsers": [
     "ie 11",
     "ie 10",
     "ie 9",
     "ie 8",
+    "firefox 32",
     "firefox 31",
-    "firefox 30",
+    "chrome 37",
     "chrome 36",
     "chrome 35",
     "safari 7",
+    "ios_saf 8",
     "ios_saf 7.1",
     "ios_saf 7.0",
     "android 4.4",
     "android 4.1",
-    "safari 6.1",
+    "chrome 38",
+    "safari 7.1",
+    "opera 24",
     "opera 23",
-    "opera 22",
     "android 4.3",
     "ie_mob 10",
     "firefox 24",
@@ -129,11 +132,11 @@
     },
     "-webkit-animation": {
       "keep": true,
-      "msg": "required by chrome 35, safari 6.1, ios_saf 7.1, android 4.1 and later"
+      "msg": "required by chrome 35, safari 7, ios_saf 7.1, android 4.1 and later"
     },
     "-o-animation": {
       "keep": true,
-      "msg": "required by opera 22 and later"
+      "msg": "required by opera 23 and later"
     },
     "-ms-animation-name": {
       "keep": false,
@@ -145,11 +148,11 @@
     },
     "-webkit-animation-name": {
       "keep": true,
-      "msg": "required by chrome 35, safari 6.1, ios_saf 7.1, android 4.1 and later"
+      "msg": "required by chrome 35, safari 7, ios_saf 7.1, android 4.1 and later"
     },
     "-o-animation-name": {
       "keep": true,
-      "msg": "required by opera 22 and later"
+      "msg": "required by opera 23 and later"
     },
     "-ms-animation-duration": {
       "keep": false,
@@ -161,11 +164,11 @@
     },
     "-webkit-animation-duration": {
       "keep": true,
-      "msg": "required by chrome 35, safari 6.1, ios_saf 7.1, android 4.1 and later"
+      "msg": "required by chrome 35, safari 7, ios_saf 7.1, android 4.1 and later"
     },
     "-o-animation-duration": {
       "keep": true,
-      "msg": "required by opera 22 and later"
+      "msg": "required by opera 23 and later"
     },
     "-ms-animation-delay": {
       "keep": false,
@@ -177,11 +180,11 @@
     },
     "-webkit-animation-delay": {
       "keep": true,
-      "msg": "required by chrome 35, safari 6.1, ios_saf 7.1, android 4.1 and later"
+      "msg": "required by chrome 35, safari 7, ios_saf 7.1, android 4.1 and later"
     },
     "-o-animation-delay": {
       "keep": true,
-      "msg": "required by opera 22 and later"
+      "msg": "required by opera 23 and later"
     },
     "-ms-animation-direction": {
       "keep": false,
@@ -193,11 +196,11 @@
     },
     "-webkit-animation-direction": {
       "keep": true,
-      "msg": "required by chrome 35, safari 6.1, ios_saf 7.1, android 4.1 and later"
+      "msg": "required by chrome 35, safari 7, ios_saf 7.1, android 4.1 and later"
     },
     "-o-animation-direction": {
       "keep": true,
-      "msg": "required by opera 22 and later"
+      "msg": "required by opera 23 and later"
     },
     "-ms-animation-fill-mode": {
       "keep": false,
@@ -209,11 +212,11 @@
     },
     "-webkit-animation-fill-mode": {
       "keep": true,
-      "msg": "required by chrome 35, safari 6.1, ios_saf 7.1, android 4.1 and later"
+      "msg": "required by chrome 35, safari 7, ios_saf 7.1, android 4.1 and later"
     },
     "-o-animation-fill-mode": {
       "keep": true,
-      "msg": "required by opera 22 and later"
+      "msg": "required by opera 23 and later"
     },
     "-ms-animation-iteration-count": {
       "keep": false,
@@ -225,11 +228,11 @@
     },
     "-webkit-animation-iteration-count": {
       "keep": true,
-      "msg": "required by chrome 35, safari 6.1, ios_saf 7.1, android 4.1 and later"
+      "msg": "required by chrome 35, safari 7, ios_saf 7.1, android 4.1 and later"
     },
     "-o-animation-iteration-count": {
       "keep": true,
-      "msg": "required by opera 22 and later"
+      "msg": "required by opera 23 and later"
     },
     "-ms-animation-play-state": {
       "keep": false,
@@ -241,11 +244,11 @@
     },
     "-webkit-animation-play-state": {
       "keep": true,
-      "msg": "required by chrome 35, safari 6.1, ios_saf 7.1, android 4.1 and later"
+      "msg": "required by chrome 35, safari 7, ios_saf 7.1, android 4.1 and later"
     },
     "-o-animation-play-state": {
       "keep": true,
-      "msg": "required by opera 22 and later"
+      "msg": "required by opera 23 and later"
     },
     "-ms-animation-timing-function": {
       "keep": false,
@@ -257,11 +260,11 @@
     },
     "-webkit-animation-timing-function": {
       "keep": true,
-      "msg": "required by chrome 35, safari 6.1, ios_saf 7.1, android 4.1 and later"
+      "msg": "required by chrome 35, safari 7, ios_saf 7.1, android 4.1 and later"
     },
     "-o-animation-timing-function": {
       "keep": true,
-      "msg": "required by opera 22 and later"
+      "msg": "required by opera 23 and later"
     },
     "-ms-@keyframes": {
       "keep": false,
@@ -273,11 +276,11 @@
     },
     "-webkit-@keyframes": {
       "keep": true,
-      "msg": "required by chrome 35, safari 6.1, ios_saf 7.1, android 4.1 and later"
+      "msg": "required by chrome 35, safari 7, ios_saf 7.1, android 4.1 and later"
     },
     "-o-@keyframes": {
       "keep": true,
-      "msg": "required by opera 22 and later"
+      "msg": "required by opera 23 and later"
     },
     "-ms-transition": {
       "keep": false,
@@ -369,11 +372,11 @@
     },
     "-webkit-transform": {
       "keep": true,
-      "msg": "required by chrome 35, safari 6.1, ios_saf 7.1, android 4.1 and later"
+      "msg": "required by chrome 35, safari 7, ios_saf 7.1, android 4.1 and later"
     },
     "-o-transform": {
-      "keep": true,
-      "msg": "required by opera 22 and later"
+      "keep": false,
+      "msg": "was required by opera 22 and earlier"
     },
     "-ms-transform-origin": {
       "keep": true,
@@ -385,11 +388,11 @@
     },
     "-webkit-transform-origin": {
       "keep": true,
-      "msg": "required by chrome 35, safari 6.1, ios_saf 7.1, android 4.1 and later"
+      "msg": "required by chrome 35, safari 7, ios_saf 7.1, android 4.1 and later"
     },
     "-o-transform-origin": {
-      "keep": true,
-      "msg": "required by opera 22 and later"
+      "keep": false,
+      "msg": "was required by opera 22 and earlier"
     },
     "-ms-perspective": {
       "keep": false,
@@ -401,11 +404,11 @@
     },
     "-webkit-perspective": {
       "keep": true,
-      "msg": "required by chrome 35, safari 6.1, ios_saf 7.1, android 4.1 and later"
+      "msg": "required by chrome 35, safari 7, ios_saf 7.1, android 4.1 and later"
     },
     "-o-perspective": {
-      "keep": true,
-      "msg": "required by opera 22 and later"
+      "keep": false,
+      "msg": "was required by opera 22 and earlier"
     },
     "-ms-perspective-origin": {
       "keep": false,
@@ -417,11 +420,11 @@
     },
     "-webkit-perspective-origin": {
       "keep": true,
-      "msg": "required by chrome 35, safari 6.1, ios_saf 7.1, android 4.1 and later"
+      "msg": "required by chrome 35, safari 7, ios_saf 7.1, android 4.1 and later"
     },
     "-o-perspective-origin": {
-      "keep": true,
-      "msg": "required by opera 22 and later"
+      "keep": false,
+      "msg": "was required by opera 22 and earlier"
     },
     "-ms-transform-style": {
       "keep": false,
@@ -433,11 +436,11 @@
     },
     "-webkit-transform-style": {
       "keep": true,
-      "msg": "required by chrome 35, safari 6.1, ios_saf 7.1, android 4.1 and later"
+      "msg": "required by chrome 35, safari 7, ios_saf 7.1, android 4.1 and later"
     },
     "-o-transform-style": {
-      "keep": true,
-      "msg": "required by opera 22 and later"
+      "keep": false,
+      "msg": "was required by opera 22 and earlier"
     },
     "-ms-backface-visibility": {
       "keep": false,
@@ -449,11 +452,11 @@
     },
     "-webkit-backface-visibility": {
       "keep": true,
-      "msg": "required by chrome 35, safari 6.1, ios_saf 7.1, android 4.1 and later"
+      "msg": "required by chrome 35, safari 7, ios_saf 7.1, android 4.1 and later"
     },
     "-o-backface-visibility": {
-      "keep": true,
-      "msg": "required by opera 22 and later"
+      "keep": false,
+      "msg": "was required by opera 22 and earlier"
     },
     "-ms-box-sizing": {
       "keep": false,
@@ -481,11 +484,11 @@
     },
     "-webkit-filter": {
       "keep": true,
-      "msg": "required by chrome 35, safari 6.1, ios_saf 7.1, android 4.4 and later"
+      "msg": "required by chrome 35, safari 7, ios_saf 7.1, android 4.4 and later"
     },
     "-o-filter": {
       "keep": true,
-      "msg": "required by opera 22 and later"
+      "msg": "required by opera 23 and later"
     },
     "-ms-columns": {
       "keep": false,
@@ -497,11 +500,11 @@
     },
     "-webkit-columns": {
       "keep": true,
-      "msg": "required by chrome 35, safari 6.1, ios_saf 7.1, android 4.1 and later"
+      "msg": "required by chrome 35, safari 7, ios_saf 7.1, android 4.1 and later"
     },
     "-o-columns": {
       "keep": true,
-      "msg": "required by opera 22 and later"
+      "msg": "required by opera 23 and later"
     },
     "-ms-column-width": {
       "keep": false,
@@ -513,11 +516,11 @@
     },
     "-webkit-column-width": {
       "keep": true,
-      "msg": "required by chrome 35, safari 6.1, ios_saf 7.1, android 4.1 and later"
+      "msg": "required by chrome 35, safari 7, ios_saf 7.1, android 4.1 and later"
     },
     "-o-column-width": {
       "keep": true,
-      "msg": "required by opera 22 and later"
+      "msg": "required by opera 23 and later"
     },
     "-ms-column-gap": {
       "keep": false,
@@ -529,11 +532,11 @@
     },
     "-webkit-column-gap": {
       "keep": true,
-      "msg": "required by chrome 35, safari 6.1, ios_saf 7.1, android 4.1 and later"
+      "msg": "required by chrome 35, safari 7, ios_saf 7.1, android 4.1 and later"
     },
     "-o-column-gap": {
       "keep": true,
-      "msg": "required by opera 22 and later"
+      "msg": "required by opera 23 and later"
     },
     "-ms-column-rule": {
       "keep": false,
@@ -545,11 +548,11 @@
     },
     "-webkit-column-rule": {
       "keep": true,
-      "msg": "required by chrome 35, safari 6.1, ios_saf 7.1, android 4.1 and later"
+      "msg": "required by chrome 35, safari 7, ios_saf 7.1, android 4.1 and later"
     },
     "-o-column-rule": {
       "keep": true,
-      "msg": "required by opera 22 and later"
+      "msg": "required by opera 23 and later"
     },
     "-ms-column-rule-color": {
       "keep": false,
@@ -561,11 +564,11 @@
     },
     "-webkit-column-rule-color": {
       "keep": true,
-      "msg": "required by chrome 35, safari 6.1, ios_saf 7.1, android 4.1 and later"
+      "msg": "required by chrome 35, safari 7, ios_saf 7.1, android 4.1 and later"
     },
     "-o-column-rule-color": {
       "keep": true,
-      "msg": "required by opera 22 and later"
+      "msg": "required by opera 23 and later"
     },
     "-ms-column-rule-width": {
       "keep": false,
@@ -577,11 +580,11 @@
     },
     "-webkit-column-rule-width": {
       "keep": true,
-      "msg": "required by chrome 35, safari 6.1, ios_saf 7.1, android 4.1 and later"
+      "msg": "required by chrome 35, safari 7, ios_saf 7.1, android 4.1 and later"
     },
     "-o-column-rule-width": {
       "keep": true,
-      "msg": "required by opera 22 and later"
+      "msg": "required by opera 23 and later"
     },
     "-ms-column-count": {
       "keep": false,
@@ -593,11 +596,11 @@
     },
     "-webkit-column-count": {
       "keep": true,
-      "msg": "required by chrome 35, safari 6.1, ios_saf 7.1, android 4.1 and later"
+      "msg": "required by chrome 35, safari 7, ios_saf 7.1, android 4.1 and later"
     },
     "-o-column-count": {
       "keep": true,
-      "msg": "required by opera 22 and later"
+      "msg": "required by opera 23 and later"
     },
     "-ms-column-rule-style": {
       "keep": false,
@@ -609,11 +612,11 @@
     },
     "-webkit-column-rule-style": {
       "keep": true,
-      "msg": "required by chrome 35, safari 6.1, ios_saf 7.1, android 4.1 and later"
+      "msg": "required by chrome 35, safari 7, ios_saf 7.1, android 4.1 and later"
     },
     "-o-column-rule-style": {
       "keep": true,
-      "msg": "required by opera 22 and later"
+      "msg": "required by opera 23 and later"
     },
     "-ms-column-span": {
       "keep": false,
@@ -625,11 +628,11 @@
     },
     "-webkit-column-span": {
       "keep": true,
-      "msg": "required by chrome 35, safari 6.1, ios_saf 7.1, android 4.1 and later"
+      "msg": "required by chrome 35, safari 7, ios_saf 7.1, android 4.1 and later"
     },
     "-o-column-span": {
       "keep": true,
-      "msg": "required by opera 22 and later"
+      "msg": "required by opera 23 and later"
     },
     "-ms-column-fill": {
       "keep": false,
@@ -641,11 +644,11 @@
     },
     "-webkit-column-fill": {
       "keep": true,
-      "msg": "required by chrome 35, safari 6.1, ios_saf 7.1, android 4.1 and later"
+      "msg": "required by chrome 35, safari 7, ios_saf 7.1, android 4.1 and later"
     },
     "-o-column-fill": {
       "keep": true,
-      "msg": "required by opera 22 and later"
+      "msg": "required by opera 23 and later"
     },
     "-ms-break-before": {
       "keep": false,
@@ -657,11 +660,11 @@
     },
     "-webkit-break-before": {
       "keep": true,
-      "msg": "required by chrome 35, safari 6.1, ios_saf 7.1, android 4.1 and later"
+      "msg": "required by chrome 35, safari 7, ios_saf 7.1, android 4.1 and later"
     },
     "-o-break-before": {
       "keep": true,
-      "msg": "required by opera 22 and later"
+      "msg": "required by opera 23 and later"
     },
     "-ms-break-after": {
       "keep": false,
@@ -673,11 +676,11 @@
     },
     "-webkit-break-after": {
       "keep": true,
-      "msg": "required by chrome 35, safari 6.1, ios_saf 7.1, android 4.1 and later"
+      "msg": "required by chrome 35, safari 7, ios_saf 7.1, android 4.1 and later"
     },
     "-o-break-after": {
       "keep": true,
-      "msg": "required by opera 22 and later"
+      "msg": "required by opera 23 and later"
     },
     "-ms-break-inside": {
       "keep": false,
@@ -689,11 +692,11 @@
     },
     "-webkit-break-inside": {
       "keep": true,
-      "msg": "required by chrome 35, safari 6.1, ios_saf 7.1, android 4.1 and later"
+      "msg": "required by chrome 35, safari 7, ios_saf 7.1, android 4.1 and later"
     },
     "-o-break-inside": {
       "keep": true,
-      "msg": "required by opera 22 and later"
+      "msg": "required by opera 23 and later"
     },
     "-ms-user-select": {
       "keep": true,
@@ -705,11 +708,11 @@
     },
     "-webkit-user-select": {
       "keep": true,
-      "msg": "required by chrome 35, safari 6.1, ios_saf 7.1, android 4.1 and later"
+      "msg": "required by chrome 35, safari 7, ios_saf 7.1, android 4.1 and later"
     },
     "-o-user-select": {
       "keep": true,
-      "msg": "required by opera 22 and later"
+      "msg": "required by opera 23 and later"
     },
     "-ms-flex": {
       "keep": true,
@@ -721,7 +724,7 @@
     },
     "-webkit-flex": {
       "keep": true,
-      "msg": "required by safari 7, ios_saf 7.1, android 4.1 and later"
+      "msg": "required by safari 7, ios_saf 7.1 and later"
     },
     "-o-flex": {
       "keep": false,
@@ -737,7 +740,7 @@
     },
     "-webkit-flex-grow": {
       "keep": true,
-      "msg": "required by safari 7, ios_saf 7.1, android 4.1 and later"
+      "msg": "required by safari 7, ios_saf 7.1 and later"
     },
     "-o-flex-grow": {
       "keep": false,
@@ -753,7 +756,7 @@
     },
     "-webkit-flex-shrink": {
       "keep": true,
-      "msg": "required by safari 7, ios_saf 7.1, android 4.1 and later"
+      "msg": "required by safari 7, ios_saf 7.1 and later"
     },
     "-o-flex-shrink": {
       "keep": false,
@@ -769,7 +772,7 @@
     },
     "-webkit-flex-basis": {
       "keep": true,
-      "msg": "required by safari 7, ios_saf 7.1, android 4.1 and later"
+      "msg": "required by safari 7, ios_saf 7.1 and later"
     },
     "-o-flex-basis": {
       "keep": false,
@@ -785,7 +788,7 @@
     },
     "-webkit-flex-direction": {
       "keep": true,
-      "msg": "required by safari 7, ios_saf 7.1, android 4.1 and later"
+      "msg": "required by safari 7, ios_saf 7.1 and later"
     },
     "-o-flex-direction": {
       "keep": false,
@@ -801,7 +804,7 @@
     },
     "-webkit-flex-wrap": {
       "keep": true,
-      "msg": "required by safari 7, ios_saf 7.1, android 4.1 and later"
+      "msg": "required by safari 7, ios_saf 7.1 and later"
     },
     "-o-flex-wrap": {
       "keep": false,
@@ -817,7 +820,7 @@
     },
     "-webkit-flex-flow": {
       "keep": true,
-      "msg": "required by safari 7, ios_saf 7.1, android 4.1 and later"
+      "msg": "required by safari 7, ios_saf 7.1 and later"
     },
     "-o-flex-flow": {
       "keep": false,
@@ -833,7 +836,7 @@
     },
     "-webkit-justify-content": {
       "keep": true,
-      "msg": "required by safari 7, ios_saf 7.1, android 4.1 and later"
+      "msg": "required by safari 7, ios_saf 7.1 and later"
     },
     "-o-justify-content": {
       "keep": false,
@@ -849,7 +852,7 @@
     },
     "-webkit-order": {
       "keep": true,
-      "msg": "required by safari 7, ios_saf 7.1, android 4.1 and later"
+      "msg": "required by safari 7, ios_saf 7.1 and later"
     },
     "-o-order": {
       "keep": false,
@@ -865,7 +868,7 @@
     },
     "-webkit-align-items": {
       "keep": true,
-      "msg": "required by safari 7, ios_saf 7.1, android 4.1 and later"
+      "msg": "required by safari 7, ios_saf 7.1 and later"
     },
     "-o-align-items": {
       "keep": false,
@@ -881,7 +884,7 @@
     },
     "-webkit-align-self": {
       "keep": true,
-      "msg": "required by safari 7, ios_saf 7.1, android 4.1 and later"
+      "msg": "required by safari 7, ios_saf 7.1 and later"
     },
     "-o-align-self": {
       "keep": false,
@@ -897,7 +900,7 @@
     },
     "-webkit-align-content": {
       "keep": true,
-      "msg": "required by safari 7, ios_saf 7.1, android 4.1 and later"
+      "msg": "required by safari 7, ios_saf 7.1 and later"
     },
     "-o-align-content": {
       "keep": false,
@@ -965,7 +968,7 @@
     },
     "-o-font-feature-settings": {
       "keep": true,
-      "msg": "required by opera 22 and later"
+      "msg": "required by opera 23 and later"
     },
     "-ms-font-variant-ligatures": {
       "keep": false,
@@ -981,7 +984,7 @@
     },
     "-o-font-variant-ligatures": {
       "keep": true,
-      "msg": "required by opera 22 and later"
+      "msg": "required by opera 23 and later"
     },
     "-ms-font-language-override": {
       "keep": false,
@@ -997,7 +1000,7 @@
     },
     "-o-font-language-override": {
       "keep": true,
-      "msg": "required by opera 22 and later"
+      "msg": "required by opera 23 and later"
     },
     "-ms-font-kerning": {
       "keep": false,
@@ -1013,7 +1016,7 @@
     },
     "-o-font-kerning": {
       "keep": true,
-      "msg": "required by opera 22 and later"
+      "msg": "required by opera 23 and later"
     },
     "-ms-border-image": {
       "keep": false,
@@ -1041,7 +1044,7 @@
     },
     "-webkit-hyphens": {
       "keep": true,
-      "msg": "required by safari 6.1, ios_saf 7.1 and later"
+      "msg": "required by safari 7, ios_saf 7.1 and later"
     },
     "-o-hyphens": {
       "keep": false,
@@ -1089,7 +1092,7 @@
     },
     "-webkit-text-decoration-style": {
       "keep": true,
-      "msg": "required by chrome 35 and later"
+      "msg": "required by chrome 35, safari 7.1, ios_saf 8 and later"
     },
     "-o-text-decoration-style": {
       "keep": false,
@@ -1153,11 +1156,11 @@
     },
     "-webkit-clip-path": {
       "keep": true,
-      "msg": "required by chrome 35, safari 6.1, ios_saf 7.1, android 4.1 and later"
+      "msg": "required by chrome 35, safari 7, ios_saf 7.1, android 4.1 and later"
     },
     "-o-clip-path": {
       "keep": true,
-      "msg": "required by opera 22 and later"
+      "msg": "required by opera 23 and later"
     },
     "-ms-mask": {
       "keep": false,
@@ -1169,11 +1172,11 @@
     },
     "-webkit-mask": {
       "keep": true,
-      "msg": "required by chrome 35, safari 6.1, ios_saf 7.1, android 4.1 and later"
+      "msg": "required by chrome 35, safari 7, ios_saf 7.1, android 4.1 and later"
     },
     "-o-mask": {
       "keep": true,
-      "msg": "required by opera 22 and later"
+      "msg": "required by opera 23 and later"
     },
     "-ms-mask-clip": {
       "keep": false,
@@ -1185,11 +1188,11 @@
     },
     "-webkit-mask-clip": {
       "keep": true,
-      "msg": "required by chrome 35, safari 6.1, ios_saf 7.1, android 4.1 and later"
+      "msg": "required by chrome 35, safari 7, ios_saf 7.1, android 4.1 and later"
     },
     "-o-mask-clip": {
       "keep": true,
-      "msg": "required by opera 22 and later"
+      "msg": "required by opera 23 and later"
     },
     "-ms-mask-composite": {
       "keep": false,
@@ -1201,11 +1204,11 @@
     },
     "-webkit-mask-composite": {
       "keep": true,
-      "msg": "required by chrome 35, safari 6.1, ios_saf 7.1, android 4.1 and later"
+      "msg": "required by chrome 35, safari 7, ios_saf 7.1, android 4.1 and later"
     },
     "-o-mask-composite": {
       "keep": true,
-      "msg": "required by opera 22 and later"
+      "msg": "required by opera 23 and later"
     },
     "-ms-mask-image": {
       "keep": false,
@@ -1217,11 +1220,11 @@
     },
     "-webkit-mask-image": {
       "keep": true,
-      "msg": "required by chrome 35, safari 6.1, ios_saf 7.1, android 4.1 and later"
+      "msg": "required by chrome 35, safari 7, ios_saf 7.1, android 4.1 and later"
     },
     "-o-mask-image": {
       "keep": true,
-      "msg": "required by opera 22 and later"
+      "msg": "required by opera 23 and later"
     },
     "-ms-mask-origin": {
       "keep": false,
@@ -1233,11 +1236,11 @@
     },
     "-webkit-mask-origin": {
       "keep": true,
-      "msg": "required by chrome 35, safari 6.1, ios_saf 7.1, android 4.1 and later"
+      "msg": "required by chrome 35, safari 7, ios_saf 7.1, android 4.1 and later"
     },
     "-o-mask-origin": {
       "keep": true,
-      "msg": "required by opera 22 and later"
+      "msg": "required by opera 23 and later"
     },
     "-ms-mask-position": {
       "keep": false,
@@ -1249,11 +1252,11 @@
     },
     "-webkit-mask-position": {
       "keep": true,
-      "msg": "required by chrome 35, safari 6.1, ios_saf 7.1, android 4.1 and later"
+      "msg": "required by chrome 35, safari 7, ios_saf 7.1, android 4.1 and later"
     },
     "-o-mask-position": {
       "keep": true,
-      "msg": "required by opera 22 and later"
+      "msg": "required by opera 23 and later"
     },
     "-ms-mask-repeat": {
       "keep": false,
@@ -1265,11 +1268,11 @@
     },
     "-webkit-mask-repeat": {
       "keep": true,
-      "msg": "required by chrome 35, safari 6.1, ios_saf 7.1, android 4.1 and later"
+      "msg": "required by chrome 35, safari 7, ios_saf 7.1, android 4.1 and later"
     },
     "-o-mask-repeat": {
       "keep": true,
-      "msg": "required by opera 22 and later"
+      "msg": "required by opera 23 and later"
     },
     "-ms-mask-size": {
       "keep": false,
@@ -1281,11 +1284,11 @@
     },
     "-webkit-mask-size": {
       "keep": true,
-      "msg": "required by chrome 35, safari 6.1, ios_saf 7.1, android 4.1 and later"
+      "msg": "required by chrome 35, safari 7, ios_saf 7.1, android 4.1 and later"
     },
     "-o-mask-size": {
       "keep": true,
-      "msg": "required by opera 22 and later"
+      "msg": "required by opera 23 and later"
     }
   }
 }

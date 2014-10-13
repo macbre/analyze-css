@@ -30,7 +30,7 @@
     "specificity": "~0.1.3"
   },
   "devDependencies": {
-    "autoprefixer": "~2.2.0",
+    "autoprefixer": "^3.1.0",
     "glob": "~4.0.5",
     "istanbul": "~0.3.0",
     "jshint": "~2.5.2",
@@ -41,7 +41,8 @@
   "scripts": {
     "test": "mocha -R spec",
     "lint": "jshint --verbose bin/ lib/ rules/ test/",
-    "coverage": "istanbul cover  _mocha -- -R spec"
+    "coverage": "istanbul cover  _mocha -- -R spec",
+    "prefixes": "DEBUG=* node data/prefixes.js"
   },
   "jshintConfig": {
     "node": true,
