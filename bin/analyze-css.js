@@ -52,17 +52,17 @@ if (argv._ && argv._.indexOf('-') > -1) {
 	runnerOpts.stdin = true;
 }
 // --url
-else if (typeof argv.url === 'string') {
+else if (argv.url) {
 	runnerOpts.url = argv.url;
 }
 // --file
-else if (typeof argv.file === 'string') {
+else if (argv.file) {
 	runnerOpts.file = argv.file;
 }
 // either --url or --file or - (stdin) needs to be provided
 else {
 	program.showHelp();
-	process.exit(255);
+	process.exit(analyzer.EXIT_NEED_OPTIONS);
 }
 
 runnerOpts.ignoreSslErrors = argv['ignore-ssl-errors'];
@@ -71,12 +71,15 @@ debug('opts: %j', runnerOpts);
 
 // run the analyzer
 runner(runnerOpts, function(err, res) {
-	var output;
+	var output, exitCode;
 
 	// emit an error and die
 	if (err) {
+		exitCode = err.code || 1;
+		debug('Exiting with exit code #%d', exitCode);
+
 		console.error(err.toString());
-		process.exit(255);
+		process.exit(exitCode);
 	}
 
 	// make offenders flat (and append position if possible - issue #25)
