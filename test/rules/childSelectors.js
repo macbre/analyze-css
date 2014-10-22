@@ -67,6 +67,24 @@ exports.tests = [
 			redundantChildNodesSelectors: 0
 		}
 	},
+	{
+		css: 'table[class*="infobox"] tr {}',
+		metrics: {
+			redundantChildNodesSelectors: 0
+		}
+	},
+	{
+		css: 'table[class*="infobox"] tr p {}',
+		metrics: {
+			redundantChildNodesSelectors: 0
+		}
+	},
+	{
+		css: 'ol:lang(or) li {}',
+		metrics: {
+			redundantChildNodesSelectors: 0
+		}
+	},
 	// select option
 	{
 		css: '.form select option {}',
