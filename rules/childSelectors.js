@@ -31,6 +31,7 @@ function rule(analyzer) {
 		Object.keys(redundantChildSelectors).forEach(function(nodeName) {
 			var nodeIndex = selectorNodeNames.indexOf(nodeName),
 				nextNode,
+				curExpression,
 				combinator,
 				redundantNodes = redundantChildSelectors[nodeName];
 
@@ -45,11 +46,20 @@ function rule(analyzer) {
 				nextNode = selectorNodeNames[nodeIndex + 1];
 
 				if (redundantNodes.indexOf(nextNode) > -1) {
-					combinator = expressions[nodeIndex + 1].combinator;
+					// skip selectors that match:
+					// - by attributes - foo[class*=bar]
+					// - by pseudo attributes - foo:lang(fo)
+					curExpression = expressions[nodeIndex];
+
+					if (curExpression.pseudos || curExpression.attributes) {
+						return;
+					}
 
 					// only the following combinator can match:
 					// ul li
 					// ul > li
+					combinator = expressions[nodeIndex + 1].combinator;
+
 					if ( (combinator === ' ') || (combinator === '>') ){
 						analyzer.incrMetric('redundantChildNodesSelectors');
 						analyzer.addOffender('redundantChildNodesSelectors', selector);
