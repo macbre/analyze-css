@@ -73,5 +73,24 @@ exports.tests = [
 		metrics: {
 			duplicatedSelectors: 1
 		}
-	}
+	},
+	// duplicated properties
+	{
+		css: '#foo { background: none; background-color: red;}',
+		metrics: {
+			duplicatedProperties: 0
+		}
+	},
+	{
+		css: '#foo { background: none; background-color: red; background: transparent}',
+		metrics: {
+			duplicatedProperties: 1
+		}
+	},
+	{
+		css: '#foo { color: #000; background: none; background-color: red; color: red; color: blue; background: none}',
+		metrics: {
+			duplicatedProperties: 3 // color x3, background x2
+		}
+	},
 ];
