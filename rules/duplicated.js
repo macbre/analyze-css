@@ -43,13 +43,20 @@ function rule(analyzer) {
 				if (declaration.type === 'declaration') {
 					propertyName = declaration.property;
 
+					// skip properties that require browser prefixes
+					//  background-image:-moz-linear-gradient(...)
+					//  background-image:-webkit-gradient(...)
+					if ( (propertyName === 'background-image') && (/^-(moz|o|webkit|ms)-/.test(declaration.value) === true) ) {
+						return;
+					}
+
 					// property was already used in the current selector - report it
 					if (propertiesHash[propertyName] === true) {
 						// report the position of the offending property
 						analyzer.setCurrentPosition(declaration.position);
 
 						analyzer.incrMetric('duplicatedProperties');
-						analyzer.addOffender('duplicatedProperties', format('%s - "%s" property', rule.selectors.join(' '), propertyName));
+						analyzer.addOffender('duplicatedProperties', format('%s {%s: %s}', rule.selectors.join(' '), declaration.property, declaration.value));
 					}
 					else {
 						// mark given property as defined in the context of the current selector
