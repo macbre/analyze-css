@@ -57,7 +57,7 @@ function rule(analyzer) {
 						analyzer.setCurrentPosition(declaration.position);
 
 						analyzer.incrMetric('duplicatedProperties');
-						analyzer.addOffender('duplicatedProperties', format('%s {%s: %s}', rule.selectors.join(' '), declaration.property, declaration.value));
+						analyzer.addOffender('duplicatedProperties', format('%s {%s: %s}', rule.selectors.join(', '), declaration.property, declaration.value));
 					}
 					else {
 						// mark given property as defined in the context of the current selector
