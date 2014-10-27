@@ -99,4 +99,10 @@ exports.tests = [
 			duplicatedProperties: 0 // browser prefixes should not be included
 		}
 	},
+	{
+		css: 'button{background-color:#006cb0; background:-moz-linear-gradient(top,#008be3 35%,#006cb0 65%);background:-webkit-gradient(linear,0% 0%,0% 100%,color-stop(35%,#008be3),color-stop(65%,#006cb0));background:-o-linear-gradient(top,#008be3 35%,#006cb0 65%);background:-ms-linear-gradient(top,#008be3 35%,#006cb0 65%);  border:1px solid #006cb0;border-radius:4px;}',
+		metrics: {
+			duplicatedProperties: 0 // browser prefixes should not be included
+		}
+	},
 ];

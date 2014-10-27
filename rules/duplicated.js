@@ -6,7 +6,8 @@ var collection = require('../lib/collection'),
 
 function rule(analyzer) {
 	var selectors = new collection(),
-		mediaQueryStack = [];
+		mediaQueryStack = [],
+		browserPrefixRegEx = /^-(moz|o|webkit|ms)-/;
 
 	analyzer.setMetric('duplicatedSelectors');
 	analyzer.setMetric('duplicatedProperties');
@@ -46,7 +47,7 @@ function rule(analyzer) {
 					// skip properties that require browser prefixes
 					//  background-image:-moz-linear-gradient(...)
 					//  background-image:-webkit-gradient(...)
-					if ( (propertyName === 'background-image') && (/^-(moz|o|webkit|ms)-/.test(declaration.value) === true) ) {
+					if (browserPrefixRegEx.test(declaration.value) === true) {
 						return;
 					}
 
@@ -56,7 +57,7 @@ function rule(analyzer) {
 						analyzer.setCurrentPosition(declaration.position);
 
 						analyzer.incrMetric('duplicatedProperties');
-						analyzer.addOffender('duplicatedProperties', format('%s {%s: %s}', rule.selectors.join(' '), declaration.property, declaration.value));
+						analyzer.addOffender('duplicatedProperties', format('%s {%s: %s}', rule.selectors.join(', '), declaration.property, declaration.value));
 					}
 					else {
 						// mark given property as defined in the context of the current selector
