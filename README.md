@@ -43,7 +43,18 @@ new analyzer('.foo {margin: 0 !important}', function(err, results) {
   console.error(err);
   console.log(results); // example? see below
 });
+```
 
+```js
+// options can be provided
+var opts = {
+  'noOffenders': true
+};
+
+new analyzer('.foo {margin: 0 !important}', opts, function(err, results) {
+  console.error(err);
+  console.log(results); // example? see below
+});```
 ```
 
 ### [grunt task](https://www.npmjs.org/package/grunt-contrib-analyze-css)
