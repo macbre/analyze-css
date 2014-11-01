@@ -24,6 +24,7 @@ program
 
 	.describe('ignore-ssl-errors', 'Ignores SSL errors, such as expired or self-signed certificate errors').boolean('ignore-ssl-errors')
 	.describe('pretty', 'Causes JSON with the results to be pretty-printed').boolean('pretty').alias('pretty', 'p')
+	.describe('no-offenders', 'Show only the metrics without the offenders part').boolean('no-offenders').alias('no-offenders', 'N')
 
 	// version / help
 	.describe('version', 'Show version number and quit').boolean('version').alias('version', 'V')
@@ -66,6 +67,7 @@ else {
 }
 
 runnerOpts.ignoreSslErrors = argv['ignore-ssl-errors'];
+runnerOpts.noOffenders = argv['no-offenders'] || (argv.offenders === false);
 
 debug('opts: %j', runnerOpts);
 
