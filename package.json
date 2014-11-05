@@ -9,9 +9,10 @@
     "url": "git://github.com/macbre/analyze-css.git"
   },
   "keywords": [
-    "css",
-    "analyzer",
+    "analysis",
     "complexity",
+    "css",
+    "stylesheet",
     "webperf"
   ],
   "license": "BSD",
