@@ -22,10 +22,10 @@
   "dependencies": {
     "cli": "~0.6.2",
     "css": "^2.1.0",
-    "debug": "~1.0.4",
+    "debug": "~2.1.0",
     "fast-stats": "0.0.x",
     "glob": "~4.0.5",
-    "node-sass": "~0.9.3",
+    "node-sass": "~1.0.3",
     "optimist": "0.6.x",
     "slick": "~1.12.1",
     "specificity": "~0.1.3"
