@@ -35,7 +35,7 @@
     "glob": "~4.0.5",
     "istanbul": "~0.3.0",
     "jshint": "~2.5.2",
-    "mocha": "~1.21.3"
+    "mocha": "~2.0.1"
   },
   "bin": "./bin/analyze-css.js",
   "preferGlobal": true,
