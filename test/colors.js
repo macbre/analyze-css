@@ -33,7 +33,7 @@ describe('Colors', function() {
 			],
 			[
 				'none',
-				[]
+				false
 			],
 		];
 
