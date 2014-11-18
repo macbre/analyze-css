@@ -26,6 +26,7 @@
     "fast-stats": "0.0.x",
     "glob": "~4.0.5",
     "node-sass": "~1.0.3",
+    "onecolor": "2.4.x",
     "optimist": "0.6.x",
     "slick": "~1.12.1",
     "specificity": "~0.1.3"
