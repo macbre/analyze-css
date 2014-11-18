@@ -22,7 +22,7 @@ function rule(analyzer) {
 			analyzer.incrMetric('base64Length', base64.length);
 
 			if (base64.length > MAX_LENGTH) {
-				analyzer.addOffender('base64Length', format('%s { %s: ... } // base64: %s kB, raw: %s kB', rule.selectors.join(', '), property, (base64.length/1024).toFixed(2), (buf.length/1024).toFixed(2)));
+				analyzer.addOffender('base64Length', format('%s { %s: ... } // base64: %s kB, raw: %s kB', rule.selectors.join(', '), property, (base64.length / 1024).toFixed(2), (buf.length / 1024).toFixed(2)));
 			}
 		}
 	});

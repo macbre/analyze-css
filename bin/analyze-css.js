@@ -1,4 +1,5 @@
 #!/usr/bin/env node
+
 /**
  * analyze-css entry point
  *
@@ -17,15 +18,12 @@ var analyzer = require('./../lib/index'),
 // parse options
 program
 	.usage('analyze-css --url <url> [options]')
-
 	// mandatory
 	.describe('url', 'Set URL of CSS to analyze').string('url')
 	.describe('file', 'Set local CSS file to analyze').string('file')
-
 	.describe('ignore-ssl-errors', 'Ignores SSL errors, such as expired or self-signed certificate errors').boolean('ignore-ssl-errors')
 	.describe('pretty', 'Causes JSON with the results to be pretty-printed').boolean('pretty').alias('pretty', 'p')
 	.describe('no-offenders', 'Show only the metrics without the offenders part').boolean('no-offenders').alias('no-offenders', 'N')
-
 	// version / help
 	.describe('version', 'Show version number and quit').boolean('version').alias('version', 'V')
 	.describe('help', 'This help text').boolean('help').alias('help', 'h');
@@ -97,8 +95,7 @@ runner(runnerOpts, function(err, res) {
 	// format the results
 	if (argv.pretty === true) {
 		output = JSON.stringify(res, null, '  ');
-	}
-	else {
+	} else {
 		output = JSON.stringify(res);
 	}
 

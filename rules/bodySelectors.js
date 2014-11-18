@@ -19,10 +19,10 @@ function rule(analyzer) {
 
 		// first, let's find the body tag selector in the expression
 		var bodyIndex = expressions.
-			map(function(item) {
-				return item.tag;
-			}).
-			indexOf('body');
+		map(function(item) {
+			return item.tag;
+		}).
+		indexOf('body');
 
 		// body selector not found - skip the rules that follow
 		if (bodyIndex < 0) {
@@ -31,19 +31,19 @@ function rule(analyzer) {
 
 		// matches "html > body"
 		// matches "html.modal-popup-mode body" (issue #44)
-		if ( (firstTag === 'html') && (bodyIndex === 1) && (isDescendantCombinator || isShortExpression) ) {
+		if ((firstTag === 'html') && (bodyIndex === 1) && (isDescendantCombinator || isShortExpression)) {
 			isRedundant = false;
 		}
 		// matches "body .foo", but not "body > .bar' nor "body.foo .bar"
-		else if ( (bodyIndex === 0) && isDescendantCombinator && isShortExpression ) {
+		else if ((bodyIndex === 0) && isDescendantCombinator && isShortExpression) {
 			isRedundant = false;
 		}
 		// matches "body.foo ul li a"
-		else if ( (bodyIndex === 0) && firstHasClass) {
+		else if ((bodyIndex === 0) && firstHasClass) {
 			isRedundant = false;
 		}
 		// matches ".has-modal > body" (issue #49)
-		else if ( firstHasClass && (bodyIndex === 1) && isDescendantCombinator) {
+		else if (firstHasClass && (bodyIndex === 1) && isDescendantCombinator) {
 			isRedundant = false;
 		}
 

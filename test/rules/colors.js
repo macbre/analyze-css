@@ -18,7 +18,7 @@ exports.tests = [
 		}
 	},
 	{
-		css: '.foo {background-image: -moz-linear-gradient(top, rgba(240, 231, 223, 0) 50%, #f0e7df 100%);background-image: -webkit-gradient(linear, 0% 0%, 0% 100%, color-stop(50%, #f8f4f0), color-stop(100%, #f0e7df));}', 
+		css: '.foo {background-image: -moz-linear-gradient(top, rgba(240, 231, 223, 0) 50%, #f0e7df 100%);background-image: -webkit-gradient(linear, 0% 0%, 0% 100%, color-stop(50%, #f8f4f0), color-stop(100%, #f0e7df));}',
 		metrics: {
 			colors: 3
 		}
