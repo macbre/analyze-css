@@ -1,5 +1,5 @@
 {
-  "generated": "2014-11-06 using autoprefixer-core v3.1.2",
+  "generated": "2014-11-18 using autoprefixer-core v4.0.0",
   "browsers": [
     "ie 11",
     "ie 10",
@@ -1289,6 +1289,22 @@
       "msg": "required by chrome 36, safari 7.1, ios_saf 7.1, android 4.1 and later"
     },
     "-o-mask-size": {
+      "keep": true,
+      "msg": "required by opera 24 and later"
+    },
+    "-ms-box-decoration-break": {
+      "keep": false,
+      "msg": "prefix is no longer supported"
+    },
+    "-moz-box-decoration-break": {
+      "keep": false,
+      "msg": "prefix is no longer supported"
+    },
+    "-webkit-box-decoration-break": {
+      "keep": true,
+      "msg": "required by chrome 36, safari 7.1, ios_saf 7.1, android 4.1 and later"
+    },
+    "-o-box-decoration-break": {
       "keep": true,
       "msg": "required by opera 24 and later"
     }
