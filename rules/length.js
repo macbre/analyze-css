@@ -2,7 +2,7 @@
 
 function rule(analyzer) {
 	analyzer.on('css', function(css) {
-		analyzer.setMetric('length', css. length);
+		analyzer.setMetric('length', css.length);
 	});
 }
 

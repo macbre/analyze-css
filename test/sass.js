@@ -7,7 +7,7 @@ var analyzer = require('../'),
 
 describe('SASS preprocessor', function() {
 	it('should be chosen for SCSS files', function() {
-		var preprocessors = new (require('../lib/preprocessors.js'))();
+		var preprocessors = new(require('../lib/preprocessors.js'))();
 
 		assert.equal(preprocessors.findMatchingByFileName('test/foo.scss'), 'sass');
 		assert.equal(preprocessors.findMatchingByFileName('test/foo.sass'), false);
@@ -22,7 +22,9 @@ describe('SASS preprocessor', function() {
 	});
 
 	it('should generate CSS correctly', function(done) {
-		new analyzer(css, {preprocessor: 'sass'}, function(err, res) {
+		new analyzer(css, {
+			preprocessor: 'sass'
+		}, function(err, res) {
 			assert.strictEqual(err, null);
 			assert.equal(res.metrics.selectors, 1);
 			done();

@@ -31,22 +31,22 @@ function rule(analyzer) {
 		debug('%s: %s -> %j', property, value, extractedColors);
 
 		extractedColors.
-			map(function(item) {
-				var color = onecolor(item);
+		map(function(item) {
+			var color = onecolor(item);
 
-				// handle parsing errors
-				if (color === false) {
-					return false;
-				}
+			// handle parsing errors
+			if (color === false) {
+				return false;
+			}
 
-				// return either rgba(0,0,0,0.25) or #000000
-				return (color.alpha() < 1.0) ? color.cssa() : color.hex();
-			}).
-			forEach(function(color) {
-				if (color !== false) {
-					colors.push(color);
-				}
-			});
+			// return either rgba(0,0,0,0.25) or #000000
+			return (color.alpha() < 1.0) ? color.cssa() : color.hex();
+		}).
+		forEach(function(color) {
+			if (color !== false) {
+				colors.push(color);
+			}
+		});
 	});
 
 	analyzer.on('report', function() {
@@ -64,4 +64,3 @@ module.exports = rule;
 
 // expose for unit testing
 module.exports.extractColors = extractColors;
-

@@ -28,11 +28,11 @@ function rule(analyzer) {
 
 		// parse the results
 		parts = selectorSpecificity[0].specificity.
-			split(',').
-			slice(1).
-			map(function(i) {
-				return parseInt(i, 10);
-			});
+		split(',').
+		slice(1).
+		map(function(i) {
+			return parseInt(i, 10);
+		});
 
 		debug('%s: %s', selector, parts.join(''));
 

@@ -35,7 +35,7 @@ function rule(analyzer) {
 				combinator,
 				redundantNodes = redundantChildSelectors[nodeName];
 
-			if ( (nodeIndex > -1) && (nodeIndex < noExpressions - 1) ) {
+			if ((nodeIndex > -1) && (nodeIndex < noExpressions - 1)) {
 				// skip cases like the following: "article > ul li"
 				if (expressions[nodeIndex].combinator !== ' ') {
 					return;
@@ -60,7 +60,7 @@ function rule(analyzer) {
 					// ul > li
 					combinator = expressions[nodeIndex + 1].combinator;
 
-					if ( (combinator === ' ') || (combinator === '>') ){
+					if ((combinator === ' ') || (combinator === '>')) {
 						analyzer.incrMetric('redundantChildNodesSelectors');
 						analyzer.addOffender('redundantChildNodesSelectors', selector);
 					}
