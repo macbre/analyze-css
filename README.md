@@ -72,42 +72,43 @@ It uses configurable threshold and compares the analyze-css result with it.
 
 ```json
 {
-  "generator": "analyze-css v0.5.0",
+  "generator": "analyze-css v0.8.0",
   "metrics": {
-    "base64Length": 9308,
+    "base64Length": 11332,
     "redundantBodySelectors": 0,
-    "redundantChildNodesSelectors": 6,
-    "colors": 105,
+    "redundantChildNodesSelectors": 1,
+    "colors": 106,
     "comments": 1,
     "commentsLength": 68,
-    "complexSelectors": 32,
+    "complexSelectors": 37,
     "complexSelectorsByAttribute": 3,
     "duplicatedSelectors": 7,
-    "duplicatedProperties": 66,
+    "duplicatedProperties": 24,
     "emptyRules": 0,
     "expressions": 0,
     "oldIEFixes": 51,
     "imports": 0,
     "importants": 3,
     "mediaQueries": 0,
-    "oldPropertyPrefixes": 65,
+    "multiClassesSelectors": 74,
+    "oldPropertyPrefixes": 79,
     "qualifiedSelectors": 28,
-    "specificityIdAvg": 0.05,
-    "specificityIdTotal": 35,
-    "specificityClassAvg": 1.25,
-    "specificityClassTotal": 872,
-    "specificityTagAvg": 0.78,
-    "specificityTagTotal": 548,
-    "selectorsByAttribute": 93,
-    "selectorsByClass": 568,
-    "selectorsById": 35,
-    "selectorsByPseudo": 166,
-    "selectorsByTag": 519,
-    "universalSelectors": 4,
-    "length": 51665,
-    "rules": 422,
-    "selectors": 699,
-    "declarations": 1240
+    "specificityIdAvg": 0.04,
+    "specificityIdTotal": 25,
+    "specificityClassAvg": 1.27,
+    "specificityClassTotal": 904,
+    "specificityTagAvg": 0.79,
+    "specificityTagTotal": 562,
+    "selectorsByAttribute": 92,
+    "selectorsByClass": 600,
+    "selectorsById": 25,
+    "selectorsByPseudo": 167,
+    "selectorsByTag": 533,
+    "universalSelectors": 5,
+    "length": 55173,
+    "rules": 433,
+    "selectors": 712,
+    "declarations": 1288
   },
   "offenders": {
     "importants": [
@@ -135,6 +136,7 @@ It uses configurable threshold and compares the analyze-css result with it.
 * **imports** number of ``@import`` rules
 * **importants**: number of properties with value forced by ``!important``
 * **mediaQueries**: number of media queries (e.g. ``@media screen and (min-width: 1370px)``)
+* **multiClassesSelectors**: reports selectors with multiple classes (e.g. ``span.foo.bar``)
 * **oldPropertyPrefixes**: number of properties with no longer needed vendor prefix, powered by data provided by [autoprefixer](https://github.com/ai/autoprefixer) (e.g. ``--moz-border-radius``)
 * **qualifiedSelectors**: number of [qualified selectors](https://developer.mozilla.org/en-US/docs/Web/Guide/CSS/Writing_efficient_CSS) (e.g. ``header#nav``, ``.foo#bar``, ``h1.title``)
 * **specificityIdAvg**: average [specificity](http://css-tricks.com/specifics-on-css-specificity/) for ID
