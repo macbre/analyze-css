@@ -5,6 +5,7 @@
  * @see https://github.com/ai/autoprefixer
  */
 var autoprefixer = require('autoprefixer-core'),
+	browserslist = require('browserslist'),
 	debug = require('debug')('analyze-css:prefixes'),
 	fs = require('fs'),
 	instance = new autoprefixer(),
@@ -17,7 +18,7 @@ var autoprefixer = require('autoprefixer-core'),
 data = {
 	generated: (new Date()).toJSON().substr(0, 10) + ' using autoprefixer-core v' + (require('../node_modules/autoprefixer-core/package.json').version),
 	// supported browsers, i.e. will keep venoder prefixes that they require
-	browsers: instance.browsers,
+	browsers: browserslist().sort(),
 	// list of prefixes: prefix / hash (keep: true / false, msg: reason, list of browsers)
 	prefixes: {}
 };
