@@ -24,7 +24,6 @@
     "css": "^2.1.0",
     "debug": "~2.1.0",
     "fast-stats": "0.0.x",
-    "glob": "~4.0.5",
     "node-sass": "1.1.2",
     "onecolor": "2.4.x",
     "optimist": "0.6.x",
@@ -34,11 +33,11 @@
   "devDependencies": {
     "autoprefixer-core": "~5.0.0",
     "browserslist": "~0.1.1",
-    "glob": "~4.0.5",
+    "glob": "~4.3.5",
     "istanbul": "~0.3.0",
     "js-beautify": "~1.5.4",
     "jshint": "~2.5.2",
-    "mocha": "~2.0.1"
+    "mocha": "~2.1.0"
   },
   "bin": "./bin/analyze-css.js",
   "preferGlobal": true,
