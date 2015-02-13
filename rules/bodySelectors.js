@@ -34,8 +34,8 @@ function rule(analyzer) {
 		if ((firstTag === 'html') && (bodyIndex === 1) && (isDescendantCombinator || isShortExpression)) {
 			isRedundant = false;
 		}
-		// matches "body .foo", but not "body > .bar' nor "body.foo .bar"
-		else if ((bodyIndex === 0) && isDescendantCombinator && isShortExpression) {
+		// matches "body > .bar" (issue #82)
+		else if ((bodyIndex === 0) && isDescendantCombinator) {
 			isRedundant = false;
 		}
 		// matches "body.foo ul li a"

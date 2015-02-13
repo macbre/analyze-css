@@ -24,6 +24,12 @@ exports.tests = [
 		}
 	},
 	{
+		css: 'body > h1 .foo {}',
+		metrics: {
+			redundantBodySelectors: 0
+		}
+	},
+	{
 		css: 'html > body #foo .bar {}',
 		metrics: {
 			redundantBodySelectors: 0
