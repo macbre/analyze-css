@@ -21,10 +21,10 @@
   },
   "dependencies": {
     "cli": "~0.6.2",
-    "css": "^2.1.0",
+    "css": "2.2.x",
     "debug": "~2.1.0",
     "fast-stats": "0.0.x",
-    "glob": "~4.3.5",
+    "glob": "4.4.x",
     "node-sass": "1.1.2",
     "onecolor": "2.4.x",
     "optimist": "0.6.x",
@@ -32,11 +32,11 @@
     "specificity": "~0.1.3"
   },
   "devDependencies": {
-    "autoprefixer-core": "~5.0.0",
-    "browserslist": "~0.1.1",
-    "istanbul": "~0.3.0",
+    "autoprefixer-core": "5.1.x",
+    "browserslist": "0.2.x",
+    "istanbul": "0.3.x",
     "js-beautify": "~1.5.4",
-    "jshint": "~2.5.2",
+    "jshint": "2.6.x",
     "mocha": "~2.1.0"
   },
   "bin": "./bin/analyze-css.js",
