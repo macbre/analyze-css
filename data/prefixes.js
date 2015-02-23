@@ -126,6 +126,8 @@ Object.keys(prefixes).forEach(function(property) {
 			msg = 'required by ' + getLatestVersions(browsers, true).join(', ') + ' and later';
 		}
 
+		prefix = '-' + prefix + '-'; // "mozborder-radius" -> "-moz-border-radius"
+
 		debug('%j', browsers);
 		debug('%s: keep? %j (%s)', prefix + property, !!keep, msg);
 
