@@ -15,9 +15,10 @@ describe('SASS preprocessor', function() {
 		assert.equal(preprocessors.findMatchingByFileName('test/foo.css'), false);
 	});
 
-	it('should raise an error (if not selected)', function(done) {
+	it('should report parsing error (if not selected)', function(done) {
 		new analyzer(scss, function(err, res) {
-			assert.equal(err && /CSS parsing failed/.test(err), true);
+			assert.strictEqual(err, null);
+			assert.equal(res.metrics.parsingErrors, 3);
 			done();
 		});
 	});

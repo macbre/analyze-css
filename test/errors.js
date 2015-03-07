@@ -23,16 +23,6 @@ tests = [
 		css: false,
 		check: /css parameter passed is not a string/,
 		code: analyzer.EXIT_CSS_PASSED_IS_NOT_STRING
-	},
-	{
-		css: 'foo bar',
-		check: /CSS parsing failed/,
-		code: analyzer.EXIT_CSS_PARSE_ERROR
-	},
-	{
-		css: 'foo bar [abc]',
-		check: /CSS parsing failed/,
-		code: analyzer.EXIT_CSS_PARSE_ERROR
 	}
 ];
 

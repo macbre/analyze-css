@@ -91,6 +91,7 @@ It uses configurable threshold and compares the analyze-css result with it.
     "importants": 3,
     "mediaQueries": 0,
     "multiClassesSelectors": 74,
+    "parsingErrors": 0,
     "oldPropertyPrefixes": 79,
     "qualifiedSelectors": 28,
     "specificityIdAvg": 0.04,
@@ -137,6 +138,7 @@ It uses configurable threshold and compares the analyze-css result with it.
 * **importants**: number of properties with value forced by ``!important``
 * **mediaQueries**: number of media queries (e.g. ``@media screen and (min-width: 1370px)``)
 * **multiClassesSelectors**: reports selectors with multiple classes (e.g. ``span.foo.bar``)
+* **parsingErrors**: number of CSS parsing errors
 * **oldPropertyPrefixes**: number of properties with no longer needed vendor prefix, powered by data provided by [autoprefixer](https://github.com/ai/autoprefixer) (e.g. ``--moz-border-radius``)
 * **qualifiedSelectors**: number of [qualified selectors](https://developer.mozilla.org/en-US/docs/Web/Guide/CSS/Writing_efficient_CSS) (e.g. ``header#nav``, ``.foo#bar``, ``h1.title``)
 * **specificityIdAvg**: average [specificity](http://css-tricks.com/specifics-on-css-specificity/) for ID
