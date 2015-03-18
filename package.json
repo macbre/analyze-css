@@ -25,7 +25,7 @@
     "debug": "~2.1.0",
     "fast-stats": "0.0.x",
     "glob": "4.4.x",
-    "node-sass": "1.1.2",
+    "node-sass": "3.0.0-alpha.0",
     "onecolor": "2.4.x",
     "optimist": "0.6.x",
     "slick": "~1.12.1",
