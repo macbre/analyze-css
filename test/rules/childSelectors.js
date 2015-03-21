@@ -92,4 +92,36 @@ exports.tests = [
 			redundantChildNodesSelectors: 1
 		}
 	},
+	// tr + td
+	{
+		css: '.foo tr td {}',
+		metrics: {
+			redundantChildNodesSelectors: 1
+		}
+	},
+	{
+		css: '.foo tr th {}',
+		metrics: {
+			redundantChildNodesSelectors: 1
+		}
+	},
+	// table + tr & tr + td
+	{
+		css: 'table.recommended tr td {}',
+		metrics: {
+			redundantChildNodesSelectors: 2
+		}
+	},
+	{
+		css: 'table.tableborder tr.first td {}',
+		metrics: {
+			redundantChildNodesSelectors: 2
+		}
+	},
+	{
+		css: 'table tr th.first {}',
+		metrics: {
+			redundantChildNodesSelectors: 2
+		}
+	},
 ];
