@@ -11,6 +11,7 @@ function rule(analyzer) {
 		'ol': ['li'],
 		'select': ['option'],
 		'table': ['tr', 'th'], // e.g. table can not be followed by any of tr / th
+		'tr': ['td', 'th'],
 	};
 
 	analyzer.setMetric('redundantChildNodesSelectors');
