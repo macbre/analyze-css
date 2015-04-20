@@ -12,6 +12,7 @@ var autoprefixer = require('autoprefixer-core'),
 	prefixes = instance.data.prefixes,
 	// data
 	browsersByPrefix = {},
+	namesByVendor = {},
 	data;
 
 // prepare data
@@ -47,9 +48,13 @@ Object.keys(instance.data.browsers).forEach(function(vendor) {
 			browsersByPrefix[prefix].browsers.push(browser);
 		}
 	});
+
+	// "and_uc" : "UC Browser for Android"
+	namesByVendor[vendor] = vendorData.browser;
 });
 
 debug('Browsers by prefix: %j' ,browsersByPrefix);
+debug('Names by vendor: %j', namesByVendor);
 
 function getLatestVersions(browsers, oldest) {
 	var latest = {},
@@ -73,7 +78,7 @@ function getLatestVersions(browsers, oldest) {
 	});
 
 	Object.keys(latest).forEach(function(vendor) {
-		ret.push(vendor + ' ' + latest[vendor]);
+		ret.push((namesByVendor[vendor] || vendor) + ' ' + latest[vendor]);
 	});
 
 	return ret;
