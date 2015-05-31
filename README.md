@@ -93,6 +93,7 @@ It uses configurable threshold and compares the analyze-css result with it.
     "multiClassesSelectors": 74,
     "parsingErrors": 0,
     "oldPropertyPrefixes": 79,
+    "propertyResets": 0,
     "qualifiedSelectors": 28,
     "specificityIdAvg": 0.04,
     "specificityIdTotal": 25,
@@ -140,6 +141,7 @@ It uses configurable threshold and compares the analyze-css result with it.
 * **multiClassesSelectors**: reports selectors with multiple classes (e.g. ``span.foo.bar``)
 * **parsingErrors**: number of CSS parsing errors
 * **oldPropertyPrefixes**: number of properties with no longer needed vendor prefix, powered by data provided by [autoprefixer](https://github.com/ai/autoprefixer) (e.g. ``--moz-border-radius``)
+* **propertyResets**: number of [accidental property resets](http://css-tricks.com/accidental-css-resets/)
 * **qualifiedSelectors**: number of [qualified selectors](https://developer.mozilla.org/en-US/docs/Web/Guide/CSS/Writing_efficient_CSS) (e.g. ``header#nav``, ``.foo#bar``, ``h1.title``)
 * **specificityIdAvg**: average [specificity](http://css-tricks.com/specifics-on-css-specificity/) for ID
 * **specificityIdTotal**: total [specificity](http://css-tricks.com/specifics-on-css-specificity/) for ID

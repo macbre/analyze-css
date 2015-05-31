@@ -22,6 +22,7 @@
   "dependencies": {
     "cli": "0.7.x",
     "css": "2.2.x",
+    "css-shorthand-properties": "1.0.x",
     "debug": "2.2.x",
     "fast-stats": "0.0.x",
     "glob": "5.0.x",
