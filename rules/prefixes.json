@@ -1,5 +1,5 @@
 {
-  "generated": "2015-05-02 using autoprefixer-core v5.1.11",
+  "generated": "2015-05-31 using autoprefixer-core v5.2.0",
   "browsers": [
     "and_chr 42",
     "and_uc 9.9",
@@ -1112,8 +1112,8 @@
       "msg": "required by Firefox 31 and later"
     },
     "-webkit-text-decoration-line": {
-      "keep": false,
-      "msg": "prefix is no longer supported"
+      "keep": true,
+      "msg": "required by Chrome 39, Safari 7.1, iOS Safari 8 and later"
     },
     "-o-text-decoration-line": {
       "keep": false,
@@ -1128,8 +1128,8 @@
       "msg": "required by Firefox 31 and later"
     },
     "-webkit-text-decoration-color": {
-      "keep": false,
-      "msg": "prefix is no longer supported"
+      "keep": true,
+      "msg": "required by Chrome 39, Safari 7.1, iOS Safari 8 and later"
     },
     "-o-text-decoration-color": {
       "keep": false,
@@ -1676,6 +1676,22 @@
       "msg": "required by Chrome 39, Safari 7.1, Opera 26, iOS Safari 7, Android Browser 4.2, Chrome for Android 42, UC Browser for Android 9.9 and later"
     },
     "-o-padding-block-end": {
+      "keep": false,
+      "msg": "prefix is no longer supported"
+    },
+    "-ms-appearance": {
+      "keep": false,
+      "msg": "prefix is no longer supported"
+    },
+    "-moz-appearance": {
+      "keep": true,
+      "msg": "required by Firefox 31 and later"
+    },
+    "-webkit-appearance": {
+      "keep": true,
+      "msg": "required by Chrome 39, Safari 7.1, Opera 26, iOS Safari 7, Android Browser 4.2, Chrome for Android 42, UC Browser for Android 9.9 and later"
+    },
+    "-o-appearance": {
       "keep": false,
       "msg": "prefix is no longer supported"
     }

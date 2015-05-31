@@ -8,8 +8,7 @@ var autoprefixer = require('autoprefixer-core'),
 	browserslist = require('browserslist'),
 	debug = require('debug')('analyze-css:prefixes'),
 	fs = require('fs'),
-	instance = new autoprefixer(),
-	prefixes = instance.data.prefixes,
+	prefixes = autoprefixer.data.prefixes,
 	// data
 	browsersByPrefix = {},
 	namesByVendor = {},
@@ -29,8 +28,8 @@ debug('Supported browsers: %s', data.browsers.join(', '));
 
 // prepare vendors data
 // [prefix] => [supported browsers]
-Object.keys(instance.data.browsers).forEach(function(vendor) {
-	var vendorData = instance.data.browsers[vendor],
+Object.keys(autoprefixer.data.browsers).forEach(function(vendor) {
+	var vendorData = autoprefixer.data.browsers[vendor],
 		prefix = vendorData.prefix;
 
 	if (typeof browsersByPrefix[prefix] === 'undefined') {
