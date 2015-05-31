@@ -20,12 +20,12 @@
     "node": ">=0.8"
   },
   "dependencies": {
-    "cli": "~0.6.2",
+    "cli": "0.7.x",
     "css": "2.2.x",
-    "debug": "~2.1.0",
+    "debug": "2.2.x",
     "fast-stats": "0.0.x",
     "glob": "5.0.x",
-    "node-sass": "3.0.0-alpha.0",
+    "node-sass": "3.1.x",
     "onecolor": "2.4.x",
     "optimist": "0.6.x",
     "slick": "~1.12.1",
