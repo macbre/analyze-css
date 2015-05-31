@@ -1,0 +1,32 @@
+/**
+ * @see https://css-tricks.com/accidental-css-resets/
+ */
+.flex >  span {
+	/* Will be reset to `auto` (or `main-size` if supported) */
+	flex-basis: 150px;
+
+	/* Will be reset to `1` */
+	flex-grow: 0;
+
+	/* Will be reset to `1` */
+	flex-shrink: 0;
+
+	/* OVERRIDE */
+	flex: auto;
+}
+
+.module {
+	margin-right: 20px;
+	margin: 10px;
+	/* margin-right will be 10px now */
+
+	padding-top: 30px;
+	padding: 10px;
+	/* padding-top will be 10px now */
+
+	border-left: 1px;
+	border: 0;
+	/* border-left will be removed */
+
+	border-right: 3px;
+}
