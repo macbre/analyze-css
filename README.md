@@ -101,6 +101,8 @@ It uses configurable threshold and compares the analyze-css result with it.
     "specificityClassTotal": 904,
     "specificityTagAvg": 0.79,
     "specificityTagTotal": 562,
+    "selectors": 712,
+    "selectorLengthAvg": 1.5722460658082975,
     "selectorsByAttribute": 92,
     "selectorsByClass": 600,
     "selectorsById": 25,
@@ -109,7 +111,6 @@ It uses configurable threshold and compares the analyze-css result with it.
     "universalSelectors": 5,
     "length": 55173,
     "rules": 433,
-    "selectors": 712,
     "declarations": 1288
   },
   "offenders": {
@@ -149,6 +150,8 @@ It uses configurable threshold and compares the analyze-css result with it.
 * **specificityClassTotal**: total [specificity](http://css-tricks.com/specifics-on-css-specificity/) for class, pseudo-class or attribute
 * **specificityTagAvg**: average [specificity](http://css-tricks.com/specifics-on-css-specificity/) for element
 * **specificityTagTotal**: total [specificity](http://css-tricks.com/specifics-on-css-specificity/) for element
+* **selectors**: number of selectors (e.g. ``.foo, .bar { color: red }`` is counted as two selectors - ``.foo`` and ``.bar``)
+* **selectorLengthAvg**: average length of selector (e.g. for ``.foo .bar, #test div > span { color: red }`` will be set as 2.5)
 * **selectorsByAttribute**: number of selectors by attribute (e.g. ``.foo[value=bar]``)
 * **selectorsByClass**: number of selectors by class
 * **selectorsById**: number of selectors by ID
@@ -157,7 +160,6 @@ It uses configurable threshold and compares the analyze-css result with it.
 * **universalSelectors**: number of selectors trying to match every element (e.g. ``.foo > *``)
 * **length**: length of CSS source (in bytes)
 * **rules**: number of rules (e.g. ``.foo, .bar { color: red }`` is counted as one rule)
-* **selectors**: number of selectors (e.g. ``.foo, .bar { color: red }`` is counted as two selectors - ``.foo`` and ``.bar``)
 * **declarations**: number of declarations (e.g. ``.foo, .bar { color: red }`` is counted as one declaration - ``color: red``)
 
 ## Read more
