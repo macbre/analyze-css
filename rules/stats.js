@@ -54,7 +54,7 @@ function rule(analyzer) {
 	});
 
 	analyzer.on('report', function() {
-		analyzer.incrMetric('selectors', selectors);
+		analyzer.setMetric('selectors', selectors);
 		analyzer.setMetric('selectorLengthAvg', selectorsLength / selectors);
 	});
 }
