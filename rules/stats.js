@@ -1,6 +1,12 @@
 'use strict';
 
 function rule(analyzer) {
+	var selectors = 0,
+		selectorsLength = 0;
+
+	analyzer.setMetric('selectors');
+	analyzer.setMetric('selectorLengthAvg');
+
 	analyzer.setMetric('selectorsByAttribute');
 	analyzer.setMetric('selectorsByClass');
 	analyzer.setMetric('selectorsById');
@@ -11,8 +17,9 @@ function rule(analyzer) {
 		analyzer.incrMetric('rules');
 	});
 
-	analyzer.on('selector', function() {
-		analyzer.incrMetric('selectors');
+	analyzer.on('selector', function(rule, selector, expressions) {
+		selectors += 1;
+		selectorsLength += expressions.length;
 	});
 
 	analyzer.on('declaration', function() {
@@ -44,6 +51,11 @@ function rule(analyzer) {
 		if (expression.tag && expression.tag !== '*') {
 			analyzer.incrMetric('selectorsByTag');
 		}
+	});
+
+	analyzer.on('report', function() {
+		analyzer.setMetric('selectors', selectors);
+		analyzer.setMetric('selectorLengthAvg', selectorsLength / selectors);
 	});
 }
 

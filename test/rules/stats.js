@@ -4,6 +4,7 @@ exports.tests = [
 		metrics: {
 			rules: 1,
 			selectors: 2,
+			selectorLengthAvg: 1,
 			declarations: 2
 		}
 	},
@@ -23,7 +24,8 @@ exports.tests = [
 		css: 'ul li, a.foo.bar {}',
 		metrics: {
 			selectorsByClass: 1,
-			selectorsByTag: 3
+			selectorsByTag: 3,
+			selectorLengthAvg: 1.5
 		}
 	},
 	{
@@ -36,6 +38,7 @@ exports.tests = [
 		css: '[href] {}',
 		metrics: {
 			selectorsByAttribute: 1,
+			selectorLengthAvg: 1
 		}
 	},
 	{
@@ -58,6 +61,13 @@ exports.tests = [
 			selectorsById: 1,
 			selectorsByPseudo: 1,
 			selectorsByTag: 4
+		}
+	},
+	{
+		css: 'div .foo, div .bar, div .foo .bar, div#foo .bar span.test {}',
+		metrics: {
+			selectors: 4,
+			selectorLengthAvg: 2.5
 		}
 	}
 ];
