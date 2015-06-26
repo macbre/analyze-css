@@ -23,6 +23,13 @@ tests = [
 		css: false,
 		check: /css parameter passed is not a string/,
 		code: analyzer.EXIT_CSS_PASSED_IS_NOT_STRING
+	},
+	// issue #98
+	{
+		name: 'Invalid CSS selector',
+		css: 'foo, bar, {color: red}',
+		check: /Unable to parse "" selector. Rule position start: @ 1:1, end @ 1:23/,
+		code: analyzer.EXIT_PARSING_FAILED
 	}
 ];
 
@@ -31,8 +38,9 @@ describe('Errors handling', function() {
 		describe(test.name || '"' + test.css + '" CSS snippet', function() {
 			it('should raise an error with correct error code', function(done) {
 				new analyzer(test.css, function(err, res) {
-					assert.equal(test.check.test(err && err.toString()), true, err);
+					assert.equal(test.check.test(err && err.toString()), true);
 					assert.equal(err.code, test.code);
+					assert.equal(res, null);
 					done();
 				});
 			});
