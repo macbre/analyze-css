@@ -34,7 +34,7 @@
   },
   "devDependencies": {
     "autoprefixer-core": "^5.2.1",
-    "browserslist": "0.4.x",
+    "browserslist": "0.5.x",
     "istanbul": "0.3.x",
     "js-beautify": "~1.5.4",
     "jshint": "2.8.x",
