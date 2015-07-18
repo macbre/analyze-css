@@ -35,6 +35,8 @@ echo ".foo {margin: 0 \!important}" | analyze-css -
 
 This will emit JSON formatted results on ``stdout``. Use ``--pretty`` (or ``-p`` shortcut) option to make the output readable for human beings.
 
+Basic HTTP authentication can be provided through the options `--auth-user` and `--auth-pass`.
+
 ### CommonJS module
 
 ```js
