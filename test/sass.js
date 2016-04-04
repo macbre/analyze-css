@@ -2,9 +2,16 @@
 'use strict';
 
 var analyzer = require('../'),
+	isSassInstalled = true,
 	assert = require('assert'),
 	scss = 'nav {\nul{ color: white }\n}',
 	sass = 'nav\n\tul\n\t\tcolor: white\n';
+
+try {
+	require('node-sass');
+} catch (e) {
+	isSassInstalled = false;
+}
 
 /**
  * TODO: install and test node-sass
@@ -34,7 +41,7 @@ function testSassNotInstalled(done) {
 	}
 }
 
-describe('SASS preprocessor', function() {
+describe('SASS preprocessor [' + (isSassInstalled ? 'node-sass installed' : 'node-sass missing') + ']', function() {
 	it('should be chosen for SCSS files', function() {
 		var preprocessors = new(require('../lib/preprocessors.js'))();
 
@@ -51,7 +58,7 @@ describe('SASS preprocessor', function() {
 		});
 	});
 
-	it('should generate CSS from SCSS correctly', testSassNotInstalled);
+	it('should generate CSS from SCSS correctly', !isSassInstalled ? testSassNotInstalled : testSassInstalled);
 
-	it('should generate CSS from SASS correctly', testSassNotInstalled);
+	it('should generate CSS from SASS correctly', !isSassInstalled ? testSassNotInstalled : testSassInstalled);
 });
