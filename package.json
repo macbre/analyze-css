@@ -26,6 +26,7 @@
     "debug": "2.2.x",
     "fast-stats": "0.0.x",
     "glob": "7.0.x",
+    "http-proxy-agent": "^1.0.0",
     "node-fetch": "^1.5.1",
     "onecolor": "^3.0.0",
     "optimist": "0.6.x",
