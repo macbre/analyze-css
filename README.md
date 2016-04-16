@@ -26,7 +26,7 @@ You can use analyze-css "binary" to analyze local CSS files or remote CSS assets
 
 ```
 analyze-css --file examples/elecena.css
-analyze-css --url http://jigsaw.w3.org/css-validator/style/base.css
+analyze-css --url http://s3.macbre.net/analyze-css/propertyResets.css
 ```
 
 You can provide CSS via stdin as well (notice the dash: ``-``):
