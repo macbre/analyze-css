@@ -1,9 +1,10 @@
 {
-  "generated": "2016-06-23 using autoprefixer-core v6.0.1",
+  "generated": "2016-07-08 using autoprefixer-core v6.0.1",
   "browsers": [
     "and_chr 50",
     "and_uc 9.9",
     "android 4.4",
+    "chrome 29",
     "chrome 49",
     "chrome 50",
     "chrome 51",
@@ -18,11 +19,12 @@
     "ie_mob 11",
     "ios_saf 9.0-9.2",
     "ios_saf 9.3",
-    "op_mini 5.0-8.0",
+    "op_mini all",
     "opera 37",
     "opera 38",
     "safari 9",
-    "safari 9.1"
+    "safari 9.1",
+    "samsung 4"
   ],
   "prefixes": {
     "-ms-border-radius": {
@@ -131,7 +133,7 @@
     },
     "-webkit-animation": {
       "keep": true,
-      "msg": "required by Android Browser 4.4, UC Browser for Android 9.9 and later"
+      "msg": "required by Chrome 29, Android Browser 4.4, UC Browser for Android 9.9 and later"
     },
     "-o-animation": {
       "keep": false,
@@ -147,7 +149,7 @@
     },
     "-webkit-animation-name": {
       "keep": true,
-      "msg": "required by Android Browser 4.4, UC Browser for Android 9.9 and later"
+      "msg": "required by Chrome 29, Android Browser 4.4, UC Browser for Android 9.9 and later"
     },
     "-o-animation-name": {
       "keep": false,
@@ -163,7 +165,7 @@
     },
     "-webkit-animation-duration": {
       "keep": true,
-      "msg": "required by Android Browser 4.4, UC Browser for Android 9.9 and later"
+      "msg": "required by Chrome 29, Android Browser 4.4, UC Browser for Android 9.9 and later"
     },
     "-o-animation-duration": {
       "keep": false,
@@ -179,7 +181,7 @@
     },
     "-webkit-animation-delay": {
       "keep": true,
-      "msg": "required by Android Browser 4.4, UC Browser for Android 9.9 and later"
+      "msg": "required by Chrome 29, Android Browser 4.4, UC Browser for Android 9.9 and later"
     },
     "-o-animation-delay": {
       "keep": false,
@@ -195,7 +197,7 @@
     },
     "-webkit-animation-direction": {
       "keep": true,
-      "msg": "required by Android Browser 4.4, UC Browser for Android 9.9 and later"
+      "msg": "required by Chrome 29, Android Browser 4.4, UC Browser for Android 9.9 and later"
     },
     "-o-animation-direction": {
       "keep": false,
@@ -211,7 +213,7 @@
     },
     "-webkit-animation-fill-mode": {
       "keep": true,
-      "msg": "required by Android Browser 4.4, UC Browser for Android 9.9 and later"
+      "msg": "required by Chrome 29, Android Browser 4.4, UC Browser for Android 9.9 and later"
     },
     "-o-animation-fill-mode": {
       "keep": false,
@@ -227,7 +229,7 @@
     },
     "-webkit-animation-iteration-count": {
       "keep": true,
-      "msg": "required by Android Browser 4.4, UC Browser for Android 9.9 and later"
+      "msg": "required by Chrome 29, Android Browser 4.4, UC Browser for Android 9.9 and later"
     },
     "-o-animation-iteration-count": {
       "keep": false,
@@ -243,7 +245,7 @@
     },
     "-webkit-animation-play-state": {
       "keep": true,
-      "msg": "required by Android Browser 4.4, UC Browser for Android 9.9 and later"
+      "msg": "required by Chrome 29, Android Browser 4.4, UC Browser for Android 9.9 and later"
     },
     "-o-animation-play-state": {
       "keep": false,
@@ -259,7 +261,7 @@
     },
     "-webkit-animation-timing-function": {
       "keep": true,
-      "msg": "required by Android Browser 4.4, UC Browser for Android 9.9 and later"
+      "msg": "required by Chrome 29, Android Browser 4.4, UC Browser for Android 9.9 and later"
     },
     "-o-animation-timing-function": {
       "keep": false,
@@ -275,7 +277,7 @@
     },
     "-webkit-@keyframes": {
       "keep": true,
-      "msg": "required by Android Browser 4.4, UC Browser for Android 9.9 and later"
+      "msg": "required by Chrome 29, Android Browser 4.4, UC Browser for Android 9.9 and later"
     },
     "-o-@keyframes": {
       "keep": false,
@@ -371,7 +373,7 @@
     },
     "-webkit-transform": {
       "keep": true,
-      "msg": "required by Android Browser 4.4, UC Browser for Android 9.9 and later"
+      "msg": "required by Chrome 29, Android Browser 4.4, UC Browser for Android 9.9 and later"
     },
     "-o-transform": {
       "keep": false,
@@ -387,7 +389,7 @@
     },
     "-webkit-transform-origin": {
       "keep": true,
-      "msg": "required by Android Browser 4.4, UC Browser for Android 9.9 and later"
+      "msg": "required by Chrome 29, Android Browser 4.4, UC Browser for Android 9.9 and later"
     },
     "-o-transform-origin": {
       "keep": false,
@@ -403,7 +405,7 @@
     },
     "-webkit-perspective": {
       "keep": true,
-      "msg": "required by Android Browser 4.4, UC Browser for Android 9.9 and later"
+      "msg": "required by Chrome 29, Android Browser 4.4, UC Browser for Android 9.9 and later"
     },
     "-o-perspective": {
       "keep": false,
@@ -419,7 +421,7 @@
     },
     "-webkit-perspective-origin": {
       "keep": true,
-      "msg": "required by Android Browser 4.4, UC Browser for Android 9.9 and later"
+      "msg": "required by Chrome 29, Android Browser 4.4, UC Browser for Android 9.9 and later"
     },
     "-o-perspective-origin": {
       "keep": false,
@@ -435,7 +437,7 @@
     },
     "-webkit-transform-style": {
       "keep": true,
-      "msg": "required by Android Browser 4.4, UC Browser for Android 9.9 and later"
+      "msg": "required by Chrome 29, Android Browser 4.4, UC Browser for Android 9.9 and later"
     },
     "-o-transform-style": {
       "keep": false,
@@ -451,7 +453,7 @@
     },
     "-webkit-backface-visibility": {
       "keep": true,
-      "msg": "required by Android Browser 4.4, UC Browser for Android 9.9 and later"
+      "msg": "required by Chrome 29, Android Browser 4.4, UC Browser for Android 9.9 and later"
     },
     "-o-backface-visibility": {
       "keep": false,
@@ -483,7 +485,7 @@
     },
     "-webkit-filter": {
       "keep": true,
-      "msg": "required by Chrome 49, Safari 9, Opera 37, iOS Safari 9, Android Browser 4.4, UC Browser for Android 9.9 and later"
+      "msg": "required by Chrome 29, Safari 9, Opera 37, iOS Safari 9, Android Browser 4.4, UC Browser for Android 9.9 and later"
     },
     "-o-filter": {
       "keep": false,
@@ -515,7 +517,7 @@
     },
     "-webkit-columns": {
       "keep": true,
-      "msg": "required by Chrome 49, Android Browser 4.4, UC Browser for Android 9.9 and later"
+      "msg": "required by Chrome 29, Android Browser 4.4, UC Browser for Android 9.9 and later"
     },
     "-o-columns": {
       "keep": false,
@@ -531,7 +533,7 @@
     },
     "-webkit-column-width": {
       "keep": true,
-      "msg": "required by Chrome 49, Android Browser 4.4, UC Browser for Android 9.9 and later"
+      "msg": "required by Chrome 29, Android Browser 4.4, UC Browser for Android 9.9 and later"
     },
     "-o-column-width": {
       "keep": false,
@@ -547,7 +549,7 @@
     },
     "-webkit-column-gap": {
       "keep": true,
-      "msg": "required by Chrome 49, Android Browser 4.4, UC Browser for Android 9.9 and later"
+      "msg": "required by Chrome 29, Android Browser 4.4, UC Browser for Android 9.9 and later"
     },
     "-o-column-gap": {
       "keep": false,
@@ -563,7 +565,7 @@
     },
     "-webkit-column-rule": {
       "keep": true,
-      "msg": "required by Chrome 49, Android Browser 4.4, UC Browser for Android 9.9 and later"
+      "msg": "required by Chrome 29, Android Browser 4.4, UC Browser for Android 9.9 and later"
     },
     "-o-column-rule": {
       "keep": false,
@@ -579,7 +581,7 @@
     },
     "-webkit-column-rule-color": {
       "keep": true,
-      "msg": "required by Chrome 49, Android Browser 4.4, UC Browser for Android 9.9 and later"
+      "msg": "required by Chrome 29, Android Browser 4.4, UC Browser for Android 9.9 and later"
     },
     "-o-column-rule-color": {
       "keep": false,
@@ -595,7 +597,7 @@
     },
     "-webkit-column-rule-width": {
       "keep": true,
-      "msg": "required by Chrome 49, Android Browser 4.4, UC Browser for Android 9.9 and later"
+      "msg": "required by Chrome 29, Android Browser 4.4, UC Browser for Android 9.9 and later"
     },
     "-o-column-rule-width": {
       "keep": false,
@@ -611,7 +613,7 @@
     },
     "-webkit-column-count": {
       "keep": true,
-      "msg": "required by Chrome 49, Android Browser 4.4, UC Browser for Android 9.9 and later"
+      "msg": "required by Chrome 29, Android Browser 4.4, UC Browser for Android 9.9 and later"
     },
     "-o-column-count": {
       "keep": false,
@@ -627,7 +629,7 @@
     },
     "-webkit-column-rule-style": {
       "keep": true,
-      "msg": "required by Chrome 49, Android Browser 4.4, UC Browser for Android 9.9 and later"
+      "msg": "required by Chrome 29, Android Browser 4.4, UC Browser for Android 9.9 and later"
     },
     "-o-column-rule-style": {
       "keep": false,
@@ -643,7 +645,7 @@
     },
     "-webkit-column-span": {
       "keep": true,
-      "msg": "required by Chrome 49, Android Browser 4.4, UC Browser for Android 9.9 and later"
+      "msg": "required by Chrome 29, Android Browser 4.4, UC Browser for Android 9.9 and later"
     },
     "-o-column-span": {
       "keep": false,
@@ -659,7 +661,7 @@
     },
     "-webkit-column-fill": {
       "keep": true,
-      "msg": "required by Chrome 49, Android Browser 4.4, UC Browser for Android 9.9 and later"
+      "msg": "required by Chrome 29, Android Browser 4.4, UC Browser for Android 9.9 and later"
     },
     "-o-column-fill": {
       "keep": false,
@@ -675,7 +677,7 @@
     },
     "-webkit-break-before": {
       "keep": true,
-      "msg": "required by Chrome 49, Android Browser 4.4, UC Browser for Android 9.9 and later"
+      "msg": "required by Chrome 29, Android Browser 4.4, UC Browser for Android 9.9 and later"
     },
     "-o-break-before": {
       "keep": false,
@@ -691,7 +693,7 @@
     },
     "-webkit-break-after": {
       "keep": true,
-      "msg": "required by Chrome 49, Android Browser 4.4, UC Browser for Android 9.9 and later"
+      "msg": "required by Chrome 29, Android Browser 4.4, UC Browser for Android 9.9 and later"
     },
     "-o-break-after": {
       "keep": false,
@@ -707,7 +709,7 @@
     },
     "-webkit-break-inside": {
       "keep": true,
-      "msg": "required by Chrome 49, Android Browser 4.4, UC Browser for Android 9.9 and later"
+      "msg": "required by Chrome 29, Android Browser 4.4, UC Browser for Android 9.9 and later"
     },
     "-o-break-inside": {
       "keep": false,
@@ -723,7 +725,7 @@
     },
     "-webkit-user-select": {
       "keep": true,
-      "msg": "required by Chrome 49, Safari 9, Opera 37, iOS Safari 9, Android Browser 4.4, UC Browser for Android 9.9 and later"
+      "msg": "required by Chrome 29, Safari 9, Opera 37, iOS Safari 9, Android Browser 4.4, UC Browser for Android 9.9 and later"
     },
     "-o-user-select": {
       "keep": false,
@@ -979,7 +981,7 @@
     },
     "-webkit-font-feature-settings": {
       "keep": true,
-      "msg": "required by Android Browser 4.4, UC Browser for Android 9.9 and later"
+      "msg": "required by Chrome 29, Android Browser 4.4, UC Browser for Android 9.9 and later"
     },
     "-o-font-feature-settings": {
       "keep": false,
@@ -995,7 +997,7 @@
     },
     "-webkit-font-variant-ligatures": {
       "keep": true,
-      "msg": "required by Android Browser 4.4, UC Browser for Android 9.9 and later"
+      "msg": "required by Chrome 29, Android Browser 4.4, UC Browser for Android 9.9 and later"
     },
     "-o-font-variant-ligatures": {
       "keep": false,
@@ -1011,7 +1013,7 @@
     },
     "-webkit-font-language-override": {
       "keep": true,
-      "msg": "required by Android Browser 4.4, UC Browser for Android 9.9 and later"
+      "msg": "required by Chrome 29, Android Browser 4.4, UC Browser for Android 9.9 and later"
     },
     "-o-font-language-override": {
       "keep": false,
@@ -1027,7 +1029,7 @@
     },
     "-webkit-font-kerning": {
       "keep": true,
-      "msg": "required by Android Browser 4.4, UC Browser for Android 9.9 and later"
+      "msg": "required by Chrome 29, Android Browser 4.4, UC Browser for Android 9.9 and later"
     },
     "-o-font-kerning": {
       "keep": false,
@@ -1046,8 +1048,8 @@
       "msg": "was required by Android Browser 4.2, Chrome 15, iOS Safari 5, Opera 12.1, Safari 5.1 and earlier"
     },
     "-o-border-image": {
-      "keep": true,
-      "msg": "required by Opera Mini 5 and later"
+      "keep": false,
+      "msg": "was required by Opera Mini 5 and earlier"
     },
     "-ms-hyphens": {
       "keep": true,
@@ -1078,8 +1080,8 @@
       "msg": "was required by Opera 12.1 and earlier"
     },
     "-o-tab-size": {
-      "keep": true,
-      "msg": "required by Opera Mini 5 and later"
+      "keep": false,
+      "msg": "was required by Opera Mini 5 and earlier"
     },
     "-ms-touch-action": {
       "keep": true,
@@ -1107,7 +1109,7 @@
     },
     "-webkit-text-decoration-style": {
       "keep": true,
-      "msg": "required by Chrome 49, Safari 9, Opera 37, iOS Safari 9 and later"
+      "msg": "required by Chrome 29, Safari 9, Opera 37, iOS Safari 9 and later"
     },
     "-o-text-decoration-style": {
       "keep": false,
@@ -1123,7 +1125,7 @@
     },
     "-webkit-text-decoration-line": {
       "keep": true,
-      "msg": "required by Chrome 49, Safari 9, Opera 37, iOS Safari 9 and later"
+      "msg": "required by Chrome 29, Safari 9, Opera 37, iOS Safari 9 and later"
     },
     "-o-text-decoration-line": {
       "keep": false,
@@ -1139,7 +1141,7 @@
     },
     "-webkit-text-decoration-color": {
       "keep": true,
-      "msg": "required by Chrome 49, Safari 9, Opera 37, iOS Safari 9 and later"
+      "msg": "required by Chrome 29, Safari 9, Opera 37, iOS Safari 9 and later"
     },
     "-o-text-decoration-color": {
       "keep": false,
@@ -1171,7 +1173,7 @@
     },
     "-webkit-mask-clip": {
       "keep": true,
-      "msg": "required by Chrome 49, Safari 9, Opera 37, iOS Safari 9, Android Browser 4.4, UC Browser for Android 9.9 and later"
+      "msg": "required by Chrome 29, Safari 9, Opera 37, iOS Safari 9, Android Browser 4.4, UC Browser for Android 9.9 and later"
     },
     "-o-mask-clip": {
       "keep": false,
@@ -1187,7 +1189,7 @@
     },
     "-webkit-mask-composite": {
       "keep": true,
-      "msg": "required by Chrome 49, Safari 9, Opera 37, iOS Safari 9, Android Browser 4.4, UC Browser for Android 9.9 and later"
+      "msg": "required by Chrome 29, Safari 9, Opera 37, iOS Safari 9, Android Browser 4.4, UC Browser for Android 9.9 and later"
     },
     "-o-mask-composite": {
       "keep": false,
@@ -1203,7 +1205,7 @@
     },
     "-webkit-mask-image": {
       "keep": true,
-      "msg": "required by Chrome 49, Safari 9, Opera 37, iOS Safari 9, Android Browser 4.4, UC Browser for Android 9.9 and later"
+      "msg": "required by Chrome 29, Safari 9, Opera 37, iOS Safari 9, Android Browser 4.4, UC Browser for Android 9.9 and later"
     },
     "-o-mask-image": {
       "keep": false,
@@ -1219,7 +1221,7 @@
     },
     "-webkit-mask-origin": {
       "keep": true,
-      "msg": "required by Chrome 49, Safari 9, Opera 37, iOS Safari 9, Android Browser 4.4, UC Browser for Android 9.9 and later"
+      "msg": "required by Chrome 29, Safari 9, Opera 37, iOS Safari 9, Android Browser 4.4, UC Browser for Android 9.9 and later"
     },
     "-o-mask-origin": {
       "keep": false,
@@ -1235,7 +1237,7 @@
     },
     "-webkit-mask-repeat": {
       "keep": true,
-      "msg": "required by Chrome 49, Safari 9, Opera 37, iOS Safari 9, Android Browser 4.4, UC Browser for Android 9.9 and later"
+      "msg": "required by Chrome 29, Safari 9, Opera 37, iOS Safari 9, Android Browser 4.4, UC Browser for Android 9.9 and later"
     },
     "-o-mask-repeat": {
       "keep": false,
@@ -1251,7 +1253,7 @@
     },
     "-webkit-mask-border-repeat": {
       "keep": true,
-      "msg": "required by Chrome 49, Safari 9, Opera 37, iOS Safari 9, Android Browser 4.4, UC Browser for Android 9.9 and later"
+      "msg": "required by Chrome 29, Safari 9, Opera 37, iOS Safari 9, Android Browser 4.4, UC Browser for Android 9.9 and later"
     },
     "-o-mask-border-repeat": {
       "keep": false,
@@ -1267,7 +1269,7 @@
     },
     "-webkit-mask-border-source": {
       "keep": true,
-      "msg": "required by Chrome 49, Safari 9, Opera 37, iOS Safari 9, Android Browser 4.4, UC Browser for Android 9.9 and later"
+      "msg": "required by Chrome 29, Safari 9, Opera 37, iOS Safari 9, Android Browser 4.4, UC Browser for Android 9.9 and later"
     },
     "-o-mask-border-source": {
       "keep": false,
@@ -1283,7 +1285,7 @@
     },
     "-webkit-clip-path": {
       "keep": true,
-      "msg": "required by Chrome 49, Safari 9, Opera 37, iOS Safari 9, Android Browser 4.4, UC Browser for Android 9.9 and later"
+      "msg": "required by Chrome 29, Safari 9, Opera 37, iOS Safari 9, Android Browser 4.4, UC Browser for Android 9.9 and later"
     },
     "-o-clip-path": {
       "keep": false,
@@ -1299,7 +1301,7 @@
     },
     "-webkit-mask": {
       "keep": true,
-      "msg": "required by Chrome 49, Safari 9, Opera 37, iOS Safari 9, Android Browser 4.4, UC Browser for Android 9.9 and later"
+      "msg": "required by Chrome 29, Safari 9, Opera 37, iOS Safari 9, Android Browser 4.4, UC Browser for Android 9.9 and later"
     },
     "-o-mask": {
       "keep": false,
@@ -1315,7 +1317,7 @@
     },
     "-webkit-mask-position": {
       "keep": true,
-      "msg": "required by Chrome 49, Safari 9, Opera 37, iOS Safari 9, Android Browser 4.4, UC Browser for Android 9.9 and later"
+      "msg": "required by Chrome 29, Safari 9, Opera 37, iOS Safari 9, Android Browser 4.4, UC Browser for Android 9.9 and later"
     },
     "-o-mask-position": {
       "keep": false,
@@ -1331,7 +1333,7 @@
     },
     "-webkit-mask-size": {
       "keep": true,
-      "msg": "required by Chrome 49, Safari 9, Opera 37, iOS Safari 9, Android Browser 4.4, UC Browser for Android 9.9 and later"
+      "msg": "required by Chrome 29, Safari 9, Opera 37, iOS Safari 9, Android Browser 4.4, UC Browser for Android 9.9 and later"
     },
     "-o-mask-size": {
       "keep": false,
@@ -1347,7 +1349,7 @@
     },
     "-webkit-mask-border": {
       "keep": true,
-      "msg": "required by Chrome 49, Safari 9, Opera 37, iOS Safari 9, Android Browser 4.4, UC Browser for Android 9.9 and later"
+      "msg": "required by Chrome 29, Safari 9, Opera 37, iOS Safari 9, Android Browser 4.4, UC Browser for Android 9.9 and later"
     },
     "-o-mask-border": {
       "keep": false,
@@ -1363,7 +1365,7 @@
     },
     "-webkit-mask-border-outset": {
       "keep": true,
-      "msg": "required by Chrome 49, Safari 9, Opera 37, iOS Safari 9, Android Browser 4.4, UC Browser for Android 9.9 and later"
+      "msg": "required by Chrome 29, Safari 9, Opera 37, iOS Safari 9, Android Browser 4.4, UC Browser for Android 9.9 and later"
     },
     "-o-mask-border-outset": {
       "keep": false,
@@ -1379,7 +1381,7 @@
     },
     "-webkit-mask-border-width": {
       "keep": true,
-      "msg": "required by Chrome 49, Safari 9, Opera 37, iOS Safari 9, Android Browser 4.4, UC Browser for Android 9.9 and later"
+      "msg": "required by Chrome 29, Safari 9, Opera 37, iOS Safari 9, Android Browser 4.4, UC Browser for Android 9.9 and later"
     },
     "-o-mask-border-width": {
       "keep": false,
@@ -1395,7 +1397,7 @@
     },
     "-webkit-mask-border-slice": {
       "keep": true,
-      "msg": "required by Chrome 49, Safari 9, Opera 37, iOS Safari 9, Android Browser 4.4, UC Browser for Android 9.9 and later"
+      "msg": "required by Chrome 29, Safari 9, Opera 37, iOS Safari 9, Android Browser 4.4, UC Browser for Android 9.9 and later"
     },
     "-o-mask-border-slice": {
       "keep": false,
@@ -1411,7 +1413,7 @@
     },
     "-webkit-box-decoration-break": {
       "keep": true,
-      "msg": "required by Chrome 49, Safari 9, Opera 37, iOS Safari 9, Android Browser 4.4 and later"
+      "msg": "required by Chrome 29, Safari 9, Opera 37, iOS Safari 9, Android Browser 4.4 and later"
     },
     "-o-box-decoration-break": {
       "keep": false,
@@ -1430,8 +1432,8 @@
       "msg": "was required by Opera 12.1 and earlier"
     },
     "-o-object-fit": {
-      "keep": true,
-      "msg": "required by Opera Mini 5 and later"
+      "keep": false,
+      "msg": "was required by Opera Mini 5 and earlier"
     },
     "-ms-object-position": {
       "keep": false,
@@ -1446,8 +1448,8 @@
       "msg": "was required by Opera 12.1 and earlier"
     },
     "-o-object-position": {
-      "keep": true,
-      "msg": "required by Opera Mini 5 and later"
+      "keep": false,
+      "msg": "was required by Opera Mini 5 and earlier"
     },
     "-ms-shape-margin": {
       "keep": false,
@@ -1523,7 +1525,7 @@
     },
     "-webkit-text-emphasis": {
       "keep": true,
-      "msg": "required by Chrome 49, Opera 37, Android Browser 4.4, UC Browser for Android 9.9 and later"
+      "msg": "required by Chrome 29, Opera 37, Android Browser 4.4, UC Browser for Android 9.9 and later"
     },
     "-o-text-emphasis": {
       "keep": false,
@@ -1542,8 +1544,8 @@
       "msg": "prefix is no longer supported"
     },
     "-o-@viewport": {
-      "keep": true,
-      "msg": "required by Opera Mini 5 and later"
+      "keep": false,
+      "msg": "was required by Opera Mini 5 and earlier"
     },
     "-ms-@resolution": {
       "keep": false,
@@ -1603,7 +1605,7 @@
     },
     "-webkit-border-inline-start": {
       "keep": true,
-      "msg": "required by Chrome 49, Safari 9, Opera 37, iOS Safari 9, Android Browser 4.4, UC Browser for Android 9.9 and later"
+      "msg": "required by Chrome 29, Safari 9, Opera 37, iOS Safari 9, Android Browser 4.4, UC Browser for Android 9.9 and later"
     },
     "-o-border-inline-start": {
       "keep": false,
@@ -1619,7 +1621,7 @@
     },
     "-webkit-border-inline-end": {
       "keep": true,
-      "msg": "required by Chrome 49, Safari 9, Opera 37, iOS Safari 9, Android Browser 4.4, UC Browser for Android 9.9 and later"
+      "msg": "required by Chrome 29, Safari 9, Opera 37, iOS Safari 9, Android Browser 4.4, UC Browser for Android 9.9 and later"
     },
     "-o-border-inline-end": {
       "keep": false,
@@ -1635,7 +1637,7 @@
     },
     "-webkit-margin-inline-start": {
       "keep": true,
-      "msg": "required by Chrome 49, Safari 9, Opera 37, iOS Safari 9, Android Browser 4.4, UC Browser for Android 9.9 and later"
+      "msg": "required by Chrome 29, Safari 9, Opera 37, iOS Safari 9, Android Browser 4.4, UC Browser for Android 9.9 and later"
     },
     "-o-margin-inline-start": {
       "keep": false,
@@ -1651,7 +1653,7 @@
     },
     "-webkit-margin-inline-end": {
       "keep": true,
-      "msg": "required by Chrome 49, Safari 9, Opera 37, iOS Safari 9, Android Browser 4.4, UC Browser for Android 9.9 and later"
+      "msg": "required by Chrome 29, Safari 9, Opera 37, iOS Safari 9, Android Browser 4.4, UC Browser for Android 9.9 and later"
     },
     "-o-margin-inline-end": {
       "keep": false,
@@ -1667,7 +1669,7 @@
     },
     "-webkit-padding-inline-start": {
       "keep": true,
-      "msg": "required by Chrome 49, Safari 9, Opera 37, iOS Safari 9, Android Browser 4.4, UC Browser for Android 9.9 and later"
+      "msg": "required by Chrome 29, Safari 9, Opera 37, iOS Safari 9, Android Browser 4.4, UC Browser for Android 9.9 and later"
     },
     "-o-padding-inline-start": {
       "keep": false,
@@ -1683,7 +1685,7 @@
     },
     "-webkit-padding-inline-end": {
       "keep": true,
-      "msg": "required by Chrome 49, Safari 9, Opera 37, iOS Safari 9, Android Browser 4.4, UC Browser for Android 9.9 and later"
+      "msg": "required by Chrome 29, Safari 9, Opera 37, iOS Safari 9, Android Browser 4.4, UC Browser for Android 9.9 and later"
     },
     "-o-padding-inline-end": {
       "keep": false,
@@ -1699,7 +1701,7 @@
     },
     "-webkit-border-block-start": {
       "keep": true,
-      "msg": "required by Chrome 49, Safari 9, Opera 37, iOS Safari 9, Android Browser 4.4, UC Browser for Android 9.9 and later"
+      "msg": "required by Chrome 29, Safari 9, Opera 37, iOS Safari 9, Android Browser 4.4, UC Browser for Android 9.9 and later"
     },
     "-o-border-block-start": {
       "keep": false,
@@ -1715,7 +1717,7 @@
     },
     "-webkit-border-block-end": {
       "keep": true,
-      "msg": "required by Chrome 49, Safari 9, Opera 37, iOS Safari 9, Android Browser 4.4, UC Browser for Android 9.9 and later"
+      "msg": "required by Chrome 29, Safari 9, Opera 37, iOS Safari 9, Android Browser 4.4, UC Browser for Android 9.9 and later"
     },
     "-o-border-block-end": {
       "keep": false,
@@ -1731,7 +1733,7 @@
     },
     "-webkit-margin-block-start": {
       "keep": true,
-      "msg": "required by Chrome 49, Safari 9, Opera 37, iOS Safari 9, Android Browser 4.4, UC Browser for Android 9.9 and later"
+      "msg": "required by Chrome 29, Safari 9, Opera 37, iOS Safari 9, Android Browser 4.4, UC Browser for Android 9.9 and later"
     },
     "-o-margin-block-start": {
       "keep": false,
@@ -1747,7 +1749,7 @@
     },
     "-webkit-margin-block-end": {
       "keep": true,
-      "msg": "required by Chrome 49, Safari 9, Opera 37, iOS Safari 9, Android Browser 4.4, UC Browser for Android 9.9 and later"
+      "msg": "required by Chrome 29, Safari 9, Opera 37, iOS Safari 9, Android Browser 4.4, UC Browser for Android 9.9 and later"
     },
     "-o-margin-block-end": {
       "keep": false,
@@ -1763,7 +1765,7 @@
     },
     "-webkit-padding-block-start": {
       "keep": true,
-      "msg": "required by Chrome 49, Safari 9, Opera 37, iOS Safari 9, Android Browser 4.4, UC Browser for Android 9.9 and later"
+      "msg": "required by Chrome 29, Safari 9, Opera 37, iOS Safari 9, Android Browser 4.4, UC Browser for Android 9.9 and later"
     },
     "-o-padding-block-start": {
       "keep": false,
@@ -1779,7 +1781,7 @@
     },
     "-webkit-padding-block-end": {
       "keep": true,
-      "msg": "required by Chrome 49, Safari 9, Opera 37, iOS Safari 9, Android Browser 4.4, UC Browser for Android 9.9 and later"
+      "msg": "required by Chrome 29, Safari 9, Opera 37, iOS Safari 9, Android Browser 4.4, UC Browser for Android 9.9 and later"
     },
     "-o-padding-block-end": {
       "keep": false,
@@ -1795,7 +1797,7 @@
     },
     "-webkit-appearance": {
       "keep": true,
-      "msg": "required by Chrome 49, Safari 9, Opera 37, iOS Safari 9, Android Browser 4.4, UC Browser for Android 9.9 and later"
+      "msg": "required by Chrome 29, Safari 9, Opera 37, iOS Safari 9, Android Browser 4.4, UC Browser for Android 9.9 and later"
     },
     "-o-appearance": {
       "keep": false,
@@ -1939,7 +1941,7 @@
     },
     "-webkit-writing-mode": {
       "keep": true,
-      "msg": "required by Chrome 49, Safari 9, Opera 37, iOS Safari 9, Android Browser 4.4, UC Browser for Android 9.9 and later"
+      "msg": "required by Chrome 29, Safari 9, Opera 37, iOS Safari 9, Android Browser 4.4, UC Browser for Android 9.9 and later"
     },
     "-o-writing-mode": {
       "keep": false,
@@ -1955,7 +1957,7 @@
     },
     "-webkit-text-emphasis-position": {
       "keep": true,
-      "msg": "required by Chrome 49, Opera 37, Android Browser 4.4, UC Browser for Android 9.9 and later"
+      "msg": "required by Chrome 29, Opera 37, Android Browser 4.4, UC Browser for Android 9.9 and later"
     },
     "-o-text-emphasis-position": {
       "keep": false,
@@ -1971,7 +1973,7 @@
     },
     "-webkit-text-emphasis-style": {
       "keep": true,
-      "msg": "required by Chrome 49, Opera 37, Android Browser 4.4, UC Browser for Android 9.9 and later"
+      "msg": "required by Chrome 29, Opera 37, Android Browser 4.4, UC Browser for Android 9.9 and later"
     },
     "-o-text-emphasis-style": {
       "keep": false,
@@ -1987,7 +1989,7 @@
     },
     "-webkit-text-emphasis-color": {
       "keep": true,
-      "msg": "required by Chrome 49, Opera 37, Android Browser 4.4, UC Browser for Android 9.9 and later"
+      "msg": "required by Chrome 29, Opera 37, Android Browser 4.4, UC Browser for Android 9.9 and later"
     },
     "-o-text-emphasis-color": {
       "keep": false,
