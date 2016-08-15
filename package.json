@@ -20,14 +20,14 @@
     "node": ">=0.8"
   },
   "dependencies": {
-    "cli": "^0.11.1",
+    "cli": "^0.11.3",
     "css": "2.2.x",
     "css-shorthand-properties": "1.0.x",
     "debug": "2.2.x",
     "fast-stats": "0.0.x",
     "glob": "^7.0.5",
     "http-proxy-agent": "^1.0.0",
-    "node-fetch": "^1.5.3",
+    "node-fetch": "^1.6.0",
     "onecolor": "^3.0.4",
     "optimist": "0.6.x",
     "slick": "~1.12.1",
@@ -39,7 +39,7 @@
     "istanbul": "^0.4.4",
     "js-beautify": "^1.6.3",
     "jshint": "2.9.x",
-    "mocha": "^2.5.3"
+    "mocha": "^3.0.2"
   },
   "bin": "./bin/analyze-css.js",
   "preferGlobal": true,
