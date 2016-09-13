@@ -105,8 +105,5 @@ runner(runnerOpts, function(err, res) {
 		output = JSON.stringify(res);
 	}
 
-	console.log(output);
-
-	// done
-	process.exit(0);
+	process.stdout.write(output);
 });
