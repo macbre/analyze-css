@@ -41,7 +41,7 @@ This will emit JSON formatted results on ``stdout``. Use ``--pretty`` (or ``-p``
 
 Basic HTTP authentication can be provided through the options `--auth-user` and `--auth-pass`.
 
-HTTP proxy can be provided via:
+HTTP proxy (e.g. `http://localhost:8080`) can be provided via:
 
 * `--proxy` or `-x` option
 * `HTTP_PROXY` env variable
