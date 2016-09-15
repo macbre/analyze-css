@@ -92,7 +92,6 @@ It uses configurable threshold and compares the analyze-css result with it.
     "comments": 1,
     "commentsLength": 68,
     "complexSelectors": 37,
-    "complexSelectorsByAttribute": 3,
     "duplicatedSelectors": 7,
     "duplicatedProperties": 24,
     "emptyRules": 0,
@@ -142,7 +141,6 @@ It uses configurable threshold and compares the analyze-css result with it.
 * **comments**: number of comments in CSS source
 * **commentsLength**: length of comments content in CSS source
 * **complexSelectors**: number of complex selectors (consisting of more than three expressions, e.g. ``header ul li .foo``)
-* **complexSelectorsByAttribute**: number of selectors with complex matching by attribute (e.g. ``[class$="foo"]``)
 * **duplicatedSelectors**: number of CSS selectors defined more than once in CSS source
 * **duplicatedProperties**: number of CSS property definitions duplicated within a selector
 * **emptyRules**: number of rules with no properties (e.g. ``.foo { }``)
