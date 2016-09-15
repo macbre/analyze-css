@@ -20,14 +20,14 @@
     "node": ">=0.8"
   },
   "dependencies": {
-    "cli": "^0.11.3",
+    "cli": "^1.0.0",
     "css": "2.2.x",
     "css-shorthand-properties": "1.0.x",
     "debug": "2.2.x",
     "fast-stats": "0.0.x",
     "glob": "^7.0.6",
     "http-proxy-agent": "^1.0.0",
-    "node-fetch": "^1.6.0",
+    "node-fetch": "^1.6.1",
     "onecolor": "^3.0.4",
     "optimist": "0.6.x",
     "slick": "~1.12.1",
