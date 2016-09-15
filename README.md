@@ -119,7 +119,6 @@ It uses configurable threshold and compares the analyze-css result with it.
     "selectorsById": 25,
     "selectorsByPseudo": 167,
     "selectorsByTag": 533,
-    "universalSelectors": 5,
     "length": 55173,
     "rules": 433,
     "declarations": 1288
@@ -168,7 +167,6 @@ It uses configurable threshold and compares the analyze-css result with it.
 * **selectorsById**: number of selectors by ID
 * **selectorsByPseudo**: number of pseudo-selectors (e,g. ``:hover``)
 * **selectorsByTag**: number of selectors by tag name
-* **universalSelectors**: number of selectors trying to match every element (e.g. ``.foo > *``)
 * **length**: length of CSS source (in bytes)
 * **rules**: number of rules (e.g. ``.foo, .bar { color: red }`` is counted as one rule)
 * **declarations**: number of declarations (e.g. ``.foo, .bar { color: red }`` is counted as one declaration - ``color: red``)
