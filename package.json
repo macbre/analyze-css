@@ -20,26 +20,26 @@
     "node": ">=4.0"
   },
   "dependencies": {
-    "cli": "^1.0.0",
+    "cli": "^1.0.1",
     "css": "2.2.x",
     "css-shorthand-properties": "1.0.x",
-    "debug": "2.2.x",
+    "debug": "^2.4.4",
     "fast-stats": "0.0.x",
-    "glob": "^7.0.6",
+    "glob": "^7.1.1",
     "http-proxy-agent": "^1.0.0",
-    "node-fetch": "^1.6.1",
+    "node-fetch": "^1.6.3",
     "onecolor": "^3.0.4",
     "optimist": "0.6.x",
     "slick": "~1.12.1",
-    "specificity": "^0.2.1"
+    "specificity": "^0.3.0"
   },
   "devDependencies": {
     "autoprefixer-core": "^6.0.1",
-    "browserslist": "^1.3.6",
+    "browserslist": "^1.4.0",
     "istanbul": "^0.4.5",
     "js-beautify": "^1.6.4",
-    "jshint": "^2.9.3",
-    "mocha": "^3.0.2"
+    "jshint": "^2.9.4",
+    "mocha": "^3.2.0"
   },
   "bin": "./bin/analyze-css.js",
   "preferGlobal": true,
