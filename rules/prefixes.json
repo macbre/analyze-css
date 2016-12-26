@@ -1,7 +1,7 @@
 {
-  "generated": "2016-12-17 using autoprefixer-core v6.0.1",
+  "generated": "2016-12-26 using autoprefixer-core v6.0.1",
   "browsers": [
-    "and_chr 54",
+    "and_chr 55",
     "and_uc 11",
     "android 4.4",
     "chrome 49",
@@ -19,8 +19,8 @@
     "ios_saf 10-10.1",
     "ios_saf 9.3",
     "op_mini all",
-    "opera 40",
     "opera 41",
+    "opera 42",
     "safari 10",
     "safari 9.1",
     "samsung 4"
