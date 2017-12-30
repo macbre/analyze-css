@@ -22,11 +22,11 @@
   "dependencies": {
     "cli": "^1.0.1",
     "css": "2.2.x",
-    "css-shorthand-properties": "1.0.x",
+    "css-shorthand-properties": "^1.1.0",
     "debug": "^3.1.0",
     "fast-stats": "0.0.x",
     "glob": "^7.1.2",
-    "http-proxy-agent": "^1.0.0",
+    "http-proxy-agent": "^2.0.0",
     "node-fetch": "^1.7.1",
     "onecolor": "^3.0.4",
     "optimist": "0.6.x",
