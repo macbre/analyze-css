@@ -38,7 +38,7 @@
     "browserslist": "^3.2.8",
     "istanbul": "^0.4.5",
     "js-beautify": "^1.6.14",
-    "jshint": "^2.9.5",
+    "jshint": "macbre/jshint#master",
     "mocha": "^5.2.0"
   },
   "bin": "./bin/analyze-css.js",
