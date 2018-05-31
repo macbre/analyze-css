@@ -1,6 +1,6 @@
 {
   "name": "analyze-css",
-  "version": "0.12.5",
+  "version": "0.12.6",
   "author": "Maciej Brencz <maciej.brencz@gmail.com> (https://github.com/macbre)",
   "description": "CSS selectors complexity and performance analyzer",
   "main": "./lib/index.js",
