@@ -2,7 +2,6 @@ analyze-css
 ===========
 
 [![NPM version](https://badge.fury.io/js/analyze-css.png)](http://badge.fury.io/js/analyze-css)
-[![Build Status](https://api.travis-ci.org/macbre/analyze-css.png)](http://travis-ci.org/macbre/analyze-css)
 [![Known Vulnerabilities](https://snyk.io/test/github/macbre/analyze-css/badge.svg)](https://snyk.io/test/github/macbre/analyze-css)
 
 [![Download stats](https://nodei.co/npm/analyze-css.png?downloads=true&downloadRank=true)](https://nodei.co/npm/analyze-css/)
