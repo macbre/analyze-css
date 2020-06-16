@@ -13,19 +13,18 @@ var analyzer = require('./../lib/index'),
 	debug = require('debug')('analyze-css:bin'),
 	runner = require('./../lib/runner'),
 	cssString = '',
-	argv = {},
 	runnerOpts = {};
 
 // parse options
 program
 	.version(analyzer.version)
-	.usage('analyze-css --url <url> [options]')
+	.usage('--url <url> [options]')
 	// https://www.npmjs.com/package/commander#common-option-types-boolean-and-value
 	.option('--url <url>', 'Set URL of CSS to analyze')
 	.option('--file <file>', 'Set local CSS file to analyze')
 	.option('--ignore-ssl-errors', 'Ignores SSL errors, such as expired or self-signed certificate errors')
-	.option('--pretty, -p', 'Causes JSON with the results to be pretty-printed')
-	.option('--no-offenders, -N', 'Show only the metrics without the offenders part')
+	.option('-p, --pretty', 'Causes JSON with the results to be pretty-printed')
+	.option('-N, --no-offenders', 'Show only the metrics without the offenders part')
 	.option('--auth-user <user>', 'Sets the user name used for HTTP authentication')
 	.option('--auth-pass <pass>', 'Sets the password used for HTTP authentication')
 	.option('-x, --proxy <proxy>', 'Sets the HTTP proxy');
@@ -34,7 +33,8 @@ program
 program.parse(process.argv);
 
 debug('analyze-css v%s', analyzer.version);
-debug('argv: %j', argv);
+
+var argv = {};
 
 // support stdin (issue #28)
 if (argv._ && argv._.indexOf('-') > -1) {
@@ -54,11 +54,11 @@ else {
 	process.exit(analyzer.EXIT_NEED_OPTIONS);
 }
 
-runnerOpts.ignoreSslErrors = argv['ignore-ssl-errors'];
-runnerOpts.noOffenders = argv['no-offenders'] || (argv.offenders === false);
-runnerOpts.authUser = argv['auth-user'];
-runnerOpts.authPass = argv['auth-pass'];
-runnerOpts.proxy = argv.proxy;
+runnerOpts.ignoreSslErrors = program['ignore-ssl-errors'];
+runnerOpts.noOffenders = program.offenders === false;
+runnerOpts.authUser = program['auth-user'];
+runnerOpts.authPass = program['auth-pass'];
+runnerOpts.proxy = program.proxy;
 
 debug('opts: %j', runnerOpts);
 
@@ -86,7 +86,7 @@ runner(runnerOpts, function(err, res) {
 	}
 
 	// format the results
-	if (argv.pretty === true) {
+	if (program.pretty === true) {
 		output = JSON.stringify(res, null, '  ');
 	} else {
 		output = JSON.stringify(res);
