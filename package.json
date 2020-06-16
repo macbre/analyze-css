@@ -36,10 +36,10 @@
   "devDependencies": {
     "autoprefixer-core": "^6.0.1",
     "browserslist": "^4.11.1",
-    "istanbul": "^0.4.5",
     "js-beautify": "^1.11.0",
     "jshint": "^2.11.0",
-    "mocha": "^8.0.1"
+    "mocha": "^8.0.1",
+    "nyc": "^15.1.0"
   },
   "bin": "./bin/analyze-css.js",
   "preferGlobal": true,
