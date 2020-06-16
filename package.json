@@ -21,6 +21,7 @@
   },
   "dependencies": {
     "cli": "^1.0.1",
+    "commander": "^5.1.0",
     "css": "^2.2.4",
     "css-shorthand-properties": "^1.1.1",
     "debug": "^4.1.1",
@@ -29,7 +30,6 @@
     "http-proxy-agent": "^4.0.1",
     "node-fetch": "^2.6.0",
     "onecolor": "^3.1.0",
-    "optimist": "0.6.x",
     "slick": "~1.12.1",
     "specificity": "^0.4.1"
   },
@@ -51,6 +51,7 @@
     "prefixes": "DEBUG=* node data/prefixes.js"
   },
   "jshintConfig": {
+    "esversion": 6,
     "node": true,
     "strict": true,
     "validthis": true
