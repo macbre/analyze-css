@@ -12,7 +12,6 @@ const { program } = require('commander');
 var analyzer = require('./../lib/index'),
 	debug = require('debug')('analyze-css:bin'),
 	runner = require('./../lib/runner'),
-	cssString = '',
 	runnerOpts = {};
 
 // parse options
@@ -34,10 +33,8 @@ program.parse(process.argv);
 
 debug('analyze-css v%s', analyzer.version);
 
-var argv = {};
-
 // support stdin (issue #28)
-if (argv._ && argv._.indexOf('-') > -1) {
+if (process.argv.indexOf('-') > -1) {
 	runnerOpts.stdin = true;
 }
 // --url
