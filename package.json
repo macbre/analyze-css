@@ -36,10 +36,10 @@
   "devDependencies": {
     "autoprefixer-core": "^6.0.1",
     "browserslist": "^4.11.1",
-    "istanbul": "^0.4.5",
     "js-beautify": "^1.11.0",
     "jshint": "^2.11.0",
-    "mocha": "^8.0.1"
+    "mocha": "^8.0.1",
+    "nyc": "^15.1.0"
   },
   "bin": "./bin/analyze-css.js",
   "preferGlobal": true,
@@ -47,7 +47,7 @@
     "test": "mocha -R spec && npm run lint",
     "lint": "jshint --verbose bin/ lib/ rules/ test/",
     "beautify": "js-beautify -r rules/*.js test/*.js test/rules/*.js bin/*.js lib/*.js lib/preprocessors/*.js",
-    "coverage": "istanbul cover  _mocha -- -R spec",
+    "coverage": "nyc mocha -R spec",
     "prefixes": "DEBUG=* node data/prefixes.js"
   },
   "jshintConfig": {
