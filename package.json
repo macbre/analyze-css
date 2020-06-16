@@ -47,7 +47,7 @@
     "test": "mocha -R spec && npm run lint",
     "lint": "jshint --verbose bin/ lib/ rules/ test/",
     "beautify": "js-beautify -r rules/*.js test/*.js test/rules/*.js bin/*.js lib/*.js lib/preprocessors/*.js",
-    "coverage": "istanbul cover  _mocha -- -R spec",
+    "coverage": "nyc mocha -R spec",
     "prefixes": "DEBUG=* node data/prefixes.js"
   },
   "jshintConfig": {

@@ -14,4 +14,4 @@ results
 
 npm-debug.*
 node_modules
-coverage
+.nyc_output/
