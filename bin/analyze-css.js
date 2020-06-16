@@ -7,9 +7,10 @@
  */
 'use strict';
 
+const { program } = require('commander');
+
 var analyzer = require('./../lib/index'),
 	debug = require('debug')('analyze-css:bin'),
-	program = require('optimist'),
 	runner = require('./../lib/runner'),
 	cssString = '',
 	argv = {},
@@ -17,53 +18,39 @@ var analyzer = require('./../lib/index'),
 
 // parse options
 program
+	.version(analyzer.version)
 	.usage('analyze-css --url <url> [options]')
-	// mandatory
-	.describe('url', 'Set URL of CSS to analyze').string('url')
-	.describe('file', 'Set local CSS file to analyze').string('file')
-	.describe('ignore-ssl-errors', 'Ignores SSL errors, such as expired or self-signed certificate errors').boolean('ignore-ssl-errors')
-	.describe('pretty', 'Causes JSON with the results to be pretty-printed').boolean('pretty').alias('pretty', 'p')
-	.describe('no-offenders', 'Show only the metrics without the offenders part').boolean('no-offenders').alias('no-offenders', 'N')
-	.describe('auth-user', 'Sets the user name used for HTTP authentication').string('auth-user')
-	.describe('auth-pass', 'Sets the password used for HTTP authentication').string('auth-pass')
-	.describe('proxy', 'Sets the HTTP proxy').string('proxy').alias('proxy', 'x')
-	// version / help
-	.describe('version', 'Show version number and quit').boolean('version').alias('version', 'V')
-	.describe('help', 'This help text').boolean('help').alias('help', 'h');
+	// https://www.npmjs.com/package/commander#common-option-types-boolean-and-value
+	.option('--url <url>', 'Set URL of CSS to analyze')
+	.option('--file <file>', 'Set local CSS file to analyze')
+	.option('--ignore-ssl-errors', 'Ignores SSL errors, such as expired or self-signed certificate errors')
+	.option('--pretty, -p', 'Causes JSON with the results to be pretty-printed')
+	.option('--no-offenders, -N', 'Show only the metrics without the offenders part')
+	.option('--auth-user <user>', 'Sets the user name used for HTTP authentication')
+	.option('--auth-pass <pass>', 'Sets the password used for HTTP authentication')
+	.option('-x, --proxy <proxy>', 'Sets the HTTP proxy');
 
 // parse it
-argv = program.parse(process.argv);
+program.parse(process.argv);
 
 debug('analyze-css v%s', analyzer.version);
 debug('argv: %j', argv);
-
-// show version number
-if (argv.version === true) {
-	console.log('analyze-css v%s', analyzer.version);
-	process.exit(0);
-}
-
-// show help
-if (argv.help === true) {
-	program.showHelp();
-	process.exit(0);
-}
 
 // support stdin (issue #28)
 if (argv._ && argv._.indexOf('-') > -1) {
 	runnerOpts.stdin = true;
 }
 // --url
-else if (argv.url) {
-	runnerOpts.url = argv.url;
+else if (program.url) {
+	runnerOpts.url = program.url;
 }
 // --file
-else if (argv.file) {
-	runnerOpts.file = argv.file;
+else if (program.file) {
+	runnerOpts.file = program.file;
 }
 // either --url or --file or - (stdin) needs to be provided
 else {
-	program.showHelp();
+	console.log(program.helpInformation());
 	process.exit(analyzer.EXIT_NEED_OPTIONS);
 }
 
