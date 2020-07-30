@@ -1,5 +1,5 @@
 {
-  "generated": "2020-06-16 using autoprefixer-core v6.0.1",
+  "generated": "2020-07-30 using autoprefixer-core v6.0.1",
   "browsers": [
     "and_chr 81",
     "and_ff 68",
@@ -14,8 +14,9 @@
     "edge 81",
     "edge 83",
     "firefox 68",
-    "firefox 75",
     "firefox 76",
+    "firefox 77",
+    "firefox 78",
     "ie 11",
     "ios_saf 12.2-12.4",
     "ios_saf 13.3",
@@ -23,12 +24,12 @@
     "kaios 2.5",
     "op_mini all",
     "op_mob 46",
-    "opera 67",
     "opera 68",
+    "opera 69",
     "safari 13",
     "safari 13.1",
-    "samsung 10.1",
-    "samsung 11.1-11.2"
+    "samsung 11.1-11.2",
+    "samsung 12.0"
   ],
   "prefixes": {
     "-ms-border-radius": {
@@ -457,7 +458,7 @@
     },
     "-webkit-backface-visibility": {
       "keep": false,
-      "msg": "was required by UC Browser for Android 11.4, Android Browser 4.4, Chrome 35, iOS Safari 11, Opera 22, Safari 11 and earlier"
+      "msg": "was required by UC Browser for Android 11.4, Android Browser 4.4, Chrome 35, iOS Safari 11, Opera 22, Safari NaN and earlier"
     },
     "-o-backface-visibility": {
       "keep": false,
@@ -729,7 +730,7 @@
     },
     "-webkit-user-select": {
       "keep": false,
-      "msg": "was required by QQ Browser 1.2, UC Browser for Android 11.4, Android Browser 4.4, Chrome 53, iOS Safari 11, Opera 40, Safari 10.1, Samsung Internet 6.2 and earlier"
+      "msg": "was required by QQ Browser 1.2, UC Browser for Android 11.4, Android Browser 4.4, Chrome 53, iOS Safari 11, Opera 40, Safari NaN, Samsung Internet 6.2 and earlier"
     },
     "-o-user-select": {
       "keep": false,
@@ -1065,7 +1066,7 @@
     },
     "-webkit-hyphens": {
       "keep": false,
-      "msg": "was required by UC Browser for Android 11.4, iOS Safari 11, Safari 11 and earlier"
+      "msg": "was required by UC Browser for Android 11.4, iOS Safari 11, Safari NaN and earlier"
     },
     "-o-hyphens": {
       "keep": false,
@@ -1113,7 +1114,7 @@
     },
     "-webkit-text-decoration-style": {
       "keep": false,
-      "msg": "was required by Chrome 56, iOS Safari 11, Opera 43, Safari 11 and earlier"
+      "msg": "was required by Chrome 56, iOS Safari 11, Opera 43, Safari NaN and earlier"
     },
     "-o-text-decoration-style": {
       "keep": false,
@@ -1129,7 +1130,7 @@
     },
     "-webkit-text-decoration-color": {
       "keep": false,
-      "msg": "was required by Chrome 56, iOS Safari 11, Opera 43, Safari 11 and earlier"
+      "msg": "was required by Chrome 56, iOS Safari 11, Opera 43, Safari NaN and earlier"
     },
     "-o-text-decoration-color": {
       "keep": false,
@@ -1145,7 +1146,7 @@
     },
     "-webkit-text-decoration-line": {
       "keep": false,
-      "msg": "was required by Chrome 56, iOS Safari 11, Opera 43, Safari 11 and earlier"
+      "msg": "was required by Chrome 56, iOS Safari 11, Opera 43, Safari NaN and earlier"
     },
     "-o-text-decoration-line": {
       "keep": false,
@@ -1417,7 +1418,7 @@
     },
     "-webkit-clip-path": {
       "keep": false,
-      "msg": "was required by QQ Browser 1.2, UC Browser for Android 11.4, Android Browser 4.4, Chrome 54, iOS Safari 11, Opera 41, Safari 11, Samsung Internet 6.2 and earlier"
+      "msg": "was required by QQ Browser 1.2, UC Browser for Android 11.4, Android Browser 4.4, Chrome 54, iOS Safari 11, Opera 41, Safari NaN, Samsung Internet 6.2 and earlier"
     },
     "-o-clip-path": {
       "keep": false,
@@ -1561,7 +1562,7 @@
     },
     "-webkit-@resolution": {
       "keep": false,
-      "msg": "was required by Android Browser 4.2, Chrome 28, iOS Safari 11, Opera 12, Safari 11 and earlier"
+      "msg": "was required by Android Browser 4.2, Chrome 28, iOS Safari 11, Opera 12, Safari NaN and earlier"
     },
     "-o-@resolution": {
       "keep": false,
