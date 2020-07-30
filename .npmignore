@@ -1,0 +1,6 @@
+coverage/
+examples/
+test/
+.github/
+*.md
+.jsbeautifyrc
