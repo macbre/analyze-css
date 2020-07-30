@@ -1,6 +1,6 @@
 {
   "name": "analyze-css",
-  "version": "0.12.7",
+  "version": "0.12.10",
   "author": "Maciej Brencz <maciej.brencz@gmail.com> (https://github.com/macbre)",
   "description": "CSS selectors complexity and performance analyzer",
   "main": "./lib/index.js",
@@ -17,40 +17,41 @@
   ],
   "license": "BSD-2-Clause",
   "engines": {
-    "node": ">=4.0"
+    "node": ">=10.0"
   },
   "dependencies": {
     "cli": "^1.0.1",
-    "css": "^2.2.4",
+    "commander": "^6.0.0",
+    "css": "^3.0.0",
     "css-shorthand-properties": "^1.1.1",
     "debug": "^4.1.1",
     "fast-stats": "0.0.5",
-    "glob": "^7.1.3",
-    "http-proxy-agent": "^2.1.0",
-    "node-fetch": "^2.3.0",
+    "glob": "^7.1.6",
+    "http-proxy-agent": "^4.0.1",
+    "node-fetch": "^2.6.0",
     "onecolor": "^3.1.0",
-    "optimist": "0.6.x",
     "slick": "~1.12.1",
     "specificity": "^0.4.1"
   },
   "devDependencies": {
     "autoprefixer-core": "^6.0.1",
-    "browserslist": "^4.4.0",
-    "istanbul": "^0.4.5",
-    "js-beautify": "^1.8.9",
-    "jshint": "2.9.7",
-    "mocha": "^5.2.0"
+    "browserslist": "^4.11.1",
+    "js-beautify": "^1.11.0",
+    "jshint": "^2.11.0",
+    "mocha": "^8.0.1",
+    "nyc": "^15.1.0"
   },
   "bin": "./bin/analyze-css.js",
   "preferGlobal": true,
   "scripts": {
-    "test": "mocha -R spec",
+    "test": "mocha -R spec && npm run lint",
     "lint": "jshint --verbose bin/ lib/ rules/ test/",
     "beautify": "js-beautify -r rules/*.js test/*.js test/rules/*.js bin/*.js lib/*.js lib/preprocessors/*.js",
-    "coverage": "istanbul cover  _mocha -- -R spec",
+    "coverage": "nyc mocha -R spec",
     "prefixes": "DEBUG=* node data/prefixes.js"
   },
   "jshintConfig": {
+    "esversion": 6,
     "node": true,
     "strict": true,
     "validthis": true
