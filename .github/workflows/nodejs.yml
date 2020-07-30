@@ -24,7 +24,17 @@ jobs:
       uses: actions/setup-node@v1
       with:
         node-version: ${{ matrix.node-version }}
-    - run: npm ci
-    - run: npm test
+
+    - name: Install dependencies
+      run: npm ci
+
+    - name: Lint the code
+      run: npm run lint
+
+    - name: Run tests (with node-sass support)
+      run: |
+        npm install node-sass@4.14.1
+        npm test
+
     - name: Check that "binary" script works
       run: ./bin/analyze-css.js --file examples/ti.mobile.css  -p | grep metrics -B2
