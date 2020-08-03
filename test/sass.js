@@ -58,7 +58,7 @@ describe('SASS preprocessor [' + (isSassInstalled ? 'node-sass installed' : 'nod
 		});
 	});
 
-	it('should generate metrics for SCSS file', !isSassInstalled ? testSassNotInstalled : function() {
+	it('should generate metrics for SCSS file', !isSassInstalled ? testSassNotInstalled : function(done) {
 		new analyzer(scss, {
 			preprocessor: 'sass',
 			file: '../example/base.scss',
