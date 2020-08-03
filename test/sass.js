@@ -58,6 +58,17 @@ describe('SASS preprocessor [' + (isSassInstalled ? 'node-sass installed' : 'nod
 		});
 	});
 
+	it('should generate metrics for SCSS file', !isSassInstalled ? testSassNotInstalled : function() {
+		new analyzer(scss, {
+			preprocessor: 'sass',
+			file: '../example/base.scss',
+		}, function(err, res) {
+			assert.strictEqual(err, null);
+			assert.strictEqual(res.metrics.length, 127);
+			done();
+		});
+	});
+
 	it('should generate CSS from SCSS correctly', !isSassInstalled ? testSassNotInstalled : testSassInstalled);
 
 	it('should generate CSS from SASS correctly', !isSassInstalled ? testSassNotInstalled : testSassInstalled);
