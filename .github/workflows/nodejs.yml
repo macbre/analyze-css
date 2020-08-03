@@ -37,4 +37,6 @@ jobs:
         npm test
 
     - name: Check that "binary" script works
-      run: ./bin/analyze-css.js --file examples/ti.mobile.css  -p | grep metrics -B2
+      run: |
+        ./bin/analyze-css.js --file examples/ti.mobile.css  -p | grep metrics -B2
+        ./bin/analyze-css.js --file examples/base.scss  -p | grep offenders -A3
