@@ -41,3 +41,6 @@ jobs:
 
     - name: Run bin/analyze-css.js for SCSS file
       run: ./bin/analyze-css.js --file examples/base.scss  -p | grep offenders -A3
+
+    - name: Run bin/analyze-css.js for external file over HTTP
+      run: ./bin/analyze-css.js --url http://s3.macbre.net/analyze-css/propertyResets.css -p | grep metrics -A5
