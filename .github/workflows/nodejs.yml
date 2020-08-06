@@ -36,7 +36,8 @@ jobs:
         npm install node-sass@4.14.1
         npm test
 
-    - name: Check that "binary" script works
-      run: |
-        ./bin/analyze-css.js --file examples/ti.mobile.css  -p | grep metrics -B2
-        ./bin/analyze-css.js --file examples/base.scss  -p | grep offenders -A3
+    - name: Run bin/analyze-css.js for CSS file
+      run: /bin/analyze-css.js --file examples/ti.mobile.css  -p | grep metrics -B2
+
+    - name: Run bin/analyze-css.js for SCSS file
+      run: ./bin/analyze-css.js --file examples/base.scss  -p | grep offenders -A3
