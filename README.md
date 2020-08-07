@@ -9,8 +9,6 @@ analyze-css
 
 CSS selectors complexity and performance analyzer. analyze-css is built as a set of rules bound to events fired by CSS parser. Each rule can generate metrics and add "offenders" with more detailed information (see Usage section for an example).
 
-- [Analyze CSS Demo](http://www.testmycss.com/)
-
 ## Install
 
 analyze-css comes as a "binary" for command-line and as CommonJS module. Run the following to install them globally:
