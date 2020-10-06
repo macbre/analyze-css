@@ -7,7 +7,6 @@ on:
   push:
     branches: [ devel ]
   pull_request:
-    branches: [ devel ]
 
 jobs:
   build:
@@ -27,9 +26,6 @@ jobs:
 
     - name: Install dependencies
       run: npm ci
-
-    - name: Lint the code
-      run: npm run lint
 
     - name: Run tests (with node-sass support)
       run: |
