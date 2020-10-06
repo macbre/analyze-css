@@ -29,7 +29,7 @@ function runTest(tests) {
  */
 describe('Rules', function() {
 	var files = glob.sync(__dirname + "/rules/*.js"),
-		nameRe = /([^\/]+)\.js$/;
+		nameRe = /([^/]+)\.js$/;
 
 	files.forEach(function(file) {
 		var name = file.match(nameRe)[1],

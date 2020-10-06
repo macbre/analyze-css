@@ -36,17 +36,18 @@
   "devDependencies": {
     "autoprefixer-core": "^6.0.1",
     "browserslist": "^4.11.1",
-    "js-beautify": "^1.11.0",
-    "jshint": "^2.11.0",
+    "eslint": "7.10.0",
+    "eslint-config-prettier": "6.12.0",
     "mocha": "^8.0.1",
-    "nyc": "^15.1.0"
+    "nyc": "^15.1.0",
+    "prettier": "2.1.2"
   },
   "bin": "./bin/analyze-css.js",
   "preferGlobal": true,
   "scripts": {
     "test": "mocha -R spec && npm run lint",
-    "lint": "jshint --verbose bin/ lib/ rules/ test/",
-    "beautify": "js-beautify -r rules/*.js test/*.js test/rules/*.js bin/*.js lib/*.js lib/preprocessors/*.js",
+    "lint": "eslint bin/ lib/ rules/ test/",
+    "prettier": "npx prettier --write .",
     "coverage": "nyc mocha -R spec",
     "prefixes": "DEBUG=* node data/prefixes.js"
   },
