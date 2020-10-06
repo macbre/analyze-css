@@ -1,0 +1,13 @@
+env:
+  es2017: true
+  node: true
+  browser: true
+extends:
+  - 'eslint:recommended'
+  - 'prettier'
+rules:
+  no-async-promise-executor: 'off'
+  no-empty:
+  - error
+  - allowEmptyCatch: true
+  no-prototype-builtins: 'off'
