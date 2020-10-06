@@ -33,7 +33,7 @@ function testSassNotInstalled(done) {
 	try {
 		new analyzer(scss, {
 			preprocessor: 'sass'
-		}, function(err, res) {});
+		}, function() {});
 	} catch (e) {
 		assert.ok(e instanceof Error);
 		assert.equal(e.message, 'Preprocessing failed: Error: Can\'t process SASS/SCSS, please run \'npm install node-sass\'');

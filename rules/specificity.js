@@ -6,7 +6,6 @@ var debug = require("debug")("analyze-css:specificity"),
 
 function rule(analyzer) {
   var types = ["Id", "Class", "Tag"],
-    typesLen = types.length,
     values = [];
 
   // prepare metrics and stacks for values
@@ -17,7 +16,7 @@ function rule(analyzer) {
     values.push(new stats());
   });
 
-  analyzer.on("selector", function (rule, selector, expressions) {
+  analyzer.on("selector", function (rule, selector) {
     var selectorSpecificity = specificity.calculate(selector),
       parts;
 

@@ -1,7 +1,6 @@
 "use strict";
 
-var debug = require("debug")("analyze-css:propertyResets"),
-  format = require("util").format,
+var format = require("util").format,
   shorthandProperties = require("css-shorthand-properties");
 
 /**

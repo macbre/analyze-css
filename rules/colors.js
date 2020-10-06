@@ -8,7 +8,7 @@ var collection = require("../lib/collection"),
 /**
  * Extract CSS colors from given CSS property value
  */
-var regex = /(((rgba?|hsl)\([^\)]+\))|#(\w{3,6}))/g;
+var regex = /(((rgba?|hsl)\([^)]+\))|#(\w{3,6}))/g;
 
 function extractColors(value) {
   var matches = value.match(regex);
