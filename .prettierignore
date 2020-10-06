@@ -2,3 +2,4 @@ examples/
 test/
 *.md
 *.yml
+*.json
