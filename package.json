@@ -37,7 +37,7 @@
     "autoprefixer-core": "^6.0.1",
     "browserslist": "^4.11.1",
     "eslint": "7.12.1",
-    "eslint-config-prettier": "6.14.0",
+    "eslint-config-prettier": "6.15.0",
     "mocha": "^8.0.1",
     "nyc": "^15.1.0",
     "prettier": "2.1.2"
