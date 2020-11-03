@@ -1,4 +1,4 @@
-name: Linters
+name: Linter and code style
 
 on:
   push:
@@ -6,8 +6,7 @@ on:
   pull_request:
 
 jobs:
-  build:
-
+  lint_and_style:
     runs-on: ubuntu-latest
 
     steps:
