@@ -60,7 +60,8 @@ else if (program.file) {
 // either --url or --file or - (stdin) needs to be provided
 else {
   console.log(program.helpInformation());
-  process.exit(analyzer.EXIT_NEED_OPTIONS);
+  process.exitCode = analyzer.EXIT_NEED_OPTIONS;
+  return;
 }
 
 runnerOpts.ignoreSslErrors = program["ignore-ssl-errors"];
@@ -81,7 +82,8 @@ runner(runnerOpts, function (err, res) {
     debug("Exiting with exit code #%d", exitCode);
 
     console.error(err.toString());
-    process.exit(exitCode);
+    process.exitCode = exitCode;
+    return;
   }
 
   // make offenders flat (and append position if possible - issue #25)
