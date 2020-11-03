@@ -36,8 +36,9 @@
   "devDependencies": {
     "autoprefixer-core": "^6.0.1",
     "browserslist": "^4.11.1",
-    "eslint": "7.12.1",
+    "eslint": "^7.12.1",
     "eslint-config-prettier": "6.15.0",
+    "eslint-plugin-node": "^11.1.0",
     "mocha": "^8.0.1",
     "nyc": "^15.1.0",
     "prettier": "2.1.2"
@@ -48,7 +49,7 @@
   "bin": "./bin/analyze-css.js",
   "preferGlobal": true,
   "scripts": {
-    "test": "mocha -R spec && npm run lint",
+    "test": "mocha -R spec",
     "lint": "eslint bin/ lib/ rules/ test/",
     "prettier": "npx prettier --write .",
     "coverage": "nyc mocha -R spec",

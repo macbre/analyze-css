@@ -15,7 +15,7 @@ function rule(analyzer) {
       // parse data URI
       matches = value.match(re);
       base64 = matches[2];
-      buf = new Buffer(base64, "base64");
+      buf = Buffer.from(base64, "base64");
 
       analyzer.incrMetric("base64Length", base64.length);
 
