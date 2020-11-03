@@ -11,3 +11,4 @@ rules:
   - error
   - allowEmptyCatch: true
   no-prototype-builtins: 'off'
+  no-buffer-constructor: 'error'
