@@ -45,7 +45,7 @@
   "bin": "./bin/analyze-css.js",
   "preferGlobal": true,
   "scripts": {
-    "test": "mocha -R spec && npm run lint",
+    "test": "mocha -R spec",
     "lint": "eslint bin/ lib/ rules/ test/",
     "prettier": "npx prettier --write .",
     "coverage": "nyc mocha -R spec",
