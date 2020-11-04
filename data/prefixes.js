@@ -1,4 +1,3 @@
-#!/usr/bin/env node
 /**
  * Generates data for prefixes rule using data from autoprefixer
  *

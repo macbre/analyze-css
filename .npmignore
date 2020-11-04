@@ -1,6 +1,8 @@
 coverage/
+data/
 examples/
 test/
 .github/
+
 *.md
-.jsbeautifyrc
+.*
