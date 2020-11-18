@@ -13,8 +13,8 @@ CSS selectors complexity and performance analyzer. analyze-css is built as a set
 
 analyze-css comes as a "binary" for command-line and as CommonJS module. Run the following to install them globally:
 
-```
-npm install --global analyze-css
+```sh
+$ npm install --global analyze-css
 ```
 
 ## Usage
@@ -23,17 +23,17 @@ npm install --global analyze-css
 
 You can use analyze-css "binary" to analyze local CSS files or remote CSS assets:
 
-```
-analyze-css --file examples/elecena.css
+```sh
+$ analyze-css --file examples/elecena.css
 
-analyze-css --url http://s3.macbre.net/analyze-css/propertyResets.css
-analyze-css --url https://s3.macbre.net/analyze-css/propertyResets.css --ignore-ssl-errors
+$ analyze-css --url http://s3.macbre.net/analyze-css/propertyResets.css
+$ analyze-css --url https://s3.macbre.net/analyze-css/propertyResets.css --ignore-ssl-errors
 ```
 
 You can provide CSS via stdin as well (notice the dash: ``-``):
 
-```
-echo ".foo {margin: 0 \!important}" | analyze-css -
+```sh
+$ echo ".foo {margin: 0 \!important}" | analyze-css -
 ```
 
 This will emit JSON formatted results on ``stdout``. Use ``--pretty`` (or ``-p`` shortcut) option to make the output readable for human beings.
@@ -65,15 +65,15 @@ var opts = {
 new analyzer('.foo {margin: 0 !important}', opts, function(err, results) {
   console.error(err);
   console.log(results); // example? see below
-});```
+});
 ```
 
 ### [grunt task](https://www.npmjs.org/package/grunt-contrib-analyze-css)
 
 > Created by @DeuxHuitHuit
 
-```
-npm i grunt-contrib-analyze-css
+```sh
+$ npm i grunt-contrib-analyze-css
 ```
 
 It uses configurable threshold and compares the analyze-css result with it.
@@ -184,12 +184,12 @@ It uses configurable threshold and compares the analyze-css result with it.
 
 Running tests and linting the code:
 
-```
-npm test && npm run-script lint
+```sh
+$ npm test && npm run-script lint
 ```
 
 Turning on debug mode (i.e. verbose logging to stderr via [debug module](https://npmjs.org/package/debug)):
 
-```
-DEBUG=analyze-css* analyze-css ...
+```sh
+$ DEBUG=analyze-css* analyze-css ...
 ```
