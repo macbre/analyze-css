@@ -41,7 +41,7 @@
     "eslint-plugin-node": "^11.1.0",
     "mocha": "^8.0.1",
     "nyc": "^15.1.0",
-    "prettier": "2.2.0"
+    "prettier": "2.2.1"
   },
   "optionalDependencies": {
     "node-sass": "5.0.0"
