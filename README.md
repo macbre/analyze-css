@@ -193,3 +193,7 @@ Turning on debug mode (i.e. verbose logging to stderr via [debug module](https:/
 ```sh
 $ DEBUG=analyze-css* analyze-css ...
 ```
+
+## Stargazers over time
+
+[![Stargazers over time](https://starchart.cc/macbre/analyze-css.svg)](https://starchart.cc/macbre/analyze-css)
