@@ -23,7 +23,7 @@ jobs:
     # Steps represent a sequence of tasks that will be executed as part of the job
     steps:
       # https://github.com/actions/checkout
-      - name: CLoning ${{ env.GIT_BRANCH }} branch
+      - name: Cloning ${{ env.GIT_BRANCH }} branch
         uses: actions/checkout@v2-beta
         with:
           ref: ${{ env.GIT_BRANCH }}
