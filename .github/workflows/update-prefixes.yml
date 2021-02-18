@@ -23,9 +23,10 @@ jobs:
     # Steps represent a sequence of tasks that will be executed as part of the job
     steps:
       # https://github.com/actions/checkout
-      - uses: actions/checkout@v2-beta
+      - name: CLoning ${{ env.GIT_BRANCH }} branch
+        uses: actions/checkout@v2-beta
         with:
-          ref: env.GIT_BRANCH
+          ref: ${{ env.GIT_BRANCH }}
 
       - name: Install Node.js
         uses: actions/setup-node@v1
