@@ -45,9 +45,11 @@ jobs:
       - name: Show a diff
         run: |
           git diff
-          git add .
 
-      - name: Commit if needed
+      - name: Commit if needed to a new branch
         continue-on-error: true
         run: |
-          git commit -m 'Updating rules/prefixes.json' && git push origin ${{ env.GIT_BRANCH }} --force
+          export PR_BRANCH="prefixes-update-$(date +%Y-%M-%d)"
+          git checkout -b ${PR_BRANCH}
+          git add .
+          git commit -m 'Updating rules/prefixes.json' && git push origin ${PR_BRANCH} --force
