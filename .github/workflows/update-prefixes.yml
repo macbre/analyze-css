@@ -15,12 +15,17 @@ jobs:
   update:
     runs-on: ubuntu-latest
 
+    env:
+      GIT_BRANCH: "devel"
+      GIT_USER_NAME: "macbre"
+      GIT_USER_EMAIL: "<macbre@users.noreply.github.com>"
+
     # Steps represent a sequence of tasks that will be executed as part of the job
     steps:
       # https://github.com/actions/checkout
       - uses: actions/checkout@v2-beta
         with:
-          ref: devel
+          ref: ${GIT_BRANCH}
 
       - name: Install Node.js
         uses: actions/setup-node@v1
@@ -35,8 +40,8 @@ jobs:
       # https://github.com/actions/checkout#push-a-commit-using-the-built-in-token
       - name: Set up git
         run: |
-          git config user.name "macbre"
-          git config user.email "<macbre@users.noreply.github.com>"
+          git config user.name ${GIT_USER_NAME}
+          git config user.email ${GIT_USER_EMAIL}
 
       - name: Show a diff
         run: |
@@ -46,4 +51,4 @@ jobs:
       - name: Commit if needed
         continue-on-error: true
         run: |
-          git commit -m 'Updating rules/prefixes.json' && git push origin devel
+          git commit -m 'Updating rules/prefixes.json' && git push origin ${GIT_BRANCH}
