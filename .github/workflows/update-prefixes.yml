@@ -25,7 +25,7 @@ jobs:
       # https://github.com/actions/checkout
       - uses: actions/checkout@v2-beta
         with:
-          ref: ${GIT_BRANCH}
+          ref: env.GIT_BRANCH
 
       - name: Install Node.js
         uses: actions/setup-node@v1
