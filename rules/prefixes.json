@@ -1,5 +1,5 @@
 {
-  "generated": "2021-02-04 using autoprefixer-core v6.0.1",
+  "generated": "2021-02-18 using autoprefixer-core v6.0.1",
   "browsers": [
     "and_chr 88",
     "and_ff 83",
@@ -13,13 +13,12 @@
     "edge 87",
     "edge 88",
     "firefox 78",
-    "firefox 83",
     "firefox 84",
     "firefox 85",
     "ie 11",
     "ios_saf 12.2-12.4",
     "ios_saf 13.4-13.7",
-    "ios_saf 14.0-14.3",
+    "ios_saf 14.0-14.4",
     "kaios 2.5",
     "op_mini all",
     "op_mob 59",
