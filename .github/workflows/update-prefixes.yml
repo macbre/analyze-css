@@ -52,4 +52,4 @@ jobs:
       - name: Commit if needed
         continue-on-error: true
         run: |
-          git commit -m 'Updating rules/prefixes.json' && git push origin ${GIT_BRANCH}
+          git commit -m 'Updating rules/prefixes.json' && git push origin ${{ env.GIT_BRANCH }}
