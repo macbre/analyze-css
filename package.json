@@ -53,7 +53,7 @@
     "lint": "eslint .",
     "prettier": "npx prettier --write .",
     "coverage": "nyc mocha -R spec",
-    "prefixes": "DEBUG=* node data/prefixes.js"
+    "prefixes": "npx browserslist@latest --update-db; DEBUG=* node data/prefixes.js"
   },
   "jshintConfig": {
     "esversion": 6,
