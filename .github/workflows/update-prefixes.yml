@@ -1,0 +1,49 @@
+name: CSS prefixes
+
+# Controls when the action will run. 
+on:
+  schedule:
+    # * is a special character in YAML so you have to quote this string
+    - cron:  '0 */12 * * *'
+
+  # Allows you to run this workflow manually from the Actions tab
+  workflow_dispatch:
+
+  pull_request:
+
+jobs:
+  update:
+    runs-on: ubuntu-latest
+
+    # Steps represent a sequence of tasks that will be executed as part of the job
+    steps:
+      # https://github.com/actions/checkout
+      - uses: actions/checkout@v2-beta
+        with:
+          ref: devel
+
+      - name: Install Node.js
+        uses: actions/setup-node@v1
+        with:
+          node-version: 15.x
+
+      - name: Update prefixes
+        run: |
+          npm ci
+          npm run prefixes
+
+      # https://github.com/actions/checkout#push-a-commit-using-the-built-in-token
+      - name: Set up git
+        run: |
+          git config user.name "macbre"
+          git config user.email "<macbre@users.noreply.github.com>"
+
+      - name: Show a diff
+        run: |
+          git diff
+          git add .
+
+      - name: Commit if needed
+        continue-on-error: true
+        run: |
+          git commit -m 'Updating rules/prefixes.json' && git push origin devel
