@@ -40,7 +40,7 @@ jobs:
 
     - name: Run tests (with node-sass support)
       run: |
-        npm install node-sass@4.14.1
+        time npm install node-sass@4.14.1
         npm test
 
     - name: Run bin/analyze-css.js for CSS file
