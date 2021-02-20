@@ -1,8 +1,8 @@
 {
-  "generated": "2021-02-18 using autoprefixer-core v6.0.1",
+  "generated": "2021-02-20 using autoprefixer-core v6.0.1",
   "browsers": [
     "and_chr 88",
-    "and_ff 83",
+    "and_ff 85",
     "and_qq 10.4",
     "and_uc 12.12",
     "android 81",
@@ -22,8 +22,8 @@
     "kaios 2.5",
     "op_mini all",
     "op_mob 59",
-    "opera 71",
     "opera 72",
+    "opera 73",
     "safari 13.1",
     "safari 14",
     "samsung 12.0",
