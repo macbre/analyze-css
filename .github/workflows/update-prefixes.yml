@@ -59,7 +59,8 @@ jobs:
         uses: repo-sync/pull-request@v2
         if: ${{ success() }}
         with:
-          destination_branch: "prefixes-update"
+          source_branch: "prefixes-update"
+          destination_branch: "master"
           github_token: ${{ secrets.GITHUB_TOKEN }}
           pr_label: "dependencies"
           pr_assignee: "macbre"
