@@ -6,7 +6,7 @@ exports.tests = [
 		}
 	},
 	{
-		css: '.foo { -webkit-filter: blur(5px) }',
+		css: '.foo { -webkit-backdrop-filter: blur(5px) }',
 		metrics: {
 			oldPropertyPrefixes: 0
 		}
