@@ -16,8 +16,7 @@ var autoprefixer = require("autoprefixer-core"),
 // prepare data
 data = {
   generated:
-    new Date().toJSON().substr(0, 10) +
-    " using autoprefixer-core v" +
+    "Using autoprefixer-core v" +
     require("../node_modules/autoprefixer-core/package.json").version,
   // supported browsers, i.e. will keep venoder prefixes that they require
   browsers: browserslist().sort(),
