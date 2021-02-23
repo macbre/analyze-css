@@ -1,5 +1,5 @@
 {
-  "generated": "2021-02-20 using autoprefixer-core v6.0.1",
+  "generated": "Using autoprefixer v10.2.4",
   "browsers": [
     "and_chr 88",
     "and_ff 85",
@@ -34,13 +34,13 @@
       "keep": false,
       "msg": "prefix is no longer supported"
     },
-    "-moz-border-radius": {
-      "keep": false,
-      "msg": "was required by Firefox 3.6 and earlier"
-    },
     "-webkit-border-radius": {
       "keep": false,
       "msg": "was required by Android Browser 2.1, Chrome 4, iOS Safari 3.2, Safari 4 and earlier"
+    },
+    "-moz-border-radius": {
+      "keep": false,
+      "msg": "was required by Firefox 3.6 and earlier"
     },
     "-o-border-radius": {
       "keep": false,
@@ -50,13 +50,13 @@
       "keep": false,
       "msg": "prefix is no longer supported"
     },
-    "-moz-border-top-left-radius": {
-      "keep": false,
-      "msg": "was required by Firefox 3.6 and earlier"
-    },
     "-webkit-border-top-left-radius": {
       "keep": false,
       "msg": "was required by Android Browser 2.1, Chrome 4, iOS Safari 3.2, Safari 4 and earlier"
+    },
+    "-moz-border-top-left-radius": {
+      "keep": false,
+      "msg": "was required by Firefox 3.6 and earlier"
     },
     "-o-border-top-left-radius": {
       "keep": false,
@@ -66,13 +66,13 @@
       "keep": false,
       "msg": "prefix is no longer supported"
     },
-    "-moz-border-top-right-radius": {
-      "keep": false,
-      "msg": "was required by Firefox 3.6 and earlier"
-    },
     "-webkit-border-top-right-radius": {
       "keep": false,
       "msg": "was required by Android Browser 2.1, Chrome 4, iOS Safari 3.2, Safari 4 and earlier"
+    },
+    "-moz-border-top-right-radius": {
+      "keep": false,
+      "msg": "was required by Firefox 3.6 and earlier"
     },
     "-o-border-top-right-radius": {
       "keep": false,
@@ -82,13 +82,13 @@
       "keep": false,
       "msg": "prefix is no longer supported"
     },
-    "-moz-border-bottom-right-radius": {
-      "keep": false,
-      "msg": "was required by Firefox 3.6 and earlier"
-    },
     "-webkit-border-bottom-right-radius": {
       "keep": false,
       "msg": "was required by Android Browser 2.1, Chrome 4, iOS Safari 3.2, Safari 4 and earlier"
+    },
+    "-moz-border-bottom-right-radius": {
+      "keep": false,
+      "msg": "was required by Firefox 3.6 and earlier"
     },
     "-o-border-bottom-right-radius": {
       "keep": false,
@@ -98,13 +98,13 @@
       "keep": false,
       "msg": "prefix is no longer supported"
     },
-    "-moz-border-bottom-left-radius": {
-      "keep": false,
-      "msg": "was required by Firefox 3.6 and earlier"
-    },
     "-webkit-border-bottom-left-radius": {
       "keep": false,
       "msg": "was required by Android Browser 2.1, Chrome 4, iOS Safari 3.2, Safari 4 and earlier"
+    },
+    "-moz-border-bottom-left-radius": {
+      "keep": false,
+      "msg": "was required by Firefox 3.6 and earlier"
     },
     "-o-border-bottom-left-radius": {
       "keep": false,
@@ -114,13 +114,13 @@
       "keep": false,
       "msg": "prefix is no longer supported"
     },
-    "-moz-box-shadow": {
-      "keep": false,
-      "msg": "was required by Firefox 3.6 and earlier"
-    },
     "-webkit-box-shadow": {
       "keep": false,
       "msg": "was required by Android Browser 3, Chrome 9, iOS Safari 4.2, Safari 5 and earlier"
+    },
+    "-moz-box-shadow": {
+      "keep": false,
+      "msg": "was required by Firefox 3.6 and earlier"
     },
     "-o-box-shadow": {
       "keep": false,
@@ -130,13 +130,13 @@
       "keep": false,
       "msg": "prefix is no longer supported"
     },
+    "-webkit-animation": {
+      "keep": true,
+      "msg": "required by QQ Browser 10.4 and later"
+    },
     "-moz-animation": {
       "keep": false,
       "msg": "was required by Firefox 15 and earlier"
-    },
-    "-webkit-animation": {
-      "keep": false,
-      "msg": "was required by QQ Browser 1.2, UC Browser for Android 11.4, Android Browser 4.4, Chrome 42, iOS Safari 8.1, Opera 29, Safari 8 and earlier"
     },
     "-o-animation": {
       "keep": false,
@@ -146,13 +146,13 @@
       "keep": false,
       "msg": "prefix is no longer supported"
     },
+    "-webkit-animation-name": {
+      "keep": true,
+      "msg": "required by QQ Browser 10.4 and later"
+    },
     "-moz-animation-name": {
       "keep": false,
       "msg": "was required by Firefox 15 and earlier"
-    },
-    "-webkit-animation-name": {
-      "keep": false,
-      "msg": "was required by QQ Browser 1.2, UC Browser for Android 11.4, Android Browser 4.4, Chrome 42, iOS Safari 8.1, Opera 29, Safari 8 and earlier"
     },
     "-o-animation-name": {
       "keep": false,
@@ -162,13 +162,13 @@
       "keep": false,
       "msg": "prefix is no longer supported"
     },
+    "-webkit-animation-duration": {
+      "keep": true,
+      "msg": "required by QQ Browser 10.4 and later"
+    },
     "-moz-animation-duration": {
       "keep": false,
       "msg": "was required by Firefox 15 and earlier"
-    },
-    "-webkit-animation-duration": {
-      "keep": false,
-      "msg": "was required by QQ Browser 1.2, UC Browser for Android 11.4, Android Browser 4.4, Chrome 42, iOS Safari 8.1, Opera 29, Safari 8 and earlier"
     },
     "-o-animation-duration": {
       "keep": false,
@@ -178,13 +178,13 @@
       "keep": false,
       "msg": "prefix is no longer supported"
     },
+    "-webkit-animation-delay": {
+      "keep": true,
+      "msg": "required by QQ Browser 10.4 and later"
+    },
     "-moz-animation-delay": {
       "keep": false,
       "msg": "was required by Firefox 15 and earlier"
-    },
-    "-webkit-animation-delay": {
-      "keep": false,
-      "msg": "was required by QQ Browser 1.2, UC Browser for Android 11.4, Android Browser 4.4, Chrome 42, iOS Safari 8.1, Opera 29, Safari 8 and earlier"
     },
     "-o-animation-delay": {
       "keep": false,
@@ -194,13 +194,13 @@
       "keep": false,
       "msg": "prefix is no longer supported"
     },
+    "-webkit-animation-direction": {
+      "keep": true,
+      "msg": "required by QQ Browser 10.4 and later"
+    },
     "-moz-animation-direction": {
       "keep": false,
       "msg": "was required by Firefox 15 and earlier"
-    },
-    "-webkit-animation-direction": {
-      "keep": false,
-      "msg": "was required by QQ Browser 1.2, UC Browser for Android 11.4, Android Browser 4.4, Chrome 42, iOS Safari 8.1, Opera 29, Safari 8 and earlier"
     },
     "-o-animation-direction": {
       "keep": false,
@@ -210,13 +210,13 @@
       "keep": false,
       "msg": "prefix is no longer supported"
     },
+    "-webkit-animation-fill-mode": {
+      "keep": true,
+      "msg": "required by QQ Browser 10.4 and later"
+    },
     "-moz-animation-fill-mode": {
       "keep": false,
       "msg": "was required by Firefox 15 and earlier"
-    },
-    "-webkit-animation-fill-mode": {
-      "keep": false,
-      "msg": "was required by QQ Browser 1.2, UC Browser for Android 11.4, Android Browser 4.4, Chrome 42, iOS Safari 8.1, Opera 29, Safari 8 and earlier"
     },
     "-o-animation-fill-mode": {
       "keep": false,
@@ -226,13 +226,13 @@
       "keep": false,
       "msg": "prefix is no longer supported"
     },
+    "-webkit-animation-iteration-count": {
+      "keep": true,
+      "msg": "required by QQ Browser 10.4 and later"
+    },
     "-moz-animation-iteration-count": {
       "keep": false,
       "msg": "was required by Firefox 15 and earlier"
-    },
-    "-webkit-animation-iteration-count": {
-      "keep": false,
-      "msg": "was required by QQ Browser 1.2, UC Browser for Android 11.4, Android Browser 4.4, Chrome 42, iOS Safari 8.1, Opera 29, Safari 8 and earlier"
     },
     "-o-animation-iteration-count": {
       "keep": false,
@@ -242,13 +242,13 @@
       "keep": false,
       "msg": "prefix is no longer supported"
     },
+    "-webkit-animation-play-state": {
+      "keep": true,
+      "msg": "required by QQ Browser 10.4 and later"
+    },
     "-moz-animation-play-state": {
       "keep": false,
       "msg": "was required by Firefox 15 and earlier"
-    },
-    "-webkit-animation-play-state": {
-      "keep": false,
-      "msg": "was required by QQ Browser 1.2, UC Browser for Android 11.4, Android Browser 4.4, Chrome 42, iOS Safari 8.1, Opera 29, Safari 8 and earlier"
     },
     "-o-animation-play-state": {
       "keep": false,
@@ -258,13 +258,13 @@
       "keep": false,
       "msg": "prefix is no longer supported"
     },
+    "-webkit-animation-timing-function": {
+      "keep": true,
+      "msg": "required by QQ Browser 10.4 and later"
+    },
     "-moz-animation-timing-function": {
       "keep": false,
       "msg": "was required by Firefox 15 and earlier"
-    },
-    "-webkit-animation-timing-function": {
-      "keep": false,
-      "msg": "was required by QQ Browser 1.2, UC Browser for Android 11.4, Android Browser 4.4, Chrome 42, iOS Safari 8.1, Opera 29, Safari 8 and earlier"
     },
     "-o-animation-timing-function": {
       "keep": false,
@@ -274,13 +274,13 @@
       "keep": false,
       "msg": "prefix is no longer supported"
     },
+    "-webkit-@keyframes": {
+      "keep": true,
+      "msg": "required by QQ Browser 10.4 and later"
+    },
     "-moz-@keyframes": {
       "keep": false,
       "msg": "was required by Firefox 15 and earlier"
-    },
-    "-webkit-@keyframes": {
-      "keep": false,
-      "msg": "was required by QQ Browser 1.2, UC Browser for Android 11.4, Android Browser 4.4, Chrome 42, iOS Safari 8.1, Opera 29, Safari 8 and earlier"
     },
     "-o-@keyframes": {
       "keep": false,
@@ -290,13 +290,13 @@
       "keep": false,
       "msg": "prefix is no longer supported"
     },
-    "-moz-transition": {
-      "keep": false,
-      "msg": "was required by Firefox 15 and earlier"
-    },
     "-webkit-transition": {
       "keep": false,
       "msg": "was required by Android Browser 4.2, Chrome 25, iOS Safari 6, Opera 12, Safari 6 and earlier"
+    },
+    "-moz-transition": {
+      "keep": false,
+      "msg": "was required by Firefox 15 and earlier"
     },
     "-o-transition": {
       "keep": false,
@@ -306,13 +306,13 @@
       "keep": false,
       "msg": "prefix is no longer supported"
     },
-    "-moz-transition-property": {
-      "keep": false,
-      "msg": "was required by Firefox 15 and earlier"
-    },
     "-webkit-transition-property": {
       "keep": false,
       "msg": "was required by Android Browser 4.2, Chrome 25, iOS Safari 6, Opera 12, Safari 6 and earlier"
+    },
+    "-moz-transition-property": {
+      "keep": false,
+      "msg": "was required by Firefox 15 and earlier"
     },
     "-o-transition-property": {
       "keep": false,
@@ -322,13 +322,13 @@
       "keep": false,
       "msg": "prefix is no longer supported"
     },
-    "-moz-transition-duration": {
-      "keep": false,
-      "msg": "was required by Firefox 15 and earlier"
-    },
     "-webkit-transition-duration": {
       "keep": false,
       "msg": "was required by Android Browser 4.2, Chrome 25, iOS Safari 6, Opera 12, Safari 6 and earlier"
+    },
+    "-moz-transition-duration": {
+      "keep": false,
+      "msg": "was required by Firefox 15 and earlier"
     },
     "-o-transition-duration": {
       "keep": false,
@@ -338,13 +338,13 @@
       "keep": false,
       "msg": "prefix is no longer supported"
     },
-    "-moz-transition-delay": {
-      "keep": false,
-      "msg": "was required by Firefox 15 and earlier"
-    },
     "-webkit-transition-delay": {
       "keep": false,
       "msg": "was required by Android Browser 4.2, Chrome 25, iOS Safari 6, Opera 12, Safari 6 and earlier"
+    },
+    "-moz-transition-delay": {
+      "keep": false,
+      "msg": "was required by Firefox 15 and earlier"
     },
     "-o-transition-delay": {
       "keep": false,
@@ -354,13 +354,13 @@
       "keep": false,
       "msg": "prefix is no longer supported"
     },
-    "-moz-transition-timing-function": {
-      "keep": false,
-      "msg": "was required by Firefox 15 and earlier"
-    },
     "-webkit-transition-timing-function": {
       "keep": false,
       "msg": "was required by Android Browser 4.2, Chrome 25, iOS Safari 6, Opera 12, Safari 6 and earlier"
+    },
+    "-moz-transition-timing-function": {
+      "keep": false,
+      "msg": "was required by Firefox 15 and earlier"
     },
     "-o-transition-timing-function": {
       "keep": false,
@@ -370,13 +370,13 @@
       "keep": false,
       "msg": "was required by IE 9 and earlier"
     },
+    "-webkit-transform": {
+      "keep": false,
+      "msg": "was required by Android Browser 4.4, Chrome 35, iOS Safari 8.1, Opera 22, Safari 8 and earlier"
+    },
     "-moz-transform": {
       "keep": false,
       "msg": "was required by Firefox 15 and earlier"
-    },
-    "-webkit-transform": {
-      "keep": false,
-      "msg": "was required by UC Browser for Android 11.4, Android Browser 4.4, Chrome 35, iOS Safari 8.1, Opera 22, Safari 8 and earlier"
     },
     "-o-transform": {
       "keep": false,
@@ -386,13 +386,13 @@
       "keep": false,
       "msg": "was required by IE 9 and earlier"
     },
+    "-webkit-transform-origin": {
+      "keep": false,
+      "msg": "was required by Android Browser 4.4, Chrome 35, iOS Safari 8.1, Opera 22, Safari 8 and earlier"
+    },
     "-moz-transform-origin": {
       "keep": false,
       "msg": "was required by Firefox 15 and earlier"
-    },
-    "-webkit-transform-origin": {
-      "keep": false,
-      "msg": "was required by UC Browser for Android 11.4, Android Browser 4.4, Chrome 35, iOS Safari 8.1, Opera 22, Safari 8 and earlier"
     },
     "-o-transform-origin": {
       "keep": false,
@@ -402,13 +402,13 @@
       "keep": false,
       "msg": "prefix is no longer supported"
     },
+    "-webkit-perspective": {
+      "keep": false,
+      "msg": "was required by Android Browser 4.4, Chrome 35, iOS Safari 8.1, Opera 22, Safari 8 and earlier"
+    },
     "-moz-perspective": {
       "keep": false,
       "msg": "was required by Firefox 15 and earlier"
-    },
-    "-webkit-perspective": {
-      "keep": false,
-      "msg": "was required by UC Browser for Android 11.4, Android Browser 4.4, Chrome 35, iOS Safari 8.1, Opera 22, Safari 8 and earlier"
     },
     "-o-perspective": {
       "keep": false,
@@ -418,13 +418,13 @@
       "keep": false,
       "msg": "prefix is no longer supported"
     },
+    "-webkit-perspective-origin": {
+      "keep": false,
+      "msg": "was required by Android Browser 4.4, Chrome 35, iOS Safari 8.1, Opera 22, Safari 8 and earlier"
+    },
     "-moz-perspective-origin": {
       "keep": false,
       "msg": "was required by Firefox 15 and earlier"
-    },
-    "-webkit-perspective-origin": {
-      "keep": false,
-      "msg": "was required by UC Browser for Android 11.4, Android Browser 4.4, Chrome 35, iOS Safari 8.1, Opera 22, Safari 8 and earlier"
     },
     "-o-perspective-origin": {
       "keep": false,
@@ -434,13 +434,13 @@
       "keep": false,
       "msg": "prefix is no longer supported"
     },
+    "-webkit-transform-style": {
+      "keep": false,
+      "msg": "was required by Android Browser 4.4, Chrome 35, iOS Safari 8.1, Opera 22, Safari 8 and earlier"
+    },
     "-moz-transform-style": {
       "keep": false,
       "msg": "was required by Firefox 15 and earlier"
-    },
-    "-webkit-transform-style": {
-      "keep": false,
-      "msg": "was required by UC Browser for Android 11.4, Android Browser 4.4, Chrome 35, iOS Safari 8.1, Opera 22, Safari 8 and earlier"
     },
     "-o-transform-style": {
       "keep": false,
@@ -450,13 +450,13 @@
       "keep": false,
       "msg": "prefix is no longer supported"
     },
+    "-webkit-backface-visibility": {
+      "keep": true,
+      "msg": "required by Safari 13.1, iOS Safari 12.2 and later"
+    },
     "-moz-backface-visibility": {
       "keep": false,
       "msg": "was required by Firefox 15 and earlier"
-    },
-    "-webkit-backface-visibility": {
-      "keep": false,
-      "msg": "was required by UC Browser for Android 11.4, Android Browser 4.4, Chrome 35, iOS Safari 11, Opera 22, Safari NaN and earlier"
     },
     "-o-backface-visibility": {
       "keep": false,
@@ -466,13 +466,13 @@
       "keep": false,
       "msg": "prefix is no longer supported"
     },
-    "-moz-box-sizing": {
-      "keep": false,
-      "msg": "was required by Firefox 28 and earlier"
-    },
     "-webkit-box-sizing": {
       "keep": false,
       "msg": "was required by Android Browser 3, Chrome 9, iOS Safari 4.2, Safari 5 and earlier"
+    },
+    "-moz-box-sizing": {
+      "keep": false,
+      "msg": "was required by Firefox 28 and earlier"
     },
     "-o-box-sizing": {
       "keep": false,
@@ -482,29 +482,29 @@
       "keep": false,
       "msg": "prefix is no longer supported"
     },
+    "-webkit-filter": {
+      "keep": false,
+      "msg": "was required by Android Browser 4.4, Chrome 52, iOS Safari 9, Opera 39, Safari 9, Samsung Internet 6.2 and earlier"
+    },
     "-moz-filter": {
       "keep": false,
       "msg": "prefix is no longer supported"
     },
-    "-webkit-filter": {
-      "keep": true,
-      "msg": "required by Baidu Browser 7.12 and later"
-    },
     "-o-filter": {
       "keep": false,
-      "msg": "was required by Opera Mobile 37 and earlier"
+      "msg": "prefix is no longer supported"
     },
     "-ms-backdrop-filter": {
       "keep": false,
       "msg": "prefix is no longer supported"
     },
+    "-webkit-backdrop-filter": {
+      "keep": true,
+      "msg": "required by Safari 13.1, iOS Safari 12.2 and later"
+    },
     "-moz-backdrop-filter": {
       "keep": false,
       "msg": "prefix is no longer supported"
-    },
-    "-webkit-backdrop-filter": {
-      "keep": false,
-      "msg": "was required by iOS Safari 11, Safari NaN and earlier"
     },
     "-o-backdrop-filter": {
       "keep": false,
@@ -514,13 +514,13 @@
       "keep": false,
       "msg": "prefix is no longer supported"
     },
-    "-moz-columns": {
-      "keep": false,
-      "msg": "was required by Firefox 51 and earlier"
-    },
     "-webkit-columns": {
       "keep": false,
-      "msg": "was required by UC Browser for Android 11.4, Android Browser 4.4, Chrome 49, iOS Safari 8.1, Opera 36, Safari 8, Samsung Internet 4 and earlier"
+      "msg": "was required by Android Browser 4.4, Chrome 49, iOS Safari 8.1, Opera 36, Safari 8, Samsung Internet 4 and earlier"
+    },
+    "-moz-columns": {
+      "keep": true,
+      "msg": "required by KaiOS Browser 2.5 and later"
     },
     "-o-columns": {
       "keep": false,
@@ -530,13 +530,13 @@
       "keep": false,
       "msg": "prefix is no longer supported"
     },
-    "-moz-column-width": {
-      "keep": false,
-      "msg": "was required by Firefox 51 and earlier"
-    },
     "-webkit-column-width": {
       "keep": false,
-      "msg": "was required by UC Browser for Android 11.4, Android Browser 4.4, Chrome 49, iOS Safari 8.1, Opera 36, Safari 8, Samsung Internet 4 and earlier"
+      "msg": "was required by Android Browser 4.4, Chrome 49, iOS Safari 8.1, Opera 36, Safari 8, Samsung Internet 4 and earlier"
+    },
+    "-moz-column-width": {
+      "keep": true,
+      "msg": "required by KaiOS Browser 2.5 and later"
     },
     "-o-column-width": {
       "keep": false,
@@ -546,13 +546,13 @@
       "keep": false,
       "msg": "prefix is no longer supported"
     },
-    "-moz-column-gap": {
-      "keep": false,
-      "msg": "was required by Firefox 51 and earlier"
-    },
     "-webkit-column-gap": {
       "keep": false,
-      "msg": "was required by UC Browser for Android 11.4, Android Browser 4.4, Chrome 49, iOS Safari 8.1, Opera 36, Safari 8, Samsung Internet 4 and earlier"
+      "msg": "was required by Android Browser 4.4, Chrome 49, iOS Safari 8.1, Opera 36, Safari 8, Samsung Internet 4 and earlier"
+    },
+    "-moz-column-gap": {
+      "keep": true,
+      "msg": "required by KaiOS Browser 2.5 and later"
     },
     "-o-column-gap": {
       "keep": false,
@@ -562,13 +562,13 @@
       "keep": false,
       "msg": "prefix is no longer supported"
     },
-    "-moz-column-rule": {
-      "keep": false,
-      "msg": "was required by Firefox 51 and earlier"
-    },
     "-webkit-column-rule": {
       "keep": false,
-      "msg": "was required by UC Browser for Android 11.4, Android Browser 4.4, Chrome 49, iOS Safari 8.1, Opera 36, Safari 8, Samsung Internet 4 and earlier"
+      "msg": "was required by Android Browser 4.4, Chrome 49, iOS Safari 8.1, Opera 36, Safari 8, Samsung Internet 4 and earlier"
+    },
+    "-moz-column-rule": {
+      "keep": true,
+      "msg": "required by KaiOS Browser 2.5 and later"
     },
     "-o-column-rule": {
       "keep": false,
@@ -578,13 +578,13 @@
       "keep": false,
       "msg": "prefix is no longer supported"
     },
-    "-moz-column-rule-color": {
-      "keep": false,
-      "msg": "was required by Firefox 51 and earlier"
-    },
     "-webkit-column-rule-color": {
       "keep": false,
-      "msg": "was required by UC Browser for Android 11.4, Android Browser 4.4, Chrome 49, iOS Safari 8.1, Opera 36, Safari 8, Samsung Internet 4 and earlier"
+      "msg": "was required by Android Browser 4.4, Chrome 49, iOS Safari 8.1, Opera 36, Safari 8, Samsung Internet 4 and earlier"
+    },
+    "-moz-column-rule-color": {
+      "keep": true,
+      "msg": "required by KaiOS Browser 2.5 and later"
     },
     "-o-column-rule-color": {
       "keep": false,
@@ -594,13 +594,13 @@
       "keep": false,
       "msg": "prefix is no longer supported"
     },
-    "-moz-column-rule-width": {
-      "keep": false,
-      "msg": "was required by Firefox 51 and earlier"
-    },
     "-webkit-column-rule-width": {
       "keep": false,
-      "msg": "was required by UC Browser for Android 11.4, Android Browser 4.4, Chrome 49, iOS Safari 8.1, Opera 36, Safari 8, Samsung Internet 4 and earlier"
+      "msg": "was required by Android Browser 4.4, Chrome 49, iOS Safari 8.1, Opera 36, Safari 8, Samsung Internet 4 and earlier"
+    },
+    "-moz-column-rule-width": {
+      "keep": true,
+      "msg": "required by KaiOS Browser 2.5 and later"
     },
     "-o-column-rule-width": {
       "keep": false,
@@ -610,13 +610,13 @@
       "keep": false,
       "msg": "prefix is no longer supported"
     },
-    "-moz-column-count": {
-      "keep": false,
-      "msg": "was required by Firefox 51 and earlier"
-    },
     "-webkit-column-count": {
       "keep": false,
-      "msg": "was required by UC Browser for Android 11.4, Android Browser 4.4, Chrome 49, iOS Safari 8.1, Opera 36, Safari 8, Samsung Internet 4 and earlier"
+      "msg": "was required by Android Browser 4.4, Chrome 49, iOS Safari 8.1, Opera 36, Safari 8, Samsung Internet 4 and earlier"
+    },
+    "-moz-column-count": {
+      "keep": true,
+      "msg": "required by KaiOS Browser 2.5 and later"
     },
     "-o-column-count": {
       "keep": false,
@@ -626,13 +626,13 @@
       "keep": false,
       "msg": "prefix is no longer supported"
     },
-    "-moz-column-rule-style": {
-      "keep": false,
-      "msg": "was required by Firefox 51 and earlier"
-    },
     "-webkit-column-rule-style": {
       "keep": false,
-      "msg": "was required by UC Browser for Android 11.4, Android Browser 4.4, Chrome 49, iOS Safari 8.1, Opera 36, Safari 8, Samsung Internet 4 and earlier"
+      "msg": "was required by Android Browser 4.4, Chrome 49, iOS Safari 8.1, Opera 36, Safari 8, Samsung Internet 4 and earlier"
+    },
+    "-moz-column-rule-style": {
+      "keep": true,
+      "msg": "required by KaiOS Browser 2.5 and later"
     },
     "-o-column-rule-style": {
       "keep": false,
@@ -642,13 +642,13 @@
       "keep": false,
       "msg": "prefix is no longer supported"
     },
-    "-moz-column-span": {
-      "keep": false,
-      "msg": "was required by Firefox 51 and earlier"
-    },
     "-webkit-column-span": {
       "keep": false,
-      "msg": "was required by UC Browser for Android 11.4, Android Browser 4.4, Chrome 49, iOS Safari 8.1, Opera 36, Safari 8, Samsung Internet 4 and earlier"
+      "msg": "was required by Android Browser 4.4, Chrome 49, iOS Safari 8.1, Opera 36, Safari 8, Samsung Internet 4 and earlier"
+    },
+    "-moz-column-span": {
+      "keep": true,
+      "msg": "required by KaiOS Browser 2.5 and later"
     },
     "-o-column-span": {
       "keep": false,
@@ -658,13 +658,13 @@
       "keep": false,
       "msg": "prefix is no longer supported"
     },
-    "-moz-column-fill": {
-      "keep": false,
-      "msg": "was required by Firefox 51 and earlier"
-    },
     "-webkit-column-fill": {
       "keep": false,
-      "msg": "was required by UC Browser for Android 11.4, Android Browser 4.4, Chrome 49, iOS Safari 8.1, Opera 36, Safari 8, Samsung Internet 4 and earlier"
+      "msg": "was required by Android Browser 4.4, Chrome 49, iOS Safari 8.1, Opera 36, Safari 8, Samsung Internet 4 and earlier"
+    },
+    "-moz-column-fill": {
+      "keep": true,
+      "msg": "required by KaiOS Browser 2.5 and later"
     },
     "-o-column-fill": {
       "keep": false,
@@ -674,13 +674,13 @@
       "keep": false,
       "msg": "prefix is no longer supported"
     },
-    "-moz-break-before": {
-      "keep": false,
-      "msg": "was required by Firefox 51 and earlier"
-    },
     "-webkit-break-before": {
       "keep": false,
-      "msg": "was required by UC Browser for Android 11.4, Android Browser 4.4, Chrome 49, iOS Safari 8.1, Opera 36, Safari 8, Samsung Internet 4 and earlier"
+      "msg": "was required by Android Browser 4.4, Chrome 49, iOS Safari 8.1, Opera 36, Safari 8, Samsung Internet 4 and earlier"
+    },
+    "-moz-break-before": {
+      "keep": true,
+      "msg": "required by KaiOS Browser 2.5 and later"
     },
     "-o-break-before": {
       "keep": false,
@@ -690,13 +690,13 @@
       "keep": false,
       "msg": "prefix is no longer supported"
     },
-    "-moz-break-after": {
-      "keep": false,
-      "msg": "was required by Firefox 51 and earlier"
-    },
     "-webkit-break-after": {
       "keep": false,
-      "msg": "was required by UC Browser for Android 11.4, Android Browser 4.4, Chrome 49, iOS Safari 8.1, Opera 36, Safari 8, Samsung Internet 4 and earlier"
+      "msg": "was required by Android Browser 4.4, Chrome 49, iOS Safari 8.1, Opera 36, Safari 8, Samsung Internet 4 and earlier"
+    },
+    "-moz-break-after": {
+      "keep": true,
+      "msg": "required by KaiOS Browser 2.5 and later"
     },
     "-o-break-after": {
       "keep": false,
@@ -706,13 +706,13 @@
       "keep": false,
       "msg": "prefix is no longer supported"
     },
-    "-moz-break-inside": {
-      "keep": false,
-      "msg": "was required by Firefox 51 and earlier"
-    },
     "-webkit-break-inside": {
       "keep": false,
-      "msg": "was required by UC Browser for Android 11.4, Android Browser 4.4, Chrome 49, iOS Safari 8.1, Opera 36, Safari 8, Samsung Internet 4 and earlier"
+      "msg": "was required by Android Browser 4.4, Chrome 49, iOS Safari 8.1, Opera 36, Safari 8, Samsung Internet 4 and earlier"
+    },
+    "-moz-break-inside": {
+      "keep": true,
+      "msg": "required by KaiOS Browser 2.5 and later"
     },
     "-o-break-inside": {
       "keep": false,
@@ -722,29 +722,29 @@
       "keep": true,
       "msg": "required by IE 11 and later"
     },
-    "-moz-user-select": {
-      "keep": false,
-      "msg": "was required by Firefox for Android 57, Firefox 60 and earlier"
-    },
     "-webkit-user-select": {
-      "keep": false,
-      "msg": "was required by QQ Browser 1.2, UC Browser for Android 11.4, Android Browser 4.4, Chrome 53, iOS Safari 11, Opera 40, Safari NaN, Samsung Internet 6.2 and earlier"
+      "keep": true,
+      "msg": "required by Safari 13.1, iOS Safari 12.2 and later"
+    },
+    "-moz-user-select": {
+      "keep": true,
+      "msg": "required by KaiOS Browser 2.5 and later"
     },
     "-o-user-select": {
       "keep": false,
-      "msg": "was required by Opera Mobile 37 and earlier"
+      "msg": "prefix is no longer supported"
     },
     "-ms-flex": {
       "keep": false,
       "msg": "was required by IE 10 and earlier"
     },
+    "-webkit-flex": {
+      "keep": false,
+      "msg": "was required by Android Browser 4.2, Chrome 28, iOS Safari 8.1, Opera 16, Safari 8 and earlier"
+    },
     "-moz-flex": {
       "keep": false,
       "msg": "was required by Firefox 21 and earlier"
-    },
-    "-webkit-flex": {
-      "keep": false,
-      "msg": "was required by UC Browser for Android 11.4, Android Browser 4.2, Chrome 28, iOS Safari 8.1, Opera 16, Safari 8 and earlier"
     },
     "-o-flex": {
       "keep": false,
@@ -754,13 +754,13 @@
       "keep": false,
       "msg": "was required by IE 10 and earlier"
     },
+    "-webkit-flex-grow": {
+      "keep": false,
+      "msg": "was required by Android Browser 4.2, Chrome 28, iOS Safari 8.1, Opera 16, Safari 8 and earlier"
+    },
     "-moz-flex-grow": {
       "keep": false,
       "msg": "was required by Firefox 21 and earlier"
-    },
-    "-webkit-flex-grow": {
-      "keep": false,
-      "msg": "was required by UC Browser for Android 11.4, Android Browser 4.2, Chrome 28, iOS Safari 8.1, Opera 16, Safari 8 and earlier"
     },
     "-o-flex-grow": {
       "keep": false,
@@ -770,13 +770,13 @@
       "keep": false,
       "msg": "was required by IE 10 and earlier"
     },
+    "-webkit-flex-shrink": {
+      "keep": false,
+      "msg": "was required by Android Browser 4.2, Chrome 28, iOS Safari 8.1, Opera 16, Safari 8 and earlier"
+    },
     "-moz-flex-shrink": {
       "keep": false,
       "msg": "was required by Firefox 21 and earlier"
-    },
-    "-webkit-flex-shrink": {
-      "keep": false,
-      "msg": "was required by UC Browser for Android 11.4, Android Browser 4.2, Chrome 28, iOS Safari 8.1, Opera 16, Safari 8 and earlier"
     },
     "-o-flex-shrink": {
       "keep": false,
@@ -786,13 +786,13 @@
       "keep": false,
       "msg": "was required by IE 10 and earlier"
     },
+    "-webkit-flex-basis": {
+      "keep": false,
+      "msg": "was required by Android Browser 4.2, Chrome 28, iOS Safari 8.1, Opera 16, Safari 8 and earlier"
+    },
     "-moz-flex-basis": {
       "keep": false,
       "msg": "was required by Firefox 21 and earlier"
-    },
-    "-webkit-flex-basis": {
-      "keep": false,
-      "msg": "was required by UC Browser for Android 11.4, Android Browser 4.2, Chrome 28, iOS Safari 8.1, Opera 16, Safari 8 and earlier"
     },
     "-o-flex-basis": {
       "keep": false,
@@ -802,13 +802,13 @@
       "keep": false,
       "msg": "was required by IE 10 and earlier"
     },
+    "-webkit-flex-direction": {
+      "keep": false,
+      "msg": "was required by Android Browser 4.2, Chrome 28, iOS Safari 8.1, Opera 16, Safari 8 and earlier"
+    },
     "-moz-flex-direction": {
       "keep": false,
       "msg": "was required by Firefox 21 and earlier"
-    },
-    "-webkit-flex-direction": {
-      "keep": false,
-      "msg": "was required by UC Browser for Android 11.4, Android Browser 4.2, Chrome 28, iOS Safari 8.1, Opera 16, Safari 8 and earlier"
     },
     "-o-flex-direction": {
       "keep": false,
@@ -818,13 +818,13 @@
       "keep": false,
       "msg": "was required by IE 10 and earlier"
     },
+    "-webkit-flex-wrap": {
+      "keep": false,
+      "msg": "was required by Android Browser 4.2, Chrome 28, iOS Safari 8.1, Opera 16, Safari 8 and earlier"
+    },
     "-moz-flex-wrap": {
       "keep": false,
       "msg": "was required by Firefox 21 and earlier"
-    },
-    "-webkit-flex-wrap": {
-      "keep": false,
-      "msg": "was required by UC Browser for Android 11.4, Android Browser 4.2, Chrome 28, iOS Safari 8.1, Opera 16, Safari 8 and earlier"
     },
     "-o-flex-wrap": {
       "keep": false,
@@ -834,13 +834,13 @@
       "keep": false,
       "msg": "was required by IE 10 and earlier"
     },
+    "-webkit-flex-flow": {
+      "keep": false,
+      "msg": "was required by Android Browser 4.2, Chrome 28, iOS Safari 8.1, Opera 16, Safari 8 and earlier"
+    },
     "-moz-flex-flow": {
       "keep": false,
       "msg": "was required by Firefox 21 and earlier"
-    },
-    "-webkit-flex-flow": {
-      "keep": false,
-      "msg": "was required by UC Browser for Android 11.4, Android Browser 4.2, Chrome 28, iOS Safari 8.1, Opera 16, Safari 8 and earlier"
     },
     "-o-flex-flow": {
       "keep": false,
@@ -850,13 +850,13 @@
       "keep": false,
       "msg": "was required by IE 10 and earlier"
     },
+    "-webkit-justify-content": {
+      "keep": false,
+      "msg": "was required by Android Browser 4.2, Chrome 28, iOS Safari 8.1, Opera 16, Safari 8 and earlier"
+    },
     "-moz-justify-content": {
       "keep": false,
       "msg": "was required by Firefox 21 and earlier"
-    },
-    "-webkit-justify-content": {
-      "keep": false,
-      "msg": "was required by UC Browser for Android 11.4, Android Browser 4.2, Chrome 28, iOS Safari 8.1, Opera 16, Safari 8 and earlier"
     },
     "-o-justify-content": {
       "keep": false,
@@ -866,13 +866,13 @@
       "keep": false,
       "msg": "was required by IE 10 and earlier"
     },
+    "-webkit-order": {
+      "keep": false,
+      "msg": "was required by Android Browser 4.2, Chrome 28, iOS Safari 8.1, Opera 16, Safari 8 and earlier"
+    },
     "-moz-order": {
       "keep": false,
       "msg": "was required by Firefox 21 and earlier"
-    },
-    "-webkit-order": {
-      "keep": false,
-      "msg": "was required by UC Browser for Android 11.4, Android Browser 4.2, Chrome 28, iOS Safari 8.1, Opera 16, Safari 8 and earlier"
     },
     "-o-order": {
       "keep": false,
@@ -882,13 +882,13 @@
       "keep": false,
       "msg": "was required by IE 10 and earlier"
     },
+    "-webkit-align-items": {
+      "keep": false,
+      "msg": "was required by Android Browser 4.2, Chrome 28, iOS Safari 8.1, Opera 16, Safari 8 and earlier"
+    },
     "-moz-align-items": {
       "keep": false,
       "msg": "was required by Firefox 21 and earlier"
-    },
-    "-webkit-align-items": {
-      "keep": false,
-      "msg": "was required by UC Browser for Android 11.4, Android Browser 4.2, Chrome 28, iOS Safari 8.1, Opera 16, Safari 8 and earlier"
     },
     "-o-align-items": {
       "keep": false,
@@ -898,13 +898,13 @@
       "keep": false,
       "msg": "was required by IE 10 and earlier"
     },
+    "-webkit-align-self": {
+      "keep": false,
+      "msg": "was required by Android Browser 4.2, Chrome 28, iOS Safari 8.1, Opera 16, Safari 8 and earlier"
+    },
     "-moz-align-self": {
       "keep": false,
       "msg": "was required by Firefox 21 and earlier"
-    },
-    "-webkit-align-self": {
-      "keep": false,
-      "msg": "was required by UC Browser for Android 11.4, Android Browser 4.2, Chrome 28, iOS Safari 8.1, Opera 16, Safari 8 and earlier"
     },
     "-o-align-self": {
       "keep": false,
@@ -914,31 +914,15 @@
       "keep": false,
       "msg": "was required by IE 10 and earlier"
     },
+    "-webkit-align-content": {
+      "keep": false,
+      "msg": "was required by Android Browser 4.2, Chrome 28, iOS Safari 8.1, Opera 16, Safari 8 and earlier"
+    },
     "-moz-align-content": {
       "keep": false,
       "msg": "was required by Firefox 21 and earlier"
     },
-    "-webkit-align-content": {
-      "keep": false,
-      "msg": "was required by UC Browser for Android 11.4, Android Browser 4.2, Chrome 28, iOS Safari 8.1, Opera 16, Safari 8 and earlier"
-    },
     "-o-align-content": {
-      "keep": false,
-      "msg": "prefix is no longer supported"
-    },
-    "-ms-background-clip": {
-      "keep": false,
-      "msg": "prefix is no longer supported"
-    },
-    "-moz-background-clip": {
-      "keep": false,
-      "msg": "was required by Firefox 3.6 and earlier"
-    },
-    "-webkit-background-clip": {
-      "keep": false,
-      "msg": "was required by Android Browser 2.3, Opera 10 and earlier"
-    },
-    "-o-background-clip": {
       "keep": false,
       "msg": "prefix is no longer supported"
     },
@@ -946,13 +930,13 @@
       "keep": false,
       "msg": "prefix is no longer supported"
     },
-    "-moz-background-origin": {
-      "keep": false,
-      "msg": "was required by Firefox 3.6 and earlier"
-    },
     "-webkit-background-origin": {
       "keep": false,
       "msg": "was required by Android Browser 2.3, Opera 10 and earlier"
+    },
+    "-moz-background-origin": {
+      "keep": false,
+      "msg": "was required by Firefox 3.6 and earlier"
     },
     "-o-background-origin": {
       "keep": false,
@@ -962,29 +946,45 @@
       "keep": false,
       "msg": "prefix is no longer supported"
     },
-    "-moz-background-size": {
-      "keep": false,
-      "msg": "was required by Firefox 3.6 and earlier"
-    },
     "-webkit-background-size": {
       "keep": false,
       "msg": "was required by Android Browser 2.3, Opera 10 and earlier"
+    },
+    "-moz-background-size": {
+      "keep": false,
+      "msg": "was required by Firefox 3.6 and earlier"
     },
     "-o-background-size": {
       "keep": false,
       "msg": "prefix is no longer supported"
     },
+    "-ms-background-clip": {
+      "keep": false,
+      "msg": "prefix is no longer supported"
+    },
+    "-webkit-background-clip": {
+      "keep": true,
+      "msg": "required by Edge 87, Chrome 86, Safari 13.1, Opera 72, iOS Safari 12.2, Android Browser 81, Chrome for Android 88, UC Browser for Android 12.12, Samsung Internet 12, QQ Browser 10.4, Baidu Browser 7.12 and later"
+    },
+    "-moz-background-clip": {
+      "keep": false,
+      "msg": "prefix is no longer supported"
+    },
+    "-o-background-clip": {
+      "keep": true,
+      "msg": "required by Opera Mobile 59 and later"
+    },
     "-ms-font-feature-settings": {
       "keep": false,
       "msg": "prefix is no longer supported"
     },
+    "-webkit-font-feature-settings": {
+      "keep": false,
+      "msg": "was required by Android Browser 4.4, Chrome 47, Opera 34, Samsung Internet 4 and earlier"
+    },
     "-moz-font-feature-settings": {
       "keep": false,
       "msg": "was required by Firefox 33 and earlier"
-    },
-    "-webkit-font-feature-settings": {
-      "keep": false,
-      "msg": "was required by UC Browser for Android 11.4, Android Browser 4.4, Chrome 47, Opera 34, Samsung Internet 4 and earlier"
     },
     "-o-font-feature-settings": {
       "keep": false,
@@ -994,13 +994,13 @@
       "keep": false,
       "msg": "prefix is no longer supported"
     },
+    "-webkit-font-variant-ligatures": {
+      "keep": false,
+      "msg": "was required by Android Browser 4.4, Chrome 47, Opera 34, Samsung Internet 4 and earlier"
+    },
     "-moz-font-variant-ligatures": {
       "keep": false,
       "msg": "was required by Firefox 33 and earlier"
-    },
-    "-webkit-font-variant-ligatures": {
-      "keep": false,
-      "msg": "was required by UC Browser for Android 11.4, Android Browser 4.4, Chrome 47, Opera 34, Samsung Internet 4 and earlier"
     },
     "-o-font-variant-ligatures": {
       "keep": false,
@@ -1010,13 +1010,13 @@
       "keep": false,
       "msg": "prefix is no longer supported"
     },
+    "-webkit-font-language-override": {
+      "keep": false,
+      "msg": "was required by Android Browser 4.4, Chrome 47, Opera 34, Samsung Internet 4 and earlier"
+    },
     "-moz-font-language-override": {
       "keep": false,
       "msg": "was required by Firefox 33 and earlier"
-    },
-    "-webkit-font-language-override": {
-      "keep": false,
-      "msg": "was required by UC Browser for Android 11.4, Android Browser 4.4, Chrome 47, Opera 34, Samsung Internet 4 and earlier"
     },
     "-o-font-language-override": {
       "keep": false,
@@ -1026,13 +1026,13 @@
       "keep": false,
       "msg": "prefix is no longer supported"
     },
+    "-webkit-font-kerning": {
+      "keep": true,
+      "msg": "required by iOS Safari 12.2 and later"
+    },
     "-moz-font-kerning": {
       "keep": false,
       "msg": "prefix is no longer supported"
-    },
-    "-webkit-font-kerning": {
-      "keep": false,
-      "msg": "was required by Android Browser 4.4, Chrome 32, iOS Safari 11, Opera 19, Safari 9 and earlier"
     },
     "-o-font-kerning": {
       "keep": false,
@@ -1042,13 +1042,13 @@
       "keep": false,
       "msg": "prefix is no longer supported"
     },
-    "-moz-border-image": {
-      "keep": false,
-      "msg": "was required by Firefox 14 and earlier"
-    },
     "-webkit-border-image": {
       "keep": false,
       "msg": "was required by Android Browser 4.2, Chrome 14, iOS Safari 5, Opera 12.1, Safari 5.1 and earlier"
+    },
+    "-moz-border-image": {
+      "keep": false,
+      "msg": "was required by Firefox 14 and earlier"
     },
     "-o-border-image": {
       "keep": true,
@@ -1058,13 +1058,13 @@
       "keep": true,
       "msg": "required by IE 11 and later"
     },
+    "-webkit-hyphens": {
+      "keep": true,
+      "msg": "required by Safari 13.1, iOS Safari 12.2 and later"
+    },
     "-moz-hyphens": {
       "keep": false,
       "msg": "was required by Firefox 42 and earlier"
-    },
-    "-webkit-hyphens": {
-      "keep": false,
-      "msg": "was required by UC Browser for Android 11.4, iOS Safari 11, Safari NaN and earlier"
     },
     "-o-hyphens": {
       "keep": false,
@@ -1074,13 +1074,13 @@
       "keep": false,
       "msg": "prefix is no longer supported"
     },
-    "-moz-tab-size": {
-      "keep": false,
-      "msg": "was required by Firefox for Android 57, Firefox 60 and earlier"
-    },
     "-webkit-tab-size": {
       "keep": false,
       "msg": "was required by Opera 12.1 and earlier"
+    },
+    "-moz-tab-size": {
+      "keep": true,
+      "msg": "required by Firefox 78, Firefox for Android 85, KaiOS Browser 2.5 and later"
     },
     "-o-tab-size": {
       "keep": true,
@@ -1090,11 +1090,11 @@
       "keep": false,
       "msg": "was required by IE 10 and earlier"
     },
-    "-moz-touch-action": {
+    "-webkit-touch-action": {
       "keep": false,
       "msg": "prefix is no longer supported"
     },
-    "-webkit-touch-action": {
+    "-moz-touch-action": {
       "keep": false,
       "msg": "prefix is no longer supported"
     },
@@ -1106,13 +1106,13 @@
       "keep": false,
       "msg": "prefix is no longer supported"
     },
+    "-webkit-text-decoration-style": {
+      "keep": true,
+      "msg": "required by iOS Safari 12.2 and later"
+    },
     "-moz-text-decoration-style": {
       "keep": false,
       "msg": "was required by Firefox 35 and earlier"
-    },
-    "-webkit-text-decoration-style": {
-      "keep": false,
-      "msg": "was required by Chrome 56, iOS Safari 11, Opera 43, Safari NaN and earlier"
     },
     "-o-text-decoration-style": {
       "keep": false,
@@ -1122,13 +1122,13 @@
       "keep": false,
       "msg": "prefix is no longer supported"
     },
+    "-webkit-text-decoration-color": {
+      "keep": true,
+      "msg": "required by iOS Safari 12.2 and later"
+    },
     "-moz-text-decoration-color": {
       "keep": false,
       "msg": "was required by Firefox 35 and earlier"
-    },
-    "-webkit-text-decoration-color": {
-      "keep": false,
-      "msg": "was required by Chrome 56, iOS Safari 11, Opera 43, Safari NaN and earlier"
     },
     "-o-text-decoration-color": {
       "keep": false,
@@ -1138,15 +1138,31 @@
       "keep": false,
       "msg": "prefix is no longer supported"
     },
+    "-webkit-text-decoration-line": {
+      "keep": true,
+      "msg": "required by iOS Safari 12.2 and later"
+    },
     "-moz-text-decoration-line": {
       "keep": false,
       "msg": "was required by Firefox 35 and earlier"
     },
-    "-webkit-text-decoration-line": {
-      "keep": false,
-      "msg": "was required by Chrome 56, iOS Safari 11, Opera 43, Safari NaN and earlier"
-    },
     "-o-text-decoration-line": {
+      "keep": false,
+      "msg": "prefix is no longer supported"
+    },
+    "-ms-text-decoration": {
+      "keep": false,
+      "msg": "prefix is no longer supported"
+    },
+    "-webkit-text-decoration": {
+      "keep": true,
+      "msg": "required by iOS Safari 12.2 and later"
+    },
+    "-moz-text-decoration": {
+      "keep": false,
+      "msg": "was required by Firefox 35 and earlier"
+    },
+    "-o-text-decoration": {
       "keep": false,
       "msg": "prefix is no longer supported"
     },
@@ -1154,15 +1170,31 @@
       "keep": false,
       "msg": "prefix is no longer supported"
     },
+    "-webkit-text-decoration-skip": {
+      "keep": true,
+      "msg": "required by iOS Safari 12.2 and later"
+    },
     "-moz-text-decoration-skip": {
       "keep": false,
       "msg": "prefix is no longer supported"
     },
-    "-webkit-text-decoration-skip": {
-      "keep": false,
-      "msg": "was required by iOS Safari 11, Safari NaN and earlier"
-    },
     "-o-text-decoration-skip": {
+      "keep": false,
+      "msg": "prefix is no longer supported"
+    },
+    "-ms-text-decoration-skip-ink": {
+      "keep": false,
+      "msg": "prefix is no longer supported"
+    },
+    "-webkit-text-decoration-skip-ink": {
+      "keep": true,
+      "msg": "required by iOS Safari 12.2 and later"
+    },
+    "-moz-text-decoration-skip-ink": {
+      "keep": false,
+      "msg": "prefix is no longer supported"
+    },
+    "-o-text-decoration-skip-ink": {
       "keep": false,
       "msg": "prefix is no longer supported"
     },
@@ -1170,13 +1202,13 @@
       "keep": false,
       "msg": "prefix is no longer supported"
     },
-    "-moz-text-size-adjust": {
-      "keep": false,
-      "msg": "was required by Firefox for Android 57 and earlier"
-    },
     "-webkit-text-size-adjust": {
-      "keep": false,
-      "msg": "was required by UC Browser for Android 11.4, iOS Safari 11 and earlier"
+      "keep": true,
+      "msg": "required by iOS Safari 12.2 and later"
+    },
+    "-moz-text-size-adjust": {
+      "keep": true,
+      "msg": "required by Firefox for Android 85 and later"
     },
     "-o-text-size-adjust": {
       "keep": false,
@@ -1186,269 +1218,269 @@
       "keep": false,
       "msg": "prefix is no longer supported"
     },
+    "-webkit-mask-clip": {
+      "keep": true,
+      "msg": "required by Edge 87, Chrome 86, Safari 13.1, Opera 72, iOS Safari 12.2, Android Browser 81, Chrome for Android 88, UC Browser for Android 12.12, Samsung Internet 12, QQ Browser 10.4, Baidu Browser 7.12 and later"
+    },
     "-moz-mask-clip": {
       "keep": false,
       "msg": "prefix is no longer supported"
     },
-    "-webkit-mask-clip": {
-      "keep": true,
-      "msg": "required by Baidu Browser 7.12 and later"
-    },
     "-o-mask-clip": {
-      "keep": false,
-      "msg": "was required by Opera Mobile 37 and earlier"
+      "keep": true,
+      "msg": "required by Opera Mobile 59 and later"
     },
     "-ms-mask-composite": {
       "keep": false,
       "msg": "prefix is no longer supported"
     },
+    "-webkit-mask-composite": {
+      "keep": true,
+      "msg": "required by Edge 87, Chrome 86, Safari 13.1, Opera 72, iOS Safari 12.2, Android Browser 81, Chrome for Android 88, UC Browser for Android 12.12, Samsung Internet 12, QQ Browser 10.4, Baidu Browser 7.12 and later"
+    },
     "-moz-mask-composite": {
       "keep": false,
       "msg": "prefix is no longer supported"
     },
-    "-webkit-mask-composite": {
-      "keep": true,
-      "msg": "required by Baidu Browser 7.12 and later"
-    },
     "-o-mask-composite": {
-      "keep": false,
-      "msg": "was required by Opera Mobile 37 and earlier"
+      "keep": true,
+      "msg": "required by Opera Mobile 59 and later"
     },
     "-ms-mask-image": {
       "keep": false,
       "msg": "prefix is no longer supported"
     },
+    "-webkit-mask-image": {
+      "keep": true,
+      "msg": "required by Edge 87, Chrome 86, Safari 13.1, Opera 72, iOS Safari 12.2, Android Browser 81, Chrome for Android 88, UC Browser for Android 12.12, Samsung Internet 12, QQ Browser 10.4, Baidu Browser 7.12 and later"
+    },
     "-moz-mask-image": {
       "keep": false,
       "msg": "prefix is no longer supported"
     },
-    "-webkit-mask-image": {
-      "keep": true,
-      "msg": "required by Baidu Browser 7.12 and later"
-    },
     "-o-mask-image": {
-      "keep": false,
-      "msg": "was required by Opera Mobile 37 and earlier"
+      "keep": true,
+      "msg": "required by Opera Mobile 59 and later"
     },
     "-ms-mask-origin": {
       "keep": false,
       "msg": "prefix is no longer supported"
     },
+    "-webkit-mask-origin": {
+      "keep": true,
+      "msg": "required by Edge 87, Chrome 86, Safari 13.1, Opera 72, iOS Safari 12.2, Android Browser 81, Chrome for Android 88, UC Browser for Android 12.12, Samsung Internet 12, QQ Browser 10.4, Baidu Browser 7.12 and later"
+    },
     "-moz-mask-origin": {
       "keep": false,
       "msg": "prefix is no longer supported"
     },
-    "-webkit-mask-origin": {
-      "keep": true,
-      "msg": "required by Baidu Browser 7.12 and later"
-    },
     "-o-mask-origin": {
-      "keep": false,
-      "msg": "was required by Opera Mobile 37 and earlier"
+      "keep": true,
+      "msg": "required by Opera Mobile 59 and later"
     },
     "-ms-mask-repeat": {
       "keep": false,
       "msg": "prefix is no longer supported"
     },
+    "-webkit-mask-repeat": {
+      "keep": true,
+      "msg": "required by Edge 87, Chrome 86, Safari 13.1, Opera 72, iOS Safari 12.2, Android Browser 81, Chrome for Android 88, UC Browser for Android 12.12, Samsung Internet 12, QQ Browser 10.4, Baidu Browser 7.12 and later"
+    },
     "-moz-mask-repeat": {
       "keep": false,
       "msg": "prefix is no longer supported"
     },
-    "-webkit-mask-repeat": {
-      "keep": true,
-      "msg": "required by Baidu Browser 7.12 and later"
-    },
     "-o-mask-repeat": {
-      "keep": false,
-      "msg": "was required by Opera Mobile 37 and earlier"
+      "keep": true,
+      "msg": "required by Opera Mobile 59 and later"
     },
     "-ms-mask-border-repeat": {
       "keep": false,
       "msg": "prefix is no longer supported"
     },
+    "-webkit-mask-border-repeat": {
+      "keep": true,
+      "msg": "required by Edge 87, Chrome 86, Safari 13.1, Opera 72, iOS Safari 12.2, Android Browser 81, Chrome for Android 88, UC Browser for Android 12.12, Samsung Internet 12, QQ Browser 10.4, Baidu Browser 7.12 and later"
+    },
     "-moz-mask-border-repeat": {
       "keep": false,
       "msg": "prefix is no longer supported"
     },
-    "-webkit-mask-border-repeat": {
-      "keep": true,
-      "msg": "required by Baidu Browser 7.12 and later"
-    },
     "-o-mask-border-repeat": {
-      "keep": false,
-      "msg": "was required by Opera Mobile 37 and earlier"
+      "keep": true,
+      "msg": "required by Opera Mobile 59 and later"
     },
     "-ms-mask-border-source": {
       "keep": false,
       "msg": "prefix is no longer supported"
     },
+    "-webkit-mask-border-source": {
+      "keep": true,
+      "msg": "required by Edge 87, Chrome 86, Safari 13.1, Opera 72, iOS Safari 12.2, Android Browser 81, Chrome for Android 88, UC Browser for Android 12.12, Samsung Internet 12, QQ Browser 10.4, Baidu Browser 7.12 and later"
+    },
     "-moz-mask-border-source": {
       "keep": false,
       "msg": "prefix is no longer supported"
     },
-    "-webkit-mask-border-source": {
-      "keep": true,
-      "msg": "required by Baidu Browser 7.12 and later"
-    },
     "-o-mask-border-source": {
-      "keep": false,
-      "msg": "was required by Opera Mobile 37 and earlier"
+      "keep": true,
+      "msg": "required by Opera Mobile 59 and later"
     },
     "-ms-mask": {
       "keep": false,
       "msg": "prefix is no longer supported"
     },
+    "-webkit-mask": {
+      "keep": true,
+      "msg": "required by Edge 87, Chrome 86, Safari 13.1, Opera 72, iOS Safari 12.2, Android Browser 81, Chrome for Android 88, UC Browser for Android 12.12, Samsung Internet 12, QQ Browser 10.4, Baidu Browser 7.12 and later"
+    },
     "-moz-mask": {
       "keep": false,
       "msg": "prefix is no longer supported"
     },
-    "-webkit-mask": {
-      "keep": true,
-      "msg": "required by Baidu Browser 7.12 and later"
-    },
     "-o-mask": {
-      "keep": false,
-      "msg": "was required by Opera Mobile 37 and earlier"
+      "keep": true,
+      "msg": "required by Opera Mobile 59 and later"
     },
     "-ms-mask-position": {
       "keep": false,
       "msg": "prefix is no longer supported"
     },
+    "-webkit-mask-position": {
+      "keep": true,
+      "msg": "required by Edge 87, Chrome 86, Safari 13.1, Opera 72, iOS Safari 12.2, Android Browser 81, Chrome for Android 88, UC Browser for Android 12.12, Samsung Internet 12, QQ Browser 10.4, Baidu Browser 7.12 and later"
+    },
     "-moz-mask-position": {
       "keep": false,
       "msg": "prefix is no longer supported"
     },
-    "-webkit-mask-position": {
-      "keep": true,
-      "msg": "required by Baidu Browser 7.12 and later"
-    },
     "-o-mask-position": {
-      "keep": false,
-      "msg": "was required by Opera Mobile 37 and earlier"
+      "keep": true,
+      "msg": "required by Opera Mobile 59 and later"
     },
     "-ms-mask-size": {
       "keep": false,
       "msg": "prefix is no longer supported"
     },
+    "-webkit-mask-size": {
+      "keep": true,
+      "msg": "required by Edge 87, Chrome 86, Safari 13.1, Opera 72, iOS Safari 12.2, Android Browser 81, Chrome for Android 88, UC Browser for Android 12.12, Samsung Internet 12, QQ Browser 10.4, Baidu Browser 7.12 and later"
+    },
     "-moz-mask-size": {
       "keep": false,
       "msg": "prefix is no longer supported"
     },
-    "-webkit-mask-size": {
-      "keep": true,
-      "msg": "required by Baidu Browser 7.12 and later"
-    },
     "-o-mask-size": {
-      "keep": false,
-      "msg": "was required by Opera Mobile 37 and earlier"
+      "keep": true,
+      "msg": "required by Opera Mobile 59 and later"
     },
     "-ms-mask-border": {
       "keep": false,
       "msg": "prefix is no longer supported"
     },
+    "-webkit-mask-border": {
+      "keep": true,
+      "msg": "required by Edge 87, Chrome 86, Safari 13.1, Opera 72, iOS Safari 12.2, Android Browser 81, Chrome for Android 88, UC Browser for Android 12.12, Samsung Internet 12, QQ Browser 10.4, Baidu Browser 7.12 and later"
+    },
     "-moz-mask-border": {
       "keep": false,
       "msg": "prefix is no longer supported"
     },
-    "-webkit-mask-border": {
-      "keep": true,
-      "msg": "required by Baidu Browser 7.12 and later"
-    },
     "-o-mask-border": {
-      "keep": false,
-      "msg": "was required by Opera Mobile 37 and earlier"
+      "keep": true,
+      "msg": "required by Opera Mobile 59 and later"
     },
     "-ms-mask-border-outset": {
       "keep": false,
       "msg": "prefix is no longer supported"
     },
+    "-webkit-mask-border-outset": {
+      "keep": true,
+      "msg": "required by Edge 87, Chrome 86, Safari 13.1, Opera 72, iOS Safari 12.2, Android Browser 81, Chrome for Android 88, UC Browser for Android 12.12, Samsung Internet 12, QQ Browser 10.4, Baidu Browser 7.12 and later"
+    },
     "-moz-mask-border-outset": {
       "keep": false,
       "msg": "prefix is no longer supported"
     },
-    "-webkit-mask-border-outset": {
-      "keep": true,
-      "msg": "required by Baidu Browser 7.12 and later"
-    },
     "-o-mask-border-outset": {
-      "keep": false,
-      "msg": "was required by Opera Mobile 37 and earlier"
+      "keep": true,
+      "msg": "required by Opera Mobile 59 and later"
     },
     "-ms-mask-border-width": {
       "keep": false,
       "msg": "prefix is no longer supported"
     },
+    "-webkit-mask-border-width": {
+      "keep": true,
+      "msg": "required by Edge 87, Chrome 86, Safari 13.1, Opera 72, iOS Safari 12.2, Android Browser 81, Chrome for Android 88, UC Browser for Android 12.12, Samsung Internet 12, QQ Browser 10.4, Baidu Browser 7.12 and later"
+    },
     "-moz-mask-border-width": {
       "keep": false,
       "msg": "prefix is no longer supported"
     },
-    "-webkit-mask-border-width": {
-      "keep": true,
-      "msg": "required by Baidu Browser 7.12 and later"
-    },
     "-o-mask-border-width": {
-      "keep": false,
-      "msg": "was required by Opera Mobile 37 and earlier"
+      "keep": true,
+      "msg": "required by Opera Mobile 59 and later"
     },
     "-ms-mask-border-slice": {
       "keep": false,
       "msg": "prefix is no longer supported"
     },
+    "-webkit-mask-border-slice": {
+      "keep": true,
+      "msg": "required by Edge 87, Chrome 86, Safari 13.1, Opera 72, iOS Safari 12.2, Android Browser 81, Chrome for Android 88, UC Browser for Android 12.12, Samsung Internet 12, QQ Browser 10.4, Baidu Browser 7.12 and later"
+    },
     "-moz-mask-border-slice": {
       "keep": false,
       "msg": "prefix is no longer supported"
     },
-    "-webkit-mask-border-slice": {
-      "keep": true,
-      "msg": "required by Baidu Browser 7.12 and later"
-    },
     "-o-mask-border-slice": {
-      "keep": false,
-      "msg": "was required by Opera Mobile 37 and earlier"
+      "keep": true,
+      "msg": "required by Opera Mobile 59 and later"
     },
     "-ms-clip-path": {
       "keep": false,
       "msg": "prefix is no longer supported"
     },
+    "-webkit-clip-path": {
+      "keep": true,
+      "msg": "required by Safari 13.1, iOS Safari 12.2, UC Browser for Android 12.12, Samsung Internet 12, QQ Browser 10.4 and later"
+    },
     "-moz-clip-path": {
       "keep": false,
       "msg": "prefix is no longer supported"
     },
-    "-webkit-clip-path": {
-      "keep": false,
-      "msg": "was required by QQ Browser 1.2, UC Browser for Android 11.4, Android Browser 4.4, Chrome 54, iOS Safari 11, Opera 41, Safari NaN, Samsung Internet 6.2 and earlier"
-    },
     "-o-clip-path": {
       "keep": false,
-      "msg": "was required by Opera Mobile 37 and earlier"
+      "msg": "prefix is no longer supported"
     },
     "-ms-box-decoration-break": {
       "keep": false,
       "msg": "prefix is no longer supported"
     },
+    "-webkit-box-decoration-break": {
+      "keep": true,
+      "msg": "required by Edge 87, Chrome 86, Safari 13.1, Opera 72, iOS Safari 12.2, Android Browser 81, Chrome for Android 88, Samsung Internet 12, QQ Browser 10.4, Baidu Browser 7.12 and later"
+    },
     "-moz-box-decoration-break": {
       "keep": false,
       "msg": "prefix is no longer supported"
     },
-    "-webkit-box-decoration-break": {
-      "keep": true,
-      "msg": "required by Baidu Browser 7.12 and later"
-    },
     "-o-box-decoration-break": {
-      "keep": false,
-      "msg": "was required by Opera Mobile 37 and earlier"
+      "keep": true,
+      "msg": "required by Opera Mobile 59 and later"
     },
     "-ms-object-fit": {
-      "keep": false,
-      "msg": "prefix is no longer supported"
-    },
-    "-moz-object-fit": {
       "keep": false,
       "msg": "prefix is no longer supported"
     },
     "-webkit-object-fit": {
       "keep": false,
       "msg": "was required by Opera 12.1 and earlier"
+    },
+    "-moz-object-fit": {
+      "keep": false,
+      "msg": "prefix is no longer supported"
     },
     "-o-object-fit": {
       "keep": true,
@@ -1458,13 +1490,13 @@
       "keep": false,
       "msg": "prefix is no longer supported"
     },
-    "-moz-object-position": {
-      "keep": false,
-      "msg": "prefix is no longer supported"
-    },
     "-webkit-object-position": {
       "keep": false,
       "msg": "was required by Opera 12.1 and earlier"
+    },
+    "-moz-object-position": {
+      "keep": false,
+      "msg": "prefix is no longer supported"
     },
     "-o-object-position": {
       "keep": true,
@@ -1474,13 +1506,13 @@
       "keep": false,
       "msg": "prefix is no longer supported"
     },
-    "-moz-shape-margin": {
-      "keep": false,
-      "msg": "prefix is no longer supported"
-    },
     "-webkit-shape-margin": {
       "keep": false,
       "msg": "was required by iOS Safari 10, Safari 10 and earlier"
+    },
+    "-moz-shape-margin": {
+      "keep": false,
+      "msg": "prefix is no longer supported"
     },
     "-o-shape-margin": {
       "keep": false,
@@ -1490,13 +1522,13 @@
       "keep": false,
       "msg": "prefix is no longer supported"
     },
-    "-moz-shape-outside": {
-      "keep": false,
-      "msg": "prefix is no longer supported"
-    },
     "-webkit-shape-outside": {
       "keep": false,
       "msg": "was required by iOS Safari 10, Safari 10 and earlier"
+    },
+    "-moz-shape-outside": {
+      "keep": false,
+      "msg": "prefix is no longer supported"
     },
     "-o-shape-outside": {
       "keep": false,
@@ -1506,13 +1538,13 @@
       "keep": false,
       "msg": "prefix is no longer supported"
     },
-    "-moz-shape-image-threshold": {
-      "keep": false,
-      "msg": "prefix is no longer supported"
-    },
     "-webkit-shape-image-threshold": {
       "keep": false,
       "msg": "was required by iOS Safari 10, Safari 10 and earlier"
+    },
+    "-moz-shape-image-threshold": {
+      "keep": false,
+      "msg": "prefix is no longer supported"
     },
     "-o-shape-image-threshold": {
       "keep": false,
@@ -1522,13 +1554,13 @@
       "keep": false,
       "msg": "prefix is no longer supported"
     },
-    "-moz-text-overflow": {
-      "keep": false,
-      "msg": "prefix is no longer supported"
-    },
     "-webkit-text-overflow": {
       "keep": false,
       "msg": "was required by Opera 10.6 and earlier"
+    },
+    "-moz-text-overflow": {
+      "keep": false,
+      "msg": "prefix is no longer supported"
     },
     "-o-text-overflow": {
       "keep": false,
@@ -1538,11 +1570,11 @@
       "keep": true,
       "msg": "required by IE 11 and later"
     },
-    "-moz-@viewport": {
-      "keep": false,
-      "msg": "prefix is no longer supported"
-    },
     "-webkit-@viewport": {
+      "keep": false,
+      "msg": "was required by Edge 18 and earlier"
+    },
+    "-moz-@viewport": {
       "keep": false,
       "msg": "prefix is no longer supported"
     },
@@ -1554,13 +1586,13 @@
       "keep": false,
       "msg": "prefix is no longer supported"
     },
+    "-webkit-@resolution": {
+      "keep": true,
+      "msg": "required by Safari 13.1, iOS Safari 12.2 and later"
+    },
     "-moz-@resolution": {
       "keep": false,
-      "msg": "prefix is no longer supported"
-    },
-    "-webkit-@resolution": {
-      "keep": false,
-      "msg": "was required by Android Browser 4.2, Chrome 28, iOS Safari 11, Opera 12, Safari NaN and earlier"
+      "msg": "was required by Firefox 15 and earlier"
     },
     "-o-@resolution": {
       "keep": false,
@@ -1570,13 +1602,13 @@
       "keep": false,
       "msg": "prefix is no longer supported"
     },
-    "-moz-text-align-last": {
-      "keep": false,
-      "msg": "was required by Firefox 48 and earlier"
-    },
     "-webkit-text-align-last": {
       "keep": false,
       "msg": "prefix is no longer supported"
+    },
+    "-moz-text-align-last": {
+      "keep": true,
+      "msg": "required by KaiOS Browser 2.5 and later"
     },
     "-o-text-align-last": {
       "keep": false,
@@ -1586,11 +1618,11 @@
       "keep": true,
       "msg": "required by IE 11 and later"
     },
-    "-moz-image-rendering": {
+    "-webkit-image-rendering": {
       "keep": false,
       "msg": "prefix is no longer supported"
     },
-    "-webkit-image-rendering": {
+    "-moz-image-rendering": {
       "keep": false,
       "msg": "prefix is no longer supported"
     },
@@ -1602,221 +1634,221 @@
       "keep": false,
       "msg": "prefix is no longer supported"
     },
-    "-moz-border-inline-start": {
-      "keep": false,
-      "msg": "was required by Firefox for Android 57, Firefox 40 and earlier"
-    },
     "-webkit-border-inline-start": {
       "keep": true,
-      "msg": "required by Baidu Browser 7.12 and later"
+      "msg": "required by UC Browser for Android 12.12 and later"
+    },
+    "-moz-border-inline-start": {
+      "keep": false,
+      "msg": "was required by Firefox 40 and earlier"
     },
     "-o-border-inline-start": {
       "keep": false,
-      "msg": "was required by Opera Mobile 37 and earlier"
+      "msg": "prefix is no longer supported"
     },
     "-ms-border-inline-end": {
       "keep": false,
       "msg": "prefix is no longer supported"
     },
-    "-moz-border-inline-end": {
-      "keep": false,
-      "msg": "was required by Firefox for Android 57, Firefox 40 and earlier"
-    },
     "-webkit-border-inline-end": {
       "keep": true,
-      "msg": "required by Baidu Browser 7.12 and later"
+      "msg": "required by UC Browser for Android 12.12 and later"
+    },
+    "-moz-border-inline-end": {
+      "keep": false,
+      "msg": "was required by Firefox 40 and earlier"
     },
     "-o-border-inline-end": {
       "keep": false,
-      "msg": "was required by Opera Mobile 37 and earlier"
+      "msg": "prefix is no longer supported"
     },
     "-ms-margin-inline-start": {
       "keep": false,
       "msg": "prefix is no longer supported"
     },
-    "-moz-margin-inline-start": {
-      "keep": false,
-      "msg": "was required by Firefox for Android 57, Firefox 40 and earlier"
-    },
     "-webkit-margin-inline-start": {
       "keep": true,
-      "msg": "required by Baidu Browser 7.12 and later"
+      "msg": "required by UC Browser for Android 12.12 and later"
+    },
+    "-moz-margin-inline-start": {
+      "keep": false,
+      "msg": "was required by Firefox 40 and earlier"
     },
     "-o-margin-inline-start": {
       "keep": false,
-      "msg": "was required by Opera Mobile 37 and earlier"
+      "msg": "prefix is no longer supported"
     },
     "-ms-margin-inline-end": {
       "keep": false,
       "msg": "prefix is no longer supported"
     },
-    "-moz-margin-inline-end": {
-      "keep": false,
-      "msg": "was required by Firefox for Android 57, Firefox 40 and earlier"
-    },
     "-webkit-margin-inline-end": {
       "keep": true,
-      "msg": "required by Baidu Browser 7.12 and later"
+      "msg": "required by UC Browser for Android 12.12 and later"
+    },
+    "-moz-margin-inline-end": {
+      "keep": false,
+      "msg": "was required by Firefox 40 and earlier"
     },
     "-o-margin-inline-end": {
       "keep": false,
-      "msg": "was required by Opera Mobile 37 and earlier"
+      "msg": "prefix is no longer supported"
     },
     "-ms-padding-inline-start": {
       "keep": false,
       "msg": "prefix is no longer supported"
     },
-    "-moz-padding-inline-start": {
-      "keep": false,
-      "msg": "was required by Firefox for Android 57, Firefox 40 and earlier"
-    },
     "-webkit-padding-inline-start": {
       "keep": true,
-      "msg": "required by Baidu Browser 7.12 and later"
+      "msg": "required by UC Browser for Android 12.12 and later"
+    },
+    "-moz-padding-inline-start": {
+      "keep": false,
+      "msg": "was required by Firefox 40 and earlier"
     },
     "-o-padding-inline-start": {
       "keep": false,
-      "msg": "was required by Opera Mobile 37 and earlier"
+      "msg": "prefix is no longer supported"
     },
     "-ms-padding-inline-end": {
       "keep": false,
       "msg": "prefix is no longer supported"
     },
-    "-moz-padding-inline-end": {
-      "keep": false,
-      "msg": "was required by Firefox for Android 57, Firefox 40 and earlier"
-    },
     "-webkit-padding-inline-end": {
       "keep": true,
-      "msg": "required by Baidu Browser 7.12 and later"
+      "msg": "required by UC Browser for Android 12.12 and later"
+    },
+    "-moz-padding-inline-end": {
+      "keep": false,
+      "msg": "was required by Firefox 40 and earlier"
     },
     "-o-padding-inline-end": {
       "keep": false,
-      "msg": "was required by Opera Mobile 37 and earlier"
+      "msg": "prefix is no longer supported"
     },
     "-ms-border-block-start": {
       "keep": false,
       "msg": "prefix is no longer supported"
     },
+    "-webkit-border-block-start": {
+      "keep": true,
+      "msg": "required by UC Browser for Android 12.12 and later"
+    },
     "-moz-border-block-start": {
       "keep": false,
       "msg": "prefix is no longer supported"
     },
-    "-webkit-border-block-start": {
-      "keep": true,
-      "msg": "required by Baidu Browser 7.12 and later"
-    },
     "-o-border-block-start": {
       "keep": false,
-      "msg": "was required by Opera Mobile 37 and earlier"
+      "msg": "prefix is no longer supported"
     },
     "-ms-border-block-end": {
       "keep": false,
       "msg": "prefix is no longer supported"
     },
+    "-webkit-border-block-end": {
+      "keep": true,
+      "msg": "required by UC Browser for Android 12.12 and later"
+    },
     "-moz-border-block-end": {
       "keep": false,
       "msg": "prefix is no longer supported"
     },
-    "-webkit-border-block-end": {
-      "keep": true,
-      "msg": "required by Baidu Browser 7.12 and later"
-    },
     "-o-border-block-end": {
       "keep": false,
-      "msg": "was required by Opera Mobile 37 and earlier"
+      "msg": "prefix is no longer supported"
     },
     "-ms-margin-block-start": {
       "keep": false,
       "msg": "prefix is no longer supported"
     },
+    "-webkit-margin-block-start": {
+      "keep": true,
+      "msg": "required by UC Browser for Android 12.12 and later"
+    },
     "-moz-margin-block-start": {
       "keep": false,
       "msg": "prefix is no longer supported"
     },
-    "-webkit-margin-block-start": {
-      "keep": true,
-      "msg": "required by Baidu Browser 7.12 and later"
-    },
     "-o-margin-block-start": {
       "keep": false,
-      "msg": "was required by Opera Mobile 37 and earlier"
+      "msg": "prefix is no longer supported"
     },
     "-ms-margin-block-end": {
       "keep": false,
       "msg": "prefix is no longer supported"
     },
+    "-webkit-margin-block-end": {
+      "keep": true,
+      "msg": "required by UC Browser for Android 12.12 and later"
+    },
     "-moz-margin-block-end": {
       "keep": false,
       "msg": "prefix is no longer supported"
     },
-    "-webkit-margin-block-end": {
-      "keep": true,
-      "msg": "required by Baidu Browser 7.12 and later"
-    },
     "-o-margin-block-end": {
       "keep": false,
-      "msg": "was required by Opera Mobile 37 and earlier"
+      "msg": "prefix is no longer supported"
     },
     "-ms-padding-block-start": {
       "keep": false,
       "msg": "prefix is no longer supported"
     },
+    "-webkit-padding-block-start": {
+      "keep": true,
+      "msg": "required by UC Browser for Android 12.12 and later"
+    },
     "-moz-padding-block-start": {
       "keep": false,
       "msg": "prefix is no longer supported"
     },
-    "-webkit-padding-block-start": {
-      "keep": true,
-      "msg": "required by Baidu Browser 7.12 and later"
-    },
     "-o-padding-block-start": {
       "keep": false,
-      "msg": "was required by Opera Mobile 37 and earlier"
+      "msg": "prefix is no longer supported"
     },
     "-ms-padding-block-end": {
       "keep": false,
       "msg": "prefix is no longer supported"
     },
+    "-webkit-padding-block-end": {
+      "keep": true,
+      "msg": "required by UC Browser for Android 12.12 and later"
+    },
     "-moz-padding-block-end": {
       "keep": false,
       "msg": "prefix is no longer supported"
     },
-    "-webkit-padding-block-end": {
-      "keep": true,
-      "msg": "required by Baidu Browser 7.12 and later"
-    },
     "-o-padding-block-end": {
       "keep": false,
-      "msg": "was required by Opera Mobile 37 and earlier"
+      "msg": "prefix is no longer supported"
     },
     "-ms-appearance": {
       "keep": false,
       "msg": "prefix is no longer supported"
     },
-    "-moz-appearance": {
-      "keep": false,
-      "msg": "was required by Firefox for Android 57, Firefox 60 and earlier"
-    },
     "-webkit-appearance": {
       "keep": true,
-      "msg": "required by Baidu Browser 7.12 and later"
+      "msg": "required by Safari 13.1, Opera 72, iOS Safari 12.2, Android Browser 81, UC Browser for Android 12.12, Samsung Internet 12, QQ Browser 10.4, Baidu Browser 7.12 and later"
+    },
+    "-moz-appearance": {
+      "keep": true,
+      "msg": "required by Firefox 78, Firefox for Android 85, KaiOS Browser 2.5 and later"
     },
     "-o-appearance": {
-      "keep": false,
-      "msg": "was required by Opera Mobile 37 and earlier"
+      "keep": true,
+      "msg": "required by Opera Mobile 59 and later"
     },
     "-ms-scroll-snap-type": {
       "keep": true,
       "msg": "required by IE 11 and later"
     },
+    "-webkit-scroll-snap-type": {
+      "keep": false,
+      "msg": "was required by Edge 18, iOS Safari 10.3, Safari 10.1 and earlier"
+    },
     "-moz-scroll-snap-type": {
       "keep": false,
       "msg": "prefix is no longer supported"
-    },
-    "-webkit-scroll-snap-type": {
-      "keep": false,
-      "msg": "was required by iOS Safari 10.3, Safari 10.1 and earlier"
     },
     "-o-scroll-snap-type": {
       "keep": false,
@@ -1826,13 +1858,13 @@
       "keep": true,
       "msg": "required by IE 11 and later"
     },
+    "-webkit-scroll-snap-coordinate": {
+      "keep": false,
+      "msg": "was required by Edge 18, iOS Safari 10.3, Safari 10.1 and earlier"
+    },
     "-moz-scroll-snap-coordinate": {
       "keep": false,
       "msg": "prefix is no longer supported"
-    },
-    "-webkit-scroll-snap-coordinate": {
-      "keep": false,
-      "msg": "was required by iOS Safari 10.3, Safari 10.1 and earlier"
     },
     "-o-scroll-snap-coordinate": {
       "keep": false,
@@ -1842,13 +1874,13 @@
       "keep": true,
       "msg": "required by IE 11 and later"
     },
+    "-webkit-scroll-snap-destination": {
+      "keep": false,
+      "msg": "was required by Edge 18, iOS Safari 10.3, Safari 10.1 and earlier"
+    },
     "-moz-scroll-snap-destination": {
       "keep": false,
       "msg": "prefix is no longer supported"
-    },
-    "-webkit-scroll-snap-destination": {
-      "keep": false,
-      "msg": "was required by iOS Safari 10.3, Safari 10.1 and earlier"
     },
     "-o-scroll-snap-destination": {
       "keep": false,
@@ -1858,13 +1890,13 @@
       "keep": true,
       "msg": "required by IE 11 and later"
     },
+    "-webkit-scroll-snap-points-x": {
+      "keep": false,
+      "msg": "was required by Edge 18, iOS Safari 10.3, Safari 10.1 and earlier"
+    },
     "-moz-scroll-snap-points-x": {
       "keep": false,
       "msg": "prefix is no longer supported"
-    },
-    "-webkit-scroll-snap-points-x": {
-      "keep": false,
-      "msg": "was required by iOS Safari 10.3, Safari 10.1 and earlier"
     },
     "-o-scroll-snap-points-x": {
       "keep": false,
@@ -1874,13 +1906,13 @@
       "keep": true,
       "msg": "required by IE 11 and later"
     },
+    "-webkit-scroll-snap-points-y": {
+      "keep": false,
+      "msg": "was required by Edge 18, iOS Safari 10.3, Safari 10.1 and earlier"
+    },
     "-moz-scroll-snap-points-y": {
       "keep": false,
       "msg": "prefix is no longer supported"
-    },
-    "-webkit-scroll-snap-points-y": {
-      "keep": false,
-      "msg": "was required by iOS Safari 10.3, Safari 10.1 and earlier"
     },
     "-o-scroll-snap-points-y": {
       "keep": false,
@@ -1890,13 +1922,13 @@
       "keep": true,
       "msg": "required by IE 11 and later"
     },
+    "-webkit-flow-into": {
+      "keep": false,
+      "msg": "was required by Chrome 18, Edge 18, iOS Safari 11, Safari 11 and earlier"
+    },
     "-moz-flow-into": {
       "keep": false,
       "msg": "prefix is no longer supported"
-    },
-    "-webkit-flow-into": {
-      "keep": false,
-      "msg": "was required by Chrome 18, iOS Safari 11, Safari 11 and earlier"
     },
     "-o-flow-into": {
       "keep": false,
@@ -1906,13 +1938,13 @@
       "keep": true,
       "msg": "required by IE 11 and later"
     },
+    "-webkit-flow-from": {
+      "keep": false,
+      "msg": "was required by Chrome 18, Edge 18, iOS Safari 11, Safari 11 and earlier"
+    },
     "-moz-flow-from": {
       "keep": false,
       "msg": "prefix is no longer supported"
-    },
-    "-webkit-flow-from": {
-      "keep": false,
-      "msg": "was required by Chrome 18, iOS Safari 11, Safari 11 and earlier"
     },
     "-o-flow-from": {
       "keep": false,
@@ -1922,13 +1954,13 @@
       "keep": true,
       "msg": "required by IE 11 and later"
     },
+    "-webkit-region-fragment": {
+      "keep": false,
+      "msg": "was required by Chrome 18, Edge 18, iOS Safari 11, Safari 11 and earlier"
+    },
     "-moz-region-fragment": {
       "keep": false,
       "msg": "prefix is no longer supported"
-    },
-    "-webkit-region-fragment": {
-      "keep": false,
-      "msg": "was required by Chrome 18, iOS Safari 11, Safari 11 and earlier"
     },
     "-o-region-fragment": {
       "keep": false,
@@ -1938,13 +1970,13 @@
       "keep": true,
       "msg": "required by IE 11 and later"
     },
+    "-webkit-writing-mode": {
+      "keep": false,
+      "msg": "was required by Android Browser 4.4, Chrome 47, iOS Safari 10.3, Opera 34, Safari 10.1, Samsung Internet 4 and earlier"
+    },
     "-moz-writing-mode": {
       "keep": false,
       "msg": "prefix is no longer supported"
-    },
-    "-webkit-writing-mode": {
-      "keep": false,
-      "msg": "was required by QQ Browser 1.2, UC Browser for Android 11.4, Android Browser 4.4, Chrome 47, iOS Safari 10.3, Opera 34, Safari 10.1, Samsung Internet 4 and earlier"
     },
     "-o-writing-mode": {
       "keep": false,
@@ -1954,75 +1986,75 @@
       "keep": false,
       "msg": "prefix is no longer supported"
     },
+    "-webkit-text-emphasis": {
+      "keep": true,
+      "msg": "required by Edge 87, Chrome 86, Opera 72, Android Browser 81, Chrome for Android 88, UC Browser for Android 12.12, Samsung Internet 12, QQ Browser 10.4, Baidu Browser 7.12 and later"
+    },
     "-moz-text-emphasis": {
       "keep": false,
       "msg": "prefix is no longer supported"
     },
-    "-webkit-text-emphasis": {
-      "keep": true,
-      "msg": "required by Baidu Browser 7.12 and later"
-    },
     "-o-text-emphasis": {
-      "keep": false,
-      "msg": "was required by Opera Mobile 37 and earlier"
+      "keep": true,
+      "msg": "required by Opera Mobile 59 and later"
     },
     "-ms-text-emphasis-position": {
       "keep": false,
       "msg": "prefix is no longer supported"
     },
+    "-webkit-text-emphasis-position": {
+      "keep": true,
+      "msg": "required by Edge 87, Chrome 86, Opera 72, Android Browser 81, Chrome for Android 88, UC Browser for Android 12.12, Samsung Internet 12, QQ Browser 10.4, Baidu Browser 7.12 and later"
+    },
     "-moz-text-emphasis-position": {
       "keep": false,
       "msg": "prefix is no longer supported"
     },
-    "-webkit-text-emphasis-position": {
-      "keep": true,
-      "msg": "required by Baidu Browser 7.12 and later"
-    },
     "-o-text-emphasis-position": {
-      "keep": false,
-      "msg": "was required by Opera Mobile 37 and earlier"
+      "keep": true,
+      "msg": "required by Opera Mobile 59 and later"
     },
     "-ms-text-emphasis-style": {
       "keep": false,
       "msg": "prefix is no longer supported"
     },
+    "-webkit-text-emphasis-style": {
+      "keep": true,
+      "msg": "required by Edge 87, Chrome 86, Opera 72, Android Browser 81, Chrome for Android 88, UC Browser for Android 12.12, Samsung Internet 12, QQ Browser 10.4, Baidu Browser 7.12 and later"
+    },
     "-moz-text-emphasis-style": {
       "keep": false,
       "msg": "prefix is no longer supported"
     },
-    "-webkit-text-emphasis-style": {
-      "keep": true,
-      "msg": "required by Baidu Browser 7.12 and later"
-    },
     "-o-text-emphasis-style": {
-      "keep": false,
-      "msg": "was required by Opera Mobile 37 and earlier"
+      "keep": true,
+      "msg": "required by Opera Mobile 59 and later"
     },
     "-ms-text-emphasis-color": {
       "keep": false,
       "msg": "prefix is no longer supported"
     },
+    "-webkit-text-emphasis-color": {
+      "keep": true,
+      "msg": "required by Edge 87, Chrome 86, Opera 72, Android Browser 81, Chrome for Android 88, UC Browser for Android 12.12, Samsung Internet 12, QQ Browser 10.4, Baidu Browser 7.12 and later"
+    },
     "-moz-text-emphasis-color": {
       "keep": false,
       "msg": "prefix is no longer supported"
     },
-    "-webkit-text-emphasis-color": {
-      "keep": true,
-      "msg": "required by Baidu Browser 7.12 and later"
-    },
     "-o-text-emphasis-color": {
-      "keep": false,
-      "msg": "was required by Opera Mobile 37 and earlier"
+      "keep": true,
+      "msg": "required by Opera Mobile 59 and later"
     },
     "-ms-grid-template-columns": {
       "keep": true,
       "msg": "required by IE 11 and later"
     },
-    "-moz-grid-template-columns": {
-      "keep": false,
-      "msg": "prefix is no longer supported"
-    },
     "-webkit-grid-template-columns": {
+      "keep": false,
+      "msg": "was required by Edge 15 and earlier"
+    },
+    "-moz-grid-template-columns": {
       "keep": false,
       "msg": "prefix is no longer supported"
     },
@@ -2034,11 +2066,11 @@
       "keep": true,
       "msg": "required by IE 11 and later"
     },
-    "-moz-grid-template-rows": {
-      "keep": false,
-      "msg": "prefix is no longer supported"
-    },
     "-webkit-grid-template-rows": {
+      "keep": false,
+      "msg": "was required by Edge 15 and earlier"
+    },
+    "-moz-grid-template-rows": {
       "keep": false,
       "msg": "prefix is no longer supported"
     },
@@ -2050,11 +2082,11 @@
       "keep": true,
       "msg": "required by IE 11 and later"
     },
-    "-moz-grid-row-start": {
-      "keep": false,
-      "msg": "prefix is no longer supported"
-    },
     "-webkit-grid-row-start": {
+      "keep": false,
+      "msg": "was required by Edge 15 and earlier"
+    },
+    "-moz-grid-row-start": {
       "keep": false,
       "msg": "prefix is no longer supported"
     },
@@ -2066,11 +2098,11 @@
       "keep": true,
       "msg": "required by IE 11 and later"
     },
-    "-moz-grid-column-start": {
-      "keep": false,
-      "msg": "prefix is no longer supported"
-    },
     "-webkit-grid-column-start": {
+      "keep": false,
+      "msg": "was required by Edge 15 and earlier"
+    },
+    "-moz-grid-column-start": {
       "keep": false,
       "msg": "prefix is no longer supported"
     },
@@ -2082,11 +2114,11 @@
       "keep": true,
       "msg": "required by IE 11 and later"
     },
-    "-moz-grid-row-end": {
-      "keep": false,
-      "msg": "prefix is no longer supported"
-    },
     "-webkit-grid-row-end": {
+      "keep": false,
+      "msg": "was required by Edge 15 and earlier"
+    },
+    "-moz-grid-row-end": {
       "keep": false,
       "msg": "prefix is no longer supported"
     },
@@ -2098,11 +2130,11 @@
       "keep": true,
       "msg": "required by IE 11 and later"
     },
-    "-moz-grid-column-end": {
-      "keep": false,
-      "msg": "prefix is no longer supported"
-    },
     "-webkit-grid-column-end": {
+      "keep": false,
+      "msg": "was required by Edge 15 and earlier"
+    },
+    "-moz-grid-column-end": {
       "keep": false,
       "msg": "prefix is no longer supported"
     },
@@ -2114,11 +2146,11 @@
       "keep": true,
       "msg": "required by IE 11 and later"
     },
-    "-moz-grid-row": {
-      "keep": false,
-      "msg": "prefix is no longer supported"
-    },
     "-webkit-grid-row": {
+      "keep": false,
+      "msg": "was required by Edge 15 and earlier"
+    },
+    "-moz-grid-row": {
       "keep": false,
       "msg": "prefix is no longer supported"
     },
@@ -2130,11 +2162,11 @@
       "keep": true,
       "msg": "required by IE 11 and later"
     },
-    "-moz-grid-column": {
-      "keep": false,
-      "msg": "prefix is no longer supported"
-    },
     "-webkit-grid-column": {
+      "keep": false,
+      "msg": "was required by Edge 15 and earlier"
+    },
+    "-moz-grid-column": {
       "keep": false,
       "msg": "prefix is no longer supported"
     },
@@ -2142,19 +2174,83 @@
       "keep": false,
       "msg": "prefix is no longer supported"
     },
-    "-ms-justify-items": {
+    "-ms-grid-area": {
       "keep": true,
       "msg": "required by IE 11 and later"
     },
-    "-moz-justify-items": {
+    "-webkit-grid-area": {
+      "keep": false,
+      "msg": "was required by Edge 15 and earlier"
+    },
+    "-moz-grid-area": {
       "keep": false,
       "msg": "prefix is no longer supported"
     },
-    "-webkit-justify-items": {
+    "-o-grid-area": {
       "keep": false,
       "msg": "prefix is no longer supported"
     },
-    "-o-justify-items": {
+    "-ms-grid-template": {
+      "keep": true,
+      "msg": "required by IE 11 and later"
+    },
+    "-webkit-grid-template": {
+      "keep": false,
+      "msg": "was required by Edge 15 and earlier"
+    },
+    "-moz-grid-template": {
+      "keep": false,
+      "msg": "prefix is no longer supported"
+    },
+    "-o-grid-template": {
+      "keep": false,
+      "msg": "prefix is no longer supported"
+    },
+    "-ms-grid-template-areas": {
+      "keep": true,
+      "msg": "required by IE 11 and later"
+    },
+    "-webkit-grid-template-areas": {
+      "keep": false,
+      "msg": "was required by Edge 15 and earlier"
+    },
+    "-moz-grid-template-areas": {
+      "keep": false,
+      "msg": "prefix is no longer supported"
+    },
+    "-o-grid-template-areas": {
+      "keep": false,
+      "msg": "prefix is no longer supported"
+    },
+    "-ms-place-self": {
+      "keep": true,
+      "msg": "required by IE 11 and later"
+    },
+    "-webkit-place-self": {
+      "keep": false,
+      "msg": "was required by Edge 15 and earlier"
+    },
+    "-moz-place-self": {
+      "keep": false,
+      "msg": "prefix is no longer supported"
+    },
+    "-o-place-self": {
+      "keep": false,
+      "msg": "prefix is no longer supported"
+    },
+    "-ms-grid-column-align": {
+      "keep": true,
+      "msg": "required by IE 11 and later"
+    },
+    "-webkit-grid-column-align": {
+      "keep": false,
+      "msg": "was required by Edge 15 and earlier"
+    },
+    "-moz-grid-column-align": {
+      "keep": false,
+      "msg": "prefix is no longer supported"
+    },
+    "-o-grid-column-align": {
       "keep": false,
       "msg": "prefix is no longer supported"
     },
@@ -2162,11 +2258,11 @@
       "keep": true,
       "msg": "required by IE 11 and later"
     },
-    "-moz-grid-row-align": {
-      "keep": false,
-      "msg": "prefix is no longer supported"
-    },
     "-webkit-grid-row-align": {
+      "keep": false,
+      "msg": "was required by Edge 15 and earlier"
+    },
+    "-moz-grid-row-align": {
       "keep": false,
       "msg": "prefix is no longer supported"
     },
@@ -2178,15 +2274,63 @@
       "keep": true,
       "msg": "required by IE 11 and later"
     },
+    "-webkit-text-spacing": {
+      "keep": false,
+      "msg": "was required by Edge 18 and earlier"
+    },
     "-moz-text-spacing": {
       "keep": false,
       "msg": "prefix is no longer supported"
     },
-    "-webkit-text-spacing": {
+    "-o-text-spacing": {
       "keep": false,
       "msg": "prefix is no longer supported"
     },
-    "-o-text-spacing": {
+    "-ms-overscroll-behavior": {
+      "keep": true,
+      "msg": "required by IE 11 and later"
+    },
+    "-webkit-overscroll-behavior": {
+      "keep": false,
+      "msg": "was required by Edge 17 and earlier"
+    },
+    "-moz-overscroll-behavior": {
+      "keep": false,
+      "msg": "prefix is no longer supported"
+    },
+    "-o-overscroll-behavior": {
+      "keep": false,
+      "msg": "prefix is no longer supported"
+    },
+    "-ms-color-adjust": {
+      "keep": false,
+      "msg": "prefix is no longer supported"
+    },
+    "-webkit-color-adjust": {
+      "keep": true,
+      "msg": "required by Edge 87, Chrome 86, Safari 13.1, Opera 72, QQ Browser 10.4 and later"
+    },
+    "-moz-color-adjust": {
+      "keep": false,
+      "msg": "prefix is no longer supported"
+    },
+    "-o-color-adjust": {
+      "keep": false,
+      "msg": "prefix is no longer supported"
+    },
+    "-ms-text-orientation": {
+      "keep": false,
+      "msg": "prefix is no longer supported"
+    },
+    "-webkit-text-orientation": {
+      "keep": true,
+      "msg": "required by Safari 13.1 and later"
+    },
+    "-moz-text-orientation": {
+      "keep": false,
+      "msg": "prefix is no longer supported"
+    },
+    "-o-text-orientation": {
       "keep": false,
       "msg": "prefix is no longer supported"
     }
