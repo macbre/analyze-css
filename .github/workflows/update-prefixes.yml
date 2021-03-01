@@ -51,7 +51,7 @@ jobs:
         run: |
           export PR_BRANCH="prefixes-update"
           git checkout -b ${PR_BRANCH}
-          git add .
+          git add rules/prefixes.json
           git commit -m 'Updating rules/prefixes.json' && git push origin ${PR_BRANCH} --force
 
       # https://github.com/marketplace/actions/github-pull-request-action#advanced-options
