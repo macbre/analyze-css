@@ -51,7 +51,7 @@ jobs:
         run: |
           export PR_BRANCH="prefixes-update"
           git checkout -b ${PR_BRANCH}
-          git add .
+          git add rules/prefixes.json
           git commit -m 'Updating rules/prefixes.json' && git push origin ${PR_BRANCH} --force
 
       # https://github.com/marketplace/actions/github-pull-request-action#advanced-options
@@ -61,6 +61,15 @@ jobs:
         with:
           source_branch: "prefixes-update"  # see above
           destination_branch: "devel"
-          github_token: ${{ secrets.GITHUB_TOKEN }}
+          
+          # When you use the repository's GITHUB_TOKEN to perform tasks on behalf of the GitHub Actions app,
+          # events triggered by the GITHUB_TOKEN will not create a new workflow run.
+          #
+          # Use a repo scoped Personal Access Token (PAT) created on an account that has write access
+          # to the repository that pull requests are being created in. 
+          #
+          # https://github.com/peter-evans/create-pull-request/blob/master/docs/concepts-guidelines.md#triggering-further-workflow-runs
+          github_token: ${{ secrets.PAT_TOKEN }}
+
           pr_label: "dependencies"
           pr_assignee: "macbre"
