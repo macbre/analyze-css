@@ -67,7 +67,7 @@ else {
   return;
 }
 
-runnerOpts.ignoreSslErrors = program["ignore-ssl-errors"];
+runnerOpts.ignoreSslErrors = options.ignoreSslErrors === true;
 runnerOpts.noOffenders = program.offenders === false;
 runnerOpts.authUser = program["auth-user"];
 runnerOpts.authPass = program["auth-pass"];

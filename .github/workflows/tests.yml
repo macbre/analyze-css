@@ -54,3 +54,6 @@ jobs:
 
     - name: Run bin/analyze-css.js for external file over HTTP
       run: ./bin/analyze-css.js --url http://s3.macbre.net/analyze-css/propertyResets.css -p | jq .metrics
+
+    - name: Run bin/analyze-css.js for external file over HTTPS (--ignore-ssl-errors)
+      run: ./bin/analyze-css.js --url https://s3.macbre.net/analyze-css/propertyResets.css --ignore-ssl-errors | jq .metrics
