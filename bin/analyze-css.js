@@ -44,6 +44,8 @@ program
 program.parse(process.argv);
 
 debug("analyze-css v%s", analyzer.version);
+debug("argv %j", process.argv);
+debug("opts %j", program.opts());
 
 // support stdin (issue #28)
 if (process.argv.indexOf("-") > -1) {
