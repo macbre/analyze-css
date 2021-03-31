@@ -42,20 +42,23 @@ program
 
 // parse it
 program.parse(process.argv);
+const options = program.opts();
 
 debug("analyze-css v%s", analyzer.version);
+debug("argv %j", process.argv);
+debug("opts %j", options);
 
 // support stdin (issue #28)
 if (process.argv.indexOf("-") > -1) {
   runnerOpts.stdin = true;
 }
 // --url
-else if (program.url) {
-  runnerOpts.url = program.url;
+else if (options.url) {
+  runnerOpts.url = options.url;
 }
 // --file
-else if (program.file) {
-  runnerOpts.file = program.file;
+else if (options.file) {
+  runnerOpts.file = options.file;
 }
 // either --url or --file or - (stdin) needs to be provided
 else {
@@ -64,13 +67,13 @@ else {
   return;
 }
 
-runnerOpts.ignoreSslErrors = program["ignore-ssl-errors"];
+runnerOpts.ignoreSslErrors = options.ignoreSslErrors === true;
 runnerOpts.noOffenders = program.offenders === false;
 runnerOpts.authUser = program["auth-user"];
 runnerOpts.authPass = program["auth-pass"];
 runnerOpts.proxy = program.proxy;
 
-debug("opts: %j", runnerOpts);
+debug("runner opts: %j", runnerOpts);
 
 // run the analyzer
 runner(runnerOpts, function (err, res) {
