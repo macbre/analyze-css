@@ -42,7 +42,7 @@
     "mocha": "^8.0.1",
     "nyc": "^15.1.0",
     "postcss": "^8.2.6",
-    "prettier": "2.2.1"
+    "prettier": "2.3.0"
   },
   "optionalDependencies": {
     "node-sass": "6.0.0"
