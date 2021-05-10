@@ -45,7 +45,7 @@
     "prettier": "2.2.1"
   },
   "optionalDependencies": {
-    "node-sass": "5.0.0"
+    "node-sass": "6.0.0"
   },
   "bin": "./bin/analyze-css.js",
   "preferGlobal": true,
