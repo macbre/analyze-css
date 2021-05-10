@@ -1027,8 +1027,8 @@
       "msg": "prefix is no longer supported"
     },
     "-webkit-font-kerning": {
-      "keep": true,
-      "msg": "required by Safari on iOS 13.4 and later"
+      "keep": false,
+      "msg": "was required by Android Browser 4.4, Chrome 32, Safari on iOS 11.3, Opera 19, Safari 9 and earlier"
     },
     "-moz-font-kerning": {
       "keep": false,
@@ -2323,8 +2323,8 @@
       "msg": "prefix is no longer supported"
     },
     "-webkit-text-orientation": {
-      "keep": true,
-      "msg": "required by Safari 14 and later"
+      "keep": false,
+      "msg": "was required by Safari 13.1 and earlier"
     },
     "-moz-text-orientation": {
       "keep": false,
