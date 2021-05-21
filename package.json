@@ -37,15 +37,15 @@
     "autoprefixer": "^10.2.4",
     "browserslist": "^4.11.1",
     "eslint": "^7.12.1",
-    "eslint-config-prettier": "8.1.0",
+    "eslint-config-prettier": "8.3.0",
     "eslint-plugin-node": "^11.1.0",
     "mocha": "^8.0.1",
     "nyc": "^15.1.0",
     "postcss": "^8.2.6",
-    "prettier": "2.2.1"
+    "prettier": "2.3.0"
   },
   "optionalDependencies": {
-    "node-sass": "5.0.0"
+    "node-sass": "6.0.0"
   },
   "bin": "./bin/analyze-css.js",
   "preferGlobal": true,
