@@ -172,12 +172,10 @@ It uses configurable threshold and compares the analyze-css result with it.
 
 ## Read more
 
-* [Writing Efficient CSS](http://developer.mozilla.org/en/Writing_Efficient_CSS) (by Mozilla)
 * [Optimize browser rendering](https://developers.google.com/speed/docs/best-practices/rendering) (by Google)
 * [Profiling CSS for fun and profit. Optimization notes.](http://perfectionkills.com/profiling-css-for-fun-and-profit-optimization-notes/)
 * [CSS specificity](http://css-tricks.com/specifics-on-css-specificity/)
 * [CSS Selector Performance has changed! (For the better)](http://calendar.perfplanet.com/2011/css-selector-performance-has-changed-for-the-better/) (by Nicole Sullivan)
-* [CSS Performance](http://dl.dropboxusercontent.com/u/39519/talks/cssperf/index.html) (by Paul Irish)
 * [GitHub's CSS Performance](https://speakerdeck.com/jonrohan/githubs-css-performance) (by Joh Rohan)
 
 ## Dev hints
