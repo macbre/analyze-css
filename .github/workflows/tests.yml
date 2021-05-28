@@ -11,10 +11,15 @@ on:
 jobs:
   test:
     runs-on: ubuntu-latest
+    continue-on-error: ${{ matrix.node-version }}
 
     strategy:
       matrix:
-        node-version: [12.x, 14.x, 15.x, 16.x]
+        node-version:
+        - '12.x'
+        - '14.x'
+        - '15.x'
+        - '16.x'
 
     steps:
     - uses: actions/checkout@v2
