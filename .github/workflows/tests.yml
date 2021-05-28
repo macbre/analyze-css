@@ -11,9 +11,9 @@ on:
 jobs:
   test:
     runs-on: ubuntu-latest
-    continue-on-error: ${{ matrix.node-version }}
 
     strategy:
+      fail-fast: false
       matrix:
         node-version:
         - '12.x'
