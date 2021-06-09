@@ -48,6 +48,14 @@ jobs:
         time npm install node-sass@5.0.0
         npm test
 
+    # https://github.com/marketplace/actions/coveralls-github-action
+    # upload coverage report for just one of Node.js version matrix runs
+    - name: Upload coverage report to Coveralls
+      if: matrix.node-version == '16.x'
+      uses: coverallsapp/github-action@v1.1.2
+      with:
+        github-token: ${{ github.token }}
+
     - name: Run bin/analyze-css.js for CSS file
       run: ./bin/analyze-css.js --file examples/ti.mobile.css  -p | jq .metrics
 
