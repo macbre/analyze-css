@@ -11,6 +11,7 @@ lib-cov
 pids
 logs
 results
+coverage/
 
 npm-debug.*
 node_modules
