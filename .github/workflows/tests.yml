@@ -51,7 +51,7 @@ jobs:
     # https://github.com/marketplace/actions/coveralls-github-action
     # upload coverage report for just one of Node.js version matrix runs
     - name: Upload coverage report to Coveralls
-      if: matrix.node-version == '16.x'
+      if: matrix.node-version == '15.x'
       uses: coverallsapp/github-action@v1.1.2
       with:
         github-token: ${{ github.token }}
