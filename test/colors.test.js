@@ -4,8 +4,8 @@
 var extractColors = require('../rules/colors').extractColors,
 	assert = require('assert');
 
-describe('Colors', function() {
-	it('should be properly extracted from CSS properties', function() {
+describe('Colors', () => {
+	it('should be properly extracted from CSS properties', () => {
 		var testCases = [
 			[
 				'-moz-linear-gradient(top, rgba(240, 231, 223, 0) 50%, #f0e7df 100%)',

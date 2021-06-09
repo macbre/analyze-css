@@ -16,9 +16,12 @@ function runTest(tests) {
 			}
 
 			Object.keys(metricsExpected).forEach(function(metric) {
-				it('should emit "' + metric + '" metric with a valid value - #' + (testId + 1), function() {
-					assert.strictEqual(metricsActual[metric], metricsExpected[metric], "Testing metric against: " + test.css);
-				});
+				it(
+                    'should emit "' + metric + '" metric with a valid value - #' + (testId + 1),
+                    () => {
+                        assert.strictEqual(metricsActual[metric], metricsExpected[metric], "Testing metric against: " + test.css);
+                    }
+                );
 			});
 		});
 	});
@@ -27,7 +30,7 @@ function runTest(tests) {
 /**
  * Read all files in rules/ subdirectory and perform tests defined there
  */
-describe('Rules', function() {
+describe('Rules', () => {
 	var files = glob.sync(__dirname + "/rules/*.js"),
 		nameRe = /([^/]+)\.js$/;
 
@@ -35,7 +38,7 @@ describe('Rules', function() {
 		var name = file.match(nameRe)[1],
 			testDef = require(file);
 
-		describe(name, function() {
+		describe(name, () => {
 			runTest(testDef.tests || []);
 		});
 	});
