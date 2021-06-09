@@ -60,5 +60,16 @@
     "node": true,
     "strict": true,
     "validthis": true
+  },
+  "jest": {
+    "verbose": true,
+    "coverageThreshold": {
+      "global": {
+        "statements": 98,
+        "branches": 94,
+        "functions": 100,
+        "lines": 98
+      }
+    }
   }
 }
