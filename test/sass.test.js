@@ -41,8 +41,8 @@ function testSassNotInstalled(done) {
 	}
 }
 
-describe('SASS preprocessor [' + (isSassInstalled ? 'node-sass installed' : 'node-sass missing') + ']', function() {
-	it('should be chosen for SCSS files', function() {
+describe('SASS preprocessor [' + (isSassInstalled ? 'node-sass installed' : 'node-sass missing') + ']', () => {
+	it('should be chosen for SCSS files', () => {
 		var preprocessors = new(require('../lib/preprocessors.js'))();
 
 		assert.equal(preprocessors.findMatchingByFileName('test/foo.scss'), 'sass');
@@ -50,7 +50,7 @@ describe('SASS preprocessor [' + (isSassInstalled ? 'node-sass installed' : 'nod
 		assert.equal(preprocessors.findMatchingByFileName('test/foo.css'), false);
 	});
 
-	it('should report parsing error (if not selected)', function(done) {
+	it('should report parsing error (if not selected)', done => {
 		new analyzer(scss, function(err, res) {
 			assert.strictEqual(err, null);
 			assert.equal(res.metrics.parsingErrors, 3);
@@ -58,7 +58,13 @@ describe('SASS preprocessor [' + (isSassInstalled ? 'node-sass installed' : 'nod
 		});
 	});
 
-	it('should generate CSS from SCSS correctly', !isSassInstalled ? testSassNotInstalled : testSassInstalled);
+	it(
+        'should generate CSS from SCSS correctly',
+        !isSassInstalled ? testSassNotInstalled : testSassInstalled
+    );
 
-	it('should generate CSS from SASS correctly', !isSassInstalled ? testSassNotInstalled : testSassInstalled);
+	it(
+        'should generate CSS from SASS correctly',
+        !isSassInstalled ? testSassNotInstalled : testSassInstalled
+    );
 });

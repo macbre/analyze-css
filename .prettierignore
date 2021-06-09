@@ -1,5 +1,6 @@
 examples/
 test/
+coverage/
 *.md
 *.yml
 *.json
