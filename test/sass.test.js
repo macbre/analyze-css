@@ -13,34 +13,6 @@ try {
 	isSassInstalled = false;
 }
 
-/**
- * TODO: install and test node-sass
- */
-function testSassInstalled(done) {
-	new analyzer(sass, {
-		preprocessor: 'sass'
-	}, function(err, res) {
-		assert.strictEqual(err, null);
-		assert.strictEqual(res.metrics.selectors, 1);
-		done();
-	});
-}
-
-/**
- * node-sass is not installed by default (see #118)
- */
-function testSassNotInstalled(done) {
-	try {
-		new analyzer(scss, {
-			preprocessor: 'sass'
-		}, function() {});
-	} catch (e) {
-		assert.ok(e instanceof Error);
-		assert.strictEqual(e.message, 'Preprocessing failed: Error: Can\'t process SASS/SCSS, please run \'npm install node-sass\'');
-		done();
-	}
-}
-
 describe('SASS preprocessor [' + (isSassInstalled ? 'node-sass installed' : 'node-sass missing') + ']', () => {
 	it('should be chosen for SCSS files', () => {
 		var preprocessors = new(require('../lib/preprocessors.js'))();
@@ -58,13 +30,31 @@ describe('SASS preprocessor [' + (isSassInstalled ? 'node-sass installed' : 'nod
 		});
 	});
 
-	it(
-        'should generate CSS from SCSS correctly',
-        !isSassInstalled ? testSassNotInstalled : testSassInstalled
-    );
+	if (isSassInstalled === false) {
+		return;
+	}
 
-	it(
-        'should generate CSS from SASS correctly',
-        !isSassInstalled ? testSassNotInstalled : testSassInstalled
-    );
+	it('should generate CSS from SCSS correctly', done => {
+		try {
+			new analyzer(scss, {
+				preprocessor: 'sass'
+			}, done);
+		} catch (e) {
+			assert.ok(e instanceof Error);
+			assert.strictEqual(e.message, 'Preprocessing failed: Error: Can\'t process SASS/SCSS, please run \'npm install node-sass\'');
+			done();
+		}
+	});
+
+	it('should generate CSS from SASS correctly', done => {
+		try {
+			new analyzer(sass, {
+				preprocessor: 'sass'
+			}, done);
+		} catch (e) {
+			assert.ok(e instanceof Error);
+			assert.strictEqual(e.message, 'Preprocessing failed: Error: Can\'t process SASS/SCSS, please run \'npm install node-sass\'');
+			done();
+		}
+	});
 });
