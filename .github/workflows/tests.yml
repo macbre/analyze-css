@@ -37,15 +37,15 @@ jobs:
       uses: actions/cache@v2
       with:
         path: ${{ steps.npm-cache.outputs.dir }}
-        key: ${{ runner.os }}-node-${{ hashFiles('**/package-lock.json') }}
+        key: ${{ runner.os }}-nodev-${{ matrix.node-version }}-${{ hashFiles('**/package-lock.json') }}
         restore-keys: |
-          ${{ runner.os }}-node-
+          ${{ runner.os }}-nodev-${{ matrix.node-version }}-
     - name: Install dependencies
       run: npm ci
 
     - name: Run tests (with node-sass support)
       run: |
-        time npm install node-sass@5.0.0
+        time npm install node-sass@6.0.0
         npm test
 
     # https://github.com/marketplace/actions/coveralls-github-action
