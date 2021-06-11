@@ -65,10 +65,10 @@
     "verbose": true,
     "coverageThreshold": {
       "global": {
-        "statements": 97,
-        "branches": 94,
+        "statements": 99,
+        "branches": 95,
         "functions": 100,
-        "lines": 97
+        "lines": 99
       }
     }
   }
