@@ -4,6 +4,8 @@ exports.tests = [
 		metrics: {
 			base64Length: 64
 		},
+	},
+	{
 		css: '.foo { background-image: url(data:image/gif;base64,' + 'FFFFFF'.repeat(1024) + ') }', // to big base64-encoded asset
 		metrics: {
 			base64Length: 6144
