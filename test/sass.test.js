@@ -2,6 +2,7 @@
 'use strict';
 
 var analyzer = require('../'),
+	fs = require('fs'),
 	isSassInstalled = true,
 	assert = require('assert'),
 	scss = 'nav {\nul{ color: white }\n}',
@@ -56,5 +57,15 @@ describe('SASS preprocessor [' + (isSassInstalled ? 'node-sass installed' : 'nod
 			assert.strictEqual(e.message, 'Preprocessing failed: Error: Can\'t process SASS/SCSS, please run \'npm install node-sass\'');
 			done();
 		}
+	});
+
+	it('should parse SCSS file correctly', done => {
+		const file = __dirname + '/../examples/base.scss',
+			source = fs.readFileSync(file).toString();
+
+		new analyzer(source, {
+			file: file,
+			preprocessor: 'sass'
+		}, done);
 	});
 });
