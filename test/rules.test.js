@@ -1,5 +1,4 @@
-/*global describe, it */
-'use strict';
+const { describe, it } = require("@jest/globals");
 
 const analyzer = require('../'),
 	assert = require('assert'),

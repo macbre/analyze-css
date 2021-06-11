@@ -1,15 +1,16 @@
-/*global describe, it */
-'use strict';
+const { describe, it } = require("@jest/globals");
 
 var analyzer = require('../'),
 	fs = require('fs'),
 	isSassInstalled = true,
 	assert = require('assert'),
 	scss = 'nav {\nul{ color: white }\n}',
-	sass = 'nav\n\tul\n\t\tcolor: white\n';
+	sass = 'nav\n\tul\n\t\tcolor: white\n',
+	nodeSassInfo;
 
 try {
-	require('node-sass');
+	nodeSassInfo  = require('node-sass').info;
+	console.log(`Using ${nodeSassInfo.replace("\n", " ")}`);
 } catch (e) {
 	isSassInstalled = false;
 }
