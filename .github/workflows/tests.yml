@@ -45,7 +45,7 @@ jobs:
 
     - name: Run tests (with node-sass support)
       run: |
-        time npm install node-sass@5.0.0
+        time npm install node-sass@6.0.0
         npm test
 
     # https://github.com/marketplace/actions/coveralls-github-action
