@@ -21,7 +21,7 @@ function testSassInstalled(done) {
 		preprocessor: 'sass'
 	}, function(err, res) {
 		assert.strictEqual(err, null);
-		assert.equal(res.metrics.selectors, 1);
+		assert.strictEqual(res.metrics.selectors, 1);
 		done();
 	});
 }
@@ -36,7 +36,7 @@ function testSassNotInstalled(done) {
 		}, function() {});
 	} catch (e) {
 		assert.ok(e instanceof Error);
-		assert.equal(e.message, 'Preprocessing failed: Error: Can\'t process SASS/SCSS, please run \'npm install node-sass\'');
+		assert.strictEqual(e.message, 'Preprocessing failed: Error: Can\'t process SASS/SCSS, please run \'npm install node-sass\'');
 		done();
 	}
 }
@@ -45,15 +45,15 @@ describe('SASS preprocessor [' + (isSassInstalled ? 'node-sass installed' : 'nod
 	it('should be chosen for SCSS files', () => {
 		var preprocessors = new(require('../lib/preprocessors.js'))();
 
-		assert.equal(preprocessors.findMatchingByFileName('test/foo.scss'), 'sass');
-		assert.equal(preprocessors.findMatchingByFileName('test/foo.sass'), 'sass');
-		assert.equal(preprocessors.findMatchingByFileName('test/foo.css'), false);
+		assert.strictEqual(preprocessors.findMatchingByFileName('test/foo.scss'), 'sass');
+		assert.strictEqual(preprocessors.findMatchingByFileName('test/foo.sass'), 'sass');
+		assert.strictEqual(preprocessors.findMatchingByFileName('test/foo.css'), false);
 	});
 
 	it('should report parsing error (if not selected)', done => {
 		new analyzer(scss, function(err, res) {
 			assert.strictEqual(err, null);
-			assert.equal(res.metrics.parsingErrors, 3);
+			assert.strictEqual(res.metrics.parsingErrors, 3);
 			done();
 		});
 	});
