@@ -1,15 +1,17 @@
 /*global describe, it */
 'use strict';
 
-var analyzer = require('../'),
+const analyzer = require('../'),
 	assert = require('assert'),
 	glob = require('glob');
 
 function runTest(tests) {
 	tests.forEach(function(test, testId) {
 		new analyzer(test.css, function(err, res) {
-			var metricsExpected = test.metrics,
-				metricsActual = res && res.metrics;
+			const metricsExpected = test.metrics || {},
+				offendersExpected = test.offenders || {},
+				metricsActual = res && res.metrics,
+				offendersActual = res && res.offenders;
 
 			if (err) {
 				throw err;
@@ -23,6 +25,15 @@ function runTest(tests) {
                     }
                 );
 			});
+
+			Object.keys(offendersExpected).forEach(function(metric) {
+				it(
+                    'should emit offender for "' + metric + '" metric with a valid value - #' + (testId + 1),
+                    () => {
+                        assert.deepStrictEqual(offendersActual[metric].map(item => item.message), offendersExpected[metric], "Testing offender against: " + test.css);
+                    }
+                );
+			});
 		});
 	});
 }
@@ -31,7 +42,7 @@ function runTest(tests) {
  * Read all files in rules/ subdirectory and perform tests defined there
  */
 describe('Rules', () => {
-	var files = glob.sync(__dirname + "/rules/*.js"),
+	const files = glob.sync(__dirname + "/rules/*.js"),
 		nameRe = /([^/]+)\.js$/;
 
 	files.forEach(function(file) {

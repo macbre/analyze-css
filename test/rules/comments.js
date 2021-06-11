@@ -19,6 +19,11 @@ exports.tests = [
 		metrics: {
 			comments: 1,
 			commentsLength: 273
+		},
+		offenders: {
+			comments: [
+				"\" really really really really really really really really really really really really really really r\" is too long (273 characters)"
+			]
 		}
 	}
 ];
