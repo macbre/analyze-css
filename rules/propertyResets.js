@@ -14,7 +14,7 @@ function rule(analyzer) {
   analyzer.setMetric("propertyResets");
 
   analyzer.on("selector", function (rule, selector) {
-    var declarations = rule.declarations || [],
+    var declarations = rule.declarations,
       properties;
 
     // prepare the list of properties used in this selector
