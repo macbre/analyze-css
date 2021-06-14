@@ -9,13 +9,13 @@ var analyzer = require('../'),
 	nodeSassInfo;
 
 try {
-	nodeSassInfo  = require('node-sass').info;
-	console.log(`Using ${nodeSassInfo.replace("\n", " ")}`);
+	nodeSassInfo  = require('sass').info;
+	console.log(`Using ${nodeSassInfo.replace(/[\n\t]/g, " ")}`);
 } catch (e) {
 	isSassInstalled = false;
 }
 
-describe('SASS preprocessor [' + (isSassInstalled ? 'node-sass installed' : 'node-sass missing') + ']', () => {
+describe('SASS preprocessor [' + (isSassInstalled ? 'sass installed' : 'sass missing') + ']', () => {
 	it('should be chosen for SCSS files', () => {
 		var preprocessors = new(require('../lib/preprocessors.js'))();
 
