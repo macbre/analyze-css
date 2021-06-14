@@ -69,4 +69,18 @@ describe('SASS preprocessor [' + (isSassInstalled ? 'node-sass installed' : 'nod
 			preprocessor: 'sass'
 		}, done);
 	});
+
+	it('should report parsing error when provided an incorrect syntax', done => {
+		try {
+			new analyzer("bar {foo--}", {
+				preprocessor: 'sass'
+			}, done);
+		 }
+		 catch (err) {
+			assert.ok(err instanceof Error);
+			assert.ok(err.message.indexOf("Preprocessing failed:") === 0);
+			done();
+		}
+	});
+
 });

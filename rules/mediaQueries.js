@@ -9,7 +9,7 @@ function rule(analyzer) {
     analyzer.incrMetric("mediaQueries");
     analyzer.addOffender(
       "mediaQueries",
-      format("@media %s (%d rules)", query, (rules && rules.length) || 0)
+      format("@media %s (%d rules)", query, rules.length)
     );
   });
 }

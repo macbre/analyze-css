@@ -63,12 +63,15 @@
   },
   "jest": {
     "verbose": true,
+    "coveragePathIgnorePatterns": [
+      "test/"
+    ],
     "coverageThreshold": {
       "global": {
-        "statements": 99,
-        "branches": 95,
+        "statements": 100,
+        "branches": 100,
         "functions": 100,
-        "lines": 99
+        "lines": 100
       }
     }
   }
