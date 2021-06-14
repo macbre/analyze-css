@@ -12,7 +12,7 @@ body {
 }
             `.trim();
 
-        new analyzer(css, (err, res) => {
+        new analyzer(css, (err) => {
             assert.ok(err === null, err);
         });
 	});
