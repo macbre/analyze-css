@@ -37,9 +37,9 @@ jobs:
       uses: actions/cache@v2
       with:
         path: ${{ steps.npm-cache.outputs.dir }}
-        key: ${{ runner.os }}-nodev-${{ matrix.node-version }}-${{ hashFiles('**/package-lock.json') }}
+        key: ${{ runner.os }}-v1-node-${{ matrix.node-version }}-${{ hashFiles('**/package-lock.json') }}
         restore-keys: |
-          ${{ runner.os }}-nodev-${{ matrix.node-version }}-
+          ${{ runner.os }}-v1-node-${{ matrix.node-version }}-
     - name: Install dependencies
       run: npm ci
 
