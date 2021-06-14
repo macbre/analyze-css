@@ -20,6 +20,7 @@ function rule(analyzer) {
     var selectorSpecificity = specificity.calculate(selector),
       parts;
 
+    /* istanbul ignore if */
     if (!selectorSpecificity) {
       debug("not counted for %s!", selector);
       return;
