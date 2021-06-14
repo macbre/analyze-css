@@ -63,6 +63,9 @@
   },
   "jest": {
     "verbose": true,
+    "coveragePathIgnorePatterns": [
+      "test/"
+    ],
     "coverageThreshold": {
       "global": {
         "statements": 99,
