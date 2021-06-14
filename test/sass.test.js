@@ -70,7 +70,7 @@ describe('SASS preprocessor [' + (isSassInstalled ? 'node-sass installed' : 'nod
 		}, done);
 	});
 
-	it('should report parsing error in given wrong syntax', done => {
+	it('should report parsing error when provided an incorrect syntax', done => {
 		try {
 			new analyzer("bar {foo--}", {
 				preprocessor: 'sass'
