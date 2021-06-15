@@ -45,7 +45,7 @@ jobs:
 
     - name: Run tests (with sass support)
       run: |
-        time npm install sass@1.34.1
+        time npm install sass@1.35.0
         npm test
 
     # https://github.com/marketplace/actions/coveralls-github-action
