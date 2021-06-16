@@ -1,13 +1,12 @@
-/*global describe, it */
-'use strict';
+const { describe, it } = require("@jest/globals");
 
 var analyzer = require('../'),
 	assert = require('assert'),
 	css = '.foo { color: white }';
 
-describe('CommonJS module API', function() {
-	describe('noOffenders option', function() {
-		it('should be respected', function(done) {
+describe('CommonJS module API', () => {
+	describe('noOffenders option', () => {
+		it('should be respected', done => {
 			var opts = {
 				'noOffenders': true
 			};
@@ -19,7 +18,7 @@ describe('CommonJS module API', function() {
 			});
 		});
 
-		it('should be void if not provided', function(done) {
+		it('should be void if not provided', done => {
 			new analyzer(css, function(err, res) {
 				assert.strictEqual(err, null);
 				assert.equal(typeof res.offenders, 'object', 'Results should contain offenders');

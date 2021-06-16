@@ -1,11 +1,10 @@
-/*global describe, it */
-'use strict';
+const { describe, it } = require("@jest/globals");
 
 var extractColors = require('../rules/colors').extractColors,
 	assert = require('assert');
 
-describe('Colors', function() {
-	it('should be properly extracted from CSS properties', function() {
+describe('Colors', () => {
+	it('should be properly extracted from CSS properties', () => {
 		var testCases = [
 			[
 				'-moz-linear-gradient(top, rgba(240, 231, 223, 0) 50%, #f0e7df 100%)',
@@ -39,7 +38,7 @@ describe('Colors', function() {
 
 		testCases.forEach(function(testCase) {
 			var colors = extractColors(testCase[0]);
-			assert.deepEqual(colors, testCase[1]);
+			assert.deepStrictEqual(colors, testCase[1]);
 		});
 	});
 });

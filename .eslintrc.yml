@@ -12,3 +12,4 @@ rules:
   - error
   - allowEmptyCatch: true
   no-prototype-builtins: 'off'
+  "node/no-extraneous-require": 'off'

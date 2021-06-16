@@ -39,6 +39,7 @@ function rule(analyzer) {
   analyzer.on("rule", function (rule) {
     var propertiesHash = {};
 
+    /* istanbul ignore else */
     if (rule.declarations) {
       rule.declarations.forEach(function (declaration) {
         var propertyName;

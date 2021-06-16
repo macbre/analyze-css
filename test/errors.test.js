@@ -1,5 +1,4 @@
-/*global describe, it */
-'use strict';
+const { describe, it } = require("@jest/globals");
 
 var analyzer = require('../'),
 	assert = require('assert'),
@@ -33,10 +32,10 @@ tests = [
 	}
 ];
 
-describe('Errors handling', function() {
+describe('Errors handling', () => {
 	tests.forEach(function(test) {
-		describe(test.name || '"' + test.css + '" CSS snippet', function() {
-			it('should raise an error with correct error code', function(done) {
+		describe(test.name || '"' + test.css + '" CSS snippet', () => {
+			it('should raise an error with correct error code', done => {
 				new analyzer(test.css, function(err, res) {
 					assert.equal(err instanceof Error, true, 'Error should be thrown');
 

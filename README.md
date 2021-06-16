@@ -4,6 +4,7 @@ analyze-css
 [![NPM version](https://badge.fury.io/js/analyze-css.png)](http://badge.fury.io/js/analyze-css)
 [![Known Vulnerabilities](https://snyk.io/test/github/macbre/analyze-css/badge.svg)](https://snyk.io/test/github/macbre/analyze-css)
 [![Inline docs](http://inch-ci.org/github/macbre/analyze-css.svg?branch=devel&style=flat-square)](http://inch-ci.org/github/macbre/analyze-css)
+[![Coverage Status](https://coveralls.io/repos/github/macbre/analyze-css/badge.svg?branch=devel)](https://coveralls.io/github/macbre/analyze-css?branch=devel)
 
 [![Download stats](https://nodei.co/npm/analyze-css.png?downloads=true&downloadRank=true)](https://nodei.co/npm/analyze-css/)
 
@@ -172,12 +173,10 @@ It uses configurable threshold and compares the analyze-css result with it.
 
 ## Read more
 
-* [Writing Efficient CSS](http://developer.mozilla.org/en/Writing_Efficient_CSS) (by Mozilla)
 * [Optimize browser rendering](https://developers.google.com/speed/docs/best-practices/rendering) (by Google)
 * [Profiling CSS for fun and profit. Optimization notes.](http://perfectionkills.com/profiling-css-for-fun-and-profit-optimization-notes/)
 * [CSS specificity](http://css-tricks.com/specifics-on-css-specificity/)
 * [CSS Selector Performance has changed! (For the better)](http://calendar.perfplanet.com/2011/css-selector-performance-has-changed-for-the-better/) (by Nicole Sullivan)
-* [CSS Performance](http://dl.dropboxusercontent.com/u/39519/talks/cssperf/index.html) (by Paul Irish)
 * [GitHub's CSS Performance](https://speakerdeck.com/jonrohan/githubs-css-performance) (by Joh Rohan)
 
 ## Dev hints
