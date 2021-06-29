@@ -1,4 +1,3 @@
-#!/usr/bin/env node
 
 /**
  * analyze-css entry point
