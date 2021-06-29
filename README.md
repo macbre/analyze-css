@@ -5,6 +5,7 @@ analyze-css
 [![Known Vulnerabilities](https://snyk.io/test/github/macbre/analyze-css/badge.svg)](https://snyk.io/test/github/macbre/analyze-css)
 [![Inline docs](http://inch-ci.org/github/macbre/analyze-css.svg?branch=devel&style=flat-square)](http://inch-ci.org/github/macbre/analyze-css)
 [![Coverage Status](https://coveralls.io/repos/github/macbre/analyze-css/badge.svg?branch=devel)](https://coveralls.io/github/macbre/analyze-css?branch=devel)
+[![CodeFactor](https://www.codefactor.io/repository/github/macbre/analyze-css/badge)](https://www.codefactor.io/repository/github/macbre/analyze-css)
 
 [![Download stats](https://nodei.co/npm/analyze-css.png?downloads=true&downloadRank=true)](https://nodei.co/npm/analyze-css/)
 
