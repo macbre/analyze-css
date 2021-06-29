@@ -1,4 +1,3 @@
-
 /**
  * analyze-css entry point
  *
