@@ -4,5 +4,11 @@ exports.tests = [
 		metrics: {
 			complexSelectors: 1
 		}
+	},
+	{
+		css: '.someclass:not([ng-show="gcdmShowSystemNotAvailableMessage()"]){display:none}',
+		metrics: {
+			complexSelectors: 0
+		}
 	}
 ];
