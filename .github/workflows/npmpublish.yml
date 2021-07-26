@@ -25,22 +25,31 @@ jobs:
     steps:
       - uses: actions/checkout@v2
       
-      # https://github.com/marketplace/actions/setup-node-js-environment
+      #
+      # https://github.com/actions/setup-node/blob/main/docs/advanced-usage.md#publish-to-npmjs-and-gpr-with-npm
+      #
       - uses: actions/setup-node@master
         with:
-          node-version: 16
+         node-version: '14.x'
+         cache: 'npm'
+         registry-url: 'https://npm.pkg.github.com'
 
-      # https://docs.github.com/en/packages/working-with-a-github-packages-registry/working-with-the-npm-registry#publishing-a-package
+      - run: npm ci
+
       - name: Publish to GitHub Packages
         run: |
-          npm config set registry="https://npm.pkg.github.com"
           npm publish
         env:
           NODE_AUTH_TOKEN: ${{secrets.GITHUB_TOKEN}}
 
+
+      - uses: actions/setup-node@master
+        with:
+          node-version: '14.x'
+          registry-url: 'https://registry.npmjs.org'
+
       - name: Publish to npm
         run: |
-          npm config set registry="https://registry.npmjs.org/"
           npm publish
         env:
           NODE_AUTH_TOKEN: ${{secrets.npm_token}}
