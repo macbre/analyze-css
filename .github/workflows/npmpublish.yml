@@ -15,7 +15,8 @@ jobs:
       - uses: actions/checkout@v2
       - uses: actions/setup-node@master
         with:
-          node-version: 16
+          node-version: 14
+          cache: 'npm'
       - run: npm ci
       - run: npm test
 
@@ -31,11 +32,7 @@ jobs:
       - uses: actions/setup-node@master
         with:
          node-version: '14.x'
-         cache: 'npm'
          registry-url: 'https://npm.pkg.github.com'
-
-      - run: npm ci
-
       
       # GitHub Packages only supports scoped npm packages.
       # Scoped packages have names with the format of @owner/name
