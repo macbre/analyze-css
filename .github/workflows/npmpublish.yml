@@ -32,7 +32,7 @@ jobs:
         with:
          node-version: '14.x'
          registry-url: 'https://npm.pkg.github.com'
-      
+
       # GitHub Packages only supports scoped npm packages.
       # Scoped packages have names with the format of @owner/name
       #
