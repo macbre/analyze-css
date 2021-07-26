@@ -6,7 +6,6 @@ name: Publish to npm and GitHub Packages
 on:
   release:
     types: [created]
-  pull_request:
 
 jobs:
   build:
