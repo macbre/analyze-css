@@ -42,7 +42,7 @@ jobs:
         run: |
           sed -i 's/"analyze-css"/"@macbre\/analyze-css"/g' package.json; git diff
 
-          npm publish
+          npm publish --access public
 
           git checkout -- .
         env:
@@ -56,6 +56,6 @@ jobs:
 
       - name: Publish to npm
         run: |
-          npm publish
+          npm publish --access public
         env:
           NODE_AUTH_TOKEN: ${{secrets.npm_token}}
