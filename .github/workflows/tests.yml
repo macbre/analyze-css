@@ -43,7 +43,7 @@ jobs:
 
     - name: Install dependencies
       run: npm ci
-      
+
     - name: Install sass package
       run: |
         # https://github.com/macbre/analyze-css/blob/devel/package-lock.json
