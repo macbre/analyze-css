@@ -11,6 +11,7 @@ on:
 jobs:
   test:
     runs-on: ubuntu-latest
+    timeout-minutes: 2
 
     strategy:
       fail-fast: false
@@ -40,12 +41,23 @@ jobs:
         key: ${{ runner.os }}-v1-node-${{ matrix.node-version }}-${{ hashFiles('**/package-lock.json') }}
         restore-keys: |
           ${{ runner.os }}-v1-node-${{ matrix.node-version }}-
+
     - name: Install dependencies
       run: npm ci
 
+    - name: Install sass package
+      run: |
+        # https://github.com/macbre/analyze-css/blob/devel/package-lock.json
+        # "resolved": "https://registry.npmjs.org/sass/-/sass-1.36.0.tgz",
+        export SASS_VERSION=$(grep 'registry.npmjs.org/sass/' package-lock.json | egrep -o 'sass-[0-9\.]+' | sed 's/sass-//g' | sed 's/\.$//g')
+
+        echo "Installing sass ${SASS_VERSION} ..."
+
+        set -x
+        time npm install sass@${SASS_VERSION}
+
     - name: Run tests (with sass support)
       run: |
-        time npm install sass@1.35.1
         npm test
 
     # https://github.com/marketplace/actions/coveralls-github-action
