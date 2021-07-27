@@ -40,12 +40,21 @@ jobs:
         key: ${{ runner.os }}-v1-node-${{ matrix.node-version }}-${{ hashFiles('**/package-lock.json') }}
         restore-keys: |
           ${{ runner.os }}-v1-node-${{ matrix.node-version }}-
+
     - name: Install dependencies
       run: npm ci
+      
+    - name: Install sass package
+      run: |
+        # https://github.com/macbre/analyze-css/blob/devel/package-lock.json
+        # "resolved": "https://registry.npmjs.org/sass/-/sass-1.36.0.tgz",
+        export SASS_VERSION=$(grep 'registry.npmjs.org/sass/' package-lock.json | egrep -o '[0-9.]+')
+
+        set -x
+        time npm install sass@${SASS_VERSION}
 
     - name: Run tests (with sass support)
       run: |
-        time npm install sass@1.35.1
         npm test
 
     # https://github.com/marketplace/actions/coveralls-github-action
