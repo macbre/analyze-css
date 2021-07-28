@@ -49,25 +49,29 @@ HTTP proxy (e.g. `http://localhost:8080`) can be provided via:
 
 ### CommonJS module
 
-```js
-var analyzer = require('analyze-css');
+```
+npm i --save analyze-css
+```
 
-new analyzer('.foo {margin: 0 !important}', function(err, results) {
-  console.error(err);
+```js
+const analyzer = require('analyze-css');
+
+(async() => {
+  const results = await analyzer('.foo {margin: 0 !important}');
   console.log(results); // example? see below
-});
+})();
 ```
 
 ```js
 // options can be provided
-var opts = {
+const opts = {
   'noOffenders': true
 };
 
-new analyzer('.foo {margin: 0 !important}', opts, function(err, results) {
-  console.error(err);
+(async() => {
+  const results = await analyzer('.foo {margin: 0 !important}', opts);
   console.log(results); // example? see below
-});
+})();
 ```
 
 ### [grunt task](https://www.npmjs.org/package/grunt-contrib-analyze-css)

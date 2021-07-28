@@ -62,16 +62,16 @@ jobs:
         github-token: ${{ github.token }}
 
     - name: Run bin/analyze-css.js for CSS file
-      run: ./bin/analyze-css.js --file examples/ti.mobile.css  -p | jq .metrics
+      run: ./bin/analyze-css.js --file examples/ti.mobile.css  -p | jq .metrics | grep '"'
 
     - name: Run bin/analyze-css.js for SCSS file
-      run: ./bin/analyze-css.js --file examples/base.scss  -p | jq .offenders
+      run: ./bin/analyze-css.js --file examples/base.scss  -p | jq .offenders | grep '"'
 
     - name: Run bin/analyze-css.js for stdin-provided CSS
-      run: cat examples/ti.mobile.css | ./bin/analyze-css.js - | jq .metrics
+      run: cat examples/ti.mobile.css | ./bin/analyze-css.js - | jq .metrics | grep '"'
 
     - name: Run bin/analyze-css.js for external file over HTTP
-      run: ./bin/analyze-css.js --url http://s3.macbre.net/analyze-css/propertyResets.css -p | jq .metrics
+      run: ./bin/analyze-css.js --url http://s3.macbre.net/analyze-css/propertyResets.css -p | jq .metrics | grep '"'
 
     - name: Run bin/analyze-css.js for external file over HTTPS (--ignore-ssl-errors)
-      run: ./bin/analyze-css.js --url https://s3.macbre.net/analyze-css/propertyResets.css --ignore-ssl-errors | jq .metrics
+      run: ./bin/analyze-css.js --url https://s3.macbre.net/analyze-css/propertyResets.css --ignore-ssl-errors | jq .metrics | grep '"'

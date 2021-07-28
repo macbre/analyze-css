@@ -36,17 +36,17 @@ describe('Errors handling', () => {
 	tests.forEach(function(test) {
 		describe(test.name || '"' + test.css + '" CSS snippet', () => {
 			it('should raise an error with correct error code', done => {
-				new analyzer(test.css, function(err, res) {
-					assert.equal(err instanceof Error, true, 'Error should be thrown');
+				analyzer(test.css)
+					.catch(err => {
+						assert.strictEqual(err instanceof Error, true, 'Error should be thrown');
 
-					if (!test.check.test(err.toString())) {
-						assert.fail(err.toString(), test.check);
-					}
+						if (!test.check.test(err.toString())) {
+							assert.fail(err.toString(), test.check);
+						}
 
-					assert.equal(err.code, test.code);
-					assert.equal(res, null);
-					done();
-				});
+						assert.strictEqual(err.code, test.code);
+					})
+					.finally(done);
 			});
 		});
 	});
