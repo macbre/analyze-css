@@ -105,7 +105,7 @@ runner(runnerOpts, function (err, res) {
   }
 
   // format the results
-  if (program.pretty === true) {
+  if (options.pretty === true) {
     output = JSON.stringify(res, null, "  ");
   } else {
     output = JSON.stringify(res);
