@@ -1,11 +1,14 @@
 "use strict";
 
-var collection = require("../lib/collection"),
+const Collection = require("../lib/collection"),
   debug = require("debug")("analyze-css:duplicated"),
   format = require("util").format;
 
+/**
+ * @param { import("../lib/index").CSSAnalyzer } analyzer
+ */
 function rule(analyzer) {
-  var selectors = new collection(),
+  var selectors = new Collection(),
     mediaQueryStack = [],
     browserPrefixRegEx = /^-(moz|o|webkit|ms)-/;
 
@@ -97,7 +100,7 @@ function rule(analyzer) {
   analyzer.on("report", function () {
     analyzer.setCurrentPosition(undefined);
 
-    selectors.sort().forEach(function (selector, cnt) {
+    selectors.sort().forEach((selector, cnt) => {
       if (cnt > 1) {
         analyzer.incrMetric("duplicatedSelectors");
         analyzer.addOffender(

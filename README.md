@@ -5,6 +5,7 @@ analyze-css
 [![Known Vulnerabilities](https://snyk.io/test/github/macbre/analyze-css/badge.svg)](https://snyk.io/test/github/macbre/analyze-css)
 [![Inline docs](http://inch-ci.org/github/macbre/analyze-css.svg?branch=devel&style=flat-square)](http://inch-ci.org/github/macbre/analyze-css)
 [![Coverage Status](https://coveralls.io/repos/github/macbre/analyze-css/badge.svg?branch=devel)](https://coveralls.io/github/macbre/analyze-css?branch=devel)
+[![CodeFactor](https://www.codefactor.io/repository/github/macbre/analyze-css/badge)](https://www.codefactor.io/repository/github/macbre/analyze-css)
 
 [![Download stats](https://nodei.co/npm/analyze-css.png?downloads=true&downloadRank=true)](https://nodei.co/npm/analyze-css/)
 
@@ -48,25 +49,29 @@ HTTP proxy (e.g. `http://localhost:8080`) can be provided via:
 
 ### CommonJS module
 
-```js
-var analyzer = require('analyze-css');
+```
+npm i --save analyze-css
+```
 
-new analyzer('.foo {margin: 0 !important}', function(err, results) {
-  console.error(err);
+```js
+const analyze = require('analyze-css').analyze;
+
+(async() => {
+  const results = await analyze('.foo {margin: 0 !important}');
   console.log(results); // example? see below
-});
+})();
 ```
 
 ```js
 // options can be provided
-var opts = {
+const opts = {
   'noOffenders': true
 };
 
-new analyzer('.foo {margin: 0 !important}', opts, function(err, results) {
-  console.error(err);
+(async() => {
+  const results = await analyze('.foo {margin: 0 !important}', opts);
   console.log(results); // example? see below
-});
+})();
 ```
 
 ### [grunt task](https://www.npmjs.org/package/grunt-contrib-analyze-css)

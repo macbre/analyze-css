@@ -11,7 +11,7 @@ on:
 jobs:
   test:
     runs-on: ubuntu-latest
-    timeout-minutes: 3
+    timeout-minutes: 2
 
     strategy:
       fail-fast: false
@@ -23,30 +23,34 @@ jobs:
         - '16.x'
 
     steps:
-    - uses: actions/checkout@v2
+    - uses: actions/checkout@master
+
     - name: Use Node.js ${{ matrix.node-version }}
-      uses: actions/setup-node@v1
+      uses: actions/setup-node@master
       with:
         node-version: ${{ matrix.node-version }}
+        cache: npm
 
-    # https://github.com/actions/cache/blob/main/examples.md#using-multiple-systems-and-npm-config
-    - name: Get npm cache directory
-      id: npm-cache
-      run: |
-        echo "::set-output name=dir::$(npm config get cache)"
-    - name: npm cache
-      uses: actions/cache@v2
-      with:
-        path: ${{ steps.npm-cache.outputs.dir }}
-        key: ${{ runner.os }}-v1-node-${{ matrix.node-version }}-${{ hashFiles('**/package-lock.json') }}
-        restore-keys: |
-          ${{ runner.os }}-v1-node-${{ matrix.node-version }}-
     - name: Install dependencies
       run: npm ci
 
+    - name: Run tests (without sass support)
+      run: |
+        npm test
+
+    - name: Install sass package
+      run: |
+        # https://github.com/macbre/analyze-css/blob/devel/package-lock.json
+        # "resolved": "https://registry.npmjs.org/sass/-/sass-1.36.0.tgz",
+        export SASS_VERSION=$(grep 'registry.npmjs.org/sass/' package-lock.json | egrep -o 'sass-[0-9\.]+' | sed 's/sass-//g' | sed 's/\.$//g')
+
+        echo "Installing sass ${SASS_VERSION} ..."
+
+        set -x
+        time npm install sass@${SASS_VERSION}
+
     - name: Run tests (with sass support)
       run: |
-        time npm install sass@1.35.1
         npm test
 
     # https://github.com/marketplace/actions/coveralls-github-action
@@ -58,16 +62,16 @@ jobs:
         github-token: ${{ github.token }}
 
     - name: Run bin/analyze-css.js for CSS file
-      run: ./bin/analyze-css.js --file examples/ti.mobile.css  -p | jq .metrics
+      run: ./bin/analyze-css.js --file examples/ti.mobile.css  -p | jq .metrics | grep '"'
 
     - name: Run bin/analyze-css.js for SCSS file
-      run: ./bin/analyze-css.js --file examples/base.scss  -p | jq .offenders
+      run: ./bin/analyze-css.js --file examples/base.scss  -p | jq .offenders | grep '"'
 
     - name: Run bin/analyze-css.js for stdin-provided CSS
-      run: cat examples/ti.mobile.css | ./bin/analyze-css.js - | jq .metrics
+      run: cat examples/ti.mobile.css | ./bin/analyze-css.js - | jq .metrics | grep '"'
 
     - name: Run bin/analyze-css.js for external file over HTTP
-      run: ./bin/analyze-css.js --url http://s3.macbre.net/analyze-css/propertyResets.css -p | jq .metrics
+      run: ./bin/analyze-css.js --url http://s3.macbre.net/analyze-css/propertyResets.css -p | jq .metrics | grep '"'
 
     - name: Run bin/analyze-css.js for external file over HTTPS (--ignore-ssl-errors)
-      run: ./bin/analyze-css.js --url https://s3.macbre.net/analyze-css/propertyResets.css --ignore-ssl-errors | jq .metrics
+      run: ./bin/analyze-css.js --url https://s3.macbre.net/analyze-css/propertyResets.css --ignore-ssl-errors | jq .metrics | grep '"'

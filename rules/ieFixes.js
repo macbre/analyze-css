@@ -6,6 +6,7 @@ var format = require("util").format;
  * Rules below match ugly fixes for IE9 and below
  *
  * @see http://browserhacks.com/
+ * @param { import("../lib/index").CSSAnalyzer } analyzer
  */
 function rule(analyzer) {
   var re = {

@@ -1,6 +1,6 @@
 const { describe, it } = require("@jest/globals");
 
-var analyzer = require('../'),
+var analyzer = require('../').analyze,
 	fs = require('fs'),
 	isSassInstalled = true,
 	assert = require('assert'),
@@ -24,62 +24,57 @@ describe('SASS preprocessor [' + (isSassInstalled ? 'sass installed' : 'sass mis
 		assert.strictEqual(preprocessors.findMatchingByFileName('test/foo.css'), false);
 	});
 
-	it('should report parsing error (if not selected)', done => {
-		new analyzer(scss, function(err, res) {
-			assert.strictEqual(err, null);
-			assert.strictEqual(res.metrics.parsingErrors, 3);
-			done();
-		});
+	it('should report parsing error (if not selected)', async () => {
+		const res = await analyzer(scss);
+
+		assert.strictEqual(res.metrics.parsingErrors, 3);
 	});
 
 	if (isSassInstalled === false) {
 		return;
 	}
 
-	it('should generate CSS from SCSS correctly', done => {
+	it('should generate CSS from SCSS correctly', async () => {
 		try {
-			new analyzer(scss, {
+			await analyzer(scss, {
 				preprocessor: 'sass'
-			}, done);
+			});
 		} catch (e) {
 			assert.ok(e instanceof Error);
 			assert.strictEqual(e.message, 'Preprocessing failed: Error: Can\'t process SASS/SCSS, please run \'npm install node-sass\'');
-			done();
 		}
 	});
 
-	it('should generate CSS from SASS correctly', done => {
+	it('should generate CSS from SASS correctly', async () => {
 		try {
-			new analyzer(sass, {
+			await analyzer(sass, {
 				preprocessor: 'sass'
-			}, done);
+			});
 		} catch (e) {
 			assert.ok(e instanceof Error);
 			assert.strictEqual(e.message, 'Preprocessing failed: Error: Can\'t process SASS/SCSS, please run \'npm install node-sass\'');
-			done();
 		}
 	});
 
-	it('should parse SCSS file correctly', done => {
+	it('should parse SCSS file correctly', async () => {
 		const file = __dirname + '/../examples/base.scss',
 			source = fs.readFileSync(file).toString();
 
-		new analyzer(source, {
+		await analyzer(source, {
 			file: file,
 			preprocessor: 'sass'
-		}, done);
+		});
 	});
 
-	it('should report parsing error when provided an incorrect syntax', done => {
+	it('should report parsing error when provided an incorrect syntax', async () => {
 		try {
-			new analyzer("bar {foo--}", {
+			await analyzer("bar {foo--}", {
 				preprocessor: 'sass'
-			}, done);
+			});
 		 }
 		 catch (err) {
 			assert.ok(err instanceof Error);
 			assert.ok(err.message.indexOf("Preprocessing failed:") === 0);
-			done();
 		}
 	});
 

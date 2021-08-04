@@ -2,6 +2,8 @@
 
 /**
  * Detect not minified CSS
+ *
+ * @param { import("../lib/index").CSSAnalyzer } analyzer
  */
 function rule(analyzer) {
   analyzer.setMetric("notMinified");
