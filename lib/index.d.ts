@@ -63,6 +63,23 @@ declare interface Results {
 }
 
 /**
+ * analyzer instance passed to the rules code
+ *
+ * @see https://www.typescriptlang.org/docs/handbook/jsdoc-supported-types.html
+ */
+export interface CSSAnalyzer {
+  public setMetric(name: MetricsNames, value: ?number = 0): void;
+  public incrMetric(name: MetricsNames, incr: ?number = 1): void;
+  public addOffender(
+    metricName: MetricsNames,
+    msg: string,
+    position: ?any
+  ): void;
+  public setCurrentPosition(position: any): void;
+  public on(ev: string, fn: Function<?any>): void;
+}
+
+/**
  * The main entry-point to analyze a given css
  */
 declare function analyze(css: string, options?: object): Promise<Results>;
