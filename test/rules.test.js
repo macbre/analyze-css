@@ -1,6 +1,6 @@
 const { describe, it } = require("@jest/globals");
 
-const analyzer = require('../'),
+const analyzer = require('../').analyze,
 	assert = require('assert'),
 	glob = require('glob');
 

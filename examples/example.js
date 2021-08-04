@@ -1,5 +1,5 @@
 #!/usr/bin/env node
-const analyze = require('../');
+const analyze = require('../').analyze;
 
 (async() => {
   const results = await analyze('.foo {margin: 0 !important}');
