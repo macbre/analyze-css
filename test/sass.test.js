@@ -1,6 +1,6 @@
 const { describe, it } = require("@jest/globals");
 
-var analyzer = require('../'),
+var analyzer = require('../').analyze,
 	fs = require('fs'),
 	isSassInstalled = true,
 	assert = require('assert'),

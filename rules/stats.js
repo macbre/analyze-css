@@ -1,5 +1,8 @@
 "use strict";
 
+/**
+ * @param { import("../lib/index").CSSAnalyzer } analyzer
+ */
 function rule(analyzer) {
   var selectors = 0,
     selectorsLength = 0;

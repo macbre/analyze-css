@@ -4,6 +4,7 @@
   "author": "Maciej Brencz <maciej.brencz@gmail.com> (https://github.com/macbre)",
   "description": "CSS selectors complexity and performance analyzer",
   "main": "./lib/index.js",
+  "types": "./lib/index.d.ts",
   "repository": {
     "type": "git",
     "url": "git://github.com/macbre/analyze-css.git"
@@ -36,6 +37,7 @@
   "devDependencies": {
     "autoprefixer": "^10.2.4",
     "browserslist": "^4.11.1",
+    "check-dts": "^0.5.5",
     "eslint": "^7.12.1",
     "eslint-config-prettier": "8.3.0",
     "eslint-plugin-node": "^11.1.0",

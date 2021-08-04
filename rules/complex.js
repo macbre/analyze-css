@@ -2,6 +2,9 @@
 
 var COMPLEX_SELECTOR_THRESHOLD = 3;
 
+/**
+ * @param { import("../lib/index").CSSAnalyzer } analyzer
+ */
 function rule(analyzer) {
   analyzer.setMetric("complexSelectors");
 

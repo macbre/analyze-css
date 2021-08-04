@@ -7,6 +7,7 @@ var format = require("util").format,
  * Detect accidental property resets
  *
  * @see http://css-tricks.com/accidental-css-resets/
+ * @param { import("../lib/index").CSSAnalyzer } analyzer
  */
 function rule(analyzer) {
   var debug = require("debug");
