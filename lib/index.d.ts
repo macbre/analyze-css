@@ -68,15 +68,21 @@ declare interface Results {
  * See https://www.typescriptlang.org/docs/handbook/jsdoc-supported-types.html
  */
 export class CSSAnalyzer {
-  public setMetric(name: MetricsNames, value: number|undefined /** = 0 */): void;
-  public incrMetric(name: MetricsNames, incr: number|undefined /** = 1 */): void;
+  public setMetric(
+    name: MetricsNames,
+    value: number | undefined /** = 0 */
+  ): void;
+  public incrMetric(
+    name: MetricsNames,
+    incr: number | undefined /** = 1 */
+  ): void;
   public addOffender(
     metricName: MetricsNames,
     msg: string,
-    position: any|undefined
+    position: any | undefined
   ): void;
   public setCurrentPosition(position: any): void;
-  public on(ev: string, fn: (any)): void;
+  public on(ev: string, fn: any): void;
 }
 
 /**

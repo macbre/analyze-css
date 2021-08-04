@@ -2,6 +2,9 @@
 
 var format = require("util").format;
 
+/**
+ * @param { import("../lib/index").CSSAnalyzer } analyzer
+ */
 function rule(analyzer) {
   analyzer.setMetric("mediaQueries");
 

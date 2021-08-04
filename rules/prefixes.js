@@ -3,8 +3,11 @@
 var debug = require("debug")("analyze-css:prefixes"),
   format = require("util").format;
 
+/**
+ * @param { import("../lib/index").CSSAnalyzer } analyzer
+ */
 function rule(analyzer) {
-  var data = require("./prefixes.json"),
+  var data = require(__dirname + "/prefixes.json"),
     prefixes = data.prefixes;
 
   debug("Using data generated on %s", data.generated);
