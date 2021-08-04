@@ -4,7 +4,7 @@ const format = require("util").format,
   MAX_LENGTH = 256;
 
 /**
- * @param { import("../lib/index").CSSAnalyzer } analyzer
+ * @param { import("../lib/css-analyzer").CSSAnalyzer } analyzer
  */
 function rule(analyzer) {
   analyzer.setMetric("comments");

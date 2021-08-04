@@ -3,6 +3,9 @@
 var format = require("util").format,
   MAX_LENGTH = 4 * 1024;
 
+/**
+ * @param { import("../lib/index").CSSAnalyzer } analyzer
+ */
 function rule(analyzer) {
   // @see http://stackoverflow.com/a/11335500
   var re = /data:.+\/(.+);base64,(.*)\)/;
