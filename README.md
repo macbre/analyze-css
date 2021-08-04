@@ -54,7 +54,7 @@ npm i --save analyze-css
 ```
 
 ```js
-const analyze = require('analyze-css').analyze;
+const analyze = require('analyze-css');
 
 (async() => {
   const results = await analyze('.foo {margin: 0 !important}');
