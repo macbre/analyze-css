@@ -4,6 +4,9 @@ const Collection = require("../lib/collection"),
   debug = require("debug")("analyze-css:duplicated"),
   format = require("util").format;
 
+/**
+ * @param { import("../lib/index").CSSAnalyzer } analyzer
+ */
 function rule(analyzer) {
   var selectors = new Collection(),
     mediaQueryStack = [],
