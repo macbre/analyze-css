@@ -54,10 +54,10 @@ npm i --save analyze-css
 ```
 
 ```js
-const analyzer = require('analyze-css');
+const analyze = require('analyze-css');
 
 (async() => {
-  const results = await analyzer('.foo {margin: 0 !important}');
+  const results = await analyze('.foo {margin: 0 !important}');
   console.log(results); // example? see below
 })();
 ```
@@ -69,7 +69,7 @@ const opts = {
 };
 
 (async() => {
-  const results = await analyzer('.foo {margin: 0 !important}', opts);
+  const results = await analyze('.foo {margin: 0 !important}', opts);
   console.log(results); // example? see below
 })();
 ```
