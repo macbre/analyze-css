@@ -21,7 +21,12 @@ declare class CSSAnalyzer {
     position: any | undefined
   ): void;
   public setCurrentPosition(position: any): void;
+
+  // types based on the event
   public on(ev: string, fn: any): void;
+  public on(ev: "css", fn: (css: string) => void): void;
+  public on(ev: "report", fn: () => void): void;
+
   public analyze(css: string): boolean | Error;
 
   public metrics: Metrics;
