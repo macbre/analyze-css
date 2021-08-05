@@ -70,3 +70,28 @@ export type Metrics = { [metric in MetricsNames]: number };
  * Encapsulates a set of offenders
  */
 export type Offenders = { [metric in MetricsNames]: Array<Object> };
+
+/**
+ * A CSS rule taken from "css" package
+ */
+import { Rule, AtRule, Declaration } from "css";
+
+declare interface CssDeclaration extends Declaration {
+  comment?: string | undefined;
+}
+
+// Array<Rule | Comment | AtRule> | undefined;
+export interface CSSRule extends Rule {
+  comment?: string | undefined;
+
+  /** The part following @import. */
+  import?: string | undefined;
+
+  /** Array of nodes with the types declaration and comment. */
+  declarations?: Array<CssDeclaration> | undefined;
+
+  /** The part following @media. */
+  media?: string | undefined;
+  /** Array of nodes with the types rule, comment and any of the at-rule types. */
+  rules?: Array<Rule | Comment | AtRule> | undefined;
+}
