@@ -24,23 +24,33 @@ const CSSAnalyzer = require("../lib/css-analyzer");
   // list of all available events
   // https://nodejs.org/api/events.html#events_class_eventemitter
   const eventsEmitter = instance.emitter;
+  const events = eventsEmitter.eventNames().sort();
 
   console.log(
     "export type EventsNames = " +
-      eventsEmitter
-        .eventNames()
-        .sort()
+      events
         .map((event) => {
-          const listeners = eventsEmitter.listeners(event);
-          const sourceCode = listeners[0].toString();
-          const signature = sourceCode
-            .split("\n")[0]
-            .toString()
-            .replace(/function\s?| {/g, "");
-
-          return `"${event}" /* ${signature} */`;
+          return `"${event}"`;
         })
         .join(" |\n\t") +
       ";"
+  );
+
+  console.log("// on() overloaded methods via event-specific callbacks");
+  console.log(
+    events
+      .map((event) => {
+        const listeners = eventsEmitter.listeners(event);
+        const sourceCode = listeners[0].toString();
+        const signature = sourceCode
+          .split("\n")[0]
+          .toString()
+          .replace(/function\s?| {/g, "")
+          .replace(/, /g, ": any, ")
+          .replace(/([a-z])\)/, "$1: any)");
+
+        return `public on(ev: "${event}", fn: ${signature} => void): void;`;
+      })
+      .join("\n")
   );
 })();
