@@ -1,6 +1,7 @@
 coverage/
 data/
 examples/
+scripts/
 test/
 .github/
 
