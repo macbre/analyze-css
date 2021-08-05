@@ -4,7 +4,7 @@
  * While this package is not written in TypeScript, this file will allow your IDE to provide you with auto-completion.
  */
 
-import { Metrics, Offenders } from "./helpers.d";
+import { Metrics, Offenders } from "./types";
 
 /**
  * Encapsulates results from analyze()

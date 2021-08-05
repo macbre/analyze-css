@@ -4,7 +4,7 @@
  * See https://www.typescriptlang.org/docs/handbook/jsdoc-supported-types.html
  */
 
-import { MetricsNames, Metrics, Offenders } from "./helpers.d";
+import { EventsNames, MetricsNames, Metrics, Offenders } from "./types";
 
 declare class CSSAnalyzer {
   public setMetric(
@@ -23,7 +23,7 @@ declare class CSSAnalyzer {
   public setCurrentPosition(position: any): void;
 
   // types based on the event
-  public on(ev: string, fn: any): void;
+  public on(ev: EventsNames, fn: any): void;
   public on(ev: "css", fn: (css: string) => void): void;
   public on(ev: "report", fn: () => void): void;
 
