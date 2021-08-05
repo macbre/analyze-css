@@ -3,13 +3,16 @@
 /**
  * Detect not minified CSS
  *
- * @param { import("../lib/index").CSSAnalyzer } analyzer
+ * @param { import("../lib/css-analyzer") } analyzer
  */
 function rule(analyzer) {
   analyzer.setMetric("notMinified");
 
   /**
    * A simple CSS minification detector
+   *
+   * @param {string} css
+   * @return {boolean}
    */
   function isMinified(css) {
     // analyze the first 1024 characters
@@ -19,7 +22,7 @@ function rule(analyzer) {
     return /\n/.test(css) === false;
   }
 
-  analyzer.on("css", function (css) {
+  analyzer.on("css", (css) => {
     analyzer.setMetric("notMinified", isMinified(css) ? 0 : 1);
   });
 }

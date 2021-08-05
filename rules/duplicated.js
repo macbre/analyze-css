@@ -5,7 +5,7 @@ const Collection = require("../lib/collection"),
   format = require("util").format;
 
 /**
- * @param { import("../lib/index").CSSAnalyzer } analyzer
+ * @param { import("../lib/css-analyzer") } analyzer
  */
 function rule(analyzer) {
   var selectors = new Collection(),

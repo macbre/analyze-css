@@ -6,17 +6,8 @@ const analyze = require('../');
 
   console.log(results.generator);
   console.dir(results.metrics);
-  console.dir(results.offenders);
+  console.dir(results.metrics.length); // please note that this metric is well typed
 
-  // list of all available metrics
-  console.log(
-      'All available metrics (for type hinting):\n',
-      'type MetricsNames = ' +
-      Object.keys(results.metrics)
-        .sort()
-        .map(metric => {
-            return `"${metric}"`;
-        })
-        .join(' |\n\t') + ';'
-  )
+  console.dir(results.offenders);
+  console.dir(results.offenders.importants); // and this one is too
 })();

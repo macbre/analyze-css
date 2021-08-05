@@ -3,7 +3,7 @@
 var format = require("util").format;
 
 /**
- * @param { import("../lib/index").CSSAnalyzer } analyzer
+ * @param { import("../lib/css-analyzer") } analyzer
  */
 function rule(analyzer) {
   analyzer.setMetric("mediaQueries");

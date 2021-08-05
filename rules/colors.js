@@ -16,7 +16,7 @@ function extractColors(value) {
 }
 
 /**
- * @param { import("../lib/index").CSSAnalyzer } analyzer
+ * @param { import("../lib/css-analyzer") } analyzer
  */
 function rule(analyzer) {
   // store unique colors with the counter
