@@ -15,8 +15,14 @@ CSS selectors complexity and performance analyzer. analyze-css is built as a set
 
 analyze-css comes as a "binary" for command-line and as CommonJS module. Run the following to install them globally:
 
-```sh
-$ npm install --global analyze-css
+```
+npm install --global analyze-css
+```
+
+or to install from GitHub's repository:
+
+```
+npm install --global @macbre/analyze-css
 ```
 
 ## Usage
