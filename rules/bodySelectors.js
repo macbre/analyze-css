@@ -4,26 +4,37 @@
  * @param { import("../lib/css-analyzer") } analyzer
  */
 function rule(analyzer) {
+  const debug = require("debug")("analyze-css:bodySelectors");
+
   analyzer.setMetric("redundantBodySelectors");
 
-  analyzer.on("selector", function (rule, selector, expressions) {
-    var noExpressions = expressions.length;
+  analyzer.on("selector", function (_, selector, expressions) {
+    const noExpressions = expressions.length;
 
     // check more complex selectors only
     if (noExpressions < 2) {
       return;
     }
 
-    var firstTag = expressions[0].tag,
-      firstHasClass = !!expressions[0].classList,
+    const firstTag = expressions[0].type == "tag" && expressions[0].name,
+      firstHasClass =
+        expressions[1].type == "attribute" && expressions[1].name == "class",
       isDescendantCombinator = expressions[1].combinator === ">",
-      isShortExpression = noExpressions === 2,
-      isRedundant = true; // always expect the worst ;)
+      isShortExpression = noExpressions === 2;
+
+    debug("selector: %s %j", selector, {
+      firstTag,
+      firstHasClass,
+      isDescendantCombinator,
+      isShortExpression,
+    });
+
+    let isRedundant = true; // always expect the worst ;)
 
     // first, let's find the body tag selector in the expression
     var bodyIndex = expressions
       .map(function (item) {
-        return item.tag;
+        return item.type == "tag" ? item.name : undefined;
       })
       .indexOf("body");
 
@@ -33,7 +44,13 @@ function rule(analyzer) {
     }
 
     // matches "html > body"
+    // {"type":"tag","name":"html","namespace":null},{"type":"child"},{"type":"tag","name":"body","namespace":null}
+    //
     // matches "html.modal-popup-mode body" (issue #44)
+    // {"type":"tag","name":"html","namespace":null}
+    // {"type":"attribute","name":"class","action":"element","value":"modal-popup-mode","namespace":null,"ignoreCase":false}
+    // {"type":"descendant"}
+    // {"type":"tag","name":"body","namespace":null}
     if (
       firstTag === "html" &&
       bodyIndex === 1 &&
@@ -56,6 +73,8 @@ function rule(analyzer) {
 
     // report he redundant body selector
     if (isRedundant) {
+      debug("selector %s - is redundant", selector);
+
       analyzer.incrMetric("redundantBodySelectors");
       analyzer.addOffender("redundantBodySelectors", selector);
     }
