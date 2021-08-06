@@ -45,6 +45,23 @@ function firstSelectorHasClass(expressions) {
 }
 
 /**
+ * @param { AttributeSelectors } expressions
+ * @returns {number}
+ */
+function getDescendantCombinatorIndex(expressions) {
+  // body > .foo
+  // {"type":"child"}
+  return expressions
+    .filter((item) => {
+      return !["tag", "attribute", "pseudo"].includes(item.type);
+    })
+    .map((item) => {
+      return item.type;
+    })
+    .indexOf("child");
+}
+
+/**
  * @param { import("../lib/css-analyzer") } analyzer
  */
 function rule(analyzer) {
@@ -64,17 +81,8 @@ function rule(analyzer) {
 
     const firstHasClass = firstSelectorHasClass(expressions);
 
-    // body > .foo
-    // {"type":"child"}
     const isDescendantCombinator =
-      expressions
-        .filter((item) => {
-          return !["tag", "attribute", "pseudo"].includes(item.type);
-        })
-        .map((item) => {
-          return item.type;
-        })
-        .indexOf("child") === 0;
+      getDescendantCombinatorIndex(expressions) === 0;
 
     // there only a single descendant / child selector
     // e.g. "body > foo" or "html h1"
