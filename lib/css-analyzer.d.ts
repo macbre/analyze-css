@@ -5,6 +5,7 @@
  */
 
 import { ParserError, StyleRules, Stylesheet } from "css";
+import { Selector } from "css-what";
 import {
   EventsNames,
   MetricsNames,
@@ -57,7 +58,7 @@ declare class CSSAnalyzer {
   public on(ev: "rule", fn: (rule: CSSRule) => void): void;
   public on(
     ev: "selector",
-    fn: (rule: CSSRule, selector: string, expressions: any) => void
+    fn: (rule: CSSRule, selector: string, expressions: Selector[]) => void
   ): void;
   public on(ev: "stylesheet", fn: (stylesheet: StyleRules) => void): void;
 
