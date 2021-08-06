@@ -31,7 +31,6 @@
     "http-proxy-agent": "^4.0.1",
     "node-fetch": "^2.6.0",
     "onecolor": "^3.1.0",
-    "slick": "~1.12.1",
     "specificity": "^0.4.1"
   },
   "devDependencies": {
@@ -44,7 +43,7 @@
     "eslint-plugin-node": "^11.1.0",
     "jest": "^27.0.4",
     "nyc": "^15.1.0",
-    "postcss": "^8.2.6",
+    "postcss": "^8.3.6",
     "prettier": "2.3.2"
   },
   "optionalDependencies": {
