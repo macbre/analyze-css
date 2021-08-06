@@ -16,27 +16,69 @@ function rule(analyzer) {
       return;
     }
 
-    const firstTag = expressions[0].type == "tag" && expressions[0].name,
-      firstHasClass =
-        expressions[1].type == "attribute" && expressions[1].name == "class",
-      isDescendantCombinator = expressions[1].combinator === ">",
-      isShortExpression = noExpressions === 2;
+    const firstTag = expressions[0].type === "tag" && expressions[0].name;
+
+    // remove any non-class selectors
+    const firstHasClass =
+      expressions[0].type === "tag"
+        ? // h1.foo
+          expressions[1].type === "attribute" && expressions[1].name === "class"
+        : // .foo
+          expressions[0].type === "attribute" &&
+          expressions[0].name === "class";
+
+    // body > .foo
+    // {"type":"child"}
+    const isDescendantCombinator =
+      expressions
+        .filter((item) => {
+          return !["tag", "attribute", "pseudo"].includes(item.type);
+        })
+        .map((item) => {
+          return item.type;
+        })
+        .indexOf("child") === 0;
+
+    // there only a single descendant / child selector
+    // e.g. "body > foo" or "html h1"
+    const isShortExpression =
+      expressions.filter((item) => {
+        return ["child", "descendant"].includes(item.type);
+      }).length === 1;
+
+    let isRedundant = true; // always expect the worst ;)
+
+    // first, let's find the body tag selector in the expression
+    // body.foo h1 -> 0
+    // .foo body -> 1
+    // html.css body -> 1
+    const bodyIndex = (() => {
+      let idx = 0;
+
+      for (let i = 0; i < expressions.length; i++) {
+        switch (expressions[i].type) {
+          case "tag":
+            if (expressions[i].name === "body") {
+              return idx;
+            }
+            break;
+
+          case "child":
+          case "descendant":
+            idx++;
+        }
+      }
+
+      return -1;
+    })();
 
     debug("selector: %s %j", selector, {
       firstTag,
       firstHasClass,
       isDescendantCombinator,
       isShortExpression,
+      bodyIndex,
     });
-
-    let isRedundant = true; // always expect the worst ;)
-
-    // first, let's find the body tag selector in the expression
-    var bodyIndex = expressions
-      .map(function (item) {
-        return item.type == "tag" ? item.name : undefined;
-      })
-      .indexOf("body");
 
     // body selector not found - skip the rules that follow
     if (bodyIndex < 0) {
@@ -44,7 +86,9 @@ function rule(analyzer) {
     }
 
     // matches "html > body"
-    // {"type":"tag","name":"html","namespace":null},{"type":"child"},{"type":"tag","name":"body","namespace":null}
+    // {"type":"tag","name":"html","namespace":null}
+    // {"type":"child"}
+    // {"type":"tag","name":"body","namespace":null}
     //
     // matches "html.modal-popup-mode body" (issue #44)
     // {"type":"tag","name":"html","namespace":null}
