@@ -30,6 +30,20 @@ function getBodyIndex(expressions) {
 }
 
 /**
+ *
+ * @param { import("css-what").AttributeSelector[] } expressions
+ * @returns {boolean}
+ */
+function firstSelectorHasClass(expressions) {
+  // remove any non-class selectors
+  return expressions[0].type === "tag"
+    ? // h1.foo
+      expressions[1].type === "attribute" && expressions[1].name === "class"
+    : // .foo
+      expressions[0].type === "attribute" && expressions[0].name === "class";
+}
+
+/**
  * @param { import("../lib/css-analyzer") } analyzer
  */
 function rule(analyzer) {
@@ -47,14 +61,7 @@ function rule(analyzer) {
 
     const firstTag = expressions[0].type === "tag" && expressions[0].name;
 
-    // remove any non-class selectors
-    const firstHasClass =
-      expressions[0].type === "tag"
-        ? // h1.foo
-          expressions[1].type === "attribute" && expressions[1].name === "class"
-        : // .foo
-          expressions[0].type === "attribute" &&
-          expressions[0].name === "class";
+    const firstHasClass = firstSelectorHasClass(expressions);
 
     // body > .foo
     // {"type":"child"}
