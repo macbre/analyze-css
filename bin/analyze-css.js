@@ -9,7 +9,7 @@
 
 const { program } = require("commander");
 
-var analyzer = require("./../lib/index").analyze,
+var analyzer = require("./../lib/index"),
   debug = require("debug")("analyze-css:bin"),
   runner = require("./../lib/runner"),
   runnerOpts = {};

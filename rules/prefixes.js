@@ -4,7 +4,7 @@ var debug = require("debug")("analyze-css:prefixes"),
   format = require("util").format;
 
 /**
- * @param { import("../lib/index").CSSAnalyzer } analyzer
+ * @param { import("../lib/css-analyzer") } analyzer
  */
 function rule(analyzer) {
   var data = require(__dirname + "/prefixes.json"),

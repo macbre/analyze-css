@@ -14,7 +14,7 @@ jobs:
     runs-on: ubuntu-latest
 
     env:
-      GIT_BRANCH: "devel"
+      GIT_BRANCH: "master"
       GIT_USER_NAME: "macbre"
       GIT_USER_EMAIL: "<macbre@users.noreply.github.com>"
 
@@ -60,7 +60,7 @@ jobs:
         if: ${{ success() }}
         with:
           source_branch: "prefixes-update"  # see above
-          destination_branch: "devel"
+          destination_branch: ${{ env.GIT_BRANCH }}
 
           # When you use the repository's GITHUB_TOKEN to perform tasks on behalf of the GitHub Actions app,
           # events triggered by the GITHUB_TOKEN will not create a new workflow run.

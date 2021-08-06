@@ -5,7 +5,7 @@ var debug = require("debug")("analyze-css:specificity"),
   stats = require("fast-stats").Stats;
 
 /**
- * @param { import("../lib/index").CSSAnalyzer } analyzer
+ * @param { import("../lib/css-analyzer") } analyzer
  */
 function rule(analyzer) {
   var types = ["Id", "Class", "Tag"],

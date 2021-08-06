@@ -1,7 +1,7 @@
 "use strict";
 
 /**
- * @param { import("../lib/index").CSSAnalyzer } analyzer
+ * @param { import("../lib/css-analyzer") } analyzer
  */
 function rule(analyzer) {
   // definition of redundant child nodes selectors (see #51 for the initial idea):

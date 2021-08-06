@@ -3,7 +3,7 @@ const assert = require('assert');
 
 describe('@import rule with url containing semicolon', () => {
 	it('is properly parsed', () => {
-        const analyzer = require('../..').analyze,
+        const analyzer = require('../..'),
             css = `
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;800&display=swap');
 

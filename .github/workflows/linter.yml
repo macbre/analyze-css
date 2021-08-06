@@ -2,7 +2,7 @@ name: Linter and code style
 
 on:
   push:
-    branches: [ devel ]
+    branches: [ master ]
   pull_request:
 
 jobs:
