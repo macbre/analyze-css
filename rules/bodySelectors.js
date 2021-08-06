@@ -1,6 +1,35 @@
 "use strict";
 
 /**
+ *
+ * @param { import("css-what").AttributeSelector[] } expressions
+ * @returns {int}
+ */
+function getBodyIndex(expressions) {
+  let idx = 0;
+
+  // body.foo h1 -> 0
+  // .foo body -> 1
+  // html.css body -> 1
+
+  for (let i = 0; i < expressions.length; i++) {
+    switch (expressions[i].type) {
+      case "tag":
+        if (expressions[i].name === "body") {
+          return idx;
+        }
+        break;
+
+      case "child":
+      case "descendant":
+        idx++;
+    }
+  }
+
+  return -1;
+}
+
+/**
  * @param { import("../lib/css-analyzer") } analyzer
  */
 function rule(analyzer) {
@@ -49,28 +78,7 @@ function rule(analyzer) {
     let isRedundant = true; // always expect the worst ;)
 
     // first, let's find the body tag selector in the expression
-    // body.foo h1 -> 0
-    // .foo body -> 1
-    // html.css body -> 1
-    const bodyIndex = (() => {
-      let idx = 0;
-
-      for (let i = 0; i < expressions.length; i++) {
-        switch (expressions[i].type) {
-          case "tag":
-            if (expressions[i].name === "body") {
-              return idx;
-            }
-            break;
-
-          case "child":
-          case "descendant":
-            idx++;
-        }
-      }
-
-      return -1;
-    })();
+    const bodyIndex = getBodyIndex(expressions);
 
     debug("selector: %s %j", selector, {
       firstTag,
