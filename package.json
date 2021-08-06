@@ -25,6 +25,7 @@
     "commander": "^8.0.0",
     "css": "^3.0.0",
     "css-shorthand-properties": "^1.1.1",
+    "css-what": "^5.0.1",
     "debug": "^4.1.1",
     "fast-stats": "0.0.6",
     "glob": "^7.1.6",
@@ -43,7 +44,6 @@
     "eslint-plugin-node": "^11.1.0",
     "jest": "^27.0.4",
     "nyc": "^15.1.0",
-    "postcss": "^8.3.6",
     "prettier": "2.3.2"
   },
   "optionalDependencies": {
