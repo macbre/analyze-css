@@ -1,9 +1,11 @@
 "use strict";
+/**
+ * @typedef { import("css-what").AttributeSelector[] } AttributeSelectors
+ */
 
 /**
- *
- * @param { import("css-what").AttributeSelector[] } expressions
- * @returns {int}
+ * @param { AttributeSelectors } expressions
+ * @returns { number }
  */
 function getBodyIndex(expressions) {
   let idx = 0;
@@ -30,8 +32,7 @@ function getBodyIndex(expressions) {
 }
 
 /**
- *
- * @param { import("css-what").AttributeSelector[] } expressions
+ * @param { AttributeSelectors } expressions
  * @returns {boolean}
  */
 function firstSelectorHasClass(expressions) {
