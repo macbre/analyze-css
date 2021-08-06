@@ -35,6 +35,8 @@ function testCase(test, testId, testName) {
 					}
 				);
 			});
+		}).catch(e => {
+			console.error(e.message);
 		});
 	});
 }
