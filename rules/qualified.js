@@ -7,10 +7,12 @@ function rule(analyzer) {
   analyzer.setMetric("qualifiedSelectors");
 
   // @see https://developer.mozilla.org/en-US/docs/Web/Guide/CSS/Writing_efficient_CSS
-  analyzer.on("expression", function (selector, expression) {
-    var hasId = expression.id,
-      hasTag = expression.tag && expression.tag !== "*",
-      hasClass = expression.classList;
+  analyzer.on("selector", (_, selector, expressions) => {
+    var hasId = expressions.some((expr) => expr.name === "id"),
+      hasTag = expressions.some((expr) => expr.type === "tag"),
+      hasClass = expressions.some((expr) => expr.name === "class");
+
+    // console.log(selector, expressions, {hasId, hasTag, hasClass});
 
     if (
       // tag#id

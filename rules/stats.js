@@ -36,27 +36,27 @@ function rule(analyzer) {
     // console.log(selector, expression);
 
     // a[href]
-    if (['exists'].includes(expression.action)) {
+    if (["exists"].includes(expression.action)) {
       analyzer.incrMetric("selectorsByAttribute");
     }
 
     // .bar
-    if (expression.name === 'class') {
+    if (expression.name === "class") {
       analyzer.incrMetric("selectorsByClass");
     }
 
     // #foo
-    if (expression.name === 'id') {
+    if (expression.name === "id") {
       analyzer.incrMetric("selectorsById");
     }
 
     // a:hover
-    if (expression.type === 'pseudo') {
+    if (expression.type === "pseudo") {
       analyzer.incrMetric("selectorsByPseudo");
     }
 
     // header
-    if (expression.type === 'tag') {
+    if (expression.type === "tag") {
       analyzer.incrMetric("selectorsByTag");
     }
   });
