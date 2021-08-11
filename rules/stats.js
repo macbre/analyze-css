@@ -4,7 +4,7 @@
  * @param { import("../lib/css-analyzer") } analyzer
  */
 function rule(analyzer) {
-  var selectors = 0,
+  let selectors = 0,
     selectorsLength = 0;
 
   analyzer.setMetric("selectors");
@@ -16,47 +16,52 @@ function rule(analyzer) {
   analyzer.setMetric("selectorsByPseudo");
   analyzer.setMetric("selectorsByTag");
 
-  analyzer.on("rule", function () {
+  analyzer.on("rule", () => {
     analyzer.incrMetric("rules");
   });
 
-  analyzer.on("selector", function (rule, selector, expressions) {
+  analyzer.on("selector", (_, __, expressions) => {
     selectors += 1;
-    selectorsLength += expressions.length;
+    selectorsLength +=
+      expressions.filter((item) => {
+        return ["child", "descendant"].includes(item.type);
+      }).length + 1;
   });
 
-  analyzer.on("declaration", function () {
+  analyzer.on("declaration", () => {
     analyzer.incrMetric("declarations");
   });
 
-  analyzer.on("expression", function (selector, expression) {
+  analyzer.on("expression", (selector, expression) => {
+    // console.log(selector, expression);
+
     // a[href]
-    if (expression.attributes) {
+    if (['exists'].includes(expression.action)) {
       analyzer.incrMetric("selectorsByAttribute");
     }
 
     // .bar
-    if (expression.classList) {
+    if (expression.name === 'class') {
       analyzer.incrMetric("selectorsByClass");
     }
 
-    // @foo
-    if (expression.id) {
+    // #foo
+    if (expression.name === 'id') {
       analyzer.incrMetric("selectorsById");
     }
 
     // a:hover
-    if (expression.pseudos) {
+    if (expression.type === 'pseudo') {
       analyzer.incrMetric("selectorsByPseudo");
     }
 
     // header
-    if (expression.tag && expression.tag !== "*") {
+    if (expression.type === 'tag') {
       analyzer.incrMetric("selectorsByTag");
     }
   });
 
-  analyzer.on("report", function () {
+  analyzer.on("report", () => {
     analyzer.setMetric("selectors", selectors);
     analyzer.setMetric("selectorLengthAvg", selectorsLength / selectors);
   });

@@ -42,7 +42,7 @@ declare class CSSAnalyzer {
   public on(ev: "error", fn: (err: ParserError) => void): void;
   public on(
     ev: "expression",
-    fn: (selector: any, expression: any) => void
+    fn: (selector: string, expression: Selector) => void
   ): void;
   public on(ev: "font-face", fn: (rule: CSSRule) => void): void;
   public on(ev: "import", fn: (url: string) => void): void;
