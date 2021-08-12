@@ -1,10 +1,9 @@
 const { describe, it } = require("@jest/globals");
 
-var analyzer = require('../'),
-	assert = require('assert'),
-	tests;
+const analyzer = require('../');
+const assert = require('assert');
 
-tests = [
+const tests = [
 	{
 		name: 'Empty CSS',
 		css: '',
@@ -33,20 +32,22 @@ tests = [
 ];
 
 describe('Errors handling', () => {
-	tests.forEach(function(test) {
+	tests.forEach(test => {
 		describe(test.name || '"' + test.css + '" CSS snippet', () => {
-			it('should raise an error with correct error code', done => {
-				analyzer(test.css)
-					.catch(err => {
-						assert.strictEqual(err instanceof Error, true, 'Error should be thrown');
+			it('should raise an error with correct error code', async () => {
+				try {
+					await analyzer(test.css);
+					assert.fail("Expected to fail");
+				}
+				catch(err) {
+					assert.strictEqual(err instanceof Error, true, 'Error should be thrown');
 
-						if (!test.check.test(err.toString())) {
-							assert.fail(err.toString(), test.check);
-						}
+					if (!test.check.test(err.toString())) {
+						assert.fail(`${test.name} case raised: ${err.message} (expected ${test.check})`);
+					}
 
-						assert.strictEqual(err.code, test.code);
-					})
-					.finally(done);
+					assert.strictEqual(err.code, test.code);
+				};
 			});
 		});
 	});
