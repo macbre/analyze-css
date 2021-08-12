@@ -1,6 +1,29 @@
 "use strict";
 
 /**
+ * @param { import("css-what").Selector[] } expressions
+ * @returns { number }
+ */
+function getExpressionsLength(expressions) {
+  // body -> 1
+  // ul li -> 2
+  // ol:lang(or) li -> 2
+  // .class + foo a -> 3
+  return (
+    expressions.filter((item) => {
+      return ["child", "descendant", "adjacent"].includes(item.type);
+    }).length + 1
+  );
+}
+
+/**
+ * Report redundant child selectors, e.g.:
+ *
+ * ul li
+ * ul > li
+ * table > tr
+ * tr td
+ *
  * @param { import("../lib/css-analyzer") } analyzer
  */
 function rule(analyzer) {
@@ -9,7 +32,7 @@ function rule(analyzer) {
   // ol li
   // table tr
   // table th
-  var redundantChildSelectors = {
+  const redundantChildSelectors = {
     ul: ["li"],
     ol: ["li"],
     select: ["option"],
@@ -19,56 +42,76 @@ function rule(analyzer) {
 
   analyzer.setMetric("redundantChildNodesSelectors");
 
-  analyzer.on("selector", function (rule, selector, expressions) {
-    var noExpressions = expressions.length;
-
+  analyzer.on("selector", (_, selector, expressions) => {
+    // there only a single descendant / child selector
+    // e.g. "body > foo" or "html h1"
+    //
     // check more complex selectors only
-    if (noExpressions < 2) {
+    if (getExpressionsLength(expressions) < 3) {
       return;
     }
 
-    // converts "ul#foo > li.test" selector into ['ul', 'li'] list
-    var selectorNodeNames = expressions.map(function (item) {
-      return item.tag;
-    });
+    Object.keys(redundantChildSelectors).forEach((tagName) => {
+      // find the tagName in our selector
+      const tagInSelectorIndex = expressions
+        .map((expr) => expr.type == "tag" && expr.name)
+        .indexOf(tagName);
 
-    Object.keys(redundantChildSelectors).forEach(function (nodeName) {
-      var nodeIndex = selectorNodeNames.indexOf(nodeName),
-        nextNode,
-        curExpression,
-        combinator,
-        redundantNodes = redundantChildSelectors[nodeName];
+      // tag not found in the selector
+      if (tagInSelectorIndex < 0) {
+        return;
+      }
 
-      if (nodeIndex > -1 && nodeIndex < noExpressions - 1) {
-        // skip cases like the following: "article > ul li"
-        if (expressions[nodeIndex].combinator !== " ") {
-          return;
-        }
+      // converts "ul#foo > li.test" selector into [{tag: 'ul'}, {combinator:'child'}, {tag: 'li'}] list
+      const selectorNodeNames = expressions
+        .filter((expr) =>
+          [
+            "tag",
+            "descendant" /* */,
+            "child" /* > */,
+            "adjacent" /* + */,
+          ].includes(expr.type)
+        )
+        .map((expr) =>
+          expr.name ? { tag: expr.name } : { combinator: expr.type }
+        );
 
-        // we've found the possible offender, get the next node in the selector
-        // and compare it against rules in redundantChildSelectors
-        nextNode = selectorNodeNames[nodeIndex + 1];
+      // console.log(selector, expressions, selectorNodeNames);
 
-        if (redundantNodes.indexOf(nextNode) > -1) {
-          // skip selectors that match:
-          // - by attributes - foo[class*=bar]
-          // - by pseudo attributes - foo:lang(fo)
-          curExpression = expressions[nodeIndex];
+      const tagIndex = selectorNodeNames
+        .map((item) => item.tag)
+        .indexOf(tagName);
 
-          if (curExpression.pseudos || curExpression.attributes) {
-            return;
-          }
+      const nextTagInSelector = selectorNodeNames[tagIndex + 2]?.tag;
+      const nextCombinator = selectorNodeNames[tagIndex + 1]?.combinator;
+      const previousCombinator = selectorNodeNames[tagIndex - 1]?.combinator;
 
-          // only the following combinator can match:
-          // ul li
-          // ul > li
-          combinator = expressions[nodeIndex + 1].combinator;
+      // our tag is not followed by the tag listed in redundantChildSelectors
+      const followedByRedundantTag =
+        redundantChildSelectors[tagName].includes(nextTagInSelector);
+      if (!followedByRedundantTag) {
+        return;
+      }
 
-          if (combinator === " " || combinator === ">") {
-            analyzer.incrMetric("redundantChildNodesSelectors");
-            analyzer.addOffender("redundantChildNodesSelectors", selector);
-          }
-        }
+      // ignore cases like "article > ul li"
+      if (previousCombinator === "child") {
+        return;
+      }
+
+      // console.log(
+      //   tagName, {selector, expressions}, selectorNodeNames,
+      //   {tagIndex, prreviousTagInSelector, previousCombinator, nextTagInSelector, nextCombinator, followedByRedundantTag}
+      // );
+
+      // only the following combinator can match:
+      // ul li
+      // ul > li
+      if (
+        followedByRedundantTag &&
+        ["descendant", "child"].includes(nextCombinator)
+      ) {
+        analyzer.incrMetric("redundantChildNodesSelectors");
+        analyzer.addOffender("redundantChildNodesSelectors", selector);
       }
     });
   });
