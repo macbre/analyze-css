@@ -4,7 +4,7 @@
  * See https://www.typescriptlang.org/docs/handbook/jsdoc-supported-types.html
  */
 
-import { StyleRules, Stylesheet } from "css";
+import { StyleRules, Stylesheet, Position } from "css";
 import { Selector } from "css-what";
 import {
   EventsNames,
@@ -26,9 +26,9 @@ declare class CSSAnalyzer {
   public addOffender(
     metricName: MetricsNames,
     msg: string,
-    position: any | undefined
+    position: Position | undefined
   ): void;
-  public setCurrentPosition(position: any): void;
+  public setCurrentPosition(position: Position): void;
 
   // types based on the event
   public on(ev: EventsNames, fn: any): void;
