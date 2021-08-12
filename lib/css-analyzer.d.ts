@@ -4,7 +4,7 @@
  * See https://www.typescriptlang.org/docs/handbook/jsdoc-supported-types.html
  */
 
-import { ParserError, StyleRules, Stylesheet } from "css";
+import { StyleRules, Stylesheet } from "css";
 import { Selector } from "css-what";
 import {
   EventsNames,
@@ -39,7 +39,7 @@ declare class CSSAnalyzer {
     ev: "declaration",
     fn: (rule: CSSRule, property: string, value: string) => void
   ): void;
-  public on(ev: "error", fn: (err: ParserError) => void): void;
+  public on(ev: "error", fn: (err: Error) => void): void;
   public on(
     ev: "expression",
     fn: (selector: string, expression: Selector) => void

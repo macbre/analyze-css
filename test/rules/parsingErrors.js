@@ -2,7 +2,12 @@ exports.tests = [
 	{
 		css: 'foo { color= red; } bar { color: blue; } baz {}} boo { display: none}',
 		metrics: {
-			parsingErrors: 2
+			parsingErrors: 1
+		},
+		offenders: {
+			parsingErrors: [
+				'Unmatched selector: = red; } bar'
+			]
 		}
 	},
 	{
