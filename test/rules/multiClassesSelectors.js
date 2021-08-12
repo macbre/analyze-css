@@ -15,12 +15,22 @@ exports.tests = [
 		css: '.foo.test#bar {}',
 		metrics: {
 			multiClassesSelectors: 1
+		},
+		offenders: {
+			multiClassesSelectors: [
+				'.foo.test'
+			]
 		}
 	},
 	{
 		css: 'h1.title.big, a {}',
 		metrics: {
 			multiClassesSelectors: 1
+		},
+		offenders: {
+			multiClassesSelectors: [
+				'.title.big'
+			]
 		}
 	}
 ];

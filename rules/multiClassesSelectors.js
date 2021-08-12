@@ -6,12 +6,18 @@
 function rule(analyzer) {
   analyzer.setMetric("multiClassesSelectors");
 
-  analyzer.on("expression", function (selector, expression) {
-    if (expression.classList && expression.classList.length > 1) {
+  analyzer.on("selector", (_, selector, expressions) => {
+    const expressionsWithClass = expressions.filter(
+      (expr) => expr.name === "class"
+    );
+
+    // console.log(selector, expressions, {expressionsWithClass});
+
+    if (expressionsWithClass.length > 1) {
       analyzer.incrMetric("multiClassesSelectors");
       analyzer.addOffender(
         "multiClassesSelectors",
-        "." + expression.classList.join(".")
+        "." + expressionsWithClass.map((expr) => expr.value).join(".")
       );
     }
   });

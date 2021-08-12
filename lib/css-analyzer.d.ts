@@ -4,7 +4,8 @@
  * See https://www.typescriptlang.org/docs/handbook/jsdoc-supported-types.html
  */
 
-import { ParserError, StyleRules, Stylesheet } from "css";
+import { StyleRules, Stylesheet, Position } from "css";
+import { Selector } from "css-what";
 import {
   EventsNames,
   MetricsNames,
@@ -25,9 +26,9 @@ declare class CSSAnalyzer {
   public addOffender(
     metricName: MetricsNames,
     msg: string,
-    position: any | undefined
+    position: Position | undefined
   ): void;
-  public setCurrentPosition(position: any): void;
+  public setCurrentPosition(position: Position): void;
 
   // types based on the event
   public on(ev: EventsNames, fn: any): void;
@@ -38,10 +39,10 @@ declare class CSSAnalyzer {
     ev: "declaration",
     fn: (rule: CSSRule, property: string, value: string) => void
   ): void;
-  public on(ev: "error", fn: (err: ParserError) => void): void;
+  public on(ev: "error", fn: (err: Error) => void): void;
   public on(
     ev: "expression",
-    fn: (selector: any, expression: any) => void
+    fn: (selector: string, expression: Selector) => void
   ): void;
   public on(ev: "font-face", fn: (rule: CSSRule) => void): void;
   public on(ev: "import", fn: (url: string) => void): void;
@@ -57,7 +58,7 @@ declare class CSSAnalyzer {
   public on(ev: "rule", fn: (rule: CSSRule) => void): void;
   public on(
     ev: "selector",
-    fn: (rule: CSSRule, selector: string, expressions: any) => void
+    fn: (rule: CSSRule, selector: string, expressions: Selector[]) => void
   ): void;
   public on(ev: "stylesheet", fn: (stylesheet: StyleRules) => void): void;
 

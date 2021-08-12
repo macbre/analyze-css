@@ -23,7 +23,7 @@ exports.tests = [
 	{
 		css: 'ul li, a.foo.bar {}',
 		metrics: {
-			selectorsByClass: 1,
+			selectorsByClass: 2,
 			selectorsByTag: 3,
 			selectorLengthAvg: 1.5
 		}

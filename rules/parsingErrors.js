@@ -6,9 +6,9 @@
 function rule(analyzer) {
   analyzer.setMetric("parsingErrors");
 
-  analyzer.on("error", function (err) {
+  analyzer.on("error", (err) => {
     analyzer.incrMetric("parsingErrors");
-    analyzer.addOffender("parsingErrors", err.reason);
+    analyzer.addOffender("parsingErrors", err.message);
   });
 }
 

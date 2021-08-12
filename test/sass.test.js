@@ -4,7 +4,11 @@ var analyzer = require('../'),
 	fs = require('fs'),
 	isSassInstalled = true,
 	assert = require('assert'),
-	scss = 'nav {\nul{ color: white }\n}',
+	scss = `.foo {
+	&.nav {
+		color: blue
+	}
+};`.trim(),
 	sass = 'nav\n\tul\n\t\tcolor: white\n',
 	nodeSassInfo;
 
@@ -27,7 +31,8 @@ describe('SASS preprocessor [' + (isSassInstalled ? 'sass installed' : 'sass mis
 	it('should report parsing error (if not selected)', async () => {
 		const res = await analyzer(scss);
 
-		assert.strictEqual(res.metrics.parsingErrors, 3);
+		assert.strictEqual(res.metrics.parsingErrors, 1);
+		assert.strictEqual(res.offenders.parsingErrors[0].message, 'Unmatched selector: &.nav');
 	});
 
 	if (isSassInstalled === false) {

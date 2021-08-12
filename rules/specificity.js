@@ -24,7 +24,7 @@ function rule(analyzer) {
       parts;
 
     /* istanbul ignore if */
-    if (!selectorSpecificity) {
+    if (!selectorSpecificity || !selectorSpecificity[0]) {
       debug("not counted for %s!", selector);
       return;
     }

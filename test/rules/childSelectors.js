@@ -76,7 +76,7 @@ exports.tests = [
 	{
 		css: 'table[class*="infobox"] tr p {}',
 		metrics: {
-			redundantChildNodesSelectors: 0
+			redundantChildNodesSelectors: 1
 		}
 	},
 	{

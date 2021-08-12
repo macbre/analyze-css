@@ -69,7 +69,13 @@ export type Metrics = { [metric in MetricsNames]: number };
 /**
  * Encapsulates a set of offenders
  */
-export type Offenders = { [metric in MetricsNames]: Array<Object> };
+import { Position } from "css";
+
+export interface Offender {
+  message: string;
+  position: Position;
+}
+export type Offenders = { [metric in MetricsNames]: Array<Offender> };
 
 /**
  * A CSS rule taken from "css" package
