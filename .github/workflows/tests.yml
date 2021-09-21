@@ -57,6 +57,7 @@ jobs:
     - name: Upload coverage report to Coveralls
       if: matrix.node-version == '15.x'
       uses: coverallsapp/github-action@v1.1.2
+      continue-on-error: true
       with:
         github-token: ${{ github.token }}
 
