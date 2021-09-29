@@ -1,5 +1,5 @@
 {
-  "generated": "Using autoprefixer v10.3.5",
+  "generated": "Using autoprefixer v10.3.6",
   "browsers": [
     "and_chr 93",
     "and_ff 92",
@@ -13,6 +13,7 @@
     "chrome 94",
     "edge 92",
     "edge 93",
+    "edge 94",
     "firefox 78",
     "firefox 90",
     "firefox 91",
@@ -29,6 +30,7 @@
     "safari 13.1",
     "safari 14",
     "safari 14.1",
+    "safari 15",
     "samsung 13.0",
     "samsung 14.0"
   ],
