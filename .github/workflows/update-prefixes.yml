@@ -48,6 +48,8 @@ jobs:
 
       - name: Commit if needed to a new branch
         continue-on-error: true
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         run: |
           export PR_BRANCH="prefixes-update"
           git checkout -b ${PR_BRANCH}
