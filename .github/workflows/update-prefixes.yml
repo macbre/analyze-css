@@ -54,6 +54,9 @@ jobs:
           git add rules/prefixes.json
           git commit -m 'Updating rules/prefixes.json' && git push origin ${PR_BRANCH} --force
 
+          # automatically create a patch release
+          npm run bump-version-patch
+
       # https://github.com/marketplace/actions/github-pull-request-action#advanced-options
       - name: Create a pull request from the changes above
         uses: repo-sync/pull-request@v2
