@@ -40,13 +40,13 @@ jobs:
     - name: Install sass package
       run: |
         # https://github.com/macbre/analyze-css/blob/devel/package-lock.json
-        # "resolved": "https://registry.npmjs.org/sass/-/sass-1.36.0.tgz",
-        export SASS_VERSION=$(grep 'registry.npmjs.org/sass/' package-lock.json | egrep -o 'sass-[0-9\.]+' | sed 's/sass-//g' | sed 's/\.$//g')
+        # e.g. sass@1.42.1
+        export SASS_WITH_VERSION=$(grep 'registry.npmjs.org/sass/' package-lock.json | egrep -o 'sass-[0-9\.]+' | head -n 1 | sed 's/-/@/' | sed 's/\.$//g')
 
-        echo "Installing sass ${SASS_VERSION} ..."
+        echo "Installing ${SASS_WITH_VERSION} ..."
 
         set -x
-        time npm install sass@${SASS_VERSION}
+        time npm install ${SASS_WITH_VERSION}
 
     - name: Run tests (with sass support)
       run: |
