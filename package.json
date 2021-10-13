@@ -56,7 +56,8 @@
     "test": "jest test/ --coverage --detectOpenHandles",
     "lint": "eslint .",
     "prettier": "npx prettier --write .",
-    "prefixes": "npx browserslist@latest --update-db; DEBUG=* node data/prefixes.js"
+    "prefixes": "npx browserslist@latest --update-db; DEBUG=* node data/prefixes.js",
+    "bump-version-patch": "npm version patch && git add -A . && git push && git push --tags"
   },
   "jshintConfig": {
     "esversion": 6,
