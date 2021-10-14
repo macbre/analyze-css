@@ -37,8 +37,9 @@ jobs:
           npm run prefixes
 
       # https://github.com/actions/checkout#push-a-commit-using-the-built-in-token
-      - name: Set up git
+      - name: Set up git and gh CLI tool
         run: |
+          gh auth login --with-token ${{ secrets.GITHUB_TOKEN }}
           git config user.name ${GIT_USER_NAME}
           git config user.email ${GIT_USER_EMAIL}
 
