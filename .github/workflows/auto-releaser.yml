@@ -41,7 +41,7 @@ jobs:
 
           set -x
           echo "::set-output name=commit-message::${COMMIT_MESSAGE}"
-          echo "::notice::Got the commit message: ${COMMIT_MESSAGE} ..."
+          echo "::notice::Got the commit message: ${COMMIT_MESSAGE}"
 
       - name: Automatically create a patch release
         # e.g. Updating rules/prefixes.json (#416)
