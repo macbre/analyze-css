@@ -40,7 +40,7 @@ jobs:
 
           echo "COMMIT_MESSAGE=${COMMIT_MESSAGE}" >> $GITHUB_ENV
 
-          echo "${{ env }}"
+          echo "${{ toJSON(env) }}" | jq .
 
       - name: Automatically create a patch release
         # e.g. Updating rules/prefixes.json (#416)
