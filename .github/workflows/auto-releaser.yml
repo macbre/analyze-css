@@ -30,6 +30,12 @@ jobs:
           git status
           git log -n 1
 
+      # https://docs.github.com/en/actions/learn-github-actions/contexts#github-context
+      - name: Dump GitHub context
+        env:
+          GITHUB_CONTEXT: ${{ toJSON(github) }}
+        run: echo "$GITHUB_CONTEXT" | jq .
+
       - name: Automatically create a patch release
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
