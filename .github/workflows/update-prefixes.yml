@@ -53,6 +53,8 @@ jobs:
       - name: Commit if needed to a new branch
         continue-on-error: true
         run: |
+          set -x
+
           export PR_BRANCH="prefixes-update"
           git checkout -b ${PR_BRANCH}
           git add rules/prefixes.json && git checkout -- .
@@ -63,7 +65,7 @@ jobs:
           # npm run bump-version-patch
 
       - name: Create a pull request from the changes above
-        if: ${{ success() }}
+        if: success()
         run: |
           gh pr create \
             --assignee macbre \
