@@ -37,7 +37,7 @@ jobs:
           GITHUB_CONTEXT: ${{ toJSON(github) }}
         run: |
           # -r		output raw strings, not JSON texts;
-          export COMMIT_MESSAGE=$(echo "$GITHUB_CONTEXT" | jq -r .event.head_commit.message)
+          export COMMIT_MESSAGE=$(echo "$GITHUB_CONTEXT" | jq -r .event.head_commit.message | head -n1)
 
           set -x
           echo "::set-output name=commit-message::${COMMIT_MESSAGE}"
