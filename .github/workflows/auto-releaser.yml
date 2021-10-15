@@ -36,10 +36,9 @@ jobs:
           GITHUB_CONTEXT: ${{ toJSON(github) }}
         run: |
           set -x
-
-          # echo "$GITHUB_CONTEXT" | jq .
           export COMMIT_MESSAGE=$(echo "$GITHUB_CONTEXT" | jq .event.head_commit.message)
-          echo ::set-env name=COMMIT_MESSAGE::${COMMIT_MESSAGE}
+
+          echo "COMMIT_MESSAGE=${COMMIT_MESSAGE}" >> $GITHUB_ENV
 
       - name: Automatically create a patch release
         # e.g. Updating rules/prefixes.json (#416)
