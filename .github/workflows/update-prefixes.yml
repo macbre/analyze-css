@@ -48,6 +48,7 @@ jobs:
 
       - name: Show a diff
         run: |
+          git checkout -- package*
           git diff
 
       - name: Commit if needed to a new branch
