@@ -1,0 +1,38 @@
+name: Auto-release specific changes
+
+on:
+  push:
+    branches: [ master ]
+
+  # Allows you to run this workflow manually from the Actions tab
+  workflow_dispatch:
+
+jobs:
+  auto-release:
+    runs-on: ubuntu-latest
+    timeout-minutes: 2
+
+    steps:
+      # https://github.com/actions/checkout
+      - name: Cloning ${{ env.GIT_BRANCH }} branch
+        uses: actions/checkout@v2-beta
+        with:
+          ref: master
+
+      # https://github.com/actions/checkout#push-a-commit-using-the-built-in-token
+      - name: Set up gh CLI tool
+        run: |
+          echo ${{ secrets.GITHUB_TOKEN }} | gh auth login --with-token
+          gh auth status
+
+      - name: Show the most recent changes
+        run: |
+          git status
+          git log -n 1
+
+      - name: Automatically create a patch release
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: |
+          # TODO: check the labels for on merge events
+          # npm run bump-version-patch
