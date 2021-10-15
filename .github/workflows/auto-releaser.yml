@@ -32,15 +32,19 @@ jobs:
 
       # https://docs.github.com/en/actions/learn-github-actions/contexts#github-context
       - name: Take the latest commit message
+        id: commit-message
         env:
           GITHUB_CONTEXT: ${{ toJSON(github) }}
         run: |
+          # -r		output raw strings, not JSON texts;
+          export COMMIT_MESSAGE=$(echo "$GITHUB_CONTEXT" | jq -r .event.head_commit.message)
+
           set -x
-          export COMMIT_MESSAGE=$(echo "$GITHUB_CONTEXT" | jq .event.head_commit.message)
-          echo "COMMIT_MESSAGE=${COMMIT_MESSAGE}" >> $GITHUB_ENV
+          echo "::set-output name=commit-message::${COMMIT_MESSAGE}"
+          echo "::notice::Got the commit message: ${COMMIT_MESSAGE} ..."
 
       - name: Automatically create a patch release
         # e.g. Updating rules/prefixes.json (#416)
-        if: contains( env.COMMIT_MESSAGE , 'Updating rules/prefixes.json' )
+        if: contains( steps.commit-message.outputs.commit-message , 'Updating rules/prefixes.json' )
         run: |
           npm run bump-version-patch
