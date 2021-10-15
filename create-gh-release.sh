@@ -4,7 +4,9 @@
 export VERSION=v$(grep '"version"' package.json | grep -Eo '[0-9\.]+')
 export NOTES=$(git log | grep 'Updating rules/prefixes.json' | head -n 1 | sed "s/    //g")
 
-echo "Creating a GitHub release for tag ${VERSION} (with notes '${NOTES}') ..."
+echo "::notice::Creating a GitHub release for tag ${VERSION} (with notes '${NOTES}') ..."
 
 set -x
 gh release create $VERSION --title 'Updating prefixes data'  --notes "${NOTES}"
+
+echo "::notice::Done"
