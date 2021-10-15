@@ -17,7 +17,6 @@ jobs:
       GIT_BRANCH: "master"
       GIT_USER_NAME: "macbre"
       GIT_USER_EMAIL: "<macbre@users.noreply.github.com>"
-      GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
 
     # Steps represent a sequence of tasks that will be executed as part of the job
     steps:
@@ -40,7 +39,7 @@ jobs:
       # https://github.com/actions/checkout#push-a-commit-using-the-built-in-token
       - name: Set up git and gh CLI tool
         run: |
-          echo ${GITHUB_TOKEN} | gh auth login --with-token
+          echo ${{ secrets.GITHUB_TOKEN }} | gh auth login --with-token
           gh auth status
 
           git config user.name ${GIT_USER_NAME}
