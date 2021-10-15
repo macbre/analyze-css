@@ -40,6 +40,8 @@ jobs:
 
           echo "COMMIT_MESSAGE=${COMMIT_MESSAGE}" >> $GITHUB_ENV
 
+          echo "${{ env }}"
+
       - name: Automatically create a patch release
         # e.g. Updating rules/prefixes.json (#416)
         if: contains( env.COMMIT_MESSAGE , 'Updating rules/prefixes.json' )
