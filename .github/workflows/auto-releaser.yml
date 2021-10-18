@@ -45,6 +45,8 @@ jobs:
 
       - name: Automatically create a patch release
         # e.g. Updating rules/prefixes.json (#416)
-        if: contains( steps.commit-message.outputs.commit-message , 'Updating rules/prefixes.json' )
+        if: contains( steps.commit-message.outputs.commit-message , 'Updating rules/prefixes.json' ) or contains( steps.commit-message.outputs.commit-message , 'prefixes-update' )
         run: |
           npm run bump-version-patch
+
+          echo "::notice::A new release has been created - $(npm ls --json | jq .version | sed 's/"//g')"
