@@ -22,7 +22,7 @@ jobs:
                   'version-update:semver-minor' ||
                   steps.metadata.outputs.update-type ==
                   'version-update:semver-patch' }}"
-              run: gh pr merge --auto "$PR_URL"
+              run: gh pr merge --auto --merge "$PR_URL"
               env:
                   PR_URL: ${{github.event.pull_request.html_url}}
                   GITHUB_TOKEN: ${{secrets.PAT_TOKEN}}
