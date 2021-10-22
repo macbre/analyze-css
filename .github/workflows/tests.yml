@@ -20,6 +20,7 @@ jobs:
         - '14.x'
         - '15.x'
         - '16.x'
+        - '17.x'
 
     steps:
     - uses: actions/checkout@v2.3.5
