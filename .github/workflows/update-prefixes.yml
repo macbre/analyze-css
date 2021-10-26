@@ -68,6 +68,4 @@ jobs:
               --title "Updating prefixes rules" \
               --body "rules/prefixes.json bumped"
 
-          # automatically create a patch release
-          # TODO: to happen on merges to master
-          # npm run bump-version-patch
+          # automated patch release will happen on merges to master
