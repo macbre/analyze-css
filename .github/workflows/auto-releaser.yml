@@ -12,6 +12,10 @@ jobs:
     runs-on: ubuntu-latest
     timeout-minutes: 2
 
+    env:
+      GIT_USER_NAME: "macbre"
+      GIT_USER_EMAIL: "<macbre@users.noreply.github.com>"
+
     steps:
       # https://github.com/actions/checkout
       - name: Cloning ${{ env.GIT_BRANCH }} branch
@@ -20,10 +24,13 @@ jobs:
           ref: master
 
       # https://github.com/actions/checkout#push-a-commit-using-the-built-in-token
-      - name: Set up gh CLI tool
+      - name: Set up git and gh CLI tool
         run: |
           echo ${{ secrets.GITHUB_TOKEN }} | gh auth login --with-token
           gh auth status
+
+          git config user.name ${GIT_USER_NAME}
+          git config user.email ${GIT_USER_EMAIL}
 
       - name: Show the most recent changes
         run: |
