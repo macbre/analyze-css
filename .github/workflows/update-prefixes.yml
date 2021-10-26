@@ -67,5 +67,12 @@ jobs:
               --base ${{ env.GIT_BRANCH }} \
               --title "Updating prefixes rules" \
               --body "rules/prefixes.json bumped"
-
+              
+          # now mark the PR as auto-merged
           # automated patch release will happen on merges to master
+
+          # e.g. https://github.com/macbre/analyze-css/pull/443
+          export PR_URL=$(gh pr view prefixes-update --json url | jq -r .url)
+          echo "::notice::Pull request created: <${PR_URL}>"
+
+          gh pr merge --auto --merge "$PR_URL"
