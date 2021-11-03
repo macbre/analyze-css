@@ -54,6 +54,6 @@ jobs:
         # e.g. Updating rules/prefixes.json (#416)
         if: contains( steps.commit-message.outputs.commit-message , 'Updating rules/prefixes.json' ) || contains( steps.commit-message.outputs.commit-message , 'prefixes-update' )
         run: |
-          npm run bump-version-patch
+          ./create-gh-release.sh
 
           echo "::notice::A new release has been created - $(npm ls --json | jq .version | sed 's/"//g')"
