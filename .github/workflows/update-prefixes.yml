@@ -68,7 +68,7 @@ jobs:
               --title "Updating prefixes rules" \
               --body "rules/prefixes.json bumped" \
             && npm version patch \
-            && git add package.json \
+            && git add . \
             && git commit -m 'Package version bumped' \
             && git push --tags
 
