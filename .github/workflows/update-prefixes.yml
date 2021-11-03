@@ -66,17 +66,15 @@ jobs:
               --label "css-prefixes-update" \
               --base ${{ env.GIT_BRANCH }} \
               --title "Updating prefixes rules" \
-              --body "rules/prefixes.json bumped"
+              --body "rules/prefixes.json bumped" \
+            && npm version patch \
+            && git add package.json \
+            && git commit -m 'Package version bumped' \
+            && git push --tags
 
           # e.g. https://github.com/macbre/analyze-css/pull/443
           export PR_URL=$(gh pr view prefixes-update --json url | jq -r .url)
           echo "::notice::Pull request created: <${PR_URL}>"
-
-          # bump the version (the bump commit will be a part of the pull request)
-          npm version patch \
-            && git add package.json \
-            && git commit -m 'Package version bumped' \
-            && git push --tags
 
           # now mark the PR as auto-merged
           # automated patch release will happen on merges to master
