@@ -68,8 +68,7 @@ jobs:
               --title "Updating prefixes rules" \
               --body "rules/prefixes.json bumped" \
             && npm version patch \
-            && git add . \
-            && git commit -m 'Package version bumped' \
+            && git push origin ${PR_BRANCH} --force \
             && git push --tags
 
           # e.g. https://github.com/macbre/analyze-css/pull/443
