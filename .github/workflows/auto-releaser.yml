@@ -23,6 +23,10 @@ jobs:
         with:
           ref: master
 
+      - uses: actions/setup-node@v2.4.1
+        with:
+          node-version: 16.x
+
       # https://github.com/actions/checkout#push-a-commit-using-the-built-in-token
       - name: Set up git and gh CLI tool
         run: |
