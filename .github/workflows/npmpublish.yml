@@ -44,7 +44,7 @@ jobs:
         run: |
           sed -i 's/"analyze-css"/"@macbre\/analyze-css"/g' package.json; git diff
 
-          npm publish --access public
+          npm publish --access public || true
 
           git checkout -- .
         env:
