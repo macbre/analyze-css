@@ -60,16 +60,16 @@ jobs:
           git add rules/prefixes.json && git checkout -- .
           git commit -m 'Updating rules/prefixes.json' \
             && git push origin ${PR_BRANCH} --force \
+            && npm version patch \
+            && git push origin ${PR_BRANCH} --force \
+            && git push --tags \
             && gh pr create \
               --assignee macbre \
               --label dependencies \
               --label "css-prefixes-update" \
               --base ${{ env.GIT_BRANCH }} \
               --title "Updating prefixes rules" \
-              --body "rules/prefixes.json bumped" \
-            && npm version patch \
-            && git push origin ${PR_BRANCH} --force \
-            && git push --tags
+              --body "rules/prefixes.json bumped"
 
           # e.g. https://github.com/macbre/analyze-css/pull/443
           export PR_URL=$(gh pr view prefixes-update --json url | jq -r .url)
