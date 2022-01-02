@@ -2,7 +2,7 @@
   "generated": "Using autoprefixer v10.4.1",
   "browsers": [
     "and_chr 96",
-    "and_ff 94",
+    "and_ff 95",
     "and_qq 10.4",
     "and_uc 12.12",
     "android 96",
@@ -1087,7 +1087,7 @@
     },
     "-moz-tab-size": {
       "keep": true,
-      "msg": "required by Firefox 78, Firefox for Android 94, KaiOS Browser 2.5 and later"
+      "msg": "required by Firefox 78, KaiOS Browser 2.5 and later"
     },
     "-o-tab-size": {
       "keep": true,
@@ -1215,7 +1215,7 @@
     },
     "-moz-text-size-adjust": {
       "keep": true,
-      "msg": "required by Firefox for Android 94 and later"
+      "msg": "required by Firefox for Android 95 and later"
     },
     "-o-text-size-adjust": {
       "keep": false,
