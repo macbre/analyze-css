@@ -23,7 +23,7 @@
     "ios_saf 14.0-14.4",
     "ios_saf 14.5-14.8",
     "ios_saf 15.0-15.1",
-    "ios_saf 15.2",
+    "ios_saf 15.2-15.3",
     "kaios 2.5",
     "op_mini all",
     "op_mob 64",
@@ -32,7 +32,7 @@
     "safari 13.1",
     "safari 14.1",
     "safari 15.1",
-    "safari 15.2",
+    "safari 15.2-15.3",
     "samsung 15.0",
     "samsung 16.0"
   ],
