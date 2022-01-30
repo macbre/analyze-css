@@ -32,7 +32,7 @@ describe('SASS preprocessor [' + (isSassInstalled ? 'sass installed' : 'sass mis
 		const res = await analyzer(scss);
 
 		assert.strictEqual(res.metrics.parsingErrors, 1);
-		assert.strictEqual(res.offenders.parsingErrors[0].message, 'Unmatched selector: &.nav');
+		assert.strictEqual(res.offenders.parsingErrors[0].message, 'Empty sub-selector');
 	});
 
 	if (isSassInstalled === false) {
