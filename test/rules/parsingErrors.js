@@ -6,7 +6,7 @@ exports.tests = [
 		},
 		offenders: {
 			parsingErrors: [
-				'Unmatched selector: = red; } bar'
+				'Empty sub-selector'
 			]
 		}
 	},
