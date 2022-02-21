@@ -40,7 +40,7 @@
     "browserslist": "^4.11.1",
     "check-dts": "^0.6.1",
     "eslint": "^8.0.0",
-    "eslint-config-prettier": "8.3.0",
+    "eslint-config-prettier": "8.4.0",
     "eslint-plugin-node": "^11.1.0",
     "jest": "^27.0.4",
     "postcss": "^8.3.6",
