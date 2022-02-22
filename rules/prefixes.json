@@ -13,7 +13,6 @@
     "edge 96",
     "edge 97",
     "edge 98",
-    "firefox 78",
     "firefox 91",
     "firefox 95",
     "firefox 96",
@@ -1086,7 +1085,7 @@
     },
     "-moz-tab-size": {
       "keep": true,
-      "msg": "required by Firefox 78, KaiOS Browser 2.5 and later"
+      "msg": "required by KaiOS Browser 2.5 and later"
     },
     "-o-tab-size": {
       "keep": true,
@@ -1838,7 +1837,7 @@
     },
     "-moz-appearance": {
       "keep": true,
-      "msg": "required by Firefox 78, KaiOS Browser 2.5 and later"
+      "msg": "required by KaiOS Browser 2.5 and later"
     },
     "-o-appearance": {
       "keep": false,
