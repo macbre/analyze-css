@@ -27,7 +27,7 @@ jobs:
           ref: ${{ env.GIT_BRANCH }}
 
       - name: Install Node.js
-        uses: actions/setup-node@v2.5.1
+        uses: actions/setup-node@v3
         with:
           node-version: 16.x
 
