@@ -1451,7 +1451,7 @@
     },
     "-webkit-clip-path": {
       "keep": true,
-      "msg": "required by Safari 14.1, Safari on iOS 12.2, UC Browser for Android 12.12, Samsung Internet 15, QQ Browser 10.4 and later"
+      "msg": "required by Safari on iOS 12.2, UC Browser for Android 12.12, Samsung Internet 15, QQ Browser 10.4 and later"
     },
     "-moz-clip-path": {
       "keep": false,
