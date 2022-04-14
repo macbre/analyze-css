@@ -7,4 +7,4 @@ export NOTES=$(git log | grep 'Updating rules/prefixes.json' | head -n 1 | sed "
 echo "::notice::Creating a GitHub release for tag ${VERSION} (with notes '${NOTES}') ..."
 
 set -x
-gh release create $VERSION --title 'Updating prefixes data'  --notes "${NOTES}" && echo "::notice::Done" || echo "::error::Failed"
+gh release create $VERSION --title "${VERSION}: updating prefixes data"  --notes "${NOTES}" && echo "::notice::Done" || echo "::error::Failed"
