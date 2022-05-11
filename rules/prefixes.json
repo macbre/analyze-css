@@ -2,7 +2,7 @@
   "generated": "Using autoprefixer v10.4.7",
   "browsers": [
     "and_chr 101",
-    "and_ff 99",
+    "and_ff 100",
     "and_qq 10.4",
     "and_uc 12.12",
     "android 101",
@@ -1213,7 +1213,7 @@
     },
     "-moz-text-size-adjust": {
       "keep": true,
-      "msg": "required by Firefox for Android 99 and later"
+      "msg": "required by Firefox for Android 100 and later"
     },
     "-o-text-size-adjust": {
       "keep": false,
