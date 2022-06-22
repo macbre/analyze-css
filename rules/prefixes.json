@@ -14,7 +14,6 @@
     "firefox 100",
     "firefox 101",
     "firefox 91",
-    "ie 11",
     "ios_saf 12.2-12.5",
     "ios_saf 14.0-14.4",
     "ios_saf 14.5-14.8",
@@ -371,7 +370,7 @@
     },
     "-ms-transform": {
       "keep": false,
-      "msg": "was required by IE 9 and earlier"
+      "msg": "prefix is no longer supported"
     },
     "-webkit-transform": {
       "keep": false,
@@ -387,7 +386,7 @@
     },
     "-ms-transform-origin": {
       "keep": false,
-      "msg": "was required by IE 9 and earlier"
+      "msg": "prefix is no longer supported"
     },
     "-webkit-transform-origin": {
       "keep": false,
@@ -722,8 +721,8 @@
       "msg": "prefix is no longer supported"
     },
     "-ms-user-select": {
-      "keep": true,
-      "msg": "required by IE 11 and later"
+      "keep": false,
+      "msg": "prefix is no longer supported"
     },
     "-webkit-user-select": {
       "keep": true,
@@ -739,7 +738,7 @@
     },
     "-ms-flex": {
       "keep": false,
-      "msg": "was required by IE 10 and earlier"
+      "msg": "prefix is no longer supported"
     },
     "-webkit-flex": {
       "keep": false,
@@ -755,7 +754,7 @@
     },
     "-ms-flex-grow": {
       "keep": false,
-      "msg": "was required by IE 10 and earlier"
+      "msg": "prefix is no longer supported"
     },
     "-webkit-flex-grow": {
       "keep": false,
@@ -771,7 +770,7 @@
     },
     "-ms-flex-shrink": {
       "keep": false,
-      "msg": "was required by IE 10 and earlier"
+      "msg": "prefix is no longer supported"
     },
     "-webkit-flex-shrink": {
       "keep": false,
@@ -787,7 +786,7 @@
     },
     "-ms-flex-basis": {
       "keep": false,
-      "msg": "was required by IE 10 and earlier"
+      "msg": "prefix is no longer supported"
     },
     "-webkit-flex-basis": {
       "keep": false,
@@ -803,7 +802,7 @@
     },
     "-ms-flex-direction": {
       "keep": false,
-      "msg": "was required by IE 10 and earlier"
+      "msg": "prefix is no longer supported"
     },
     "-webkit-flex-direction": {
       "keep": false,
@@ -819,7 +818,7 @@
     },
     "-ms-flex-wrap": {
       "keep": false,
-      "msg": "was required by IE 10 and earlier"
+      "msg": "prefix is no longer supported"
     },
     "-webkit-flex-wrap": {
       "keep": false,
@@ -835,7 +834,7 @@
     },
     "-ms-flex-flow": {
       "keep": false,
-      "msg": "was required by IE 10 and earlier"
+      "msg": "prefix is no longer supported"
     },
     "-webkit-flex-flow": {
       "keep": false,
@@ -851,7 +850,7 @@
     },
     "-ms-justify-content": {
       "keep": false,
-      "msg": "was required by IE 10 and earlier"
+      "msg": "prefix is no longer supported"
     },
     "-webkit-justify-content": {
       "keep": false,
@@ -867,7 +866,7 @@
     },
     "-ms-order": {
       "keep": false,
-      "msg": "was required by IE 10 and earlier"
+      "msg": "prefix is no longer supported"
     },
     "-webkit-order": {
       "keep": false,
@@ -883,7 +882,7 @@
     },
     "-ms-align-items": {
       "keep": false,
-      "msg": "was required by IE 10 and earlier"
+      "msg": "prefix is no longer supported"
     },
     "-webkit-align-items": {
       "keep": false,
@@ -899,7 +898,7 @@
     },
     "-ms-align-self": {
       "keep": false,
-      "msg": "was required by IE 10 and earlier"
+      "msg": "prefix is no longer supported"
     },
     "-webkit-align-self": {
       "keep": false,
@@ -915,7 +914,7 @@
     },
     "-ms-align-content": {
       "keep": false,
-      "msg": "was required by IE 10 and earlier"
+      "msg": "prefix is no longer supported"
     },
     "-webkit-align-content": {
       "keep": false,
@@ -1058,8 +1057,8 @@
       "msg": "required by Opera Mini NaN and later"
     },
     "-ms-hyphens": {
-      "keep": true,
-      "msg": "required by IE 11 and later"
+      "keep": false,
+      "msg": "prefix is no longer supported"
     },
     "-webkit-hyphens": {
       "keep": true,
@@ -1091,7 +1090,7 @@
     },
     "-ms-touch-action": {
       "keep": false,
-      "msg": "was required by IE 10 and earlier"
+      "msg": "prefix is no longer supported"
     },
     "-webkit-touch-action": {
       "keep": false,
@@ -1570,8 +1569,8 @@
       "msg": "was required by Opera Mobile 12 and earlier"
     },
     "-ms-@viewport": {
-      "keep": true,
-      "msg": "required by IE 11 and later"
+      "keep": false,
+      "msg": "prefix is no longer supported"
     },
     "-webkit-@viewport": {
       "keep": false,
@@ -1618,8 +1617,8 @@
       "msg": "prefix is no longer supported"
     },
     "-ms-image-rendering": {
-      "keep": true,
-      "msg": "required by IE 11 and later"
+      "keep": false,
+      "msg": "prefix is no longer supported"
     },
     "-webkit-image-rendering": {
       "keep": false,
@@ -1842,8 +1841,8 @@
       "msg": "prefix is no longer supported"
     },
     "-ms-scroll-snap-type": {
-      "keep": true,
-      "msg": "required by IE 11 and later"
+      "keep": false,
+      "msg": "prefix is no longer supported"
     },
     "-webkit-scroll-snap-type": {
       "keep": false,
@@ -1858,8 +1857,8 @@
       "msg": "prefix is no longer supported"
     },
     "-ms-scroll-snap-coordinate": {
-      "keep": true,
-      "msg": "required by IE 11 and later"
+      "keep": false,
+      "msg": "prefix is no longer supported"
     },
     "-webkit-scroll-snap-coordinate": {
       "keep": false,
@@ -1874,8 +1873,8 @@
       "msg": "prefix is no longer supported"
     },
     "-ms-scroll-snap-destination": {
-      "keep": true,
-      "msg": "required by IE 11 and later"
+      "keep": false,
+      "msg": "prefix is no longer supported"
     },
     "-webkit-scroll-snap-destination": {
       "keep": false,
@@ -1890,8 +1889,8 @@
       "msg": "prefix is no longer supported"
     },
     "-ms-scroll-snap-points-x": {
-      "keep": true,
-      "msg": "required by IE 11 and later"
+      "keep": false,
+      "msg": "prefix is no longer supported"
     },
     "-webkit-scroll-snap-points-x": {
       "keep": false,
@@ -1906,8 +1905,8 @@
       "msg": "prefix is no longer supported"
     },
     "-ms-scroll-snap-points-y": {
-      "keep": true,
-      "msg": "required by IE 11 and later"
+      "keep": false,
+      "msg": "prefix is no longer supported"
     },
     "-webkit-scroll-snap-points-y": {
       "keep": false,
@@ -1922,8 +1921,8 @@
       "msg": "prefix is no longer supported"
     },
     "-ms-flow-into": {
-      "keep": true,
-      "msg": "required by IE 11 and later"
+      "keep": false,
+      "msg": "prefix is no longer supported"
     },
     "-webkit-flow-into": {
       "keep": false,
@@ -1938,8 +1937,8 @@
       "msg": "prefix is no longer supported"
     },
     "-ms-flow-from": {
-      "keep": true,
-      "msg": "required by IE 11 and later"
+      "keep": false,
+      "msg": "prefix is no longer supported"
     },
     "-webkit-flow-from": {
       "keep": false,
@@ -1954,8 +1953,8 @@
       "msg": "prefix is no longer supported"
     },
     "-ms-region-fragment": {
-      "keep": true,
-      "msg": "required by IE 11 and later"
+      "keep": false,
+      "msg": "prefix is no longer supported"
     },
     "-webkit-region-fragment": {
       "keep": false,
@@ -1970,8 +1969,8 @@
       "msg": "prefix is no longer supported"
     },
     "-ms-writing-mode": {
-      "keep": true,
-      "msg": "required by IE 11 and later"
+      "keep": false,
+      "msg": "prefix is no longer supported"
     },
     "-webkit-writing-mode": {
       "keep": false,
@@ -2050,8 +2049,8 @@
       "msg": "required by Opera Mobile 64 and later"
     },
     "-ms-grid-template-columns": {
-      "keep": true,
-      "msg": "required by IE 11 and later"
+      "keep": false,
+      "msg": "prefix is no longer supported"
     },
     "-webkit-grid-template-columns": {
       "keep": false,
@@ -2066,8 +2065,8 @@
       "msg": "prefix is no longer supported"
     },
     "-ms-grid-template-rows": {
-      "keep": true,
-      "msg": "required by IE 11 and later"
+      "keep": false,
+      "msg": "prefix is no longer supported"
     },
     "-webkit-grid-template-rows": {
       "keep": false,
@@ -2082,8 +2081,8 @@
       "msg": "prefix is no longer supported"
     },
     "-ms-grid-row-start": {
-      "keep": true,
-      "msg": "required by IE 11 and later"
+      "keep": false,
+      "msg": "prefix is no longer supported"
     },
     "-webkit-grid-row-start": {
       "keep": false,
@@ -2098,8 +2097,8 @@
       "msg": "prefix is no longer supported"
     },
     "-ms-grid-column-start": {
-      "keep": true,
-      "msg": "required by IE 11 and later"
+      "keep": false,
+      "msg": "prefix is no longer supported"
     },
     "-webkit-grid-column-start": {
       "keep": false,
@@ -2114,8 +2113,8 @@
       "msg": "prefix is no longer supported"
     },
     "-ms-grid-row-end": {
-      "keep": true,
-      "msg": "required by IE 11 and later"
+      "keep": false,
+      "msg": "prefix is no longer supported"
     },
     "-webkit-grid-row-end": {
       "keep": false,
@@ -2130,8 +2129,8 @@
       "msg": "prefix is no longer supported"
     },
     "-ms-grid-column-end": {
-      "keep": true,
-      "msg": "required by IE 11 and later"
+      "keep": false,
+      "msg": "prefix is no longer supported"
     },
     "-webkit-grid-column-end": {
       "keep": false,
@@ -2146,8 +2145,8 @@
       "msg": "prefix is no longer supported"
     },
     "-ms-grid-row": {
-      "keep": true,
-      "msg": "required by IE 11 and later"
+      "keep": false,
+      "msg": "prefix is no longer supported"
     },
     "-webkit-grid-row": {
       "keep": false,
@@ -2162,8 +2161,8 @@
       "msg": "prefix is no longer supported"
     },
     "-ms-grid-column": {
-      "keep": true,
-      "msg": "required by IE 11 and later"
+      "keep": false,
+      "msg": "prefix is no longer supported"
     },
     "-webkit-grid-column": {
       "keep": false,
@@ -2178,8 +2177,8 @@
       "msg": "prefix is no longer supported"
     },
     "-ms-grid-area": {
-      "keep": true,
-      "msg": "required by IE 11 and later"
+      "keep": false,
+      "msg": "prefix is no longer supported"
     },
     "-webkit-grid-area": {
       "keep": false,
@@ -2194,8 +2193,8 @@
       "msg": "prefix is no longer supported"
     },
     "-ms-grid-template": {
-      "keep": true,
-      "msg": "required by IE 11 and later"
+      "keep": false,
+      "msg": "prefix is no longer supported"
     },
     "-webkit-grid-template": {
       "keep": false,
@@ -2210,8 +2209,8 @@
       "msg": "prefix is no longer supported"
     },
     "-ms-grid-template-areas": {
-      "keep": true,
-      "msg": "required by IE 11 and later"
+      "keep": false,
+      "msg": "prefix is no longer supported"
     },
     "-webkit-grid-template-areas": {
       "keep": false,
@@ -2226,8 +2225,8 @@
       "msg": "prefix is no longer supported"
     },
     "-ms-place-self": {
-      "keep": true,
-      "msg": "required by IE 11 and later"
+      "keep": false,
+      "msg": "prefix is no longer supported"
     },
     "-webkit-place-self": {
       "keep": false,
@@ -2242,8 +2241,8 @@
       "msg": "prefix is no longer supported"
     },
     "-ms-grid-column-align": {
-      "keep": true,
-      "msg": "required by IE 11 and later"
+      "keep": false,
+      "msg": "prefix is no longer supported"
     },
     "-webkit-grid-column-align": {
       "keep": false,
@@ -2258,8 +2257,8 @@
       "msg": "prefix is no longer supported"
     },
     "-ms-grid-row-align": {
-      "keep": true,
-      "msg": "required by IE 11 and later"
+      "keep": false,
+      "msg": "prefix is no longer supported"
     },
     "-webkit-grid-row-align": {
       "keep": false,
@@ -2274,8 +2273,8 @@
       "msg": "prefix is no longer supported"
     },
     "-ms-text-spacing": {
-      "keep": true,
-      "msg": "required by IE 11 and later"
+      "keep": false,
+      "msg": "prefix is no longer supported"
     },
     "-webkit-text-spacing": {
       "keep": false,
@@ -2290,8 +2289,8 @@
       "msg": "prefix is no longer supported"
     },
     "-ms-overscroll-behavior": {
-      "keep": true,
-      "msg": "required by IE 11 and later"
+      "keep": false,
+      "msg": "prefix is no longer supported"
     },
     "-webkit-overscroll-behavior": {
       "keep": false,
