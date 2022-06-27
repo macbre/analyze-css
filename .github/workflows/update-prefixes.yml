@@ -58,7 +58,7 @@ jobs:
           export PR_BRANCH="prefixes-update"
           git checkout -b ${PR_BRANCH}
           git add rules/prefixes.json && git checkout -- .
-          git commit -m 'Updating rules/prefixes.json' \
+          git commit -m "Updating rules/prefixes.json with autoprefixer $(npm list --json | jq -r .dependencies.autoprefixer.version) and browserslist $(npm list --json | jq -r .dependencies.browserslist.version)" \
             && git push origin ${PR_BRANCH} --force \
             && npm version patch \
             && git push origin ${PR_BRANCH} --force \
