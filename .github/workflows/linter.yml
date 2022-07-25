@@ -22,7 +22,7 @@ jobs:
       run: npx prettier --check .
 
     - name: Run check-dts
-      run: npx check-dts
+      run: npm run check-dts
 
     - name: Run eslint
       run: npm run lint
