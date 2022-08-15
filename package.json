@@ -1,6 +1,6 @@
 {
   "name": "analyze-css",
-  "version": "2.1.44",
+  "version": "2.1.50",
   "author": "Maciej Brencz <maciej.brencz@gmail.com> (https://github.com/macbre)",
   "description": "CSS selectors complexity and performance analyzer",
   "main": "./lib/index.js",
@@ -56,7 +56,8 @@
     "lint": "eslint .",
     "prettier": "npx prettier --write .",
     "prefixes": "npx browserslist@latest --update-db; DEBUG=* node data/prefixes.js",
-    "bump-version-patch": "npm version patch && git add -A . && git push origin master && git push --tags && ./create-gh-release.sh"
+    "bump-version-patch": "npm version patch && git add -A . && git push origin master && git push --tags && ./create-gh-release.sh",
+    "check-dts": "check-dts lib/*.d.ts"
   },
   "jshintConfig": {
     "esversion": 6,
