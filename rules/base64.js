@@ -7,7 +7,7 @@ var format = require("util").format,
  * @param { import("../lib/css-analyzer") } analyzer
  */
 function rule(analyzer) {
-  var re = /data:[^/]+\/([^;]+)(?:;charset=[^;]+)?;base64,([a-zA-Z0-9][^)]+)/;
+  var re = /data:[^/]+\/([^;]+)(?:;charset=[^;]+)?;base64,([^)]+)/;
   analyzer.setMetric("base64Length");
 
   analyzer.on("declaration", function (rule, property, value) {
