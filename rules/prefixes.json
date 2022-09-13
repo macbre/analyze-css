@@ -1,5 +1,5 @@
 {
-  "generated": "Using autoprefixer v10.4.8",
+  "generated": "Using autoprefixer v10.4.9",
   "browsers": [
     "and_chr 105",
     "and_ff 104",
@@ -20,6 +20,7 @@
     "ios_saf 15.4",
     "ios_saf 15.5",
     "ios_saf 15.6",
+    "ios_saf 16.0",
     "kaios 2.5",
     "op_mini all",
     "op_mob 64",
@@ -27,6 +28,7 @@
     "opera 90",
     "safari 15.5",
     "safari 15.6",
+    "safari 16.0",
     "samsung 17.0",
     "samsung 18.0"
   ],
