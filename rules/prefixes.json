@@ -1,5 +1,5 @@
 {
-  "generated": "Using autoprefixer v10.4.10",
+  "generated": "Using autoprefixer v10.4.11",
   "browsers": [
     "and_chr 105",
     "and_ff 104",
@@ -15,7 +15,6 @@
     "firefox 102",
     "firefox 103",
     "firefox 104",
-    "firefox 91",
     "ios_saf 14.5-14.8",
     "ios_saf 15.4",
     "ios_saf 15.5",
@@ -26,6 +25,7 @@
     "op_mob 64",
     "opera 89",
     "opera 90",
+    "opera 91",
     "safari 15.5",
     "safari 15.6",
     "safari 16.0",
@@ -1105,70 +1105,6 @@
       "keep": false,
       "msg": "prefix is no longer supported"
     },
-    "-ms-text-decoration-style": {
-      "keep": false,
-      "msg": "prefix is no longer supported"
-    },
-    "-webkit-text-decoration-style": {
-      "keep": true,
-      "msg": "required by Safari on iOS 14.5 and later"
-    },
-    "-moz-text-decoration-style": {
-      "keep": false,
-      "msg": "was required by Firefox 35 and earlier"
-    },
-    "-o-text-decoration-style": {
-      "keep": false,
-      "msg": "prefix is no longer supported"
-    },
-    "-ms-text-decoration-color": {
-      "keep": false,
-      "msg": "prefix is no longer supported"
-    },
-    "-webkit-text-decoration-color": {
-      "keep": true,
-      "msg": "required by Safari on iOS 14.5 and later"
-    },
-    "-moz-text-decoration-color": {
-      "keep": false,
-      "msg": "was required by Firefox 35 and earlier"
-    },
-    "-o-text-decoration-color": {
-      "keep": false,
-      "msg": "prefix is no longer supported"
-    },
-    "-ms-text-decoration-line": {
-      "keep": false,
-      "msg": "prefix is no longer supported"
-    },
-    "-webkit-text-decoration-line": {
-      "keep": true,
-      "msg": "required by Safari on iOS 14.5 and later"
-    },
-    "-moz-text-decoration-line": {
-      "keep": false,
-      "msg": "was required by Firefox 35 and earlier"
-    },
-    "-o-text-decoration-line": {
-      "keep": false,
-      "msg": "prefix is no longer supported"
-    },
-    "-ms-text-decoration": {
-      "keep": false,
-      "msg": "prefix is no longer supported"
-    },
-    "-webkit-text-decoration": {
-      "keep": true,
-      "msg": "required by Safari on iOS 14.5 and later"
-    },
-    "-moz-text-decoration": {
-      "keep": false,
-      "msg": "was required by Firefox 35 and earlier"
-    },
-    "-o-text-decoration": {
-      "keep": false,
-      "msg": "prefix is no longer supported"
-    },
     "-ms-text-decoration-skip": {
       "keep": false,
       "msg": "prefix is no longer supported"
@@ -1198,6 +1134,70 @@
       "msg": "prefix is no longer supported"
     },
     "-o-text-decoration-skip-ink": {
+      "keep": false,
+      "msg": "prefix is no longer supported"
+    },
+    "-ms-text-decoration": {
+      "keep": false,
+      "msg": "prefix is no longer supported"
+    },
+    "-webkit-text-decoration": {
+      "keep": true,
+      "msg": "required by Safari 15.5, Safari on iOS 14.5 and later"
+    },
+    "-moz-text-decoration": {
+      "keep": false,
+      "msg": "prefix is no longer supported"
+    },
+    "-o-text-decoration": {
+      "keep": false,
+      "msg": "prefix is no longer supported"
+    },
+    "-ms-text-decoration-color": {
+      "keep": false,
+      "msg": "prefix is no longer supported"
+    },
+    "-webkit-text-decoration-color": {
+      "keep": false,
+      "msg": "was required by Safari on iOS 12, Safari 12 and earlier"
+    },
+    "-moz-text-decoration-color": {
+      "keep": false,
+      "msg": "was required by Firefox 35 and earlier"
+    },
+    "-o-text-decoration-color": {
+      "keep": false,
+      "msg": "prefix is no longer supported"
+    },
+    "-ms-text-decoration-line": {
+      "keep": false,
+      "msg": "prefix is no longer supported"
+    },
+    "-webkit-text-decoration-line": {
+      "keep": false,
+      "msg": "was required by Safari on iOS 12, Safari 12 and earlier"
+    },
+    "-moz-text-decoration-line": {
+      "keep": false,
+      "msg": "was required by Firefox 35 and earlier"
+    },
+    "-o-text-decoration-line": {
+      "keep": false,
+      "msg": "prefix is no longer supported"
+    },
+    "-ms-text-decoration-style": {
+      "keep": false,
+      "msg": "prefix is no longer supported"
+    },
+    "-webkit-text-decoration-style": {
+      "keep": false,
+      "msg": "was required by Safari on iOS 12, Safari 12 and earlier"
+    },
+    "-moz-text-decoration-style": {
+      "keep": false,
+      "msg": "was required by Firefox 35 and earlier"
+    },
+    "-o-text-decoration-style": {
       "keep": false,
       "msg": "prefix is no longer supported"
     },
@@ -2330,8 +2330,8 @@
       "msg": "required by Edge 103, Chrome 103, Opera 89, Safari on iOS 14.5, Android Browser 105, Chrome for Android 105, Samsung Internet 17 and later"
     },
     "-moz-print-color-adjust": {
-      "keep": true,
-      "msg": "required by Firefox 91 and later"
+      "keep": false,
+      "msg": "was required by Firefox 96 and earlier"
     },
     "-o-print-color-adjust": {
       "keep": true,
@@ -2346,8 +2346,8 @@
       "msg": "required by Edge 103, Chrome 103, Opera 89, Safari on iOS 14.5, Android Browser 105, Chrome for Android 105, Samsung Internet 17 and later"
     },
     "-moz-color-adjust": {
-      "keep": true,
-      "msg": "required by Firefox 91 and later"
+      "keep": false,
+      "msg": "was required by Firefox 96 and earlier"
     },
     "-o-color-adjust": {
       "keep": true,
