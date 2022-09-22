@@ -1,5 +1,5 @@
 {
-  "generated": "Using autoprefixer v10.4.11",
+  "generated": "Using autoprefixer v10.4.12",
   "browsers": [
     "and_chr 105",
     "and_ff 104",
@@ -15,6 +15,7 @@
     "firefox 102",
     "firefox 103",
     "firefox 104",
+    "firefox 105",
     "ios_saf 14.5-14.8",
     "ios_saf 15.4",
     "ios_saf 15.5",
