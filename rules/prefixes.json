@@ -21,6 +21,7 @@
     "ios_saf 15.5",
     "ios_saf 15.6",
     "ios_saf 16.0",
+    "ios_saf 16.1",
     "kaios 2.5",
     "op_mini all",
     "op_mob 64",
@@ -28,6 +29,7 @@
     "opera 91",
     "safari 15.6",
     "safari 16.0",
+    "safari 16.1",
     "samsung 17.0",
     "samsung 18.0"
   ],
