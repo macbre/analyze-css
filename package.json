@@ -38,7 +38,7 @@
     "@types/css": "0.0.33",
     "autoprefixer": "^10.2.4",
     "browserslist": "^4.11.1",
-    "check-dts": "^0.6.1",
+    "check-dts": "^0.7.0",
     "eslint": "^8.0.0",
     "eslint-config-prettier": "8.6.0",
     "eslint-plugin-node": "^11.1.0",
