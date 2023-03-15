@@ -27,14 +27,14 @@ exports.tests = [
 	{
 		css: '.foo { border-color: #xyz; color: #00; background: #0000 }',
 		metrics: {
-			colors: 0
+			colors: 1
 		}
 	},
 	// different colors notations should be "casted" to either hex or rgba
 	{
 		css: '.foo { border-color: #000 #000000 rgb(0,0,0) rgba(0,0,0,1) }',
 		metrics: {
-			colors: 1
+			colors: 2
 		}
 	},
 ];
