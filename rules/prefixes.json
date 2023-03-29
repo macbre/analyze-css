@@ -23,6 +23,7 @@
     "ios_saf 16.1",
     "ios_saf 16.2",
     "ios_saf 16.3",
+    "ios_saf 16.4",
     "kaios 2.5",
     "kaios 3.0-3.1",
     "op_mini all",
@@ -32,6 +33,7 @@
     "safari 15.6",
     "safari 16.2",
     "safari 16.3",
+    "safari 16.4",
     "samsung 19.0",
     "samsung 20"
   ],
