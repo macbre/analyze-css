@@ -21,8 +21,8 @@ function rule(analyzer) {
         format(
           '"%s" is too long (%d characters)',
           comment.substr(0, 100),
-          comment.length
-        )
+          comment.length,
+        ),
       );
     }
   });

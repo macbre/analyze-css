@@ -26,8 +26,8 @@ function rule(analyzer) {
           rule.selectors.join(", "),
           property,
           value,
-          prefixData.msg
-        )
+          prefixData.msg,
+        ),
       );
     }
   });

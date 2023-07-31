@@ -15,7 +15,7 @@ function rule(analyzer) {
       analyzer.incrMetric("expressions");
       analyzer.addOffender(
         "expressions",
-        format("%s {%s: %s}", rule.selectors.join(", "), property, value)
+        format("%s {%s: %s}", rule.selectors.join(", "), property, value),
       );
     }
   });

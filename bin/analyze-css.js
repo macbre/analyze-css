@@ -23,20 +23,20 @@ program
   .option("--file <file>", "Set local CSS file to analyze")
   .option(
     "--ignore-ssl-errors",
-    "Ignores SSL errors, such as expired or self-signed certificate errors"
+    "Ignores SSL errors, such as expired or self-signed certificate errors",
   )
   .option("-p, --pretty", "Causes JSON with the results to be pretty-printed")
   .option(
     "-N, --no-offenders",
-    "Show only the metrics without the offenders part"
+    "Show only the metrics without the offenders part",
   )
   .option(
     "--auth-user <user>",
-    "Sets the user name used for HTTP authentication"
+    "Sets the user name used for HTTP authentication",
   )
   .option(
     "--auth-pass <pass>",
-    "Sets the password used for HTTP authentication"
+    "Sets the password used for HTTP authentication",
   )
   .option("-x, --proxy <proxy>", "Sets the HTTP proxy");
 
@@ -92,15 +92,15 @@ runner(runnerOpts, function (err, res) {
   // make offenders flat (and append position if possible - issue #25)
   if (typeof res.offenders !== "undefined") {
     Object.keys(res.offenders).forEach(function (metricName) {
-      res.offenders[metricName] = res.offenders[metricName].map(function (
-        offender
-      ) {
-        var position = offender.position && offender.position.start;
-        return (
-          offender.message +
-          (position ? " @ " + position.line + ":" + position.column : "")
-        );
-      });
+      res.offenders[metricName] = res.offenders[metricName].map(
+        function (offender) {
+          var position = offender.position && offender.position.start;
+          return (
+            offender.message +
+            (position ? " @ " + position.line + ":" + position.column : "")
+          );
+        },
+      );
     });
   }
 

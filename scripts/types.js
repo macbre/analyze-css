@@ -18,7 +18,7 @@ const CSSAnalyzer = require("../lib/css-analyzer");
           return `"${metric}"`;
         })
         .join(" |\n\t") +
-      ";"
+      ";",
   );
 
   // list of all available events
@@ -33,7 +33,7 @@ const CSSAnalyzer = require("../lib/css-analyzer");
           return `"${event}"`;
         })
         .join(" |\n\t") +
-      ";"
+      ";",
   );
 
   console.log("// on() overloaded methods via event-specific callbacks");
@@ -51,6 +51,6 @@ const CSSAnalyzer = require("../lib/css-analyzer");
 
         return `public on(ev: "${event}", fn: ${signature} => void): void;`;
       })
-      .join("\n")
+      .join("\n"),
   );
 })();

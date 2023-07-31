@@ -17,16 +17,16 @@ import {
 declare class CSSAnalyzer {
   public setMetric(
     name: MetricsNames,
-    value: number | undefined /** = 0 */
+    value: number | undefined /** = 0 */,
   ): void;
   public incrMetric(
     name: MetricsNames,
-    incr: number | undefined /** = 1 */
+    incr: number | undefined /** = 1 */,
   ): void;
   public addOffender(
     metricName: MetricsNames,
     msg: string,
-    position: Position | undefined
+    position: Position | undefined,
   ): void;
   public setCurrentPosition(position: Position): void;
 
@@ -37,28 +37,28 @@ declare class CSSAnalyzer {
   public on(ev: "css", fn: (css: string) => void): void;
   public on(
     ev: "declaration",
-    fn: (rule: CSSRule, property: string, value: string) => void
+    fn: (rule: CSSRule, property: string, value: string) => void,
   ): void;
   public on(ev: "error", fn: (err: Error) => void): void;
   public on(
     ev: "expression",
-    fn: (selector: string, expression: Selector) => void
+    fn: (selector: string, expression: Selector) => void,
   ): void;
   public on(ev: "font-face", fn: (rule: CSSRule) => void): void;
   public on(ev: "import", fn: (url: string) => void): void;
   public on(
     ev: "media",
-    fn: (query: string, rules: Array<CSSRule>) => void
+    fn: (query: string, rules: Array<CSSRule>) => void,
   ): void;
   public on(
     ev: "mediaEnd",
-    fn: (query: string, rules: Array<CSSRule>) => void
+    fn: (query: string, rules: Array<CSSRule>) => void,
   ): void;
   public on(ev: "report", fn: () => void): void;
   public on(ev: "rule", fn: (rule: CSSRule) => void): void;
   public on(
     ev: "selector",
-    fn: (rule: CSSRule, selector: string, expressions: Selector[]) => void
+    fn: (rule: CSSRule, selector: string, expressions: Selector[]) => void,
   ): void;
   public on(ev: "stylesheet", fn: (stylesheet: StyleRules) => void): void;
 

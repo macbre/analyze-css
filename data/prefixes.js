@@ -151,7 +151,7 @@ Object.keys(prefixes).forEach(function (property) {
 debug("Writing to a file...");
 fs.writeFileSync(
   __dirname + "/../rules/prefixes.json",
-  JSON.stringify(data, null, "  ")
+  JSON.stringify(data, null, "  "),
 );
 
 debug("Done");

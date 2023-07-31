@@ -29,8 +29,8 @@ function rule(analyzer) {
             rule.selectors.join(", "),
             property,
             (base64.length / 1024).toFixed(2),
-            (buf.length / 1024).toFixed(2)
-          )
+            (buf.length / 1024).toFixed(2),
+          ),
         );
       }
     }
