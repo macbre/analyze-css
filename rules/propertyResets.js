@@ -59,8 +59,8 @@ function rule(analyzer) {
               '%s: "%s" resets "%s" property set earlier',
               selector,
               property,
-              expandedProperty
-            )
+              expandedProperty,
+            ),
           );
         }
       });

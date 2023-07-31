@@ -13,7 +13,7 @@ function rule(analyzer) {
       analyzer.incrMetric("importants");
       analyzer.addOffender(
         "importants",
-        format("%s {%s: %s}", rule.selectors.join(", "), property, value)
+        format("%s {%s: %s}", rule.selectors.join(", "), property, value),
       );
     }
   });

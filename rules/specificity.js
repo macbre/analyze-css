@@ -51,7 +51,7 @@ function rule(analyzer) {
     types.forEach(function (type, idx) {
       analyzer.setMetric(
         "specificity" + type + "Avg",
-        parseFloat(values[idx].amean().toFixed(2))
+        parseFloat(values[idx].amean().toFixed(2)),
       );
       analyzer.setMetric("specificity" + type + "Total", values[idx].Σ());
     });

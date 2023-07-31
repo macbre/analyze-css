@@ -70,10 +70,10 @@ function rule(analyzer) {
             "descendant" /* */,
             "child" /* > */,
             "adjacent" /* + */,
-          ].includes(expr.type)
+          ].includes(expr.type),
         )
         .map((expr) =>
-          expr.name ? { tag: expr.name } : { combinator: expr.type }
+          expr.name ? { tag: expr.name } : { combinator: expr.type },
         );
 
       // console.log(selector, expressions, selectorNodeNames);

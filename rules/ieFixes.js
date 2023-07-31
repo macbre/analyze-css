@@ -36,7 +36,7 @@ function rule(analyzer) {
       analyzer.incrMetric("oldIEFixes");
       analyzer.addOffender(
         "oldIEFixes",
-        format("%s {%s: %s}", rule.selectors.join(", "), property, value)
+        format("%s {%s: %s}", rule.selectors.join(", "), property, value),
       );
     }
   });

@@ -34,7 +34,7 @@ function rule(analyzer) {
         ? "@media " + mediaQueryStack.join(" @media ") + " "
         : "") +
         // #foo
-        rule.selectors.join(", ")
+        rule.selectors.join(", "),
     );
   });
 
@@ -69,8 +69,8 @@ function rule(analyzer) {
                 "%s {%s: %s}",
                 rule.selectors.join(", "),
                 declaration.property,
-                declaration.value
-              )
+                declaration.value,
+              ),
             );
           } else {
             // mark given property as defined in the context of the current selector
@@ -90,7 +90,7 @@ function rule(analyzer) {
 
         debug(
           "special handling for @font-face, provided src: %s",
-          declaration.value
+          declaration.value,
         );
         return false;
       }
@@ -105,7 +105,7 @@ function rule(analyzer) {
         analyzer.incrMetric("duplicatedSelectors");
         analyzer.addOffender(
           "duplicatedSelectors",
-          format("%s (%d times)", selector, cnt)
+          format("%s (%d times)", selector, cnt),
         );
       }
     });
