@@ -25,7 +25,7 @@ jobs:
 
       - uses: actions/setup-node@v3
         with:
-          node-version: 16.x
+          node-version: 'latest'
           cache: 'npm'
       - run: npm ci
 
