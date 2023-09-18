@@ -18,7 +18,7 @@
   ],
   "license": "BSD-2-Clause",
   "engines": {
-    "node": "^14.0.0 || >=16.0.0"
+    "node": "^18.0.0"
   },
   "dependencies": {
     "cli": "^1.0.1",
