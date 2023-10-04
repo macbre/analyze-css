@@ -11,8 +11,6 @@
     "chrome 115",
     "chrome 116",
     "chrome 117",
-    "edge 114",
-    "edge 115",
     "edge 116",
     "edge 117",
     "firefox 115",
@@ -21,18 +19,15 @@
     "ios_saf 15.6-15.7",
     "ios_saf 16.1",
     "ios_saf 16.3",
-    "ios_saf 16.5",
     "ios_saf 16.6",
     "ios_saf 17.0",
     "kaios 2.5",
     "kaios 3.0-3.1",
     "op_mini all",
     "op_mob 73",
-    "opera 100",
     "opera 101",
     "opera 102",
     "safari 15.6",
-    "safari 16.5",
     "safari 16.6",
     "safari 17.0",
     "samsung 21",
@@ -973,7 +968,7 @@
     },
     "-webkit-background-clip": {
       "keep": true,
-      "msg": "required by Edge 114, Chrome 109, Opera 100, Android Browser 117, Chrome for Android 117, UC Browser for Android 15.5, Samsung Internet 21, QQ Browser 13.1 and later"
+      "msg": "required by Edge 116, Chrome 109, Opera 101, Android Browser 117, Chrome for Android 117, UC Browser for Android 15.5, Samsung Internet 21, QQ Browser 13.1 and later"
     },
     "-moz-background-clip": {
       "keep": false,
@@ -1229,7 +1224,7 @@
     },
     "-webkit-mask-clip": {
       "keep": true,
-      "msg": "required by Edge 114, Chrome 109, Opera 100, Android Browser 117, Chrome for Android 117, UC Browser for Android 15.5, Samsung Internet 21, QQ Browser 13.1 and later"
+      "msg": "required by Edge 116, Chrome 109, Opera 101, Android Browser 117, Chrome for Android 117, UC Browser for Android 15.5, Samsung Internet 21, QQ Browser 13.1 and later"
     },
     "-moz-mask-clip": {
       "keep": false,
@@ -1245,7 +1240,7 @@
     },
     "-webkit-mask-composite": {
       "keep": true,
-      "msg": "required by Edge 114, Chrome 109, Opera 100, Android Browser 117, Chrome for Android 117, UC Browser for Android 15.5, Samsung Internet 21, QQ Browser 13.1 and later"
+      "msg": "required by Edge 116, Chrome 109, Opera 101, Android Browser 117, Chrome for Android 117, UC Browser for Android 15.5, Samsung Internet 21, QQ Browser 13.1 and later"
     },
     "-moz-mask-composite": {
       "keep": false,
@@ -1261,7 +1256,7 @@
     },
     "-webkit-mask-image": {
       "keep": true,
-      "msg": "required by Edge 114, Chrome 109, Opera 100, Android Browser 117, Chrome for Android 117, UC Browser for Android 15.5, Samsung Internet 21, QQ Browser 13.1 and later"
+      "msg": "required by Edge 116, Chrome 109, Opera 101, Android Browser 117, Chrome for Android 117, UC Browser for Android 15.5, Samsung Internet 21, QQ Browser 13.1 and later"
     },
     "-moz-mask-image": {
       "keep": false,
@@ -1277,7 +1272,7 @@
     },
     "-webkit-mask-origin": {
       "keep": true,
-      "msg": "required by Edge 114, Chrome 109, Opera 100, Android Browser 117, Chrome for Android 117, UC Browser for Android 15.5, Samsung Internet 21, QQ Browser 13.1 and later"
+      "msg": "required by Edge 116, Chrome 109, Opera 101, Android Browser 117, Chrome for Android 117, UC Browser for Android 15.5, Samsung Internet 21, QQ Browser 13.1 and later"
     },
     "-moz-mask-origin": {
       "keep": false,
@@ -1293,7 +1288,7 @@
     },
     "-webkit-mask-repeat": {
       "keep": true,
-      "msg": "required by Edge 114, Chrome 109, Opera 100, Android Browser 117, Chrome for Android 117, UC Browser for Android 15.5, Samsung Internet 21, QQ Browser 13.1 and later"
+      "msg": "required by Edge 116, Chrome 109, Opera 101, Android Browser 117, Chrome for Android 117, UC Browser for Android 15.5, Samsung Internet 21, QQ Browser 13.1 and later"
     },
     "-moz-mask-repeat": {
       "keep": false,
@@ -1309,7 +1304,7 @@
     },
     "-webkit-mask-border-repeat": {
       "keep": true,
-      "msg": "required by Edge 114, Chrome 109, Opera 100, Android Browser 117, Chrome for Android 117, UC Browser for Android 15.5, Samsung Internet 21, QQ Browser 13.1 and later"
+      "msg": "required by Edge 116, Chrome 109, Opera 101, Android Browser 117, Chrome for Android 117, UC Browser for Android 15.5, Samsung Internet 21, QQ Browser 13.1 and later"
     },
     "-moz-mask-border-repeat": {
       "keep": false,
@@ -1325,7 +1320,7 @@
     },
     "-webkit-mask-border-source": {
       "keep": true,
-      "msg": "required by Edge 114, Chrome 109, Opera 100, Android Browser 117, Chrome for Android 117, UC Browser for Android 15.5, Samsung Internet 21, QQ Browser 13.1 and later"
+      "msg": "required by Edge 116, Chrome 109, Opera 101, Android Browser 117, Chrome for Android 117, UC Browser for Android 15.5, Samsung Internet 21, QQ Browser 13.1 and later"
     },
     "-moz-mask-border-source": {
       "keep": false,
@@ -1341,7 +1336,7 @@
     },
     "-webkit-mask": {
       "keep": true,
-      "msg": "required by Edge 114, Chrome 109, Opera 100, Android Browser 117, Chrome for Android 117, UC Browser for Android 15.5, Samsung Internet 21, QQ Browser 13.1 and later"
+      "msg": "required by Edge 116, Chrome 109, Opera 101, Android Browser 117, Chrome for Android 117, UC Browser for Android 15.5, Samsung Internet 21, QQ Browser 13.1 and later"
     },
     "-moz-mask": {
       "keep": false,
@@ -1357,7 +1352,7 @@
     },
     "-webkit-mask-position": {
       "keep": true,
-      "msg": "required by Edge 114, Chrome 109, Opera 100, Android Browser 117, Chrome for Android 117, UC Browser for Android 15.5, Samsung Internet 21, QQ Browser 13.1 and later"
+      "msg": "required by Edge 116, Chrome 109, Opera 101, Android Browser 117, Chrome for Android 117, UC Browser for Android 15.5, Samsung Internet 21, QQ Browser 13.1 and later"
     },
     "-moz-mask-position": {
       "keep": false,
@@ -1373,7 +1368,7 @@
     },
     "-webkit-mask-size": {
       "keep": true,
-      "msg": "required by Edge 114, Chrome 109, Opera 100, Android Browser 117, Chrome for Android 117, UC Browser for Android 15.5, Samsung Internet 21, QQ Browser 13.1 and later"
+      "msg": "required by Edge 116, Chrome 109, Opera 101, Android Browser 117, Chrome for Android 117, UC Browser for Android 15.5, Samsung Internet 21, QQ Browser 13.1 and later"
     },
     "-moz-mask-size": {
       "keep": false,
@@ -1389,7 +1384,7 @@
     },
     "-webkit-mask-border": {
       "keep": true,
-      "msg": "required by Edge 114, Chrome 109, Opera 100, Android Browser 117, Chrome for Android 117, UC Browser for Android 15.5, Samsung Internet 21, QQ Browser 13.1 and later"
+      "msg": "required by Edge 116, Chrome 109, Opera 101, Android Browser 117, Chrome for Android 117, UC Browser for Android 15.5, Samsung Internet 21, QQ Browser 13.1 and later"
     },
     "-moz-mask-border": {
       "keep": false,
@@ -1405,7 +1400,7 @@
     },
     "-webkit-mask-border-outset": {
       "keep": true,
-      "msg": "required by Edge 114, Chrome 109, Opera 100, Android Browser 117, Chrome for Android 117, UC Browser for Android 15.5, Samsung Internet 21, QQ Browser 13.1 and later"
+      "msg": "required by Edge 116, Chrome 109, Opera 101, Android Browser 117, Chrome for Android 117, UC Browser for Android 15.5, Samsung Internet 21, QQ Browser 13.1 and later"
     },
     "-moz-mask-border-outset": {
       "keep": false,
@@ -1421,7 +1416,7 @@
     },
     "-webkit-mask-border-width": {
       "keep": true,
-      "msg": "required by Edge 114, Chrome 109, Opera 100, Android Browser 117, Chrome for Android 117, UC Browser for Android 15.5, Samsung Internet 21, QQ Browser 13.1 and later"
+      "msg": "required by Edge 116, Chrome 109, Opera 101, Android Browser 117, Chrome for Android 117, UC Browser for Android 15.5, Samsung Internet 21, QQ Browser 13.1 and later"
     },
     "-moz-mask-border-width": {
       "keep": false,
@@ -1437,7 +1432,7 @@
     },
     "-webkit-mask-border-slice": {
       "keep": true,
-      "msg": "required by Edge 114, Chrome 109, Opera 100, Android Browser 117, Chrome for Android 117, UC Browser for Android 15.5, Samsung Internet 21, QQ Browser 13.1 and later"
+      "msg": "required by Edge 116, Chrome 109, Opera 101, Android Browser 117, Chrome for Android 117, UC Browser for Android 15.5, Samsung Internet 21, QQ Browser 13.1 and later"
     },
     "-moz-mask-border-slice": {
       "keep": false,
@@ -1469,7 +1464,7 @@
     },
     "-webkit-box-decoration-break": {
       "keep": true,
-      "msg": "required by Edge 114, Chrome 109, Safari 15.6, Opera 100, Safari on iOS 15.6, Android Browser 117, Chrome for Android 117, UC Browser for Android 15.5, Samsung Internet 21, QQ Browser 13.1 and later"
+      "msg": "required by Edge 116, Chrome 109, Safari 15.6, Opera 101, Safari on iOS 15.6, Android Browser 117, Chrome for Android 117, UC Browser for Android 15.5, Samsung Internet 21, QQ Browser 13.1 and later"
     },
     "-moz-box-decoration-break": {
       "keep": false,
@@ -2333,7 +2328,7 @@
     },
     "-webkit-print-color-adjust": {
       "keep": true,
-      "msg": "required by Edge 114, Chrome 109, Opera 100, Android Browser 117, Chrome for Android 117, Samsung Internet 21 and later"
+      "msg": "required by Edge 116, Chrome 109, Opera 101, Android Browser 117, Chrome for Android 117, Samsung Internet 21 and later"
     },
     "-moz-print-color-adjust": {
       "keep": false,
@@ -2349,7 +2344,7 @@
     },
     "-webkit-color-adjust": {
       "keep": true,
-      "msg": "required by Edge 114, Chrome 109, Opera 100, Android Browser 117, Chrome for Android 117, Samsung Internet 21 and later"
+      "msg": "required by Edge 116, Chrome 109, Opera 101, Android Browser 117, Chrome for Android 117, Samsung Internet 21 and later"
     },
     "-moz-color-adjust": {
       "keep": false,
