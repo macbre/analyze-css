@@ -1,6 +1,6 @@
 "use strict";
 
-var COMPLEX_SELECTOR_THRESHOLD = 3;
+var COMPLEX_SELECTOR_THRESHOLD = 6;
 
 /**
  * @param { import("../lib/css-analyzer") } analyzer
@@ -10,11 +10,7 @@ function rule(analyzer) {
 
   // #foo .bar ul li a
   analyzer.on("selector", function (rule, selector, expressions) {
-    const isComplexSelector = expressions.filter(expression => {
-      return expression.type !== 'descendant'
-    }).length > COMPLEX_SELECTOR_THRESHOLD;
-
-    if (isComplexSelector) {
+    if (expressions.length > COMPLEX_SELECTOR_THRESHOLD) {
       analyzer.incrMetric("complexSelectors");
       analyzer.addOffender("complexSelectors", selector);
     }
