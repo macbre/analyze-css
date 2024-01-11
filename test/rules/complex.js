@@ -6,6 +6,12 @@ exports.tests = [
 		}
 	},
 	{
+		css: 'header li.foo { color: red }',
+		metrics: {
+			complexSelectors: 0
+		}
+	},
+	{
 		css: '.someclass:not([ng-show="gcdmShowSystemNotAvailableMessage()"]){display:none}',
 		metrics: {
 			complexSelectors: 0

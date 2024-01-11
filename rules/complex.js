@@ -10,7 +10,11 @@ function rule(analyzer) {
 
   // #foo .bar ul li a
   analyzer.on("selector", function (rule, selector, expressions) {
-    if (expressions.length > COMPLEX_SELECTOR_THRESHOLD) {
+    const isComplexSelector = expressions.filter(expression => {
+      return expression.type !== 'descendant'
+    }).length > COMPLEX_SELECTOR_THRESHOLD;
+
+    if (isComplexSelector) {
       analyzer.incrMetric("complexSelectors");
       analyzer.addOffender("complexSelectors", selector);
     }
