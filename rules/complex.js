@@ -10,7 +10,10 @@ function rule(analyzer) {
 
   // #foo .bar ul li a
   analyzer.on("selector", function (rule, selector, expressions) {
-    if (expressions.length > COMPLEX_SELECTOR_THRESHOLD) {
+    var filteredExpr = expressions.filter((item) => {
+      return ! ["adjacent", "parent", "child", "descendant", "sibling", "column-combinator"].includes(item.type);
+    });
+    if (filteredExpr.length > COMPLEX_SELECTOR_THRESHOLD) {
       analyzer.incrMetric("complexSelectors");
       analyzer.addOffender("complexSelectors", selector);
     }
