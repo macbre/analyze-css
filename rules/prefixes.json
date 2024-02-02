@@ -1,11 +1,11 @@
 {
   "generated": "Using autoprefixer v10.4.17",
   "browsers": [
-    "and_chr 120",
-    "and_ff 119",
+    "and_chr 121",
+    "and_ff 122",
     "and_qq 13.1",
     "and_uc 15.5",
-    "android 120",
+    "android 121",
     "chrome 109",
     "chrome 118",
     "chrome 119",
@@ -1218,7 +1218,7 @@
     },
     "-moz-text-size-adjust": {
       "keep": true,
-      "msg": "required by Firefox for Android 119 and later"
+      "msg": "required by Firefox for Android 122 and later"
     },
     "-o-text-size-adjust": {
       "keep": false,
@@ -1470,7 +1470,7 @@
     },
     "-webkit-box-decoration-break": {
       "keep": true,
-      "msg": "required by Edge 119, Chrome 109, Safari 16.6, Opera 104, Safari on iOS 15.6, Android Browser 120, Chrome for Android 120, UC Browser for Android 15.5, Samsung Internet 22, QQ Browser 13.1 and later"
+      "msg": "required by Edge 119, Chrome 109, Safari 16.6, Opera 104, Safari on iOS 15.6, Android Browser 121, Chrome for Android 121, UC Browser for Android 15.5, Samsung Internet 22, QQ Browser 13.1 and later"
     },
     "-moz-box-decoration-break": {
       "keep": false,
@@ -2334,7 +2334,7 @@
     },
     "-webkit-print-color-adjust": {
       "keep": true,
-      "msg": "required by Edge 119, Chrome 109, Opera 104, Android Browser 120, Chrome for Android 120, Samsung Internet 22 and later"
+      "msg": "required by Edge 119, Chrome 109, Opera 104, Android Browser 121, Chrome for Android 121, Samsung Internet 22 and later"
     },
     "-moz-print-color-adjust": {
       "keep": false,
@@ -2350,7 +2350,7 @@
     },
     "-webkit-color-adjust": {
       "keep": true,
-      "msg": "required by Edge 119, Chrome 109, Opera 104, Android Browser 120, Chrome for Android 120, Samsung Internet 22 and later"
+      "msg": "required by Edge 119, Chrome 109, Opera 104, Android Browser 121, Chrome for Android 121, Samsung Internet 22 and later"
     },
     "-moz-color-adjust": {
       "keep": false,
