@@ -22,7 +22,7 @@
   },
   "dependencies": {
     "cli": "^1.0.1",
-    "commander": "^11.0.0",
+    "commander": "^12.0.0",
     "css": "^3.0.0",
     "css-shorthand-properties": "^1.1.1",
     "css-what": "^6.0.1",
