@@ -1,6 +1,6 @@
 "use strict";
 
-var COMPLEX_SELECTOR_THRESHOLD = 3;
+var COMPLEX_SELECTOR_THRESHOLD = 5;
 
 /**
  * @param { import("../lib/css-analyzer") } analyzer
