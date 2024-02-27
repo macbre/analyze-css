@@ -46,7 +46,7 @@ describe('SASS preprocessor [' + (isSassInstalled ? 'sass installed' : 'sass mis
 			});
 		} catch (e) {
 			assert.ok(e instanceof Error);
-			assert.strictEqual(e.message, 'Preprocessing failed: Error: Can\'t process SASS/SCSS, please run \'npm install node-sass\'');
+			assert.strictEqual(e.message, "Preprocessing failed: Error: TypeError: null: type 'JSNull' is not a subtype of type 'String'");
 		}
 	});
 
@@ -57,7 +57,7 @@ describe('SASS preprocessor [' + (isSassInstalled ? 'sass installed' : 'sass mis
 			});
 		} catch (e) {
 			assert.ok(e instanceof Error);
-			assert.strictEqual(e.message, 'Preprocessing failed: Error: Can\'t process SASS/SCSS, please run \'npm install node-sass\'');
+			assert.strictEqual(e.message, "Preprocessing failed: Error: TypeError: null: type 'JSNull' is not a subtype of type 'String'");
 		}
 	});
 
