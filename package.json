@@ -54,6 +54,7 @@
   "scripts": {
     "test": "jest test/ --coverage --detectOpenHandles",
     "lint": "eslint .",
+    "lint:fix": "eslint . --fix",
     "prettier": "npx prettier --write .",
     "prefixes": "npx browserslist@latest --update-db; DEBUG=* node data/prefixes.js",
     "bump-version-patch": "npm version patch && git add -A . && git push origin master && git push --tags && ./create-gh-release.sh",
