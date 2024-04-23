@@ -1,8 +1,17 @@
+const globals = require('globals');
+const js = require('@eslint/js');
+
 module.exports = [
+    js.configs.recommended,
     {
         languageOptions: {
-            ecmaVersion: 2017,
-            sourceType: "script"
+            ecmaVersion: 2020,
+            sourceType: "script",
+            globals: {
+                // https://eslint.org/docs/latest/use/configure/language-options#predefined-global-variables
+                ...globals.browser,
+                ...globals.node,
+            },
         },
         rules: {
             semi: "error",
@@ -11,7 +20,7 @@ module.exports = [
             "no-empty": ["error", { "allowEmptyCatch": true }],
             "no-prototype-builtins": 'off',
             "node/no-extraneous-require": 'off',
-            "node/shebang": 'off'
+            "node/shebang": 'off',
         }
     }
 ];
