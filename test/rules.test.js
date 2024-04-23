@@ -4,7 +4,6 @@
  * e.g. $ TEST_RULE=stats npx jest test/rules.test.js
  */
 const { describe, it } = require("@jest/globals");
-const process = require('process');
 
 const analyzer = require('../'),
 	assert = require('assert'),
