@@ -63,8 +63,7 @@ else if (options.file) {
 // either --url or --file or - (stdin) needs to be provided
 else {
   console.log(program.helpInformation());
-  process.exitCode = analyzer.EXIT_NEED_OPTIONS;
-  return;
+  process.exit(analyzer.EXIT_NEED_OPTIONS);
 }
 
 runnerOpts.ignoreSslErrors = options.ignoreSslErrors === true;
