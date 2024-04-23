@@ -10,7 +10,7 @@ function rule(analyzer) {
 
   // #foo .bar ul li a
   analyzer.on("selector", function (rule, selector, expressions) {
-    let filteredExpr = expressions.filter((item) => {
+    const filteredExpr = expressions.filter((item) => {
       return ![
         "adjacent",
         "parent",
