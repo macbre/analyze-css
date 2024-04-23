@@ -21,6 +21,14 @@ module.exports = [
             "no-prototype-builtins": 'off',
             "node/no-extraneous-require": 'off',
             "node/shebang": 'off',
+            // https://eslint.org/docs/latest/rules/no-unused-vars
+            "no-unused-vars": ["error", {
+                "vars": "all",
+                "args": "after-used",
+                "caughtErrors": "none", // ignore catch block variables
+                "ignoreRestSiblings": false,
+                "reportUsedIgnorePattern": false,
+            }]
         }
     }
 ];
