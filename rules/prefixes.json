@@ -1448,8 +1448,8 @@
       "msg": "prefix is no longer supported"
     },
     "-webkit-clip-path": {
-      "keep": true,
-      "msg": "required by Samsung Internet 23 and later"
+      "keep": false,
+      "msg": "was required by Android Browser 4.4, Chrome 54, Safari on iOS 12.2, Opera 41, Safari 13, Samsung Internet 5 and earlier"
     },
     "-moz-clip-path": {
       "keep": false,
@@ -1833,7 +1833,7 @@
     },
     "-webkit-appearance": {
       "keep": true,
-      "msg": "required by Samsung Internet 23, QQ Browser 14.9 and later"
+      "msg": "required by QQ Browser 14.9 and later"
     },
     "-moz-appearance": {
       "keep": true,
