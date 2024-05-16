@@ -19,6 +19,7 @@
     "ios_saf 16.6-16.7",
     "ios_saf 17.3",
     "ios_saf 17.4",
+    "ios_saf 17.5",
     "kaios 2.5",
     "kaios 3.0-3.1",
     "op_mini all",
@@ -26,8 +27,8 @@
     "opera 107",
     "opera 108",
     "opera 109",
-    "safari 17.3",
     "safari 17.4",
+    "safari 17.5",
     "samsung 23",
     "samsung 24"
   ],
@@ -502,7 +503,7 @@
     },
     "-webkit-backdrop-filter": {
       "keep": true,
-      "msg": "required by Safari 17.3, Safari on iOS 15.6 and later"
+      "msg": "required by Safari 17.4, Safari on iOS 15.6 and later"
     },
     "-moz-backdrop-filter": {
       "keep": false,
@@ -726,7 +727,7 @@
     },
     "-webkit-user-select": {
       "keep": true,
-      "msg": "required by Safari 17.3, Safari on iOS 15.6 and later"
+      "msg": "required by Safari 17.4, Safari on iOS 15.6 and later"
     },
     "-moz-user-select": {
       "keep": true,
@@ -1142,7 +1143,7 @@
     },
     "-webkit-text-decoration": {
       "keep": true,
-      "msg": "required by Safari 17.3, Safari on iOS 15.6 and later"
+      "msg": "required by Safari 17.4, Safari on iOS 15.6 and later"
     },
     "-moz-text-decoration": {
       "keep": false,
@@ -1462,7 +1463,7 @@
     },
     "-webkit-box-decoration-break": {
       "keep": true,
-      "msg": "required by Edge 123, Chrome 109, Safari 17.3, Opera 107, Safari on iOS 15.6, Android Browser 124, Chrome for Android 124, UC Browser for Android 15.5, Samsung Internet 23, QQ Browser 14.9 and later"
+      "msg": "required by Edge 123, Chrome 109, Safari 17.4, Opera 107, Safari on iOS 15.6, Android Browser 124, Chrome for Android 124, UC Browser for Android 15.5, Samsung Internet 23, QQ Browser 14.9 and later"
     },
     "-moz-box-decoration-break": {
       "keep": false,
