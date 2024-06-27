@@ -1,11 +1,11 @@
 {
   "generated": "Using autoprefixer v10.4.19",
   "browsers": [
-    "and_chr 125",
-    "and_ff 126",
+    "and_chr 126",
+    "and_ff 127",
     "and_qq 14.9",
     "and_uc 15.5",
-    "android 125",
+    "android 126",
     "chrome 109",
     "chrome 123",
     "chrome 124",
@@ -13,6 +13,7 @@
     "chrome 126",
     "edge 124",
     "edge 125",
+    "edge 126",
     "firefox 115",
     "firefox 125",
     "firefox 126",
@@ -1211,7 +1212,7 @@
     },
     "-moz-text-size-adjust": {
       "keep": true,
-      "msg": "required by Firefox for Android 126 and later"
+      "msg": "required by Firefox for Android 127 and later"
     },
     "-o-text-size-adjust": {
       "keep": false,
@@ -1463,7 +1464,7 @@
     },
     "-webkit-box-decoration-break": {
       "keep": true,
-      "msg": "required by Edge 124, Chrome 109, Safari 17.4, Opera 109, Safari on iOS 15.6, Android Browser 125, Chrome for Android 125, UC Browser for Android 15.5, Samsung Internet 24, QQ Browser 14.9 and later"
+      "msg": "required by Edge 124, Chrome 109, Safari 17.4, Opera 109, Safari on iOS 15.6, Android Browser 126, Chrome for Android 126, UC Browser for Android 15.5, Samsung Internet 24, QQ Browser 14.9 and later"
     },
     "-moz-box-decoration-break": {
       "keep": false,
@@ -2327,7 +2328,7 @@
     },
     "-webkit-print-color-adjust": {
       "keep": true,
-      "msg": "required by Edge 124, Chrome 109, Opera 109, Android Browser 125, Chrome for Android 125, Samsung Internet 24 and later"
+      "msg": "required by Edge 124, Chrome 109, Opera 109, Android Browser 126, Chrome for Android 126, Samsung Internet 24 and later"
     },
     "-moz-print-color-adjust": {
       "keep": false,
@@ -2343,7 +2344,7 @@
     },
     "-webkit-color-adjust": {
       "keep": true,
-      "msg": "required by Edge 124, Chrome 109, Opera 109, Android Browser 125, Chrome for Android 125, Samsung Internet 24 and later"
+      "msg": "required by Edge 124, Chrome 109, Opera 109, Android Browser 126, Chrome for Android 126, Samsung Internet 24 and later"
     },
     "-moz-color-adjust": {
       "keep": false,
