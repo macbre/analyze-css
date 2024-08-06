@@ -27,7 +27,7 @@
     "css-shorthand-properties": "^1.1.1",
     "css-what": "^6.0.1",
     "debug": "^4.1.1",
-    "fast-stats": "0.0.6",
+    "fast-stats": "0.0.7",
     "glob": "^10.2.1",
     "http-proxy-agent": "^7.0.0",
     "node-fetch": "^3.0.0",
