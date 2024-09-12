@@ -1,33 +1,33 @@
 {
   "generated": "Using autoprefixer v10.4.20",
   "browsers": [
-    "and_chr 127",
+    "and_chr 128",
     "and_ff 127",
     "and_qq 14.9",
     "and_uc 15.5",
-    "android 127",
+    "android 128",
     "chrome 109",
-    "chrome 125",
     "chrome 126",
     "chrome 127",
-    "edge 126",
+    "chrome 128",
     "edge 127",
+    "edge 128",
     "firefox 115",
-    "firefox 127",
     "firefox 128",
     "firefox 129",
+    "firefox 130",
     "ios_saf 15.6-15.8",
     "ios_saf 16.6-16.7",
-    "ios_saf 17.4",
     "ios_saf 17.5",
+    "ios_saf 17.6",
     "kaios 2.5",
     "kaios 3.0-3.1",
     "op_mini all",
     "op_mob 80",
     "opera 110",
     "opera 111",
-    "safari 17.4",
     "safari 17.5",
+    "safari 17.6",
     "samsung 24",
     "samsung 25"
   ],
@@ -502,7 +502,7 @@
     },
     "-webkit-backdrop-filter": {
       "keep": true,
-      "msg": "required by Safari 17.4, Safari on iOS 15.6 and later"
+      "msg": "required by Safari 17.5, Safari on iOS 15.6 and later"
     },
     "-moz-backdrop-filter": {
       "keep": false,
@@ -726,7 +726,7 @@
     },
     "-webkit-user-select": {
       "keep": true,
-      "msg": "required by Safari 17.4, Safari on iOS 15.6 and later"
+      "msg": "required by Safari 17.5, Safari on iOS 15.6 and later"
     },
     "-moz-user-select": {
       "keep": true,
@@ -1142,7 +1142,7 @@
     },
     "-webkit-text-decoration": {
       "keep": true,
-      "msg": "required by Safari 17.4, Safari on iOS 15.6 and later"
+      "msg": "required by Safari 17.5, Safari on iOS 15.6 and later"
     },
     "-moz-text-decoration": {
       "keep": false,
@@ -1462,7 +1462,7 @@
     },
     "-webkit-box-decoration-break": {
       "keep": true,
-      "msg": "required by Edge 126, Chrome 109, Safari 17.4, Opera 110, Safari on iOS 15.6, Android Browser 127, Chrome for Android 127, UC Browser for Android 15.5, Samsung Internet 24, QQ Browser 14.9 and later"
+      "msg": "required by Edge 127, Chrome 109, Safari 17.5, Opera 110, Safari on iOS 15.6, Android Browser 128, Chrome for Android 128, UC Browser for Android 15.5, Samsung Internet 24, QQ Browser 14.9 and later"
     },
     "-moz-box-decoration-break": {
       "keep": false,
@@ -2326,7 +2326,7 @@
     },
     "-webkit-print-color-adjust": {
       "keep": true,
-      "msg": "required by Edge 126, Chrome 109, Opera 110, Android Browser 127, Chrome for Android 127, Samsung Internet 24 and later"
+      "msg": "required by Edge 127, Chrome 109, Opera 110, Android Browser 128, Chrome for Android 128, Samsung Internet 24 and later"
     },
     "-moz-print-color-adjust": {
       "keep": false,
@@ -2342,7 +2342,7 @@
     },
     "-webkit-color-adjust": {
       "keep": true,
-      "msg": "required by Edge 126, Chrome 109, Opera 110, Android Browser 127, Chrome for Android 127, Samsung Internet 24 and later"
+      "msg": "required by Edge 127, Chrome 109, Opera 110, Android Browser 128, Chrome for Android 128, Samsung Internet 24 and later"
     },
     "-moz-color-adjust": {
       "keep": false,
