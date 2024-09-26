@@ -10,6 +10,7 @@
     "chrome 126",
     "chrome 127",
     "chrome 128",
+    "chrome 129",
     "edge 127",
     "edge 128",
     "firefox 115",
@@ -20,6 +21,7 @@
     "ios_saf 16.6-16.7",
     "ios_saf 17.5",
     "ios_saf 17.6",
+    "ios_saf 18.0",
     "kaios 2.5",
     "kaios 3.0-3.1",
     "op_mini all",
@@ -28,6 +30,7 @@
     "opera 111",
     "safari 17.5",
     "safari 17.6",
+    "safari 18.0",
     "samsung 24",
     "samsung 25"
   ],
