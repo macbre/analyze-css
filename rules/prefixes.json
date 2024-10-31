@@ -1,24 +1,26 @@
 {
   "generated": "Using autoprefixer v10.4.20",
   "browsers": [
-    "and_chr 129",
+    "and_chr 130",
     "and_ff 130",
     "and_qq 14.9",
     "and_uc 15.5",
-    "android 129",
+    "android 130",
     "chrome 109",
     "chrome 126",
     "chrome 127",
     "chrome 128",
     "chrome 129",
+    "chrome 130",
     "edge 127",
     "edge 128",
     "edge 129",
+    "edge 130",
     "firefox 115",
     "firefox 128",
     "firefox 129",
-    "firefox 130",
     "firefox 131",
+    "firefox 132",
     "ios_saf 15.6-15.8",
     "ios_saf 16.6-16.7",
     "ios_saf 17.5",
@@ -1467,7 +1469,7 @@
     },
     "-webkit-box-decoration-break": {
       "keep": true,
-      "msg": "required by Edge 127, Chrome 109, Safari 17.5, Opera 113, Safari on iOS 15.6, Android Browser 129, Chrome for Android 129, UC Browser for Android 15.5, Samsung Internet 24, QQ Browser 14.9 and later"
+      "msg": "required by Edge 127, Chrome 109, Safari 17.5, Opera 113, Safari on iOS 15.6, UC Browser for Android 15.5, Samsung Internet 24, QQ Browser 14.9 and later"
     },
     "-moz-box-decoration-break": {
       "keep": false,
@@ -2331,7 +2333,7 @@
     },
     "-webkit-print-color-adjust": {
       "keep": true,
-      "msg": "required by Edge 127, Chrome 109, Opera 113, Android Browser 129, Chrome for Android 129, Samsung Internet 24 and later"
+      "msg": "required by Edge 127, Chrome 109, Opera 113, Android Browser 130, Chrome for Android 130, Samsung Internet 24 and later"
     },
     "-moz-print-color-adjust": {
       "keep": false,
@@ -2347,7 +2349,7 @@
     },
     "-webkit-color-adjust": {
       "keep": true,
-      "msg": "required by Edge 127, Chrome 109, Opera 113, Android Browser 129, Chrome for Android 129, Samsung Internet 24 and later"
+      "msg": "required by Edge 127, Chrome 109, Opera 113, Android Browser 130, Chrome for Android 130, Samsung Internet 24 and later"
     },
     "-moz-color-adjust": {
       "keep": false,
