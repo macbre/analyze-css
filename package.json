@@ -41,7 +41,7 @@
     "browserslist": "^4.11.1",
     "check-dts": "^0.8.0",
     "eslint": "^9.1.0",
-    "eslint-config-prettier": "9.1.0",
+    "eslint-config-prettier": "10.0.1",
     "eslint-plugin-node": "^11.1.0",
     "globals": "^15.0.0",
     "jest": "^29.0.0",
