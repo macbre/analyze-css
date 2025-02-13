@@ -38,7 +38,11 @@ program
     "--auth-pass <pass>",
     "Sets the password used for HTTP authentication",
   )
-  .option("-x, --proxy <proxy>", "Sets the HTTP proxy");
+  .option("-x, --proxy <proxy>", "Sets the HTTP proxy")
+  // allowExcessArguments is now set to false by default
+  // we need to let commander know that '-' argument is used to read input from stdin
+  // https://github.com/tj/commander.js/issues/2149
+  .argument("[input]", "Pass - as an argument to read CSS from stdin");
 
 // parse it
 program.parse(process.argv);
