@@ -1,18 +1,17 @@
 {
   "generated": "Using autoprefixer v10.4.20",
   "browsers": [
-    "and_chr 132",
-    "and_ff 132",
+    "and_chr 133",
+    "and_ff 135",
     "and_qq 14.9",
     "and_uc 15.5",
-    "android 132",
+    "android 133",
     "chrome 109",
-    "chrome 125",
     "chrome 131",
     "chrome 132",
     "chrome 133",
-    "edge 131",
     "edge 132",
+    "edge 133",
     "firefox 128",
     "firefox 134",
     "firefox 135",
@@ -28,7 +27,6 @@
     "op_mob 80",
     "opera 113",
     "opera 114",
-    "safari 18.1",
     "safari 18.2",
     "safari 18.3",
     "samsung 26",
@@ -729,7 +727,7 @@
     },
     "-webkit-user-select": {
       "keep": true,
-      "msg": "required by Safari 18.1, Safari on iOS 15.6 and later"
+      "msg": "required by Safari 18.2, Safari on iOS 15.6 and later"
     },
     "-moz-user-select": {
       "keep": true,
@@ -1145,7 +1143,7 @@
     },
     "-webkit-text-decoration": {
       "keep": true,
-      "msg": "required by Safari 18.1, Safari on iOS 15.6 and later"
+      "msg": "required by Safari 18.2, Safari on iOS 15.6 and later"
     },
     "-moz-text-decoration": {
       "keep": false,
@@ -1213,7 +1211,7 @@
     },
     "-moz-text-size-adjust": {
       "keep": true,
-      "msg": "required by Firefox for Android 132 and later"
+      "msg": "required by Firefox for Android 135 and later"
     },
     "-o-text-size-adjust": {
       "keep": false,
@@ -1465,7 +1463,7 @@
     },
     "-webkit-box-decoration-break": {
       "keep": true,
-      "msg": "required by Chrome 109, Safari 18.1, Opera 113, Safari on iOS 15.6, UC Browser for Android 15.5, Samsung Internet 26, QQ Browser 14.9 and later"
+      "msg": "required by Chrome 109, Safari 18.2, Opera 113, Safari on iOS 15.6, UC Browser for Android 15.5, Samsung Internet 26, QQ Browser 14.9 and later"
     },
     "-moz-box-decoration-break": {
       "keep": false,
@@ -2329,7 +2327,7 @@
     },
     "-webkit-print-color-adjust": {
       "keep": true,
-      "msg": "required by Edge 131, Chrome 109, Opera 113, Android Browser 132, Chrome for Android 132, Samsung Internet 26 and later"
+      "msg": "required by Edge 132, Chrome 109, Opera 113, Android Browser 133, Chrome for Android 133, Samsung Internet 26 and later"
     },
     "-moz-print-color-adjust": {
       "keep": false,
@@ -2345,7 +2343,7 @@
     },
     "-webkit-color-adjust": {
       "keep": true,
-      "msg": "required by Edge 131, Chrome 109, Opera 113, Android Browser 132, Chrome for Android 132, Samsung Internet 26 and later"
+      "msg": "required by Edge 132, Chrome 109, Opera 113, Android Browser 133, Chrome for Android 133, Samsung Internet 26 and later"
     },
     "-moz-color-adjust": {
       "keep": false,
