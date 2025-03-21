@@ -23,8 +23,7 @@ function rule(analyzer) {
     let selectorSpecificity;
     try {
       selectorSpecificity = specificity.calculate(selector);
-    }
-    catch(ex) {
+    } catch (ex) {
       return;
     }
 
@@ -35,7 +34,11 @@ function rule(analyzer) {
     }
 
     // parse the results
-    const parts = [ selectorSpecificity['A'], selectorSpecificity['B'], selectorSpecificity['C'] ];
+    const parts = [
+      selectorSpecificity["A"],
+      selectorSpecificity["B"],
+      selectorSpecificity["C"],
+    ];
 
     debug("%s: %s", selector, parts.join(","));
 
