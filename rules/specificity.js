@@ -20,24 +20,27 @@ function rule(analyzer) {
   });
 
   analyzer.on("selector", function (rule, selector) {
-    var selectorSpecificity = specificity.calculate(selector),
-      parts;
+    let selectorSpecificity;
+    try {
+      selectorSpecificity = specificity.calculate(selector);
+    } catch (ex) {
+      return;
+    }
 
     /* istanbul ignore if */
-    if (!selectorSpecificity || !selectorSpecificity[0]) {
+    if (!selectorSpecificity) {
       debug("not counted for %s!", selector);
       return;
     }
 
     // parse the results
-    parts = selectorSpecificity[0].specificity
-      .split(",")
-      .slice(1)
-      .map(function (i) {
-        return parseInt(i, 10);
-      });
+    const parts = [
+      selectorSpecificity["A"],
+      selectorSpecificity["B"],
+      selectorSpecificity["C"],
+    ];
 
-    debug("%s: %s", selector, parts.join(""));
+    debug("%s: %s", selector, parts.join(","));
 
     // add each piece to a separate stack
     parts.forEach(function (val, idx) {
