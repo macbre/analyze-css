@@ -34,7 +34,7 @@ exports.tests = [
 	{
 		css: '.foo { border-color: #000 #000000 rgb(0,0,0) rgba(0,0,0,1) }',
 		metrics: {
-			colors: 2
+			colors: 1
 		}
 	},
 ];
