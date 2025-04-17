@@ -1,11 +1,11 @@
 {
   "generated": "Using autoprefixer v10.4.21",
   "browsers": [
-    "and_chr 134",
-    "and_ff 136",
+    "and_chr 135",
+    "and_ff 137",
     "and_qq 14.9",
     "and_uc 15.5",
-    "android 134",
+    "android 135",
     "chrome 109",
     "chrome 131",
     "chrome 132",
@@ -14,6 +14,7 @@
     "chrome 135",
     "edge 133",
     "edge 134",
+    "edge 135",
     "firefox 128",
     "firefox 136",
     "firefox 137",
@@ -1213,7 +1214,7 @@
     },
     "-moz-text-size-adjust": {
       "keep": true,
-      "msg": "required by Firefox for Android 136 and later"
+      "msg": "required by Firefox for Android 137 and later"
     },
     "-o-text-size-adjust": {
       "keep": false,
@@ -2329,7 +2330,7 @@
     },
     "-webkit-print-color-adjust": {
       "keep": true,
-      "msg": "required by Edge 133, Chrome 109, Opera 116, Android Browser 134, Chrome for Android 134, Samsung Internet 26 and later"
+      "msg": "required by Edge 133, Chrome 109, Opera 116, Android Browser 135, Chrome for Android 135, Samsung Internet 26 and later"
     },
     "-moz-print-color-adjust": {
       "keep": false,
@@ -2345,7 +2346,7 @@
     },
     "-webkit-color-adjust": {
       "keep": true,
-      "msg": "required by Edge 133, Chrome 109, Opera 116, Android Browser 134, Chrome for Android 134, Samsung Internet 26 and later"
+      "msg": "required by Edge 133, Chrome 109, Opera 116, Android Browser 135, Chrome for Android 135, Samsung Internet 26 and later"
     },
     "-moz-color-adjust": {
       "keep": false,
