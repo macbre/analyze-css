@@ -8,20 +8,14 @@
     "android 138",
     "chrome 109",
     "chrome 112",
-    "chrome 131",
-    "chrome 136",
     "chrome 137",
     "chrome 138",
-    "edge 136",
+    "chrome 139",
     "edge 137",
     "edge 138",
     "firefox 128",
-    "firefox 139",
     "firefox 140",
     "firefox 141",
-    "ios_saf 16.6-16.7",
-    "ios_saf 17.6-17.7",
-    "ios_saf 18.3",
     "ios_saf 18.4",
     "ios_saf 18.5",
     "kaios 2.5",
@@ -505,8 +499,8 @@
       "msg": "prefix is no longer supported"
     },
     "-webkit-backdrop-filter": {
-      "keep": true,
-      "msg": "required by Safari on iOS 16.6 and later"
+      "keep": false,
+      "msg": "was required by Edge 18, Safari on iOS 17.6, Safari 17.6 and earlier"
     },
     "-moz-backdrop-filter": {
       "keep": false,
@@ -730,7 +724,7 @@
     },
     "-webkit-user-select": {
       "keep": true,
-      "msg": "required by Safari 18.4, Safari on iOS 16.6 and later"
+      "msg": "required by Safari 18.4, Safari on iOS 18.4 and later"
     },
     "-moz-user-select": {
       "keep": true,
@@ -1065,8 +1059,8 @@
       "msg": "prefix is no longer supported"
     },
     "-webkit-hyphens": {
-      "keep": true,
-      "msg": "required by Safari on iOS 16.6 and later"
+      "keep": false,
+      "msg": "was required by Edge 18, Safari on iOS 16.6, Safari 16.6 and earlier"
     },
     "-moz-hyphens": {
       "keep": false,
@@ -1114,7 +1108,7 @@
     },
     "-webkit-text-decoration-skip": {
       "keep": true,
-      "msg": "required by Safari on iOS 16.6 and later"
+      "msg": "required by Safari on iOS 18.4 and later"
     },
     "-moz-text-decoration-skip": {
       "keep": false,
@@ -1130,7 +1124,7 @@
     },
     "-webkit-text-decoration-skip-ink": {
       "keep": true,
-      "msg": "required by Safari on iOS 16.6 and later"
+      "msg": "required by Safari on iOS 18.4 and later"
     },
     "-moz-text-decoration-skip-ink": {
       "keep": false,
@@ -1146,7 +1140,7 @@
     },
     "-webkit-text-decoration": {
       "keep": true,
-      "msg": "required by Safari 18.4, Safari on iOS 16.6 and later"
+      "msg": "required by Safari 18.4, Safari on iOS 18.4 and later"
     },
     "-moz-text-decoration": {
       "keep": false,
@@ -1210,7 +1204,7 @@
     },
     "-webkit-text-size-adjust": {
       "keep": true,
-      "msg": "required by Safari on iOS 16.6 and later"
+      "msg": "required by Safari on iOS 18.4 and later"
     },
     "-moz-text-size-adjust": {
       "keep": true,
@@ -1466,7 +1460,7 @@
     },
     "-webkit-box-decoration-break": {
       "keep": true,
-      "msg": "required by Chrome 109, Safari 18.4, Safari on iOS 16.6, UC Browser for Android 15.5, Samsung Internet 27, QQ Browser 14.9 and later"
+      "msg": "required by Chrome 109, Safari 18.4, Safari on iOS 18.4, UC Browser for Android 15.5, Samsung Internet 27, QQ Browser 14.9 and later"
     },
     "-moz-box-decoration-break": {
       "keep": false,
