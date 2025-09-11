@@ -11,8 +11,10 @@
     "chrome 137",
     "chrome 138",
     "chrome 139",
+    "chrome 140",
     "edge 138",
     "edge 139",
+    "edge 140",
     "firefox 128",
     "firefox 140",
     "firefox 141",
@@ -23,8 +25,8 @@
     "kaios 3.0-3.1",
     "op_mini all",
     "op_mob 80",
-    "opera 116",
-    "opera 117",
+    "opera 120",
+    "opera 121",
     "safari 18.4",
     "safari 18.5-18.6",
     "samsung 27",
@@ -2325,7 +2327,7 @@
     },
     "-webkit-print-color-adjust": {
       "keep": true,
-      "msg": "required by Chrome 109, Opera 116, Samsung Internet 27 and later"
+      "msg": "required by Chrome 109, Opera 120, Samsung Internet 27 and later"
     },
     "-moz-print-color-adjust": {
       "keep": false,
@@ -2341,7 +2343,7 @@
     },
     "-webkit-color-adjust": {
       "keep": true,
-      "msg": "required by Chrome 109, Opera 116, Samsung Internet 27 and later"
+      "msg": "required by Chrome 109, Opera 120, Samsung Internet 27 and later"
     },
     "-moz-color-adjust": {
       "keep": false,
