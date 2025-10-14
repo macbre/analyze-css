@@ -24,7 +24,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v5
-      - uses: actions/setup-node@v5
+      - uses: actions/setup-node@v6
         with:
           node-version: 'latest'
           cache: 'npm'
@@ -40,7 +40,7 @@ jobs:
       #
       # https://github.com/actions/setup-node/blob/main/docs/advanced-usage.md#publish-to-npmjs-and-gpr-with-npm
       #
-      - uses: actions/setup-node@v5
+      - uses: actions/setup-node@v6
         with:
          node-version: 'latest'
          registry-url: 'https://npm.pkg.github.com'
@@ -58,7 +58,7 @@ jobs:
         env:
           NODE_AUTH_TOKEN: ${{secrets.GITHUB_TOKEN}}
 
-      - uses: actions/setup-node@v5
+      - uses: actions/setup-node@v6
         with:
           node-version: 'latest'
           registry-url: 'https://registry.npmjs.org'
