@@ -20,6 +20,9 @@ jobs:
         - 'lts/*'
         - 'latest'
 
+    env:
+      NODE_OPTIONS: "--no-experimental-webstorage" 
+
     steps:
     - uses: actions/checkout@v5
 
