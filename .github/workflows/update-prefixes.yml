@@ -23,7 +23,7 @@ jobs:
     steps:
       # https://github.com/actions/checkout
       - name: Cloning ${{ env.GIT_BRANCH }} branch
-        uses: actions/checkout@v5
+        uses: actions/checkout@v6
         with:
           ref: ${{ env.GIT_BRANCH }}
 
