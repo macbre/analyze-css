@@ -31,8 +31,8 @@
     "op_mob 80",
     "opera 121",
     "opera 122",
-    "safari 26.0",
     "safari 26.1",
+    "safari 26.2",
     "samsung 28",
     "samsung 29"
   ],
@@ -731,7 +731,7 @@
     },
     "-webkit-user-select": {
       "keep": true,
-      "msg": "required by Safari 26, Safari on iOS 18.5 and later"
+      "msg": "required by Safari 26.1, Safari on iOS 18.5 and later"
     },
     "-moz-user-select": {
       "keep": true,
@@ -1147,7 +1147,7 @@
     },
     "-webkit-text-decoration": {
       "keep": true,
-      "msg": "required by Safari 26, Safari on iOS 18.5 and later"
+      "msg": "required by Safari 26.1, Safari on iOS 18.5 and later"
     },
     "-moz-text-decoration": {
       "keep": false,
@@ -1467,7 +1467,7 @@
     },
     "-webkit-box-decoration-break": {
       "keep": true,
-      "msg": "required by Chrome 109, Safari 26, Safari on iOS 18.5, UC Browser for Android 15.5, Samsung Internet 28, QQ Browser 14.9 and later"
+      "msg": "required by Chrome 109, Safari 26.1, Safari on iOS 18.5, UC Browser for Android 15.5, Samsung Internet 28, QQ Browser 14.9 and later"
     },
     "-moz-box-decoration-break": {
       "keep": false,
