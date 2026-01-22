@@ -46,7 +46,7 @@
     "globals": "^17.0.0",
     "jest": "^30.0.3",
     "postcss": "^8.3.6",
-    "prettier": "3.8.0"
+    "prettier": "3.8.1"
   },
   "optionalDependencies": {
     "sass": "^1.34.1"
