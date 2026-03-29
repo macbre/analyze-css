@@ -54,7 +54,7 @@
   "bin": "./bin/analyze-css.js",
   "preferGlobal": true,
   "scripts": {
-    "test": "jest test/ --coverage --detectOpenHandles",
+    "test": "node --experimental-vm-modules node_modules/.bin/jest test/ --coverage --detectOpenHandles",
     "lint": "eslint .",
     "lint:fix": "eslint . --fix",
     "prettier": "npx prettier --write .",
