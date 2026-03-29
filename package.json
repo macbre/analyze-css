@@ -25,7 +25,7 @@
     "cli": "^1.0.1",
     "commander": "^14.0.0",
     "css-shorthand-properties": "^1.1.1",
-    "css-what": "^7.0.0",
+    "css-what": "^8.0.0",
     "debug": "^4.1.1",
     "fast-stats": "0.0.7",
     "glob": "^13.0.0",
@@ -54,7 +54,7 @@
   "bin": "./bin/analyze-css.js",
   "preferGlobal": true,
   "scripts": {
-    "test": "jest test/ --coverage --detectOpenHandles",
+    "test": "node --experimental-vm-modules node_modules/.bin/jest test/ --coverage --detectOpenHandles",
     "lint": "eslint .",
     "lint:fix": "eslint . --fix",
     "prettier": "npx prettier --write .",
