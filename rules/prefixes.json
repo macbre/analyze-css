@@ -2,7 +2,7 @@
   "generated": "Using autoprefixer v10.4.27",
   "browsers": [
     "and_chr 146",
-    "and_ff 148",
+    "and_ff 149",
     "and_qq 14.9",
     "and_uc 15.5",
     "android 146",
@@ -22,9 +22,11 @@
     "firefox 140",
     "firefox 147",
     "firefox 148",
+    "firefox 149",
     "ios_saf 18.5-18.7",
     "ios_saf 26.2",
     "ios_saf 26.3",
+    "ios_saf 26.4",
     "kaios 2.5",
     "kaios 3.0-3.1",
     "op_mini all",
@@ -34,6 +36,7 @@
     "safari 18.5-18.7",
     "safari 26.2",
     "safari 26.3",
+    "safari 26.4",
     "samsung 28",
     "samsung 29"
   ],
@@ -1216,7 +1219,7 @@
     },
     "-moz-text-size-adjust": {
       "keep": true,
-      "msg": "required by Firefox for Android 148 and later"
+      "msg": "required by Firefox for Android 149 and later"
     },
     "-o-text-size-adjust": {
       "keep": false,
