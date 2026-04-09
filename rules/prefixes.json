@@ -1,26 +1,19 @@
 {
   "generated": "Using autoprefixer v10.4.27",
   "browsers": [
-    "and_chr 146",
+    "and_chr 147",
     "and_ff 149",
     "and_qq 14.9",
     "and_uc 15.5",
-    "android 146",
+    "android 147",
     "chrome 109",
-    "chrome 112",
-    "chrome 116",
-    "chrome 131",
-    "chrome 133",
-    "chrome 139",
-    "chrome 143",
     "chrome 144",
     "chrome 145",
     "chrome 146",
-    "edge 144",
+    "chrome 147",
     "edge 145",
     "edge 146",
     "firefox 140",
-    "firefox 147",
     "firefox 148",
     "firefox 149",
     "ios_saf 18.5-18.7",
@@ -33,8 +26,6 @@
     "op_mob 80",
     "opera 126",
     "opera 127",
-    "safari 18.5-18.7",
-    "safari 26.2",
     "safari 26.3",
     "safari 26.4",
     "samsung 28",
@@ -735,7 +726,7 @@
     },
     "-webkit-user-select": {
       "keep": true,
-      "msg": "required by Safari 18.5, Safari on iOS 18.5 and later"
+      "msg": "required by Safari 26.3, Safari on iOS 18.5 and later"
     },
     "-moz-user-select": {
       "keep": true,
@@ -1151,7 +1142,7 @@
     },
     "-webkit-text-decoration": {
       "keep": true,
-      "msg": "required by Safari 18.5, Safari on iOS 18.5 and later"
+      "msg": "required by Safari on iOS 18.5 and later"
     },
     "-moz-text-decoration": {
       "keep": false,
@@ -1471,7 +1462,7 @@
     },
     "-webkit-box-decoration-break": {
       "keep": true,
-      "msg": "required by Chrome 109, Safari 18.5, Safari on iOS 18.5, UC Browser for Android 15.5, Samsung Internet 28, QQ Browser 14.9 and later"
+      "msg": "required by Chrome 109, Safari 26.3, Safari on iOS 18.5, UC Browser for Android 15.5, Samsung Internet 28, QQ Browser 14.9 and later"
     },
     "-moz-box-decoration-break": {
       "keep": false,
