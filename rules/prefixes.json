@@ -1,5 +1,5 @@
 {
-  "generated": "Using autoprefixer v10.4.27",
+  "generated": "Using autoprefixer v10.5.0",
   "browsers": [
     "and_chr 147",
     "and_ff 149",
@@ -1357,6 +1357,38 @@
       "msg": "prefix is no longer supported"
     },
     "-o-mask-position": {
+      "keep": false,
+      "msg": "prefix is no longer supported"
+    },
+    "-ms-mask-position-x": {
+      "keep": false,
+      "msg": "prefix is no longer supported"
+    },
+    "-webkit-mask-position-x": {
+      "keep": true,
+      "msg": "required by Chrome 109, UC Browser for Android 15.5, QQ Browser 14.9 and later"
+    },
+    "-moz-mask-position-x": {
+      "keep": false,
+      "msg": "prefix is no longer supported"
+    },
+    "-o-mask-position-x": {
+      "keep": false,
+      "msg": "prefix is no longer supported"
+    },
+    "-ms-mask-position-y": {
+      "keep": false,
+      "msg": "prefix is no longer supported"
+    },
+    "-webkit-mask-position-y": {
+      "keep": true,
+      "msg": "required by Chrome 109, UC Browser for Android 15.5, QQ Browser 14.9 and later"
+    },
+    "-moz-mask-position-y": {
+      "keep": false,
+      "msg": "prefix is no longer supported"
+    },
+    "-o-mask-position-y": {
       "keep": false,
       "msg": "prefix is no longer supported"
     },
