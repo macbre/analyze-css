@@ -23,7 +23,7 @@
   "dependencies": {
     "@adobe/css-tools": "^4.4.2",
     "cli": "^1.0.1",
-    "commander": "^14.0.0",
+    "commander": "^15.0.0",
     "css-shorthand-properties": "^1.1.1",
     "css-what": "^8.0.0",
     "debug": "^4.1.1",
