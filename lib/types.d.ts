@@ -59,7 +59,7 @@ export type EventsNames =
   | "mediaEnd" /* (query) */
   | "report" /* () */
   | "rule" /* (rule) */
-  | "selector" /* (rule, selector, expressions) */;
+  | "selector"; /* (rule, selector, expressions) */
 
 /**
  * Encapsulates a set of metrics
