@@ -1,11 +1,11 @@
 {
-  "generated": "Using autoprefixer v10.5.2",
+  "generated": "Using autoprefixer v10.5.3",
   "browsers": [
-    "and_chr 149",
+    "and_chr 150",
     "and_ff 152",
     "and_qq 14.9",
     "and_uc 15.5",
-    "android 149",
+    "android 150",
     "chrome 109",
     "chrome 118",
     "chrome 148",
