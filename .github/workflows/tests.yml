@@ -58,7 +58,7 @@ jobs:
     # upload coverage report for just one of Node.js version matrix runs
     - name: Upload coverage report to Coveralls
       if: matrix.node-version == 'latest'
-      uses: coverallsapp/github-action@v2.3.7
+      uses: coverallsapp/github-action@v2.3.8
       continue-on-error: true
       with:
         github-token: ${{ github.token }}
