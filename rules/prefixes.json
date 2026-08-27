@@ -19,19 +19,18 @@
     "firefox 140",
     "firefox 152",
     "firefox 153",
+    "firefox 154",
     "ios_saf 18.5-18.7",
-    "ios_saf 26.3",
-    "ios_saf 26.4",
     "ios_saf 26.5",
+    "ios_saf 26.6",
     "kaios 2.5",
     "kaios 3.0-3.1",
     "op_mini all",
     "op_mob 80",
     "opera 127",
     "opera 131",
-    "safari 26.3",
-    "safari 26.4",
     "safari 26.5",
+    "safari 26.6",
     "samsung 29",
     "samsung 30"
   ],
@@ -730,7 +729,7 @@
     },
     "-webkit-user-select": {
       "keep": true,
-      "msg": "required by Safari 26.3, Safari on iOS 18.5 and later"
+      "msg": "required by Safari 26.5, Safari on iOS 18.5 and later"
     },
     "-moz-user-select": {
       "keep": true,
@@ -1498,7 +1497,7 @@
     },
     "-webkit-box-decoration-break": {
       "keep": true,
-      "msg": "required by Chrome 109, Safari 26.3, Safari on iOS 18.5, UC Browser for Android 15.5, Samsung Internet 29, QQ Browser 14.9 and later"
+      "msg": "required by Chrome 109, Safari 26.5, Safari on iOS 18.5, UC Browser for Android 15.5, Samsung Internet 29, QQ Browser 14.9 and later"
     },
     "-moz-box-decoration-break": {
       "keep": false,
