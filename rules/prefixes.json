@@ -1,5 +1,5 @@
 {
-  "generated": "Using autoprefixer v10.5.5",
+  "generated": "Using autoprefixer v10.6.0",
   "browsers": [
     "and_chr 151",
     "and_ff 153",
@@ -2386,6 +2386,22 @@
     "-o-color-adjust": {
       "keep": true,
       "msg": "required by Opera Mobile 80 and later"
+    },
+    "-ms-initial-letter": {
+      "keep": false,
+      "msg": "prefix is no longer supported"
+    },
+    "-webkit-initial-letter": {
+      "keep": true,
+      "msg": "required by Safari 26.5, Safari on iOS 18.5 and later"
+    },
+    "-moz-initial-letter": {
+      "keep": false,
+      "msg": "prefix is no longer supported"
+    },
+    "-o-initial-letter": {
+      "keep": false,
+      "msg": "prefix is no longer supported"
     }
   }
 }
