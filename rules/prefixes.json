@@ -7,18 +7,16 @@
     "and_uc 15.5",
     "android 154",
     "chrome 109",
-    "chrome 120",
-    "chrome 145",
-    "chrome 149",
     "chrome 150",
     "chrome 151",
+    "chrome 152",
     "chrome 153",
     "chrome 154",
-    "edge 150",
-    "edge 151",
+    "edge 152",
     "edge 153",
     "edge 154",
     "firefox 153",
+    "firefox 155",
     "firefox 156",
     "firefox 157",
     "ios_saf 18.5-18.7",
@@ -31,7 +29,6 @@
     "op_mob 80",
     "opera 134",
     "opera 135",
-    "safari 26.5",
     "safari 26.6",
     "safari 27",
     "samsung 29",
@@ -732,7 +729,7 @@
     },
     "-webkit-user-select": {
       "keep": true,
-      "msg": "required by Safari 26.5, Safari on iOS 18.5 and later"
+      "msg": "required by Safari 26.6, Safari on iOS 18.5 and later"
     },
     "-moz-user-select": {
       "keep": true,
@@ -1500,7 +1497,7 @@
     },
     "-webkit-box-decoration-break": {
       "keep": true,
-      "msg": "required by Chrome 109, Safari 26.5, Safari on iOS 18.5, UC Browser for Android 15.5, Samsung Internet 29, QQ Browser 14.9 and later"
+      "msg": "required by Chrome 109, Safari 26.6, Safari on iOS 18.5, UC Browser for Android 15.5, Samsung Internet 29, QQ Browser 14.9 and later"
     },
     "-moz-box-decoration-break": {
       "keep": false,
@@ -2396,7 +2393,7 @@
     },
     "-webkit-initial-letter": {
       "keep": true,
-      "msg": "required by Safari 26.5, Safari on iOS 18.5 and later"
+      "msg": "required by Safari 26.6, Safari on iOS 18.5 and later"
     },
     "-moz-initial-letter": {
       "keep": false,
