@@ -2,7 +2,7 @@
   "generated": "Using autoprefixer v10.6.1",
   "browsers": [
     "and_chr 156",
-    "and_ff 158",
+    "and_ff 159",
     "and_qq 14.9",
     "and_uc 15.5",
     "android 156",
@@ -21,8 +21,8 @@
     "firefox 153",
     "firefox 155",
     "firefox 156",
-    "firefox 157",
     "firefox 158",
+    "firefox 159",
     "ios_saf 18.5-18.7",
     "ios_saf 26.5",
     "ios_saf 26.6",
@@ -1217,7 +1217,7 @@
     },
     "-moz-text-size-adjust": {
       "keep": true,
-      "msg": "required by Firefox for Android 158 and later"
+      "msg": "required by Firefox for Android 159 and later"
     },
     "-o-text-size-adjust": {
       "keep": false,
