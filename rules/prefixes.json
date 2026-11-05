@@ -1,26 +1,25 @@
 {
-  "generated": "Using autoprefixer v10.6.1",
+  "generated": "Using autoprefixer v10.6.2",
   "browsers": [
-    "and_chr 156",
+    "and_chr 157",
     "and_ff 159",
     "and_qq 14.9",
     "and_uc 15.5",
-    "android 156",
+    "android 157",
     "chrome 109",
-    "chrome 150",
+    "chrome 146",
     "chrome 151",
     "chrome 152",
     "chrome 153",
     "chrome 154",
     "chrome 155",
     "chrome 156",
-    "edge 152",
-    "edge 153",
+    "chrome 157",
     "edge 154",
     "edge 155",
+    "edge 156",
     "firefox 153",
-    "firefox 155",
-    "firefox 156",
+    "firefox 157",
     "firefox 158",
     "firefox 159",
     "ios_saf 18.5-18.7",
@@ -31,12 +30,13 @@
     "kaios 3.0-3.1",
     "op_mini all",
     "op_mob 80",
-    "opera 134",
-    "opera 135",
+    "opera 138",
+    "opera 139",
     "safari 26.6",
-    "safari 27",
-    "samsung 29",
-    "samsung 30"
+    "safari 27.1",
+    "safari 27.2",
+    "samsung 30",
+    "samsung 31"
   ],
   "prefixes": {
     "-ms-border-radius": {
@@ -1501,7 +1501,7 @@
     },
     "-webkit-box-decoration-break": {
       "keep": true,
-      "msg": "required by Chrome 109, Safari 26.6, Safari on iOS 18.5, UC Browser for Android 15.5, Samsung Internet 29, QQ Browser 14.9 and later"
+      "msg": "required by Chrome 109, Safari 26.6, Safari on iOS 18.5, UC Browser for Android 15.5, Samsung Internet 30, QQ Browser 14.9 and later"
     },
     "-moz-box-decoration-break": {
       "keep": false,
