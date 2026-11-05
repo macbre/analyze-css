@@ -28,7 +28,7 @@
     "css-what": "^8.0.0",
     "debug": "^4.1.1",
     "fast-stats": "0.0.7",
-    "glob": "^13.0.0",
+    "glob": "^14.0.3",
     "http-proxy-agent": "^9.0.0",
     "node-fetch": "^3.0.0",
     "onecolor": "^4.0.0",
