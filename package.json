@@ -21,7 +21,7 @@
     "node": ">18"
   },
   "dependencies": {
-    "@adobe/css-tools": "^4.4.2",
+    "@adobe/css-tools": "^5.0.0",
     "cli": "^1.0.1",
     "commander": "^15.0.0",
     "css-shorthand-properties": "^1.1.1",
