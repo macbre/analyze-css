@@ -1,5 +1,5 @@
 {
-  "generated": "Using autoprefixer v10.6.2",
+  "generated": "Using autoprefixer v10.7.0",
   "browsers": [
     "and_chr 157",
     "and_ff 160",
@@ -15,9 +15,11 @@
     "chrome 155",
     "chrome 156",
     "chrome 157",
+    "chrome 158",
     "edge 154",
     "edge 155",
     "edge 156",
+    "edge 157",
     "firefox 153",
     "firefox 157",
     "firefox 158",
@@ -31,8 +33,8 @@
     "kaios 3.0-3.1",
     "op_mini all",
     "op_mob 80",
-    "opera 138",
     "opera 139",
+    "opera 140",
     "safari 26.6",
     "safari 27.1",
     "safari 27.2",
